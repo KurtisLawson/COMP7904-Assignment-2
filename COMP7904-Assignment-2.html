@@ -159,7 +159,7 @@ The streets bellow in a whorl of heated air, as you draw it&#39;s energy and sen
 
 (set: $magicRevealed to false)[[Now&#39;s your chance to escape!-&gt;A1- Escape!]]</tw-passagedata><tw-passagedata pid="17" name="A1- Seeker Info" tags="Info" position="1476.8333333333335,292.83333333333337" size="100,100">Seekers are dangerous hunters of rogue Arcanists in the city of Qui&#39;Lea, operating under the orders of the Enclave.
 
-A direct confrontation with one could easily spell your demise.</tw-passagedata><tw-passagedata pid="18" name=" A1- Attack Guard" tags="" position="1819.8333333333335,347.83333333333337" size="100,100">Following the thug, you take an opposing angle, swiftly unsheathe your blade and feint a strike, drawing the guard&#39;s eye for but a moment before disengaging.
+A direct confrontation with one could easily spell your demise.</tw-passagedata><tw-passagedata pid="18" name=" A1- Attack Guard" tags="" position="1838.8333333333335,348.83333333333337" size="100,100">Following the thug, you take an opposing angle, swiftly unsheathe your blade and feint a strike, drawing the guard&#39;s eye for but a moment before disengaging.
 
 The hesitation was all you needed, for just long enough for the thug to drive a dagger under the gap in the armor.
 
@@ -561,16 +561,18 @@ Just be careful. I know you&#39;re resourceful, but you&#39;re not invincible. A
 
 (live: 10s)[(transition:&quot;dissolve&quot;)[(text-colour:grey)[//And pray it won&#39;t be the last time you see it...//]](stop:)]
 
-(live: 10s)[(transition:&quot;dissolve&quot;)[ [[ Continue...-&gt; A2- Enter The Garrison]] ]</tw-passagedata><tw-passagedata pid="66" name=" A2- Enter The Garrison" tags="" position="29,1983.666666984558" size="100,100">&#39;&#39;The Enclave Garrison&#39;&#39;
+(live: 10s)[(transition:&quot;dissolve&quot;)[ [[ Continue...-&gt; A2- Enter The Garrison]] ] ]</tw-passagedata><tw-passagedata pid="66" name=" A2- Enter The Garrison" tags="" position="100,2000.666666984558" size="100,100">&#39;&#39;The Enclave Garrison&#39;&#39;
 &lt;img src=&quot;https://external-preview.redd.it/iRZrz6S2j1pPGG6FfjYkACahfLtp4zTJmGxJqK2_8yk.jpg?auto=webp&amp;s=7144be76be6d73f7d15caff5bd56020ce184a999&quot; width= &quot;100%&quot;&gt;
 
 The Garrison is beyond the canyons of the city, on the Eastern limits. If acts as the first line of defence from invaders should they descend from the Ashtooth, as well as an open trade checkpoint facilitating Southern travel towards the Xanthar Sultanate.
 
 You can&#39;t help but feel uncomfortable as you close the distance, watching as regular patrols pass through, and armed militia members are trained in combat pits by barking lieutenants.
 
-After stating your business with a forward operator, you are ushered into the Garrison proper. You wait for a time, before being approached by two figures in brilliant brass regalia.
+After stating your business with a forward operator, you explain that you&#39;re a freelance [[Relic Hunter-&gt; A2 - Relic Hunter Info]] that has frequented the Archipelago on a variety of hunts.
 
-[[Meet the figures-&gt; A2- Gavin &amp; Moira 1]]</tw-passagedata><tw-passagedata pid="67" name=" A2- Gavin &amp; Moira 1" tags="" position="100,2199.666666984558" size="100,100">A man and a woman, each armed with long blades and donned in Enclave colors, halt you as you approach.
+Showing the bounty notice to signal your intent, you are ushered into the Garrison proper. You wait for a time, before being approached by two figures in brilliant brass regalia.
+
+[[Meet the figures-&gt; A2- Gavin &amp; Moira 1]]</tw-passagedata><tw-passagedata pid="67" name=" A2- Gavin &amp; Moira 1" tags="" position="100,2198.666666984558" size="100,100">A man and a woman, each armed with long blades and donned in Enclave colors, halt you as you approach.
 
 The man appears to be in lighter equipment, with a form-fitting cuirass and faulds, adorned with brass pauldrons and a light cloak: A scout, by the looks of him. He doesn&#39;t wear a helmet, allowing his wild unkempt hair and beard to rest fully in view.
 
@@ -580,23 +582,79 @@ The man stops for a moment, eyeing you up and down. He speaks gently...
 
 &quot;Hold a moment, boy.. I know you.&quot;
 
-[[Your heart begins to pound.. -&gt; A2- Gavin &amp; Moira 2]]</tw-passagedata><tw-passagedata pid="68" name=" A2- Gavin &amp; Moira 2" tags="Stub" position="301,2198.666666984558" size="100,100">&quot;You&#39;re Sachi&#39;s son, aren&#39;t you? The dock-worker?&quot;
+[[Your heart begins to pound.. -&gt; A2- Gavin &amp; Moira 2]]
+
+(set: $a2_gavinInfo to 0)
+(set: $a2_moiraInfo to 0)</tw-passagedata><tw-passagedata pid="68" name=" A2- Gavin &amp; Moira 2" tags="Stub" position="402,2197.666666984558" size="100,100">&quot;You&#39;re Sachi&#39;s son, aren&#39;t you? The dock-worker?&quot;
 
 You can&#39;t tell if you look as off-guard as you feel, so you simply nod in affirmation.
 
 &quot;Ah, right, then! Thought you looked familiar. Didn&#39;t realize you were a Relic Hunter, had I known maybe I woulda gone and asked you meself!&quot; He smiles warmly and pats you on the shoulder.
 
-&quot;Don&#39;t remember me? Gavin Stormweld, at your service. This one&#39;s Moira, she&#39;s the charm of the group.&quot;
+Don&#39;t remember me? [[Gavin Stormweld-&gt;BIO - Gavin Stormweld]], at your service. This one&#39;s [[Moira De&#39;Vallan-&gt;BIO - Moira De&#39;vallan]], she&#39;s the charm of the group.&quot;
 
 &quot;Sod off&quot; The woman retorts, her voice echoing through the helmet.
 
-&quot;Real sense of humour that one. Her bark is worse than her blade, just don&#39;t giver her a reason to hurt you and you&#39;ll be fine.&quot;
+Gavin laughs, seemingly unphased by the apparent hostility. &quot;Real sense of humour that one. Her bark is worse than her blade, just don&#39;t giver her a reason to hurt you and you&#39;ll be fine.
+
+Apologize, but your name has slipped my mind. Started with an H.. Hammond, Harold?&quot;
+
+[[&quot;Ashton.&quot;-&gt;  A2- Gavin &amp; Moira 3]]</tw-passagedata><tw-passagedata pid="69" name="BIO - Gavin Stormweld" tags="Info" position="528,2002.666666984558" size="100,100">=|=
+&lt;img src=&quot;https://static.zerochan.net/Eldore.full.148667.jpg&quot; width= &quot;100%&quot;&gt;
+=|=
+&#39;&#39;Gavin Stormweld&#39;&#39;
+
+Donned in a lighter kit, with a form-fitting cuirass and faulds, adorned with brass pauldrons and a light cloak: A scout, by the looks of him. He doesn&#39;t wear a helmet, allowing his wild unkempt hair and beard to rest fully in view.
+
+It&#39;s strange to be confronted by such a boisterous character walking so plainly amidst the realm of your enemies.
+
+The Enclave of Brass has offered nothing but fear for you and your kin since you were little, yet this man, beyond all other association, speaks with clear conscience.
+(if: $a2_gavinIsAnArcanist is true) [ 
+When you think of what a Seeker represents: The fear invoked by the mention of their creed, spending your life peering over your shoulder, wondering if today would be the day they find you...
+
+It never occurred to you that some seekers choose that path. You were always told that it is forced upon Arcanists who resist, their minds indoctrinated to think radically. Why would anyone choose to prevent something as wondorous as magic?
+]
+(if: $a2_gavinInfo &lt; 3) [ (text-colour:grey)[//-- Perhaps more will be revealed with time. -- //] ]
+|==|</tw-passagedata><tw-passagedata pid="70" name="BIO - Moira De&#39;vallan" tags="Info" position="726,2002" size="100,100">=|=
+&lt;img src=&quot;https://i.imgur.com/PijclpY.jpg&quot; width= &quot;100%&quot;&gt;
+=|=
+&#39;&#39;Moira De&#39;vallan&#39;&#39;
+
+The perfect soldier: Confrontational, analytical...
+
+Terrifying.
+
+Donned in a full, heavy set of brass plate. A helmet with plumes of red-dyed silks rests upon her head, and her gaze cannot be read from below the shadows of a single slit within the visor.
+
+It&#39;s clear that this life chose her, and her commitment to the decimation of free Arcanists could almost be admired, were it not in direct opposition to your own commitments to life and freedom.
+
+(if: $a2_gavinIsAnArcanist is true) [ 
+Moira has an explicit hatred for Arcanists, yet she seems to tolerate Gavin. It&#39;s strange, but you suppose it&#39;s likely motivated by commitment to The Enclave more than her tolerance for what he is.
+]
+(if: $a2_moiraInfo &lt; 3) [ (text-colour:grey)[//-- Perhaps more will be revealed with time. -- //] ]
+|==|</tw-passagedata><tw-passagedata pid="71" name="  A2- Gavin &amp; Moira 3" tags="" position="603,2196.666666984558" size="100,100">&quot;Ashton, right! That was my third guess. Ashton.&quot;
 
 Moira approaches, her voice booming through the brass plate. &quot;Are we really expected to believe this boy is fit to be our guide? Ridiculous. He looks as though a stray wind could knock him off his feet.&quot;
 
-&quot;He isn&#39;t here to wrestle with the wind, Moira. He&#39;s here to point us in the right direction.
+&quot;He isn&#39;t here to wrestle with the wind, Moira. He&#39;s here to point us in the right direction. But I&#39;ll be honest, kid. I don&#39;t blame her for the doubt. Were time not of the essence, we&#39;d even consider sending you home. 
 
-	I&#39;ll be honest, kid. I don&#39;t blame her for the doubt.</tw-passagedata></tw-storydata>
+Unfortunately, the nature of our mission requires immediacy, and we&#39;re not in a situation to be frugal with resources...
+
+So, I&#39;m to assume, as a Relic Hunter, you&#39;re familiar with the Archipelago? What kind of dangers can we expect?&quot;
+
+[[</tw-passagedata><tw-passagedata pid="72" name=" A2 - Relic Hunter Info" tags="Info" position="332,2025.666666984558" size="100,100">&lt;img src=&quot;https://i.pinimg.com/originals/50/21/53/5021537ab0babae8cdaac002c22d234c.jpg&quot; width= &quot;100%&quot;&gt;
+
+Much of the land is dotted with ruins of a distant age, bereft of civilization for what seems like an eternity. 
+
+Beyond the perception of mere travellers, or even those who frequent these places, there exist treasures that require a special eye for history in order to identify.
+
+These Relic Hunters delve into the fringes of established cities searching actively for these places. Many perish within these expeditions, but those who survive are rewarded with wealth offered by whomever pays the highest price for their spoils.</tw-passagedata><tw-passagedata pid="73" name=" A2- Info" tags="" position="834,2195" size="100,100">It&#39;s a large chasmous mass, water on wither side
+
+Dangerous creatures frequent both land and sky
+
+Cliff faces are carved from uneven stone, and many outcrops exist
+
+</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">"use strict";var _slicedToArray=function(){return function(e,t){if(Array.isArray(e))return e;if(Symbol.iterator in Object(e))return function(e,t){var n=[],r=!0,i=!1,a=void 0;try{for(var o,s=e[Symbol.iterator]();!(r=(o=s.next()).done)&&(n.push(o.value),!t||n.length!==t);r=!0);}catch(e){i=!0,a=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw a}}return n}(e,t);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}!function(){
 /**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
