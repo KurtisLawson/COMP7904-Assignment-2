@@ -14,7 +14,11 @@
 	(set: $timer to it - 1)
 	$timer
 	(replace: ?amount)[$timer]
-]</tw-passagedata><tw-passagedata pid="2" name="Timed Passage" tags="" position="552,222.5" size="100,100">(live:10s)(go-to:&quot;Passage Name&quot;)</tw-passagedata><tw-passagedata pid="3" name="A2- Environment Start" tags="Stub" position="211,1103.1666666666667" size="100,100">You find yourself climbing over loose rocks and gravel on the winding cliff side path.</tw-passagedata><tw-passagedata pid="4" name="A2- Archipelago Dilemma" tags="Stub" position="25,532.5" size="100,100">(set: $injuryScore to 0)
+]</tw-passagedata><tw-passagedata pid="2" name="Timed Passage" tags="" position="552,222.5" size="100,100">(live:10s)(go-to:&quot;Passage Name&quot;)</tw-passagedata><tw-passagedata pid="3" name="A2- Environment Start" tags="Stub" position="277,1099.1666666666667" size="100,100">After slow progress over the jagged terrain of the fjord, the path begins to narrow. Looking forwad, you see the path twisting with the cliff side. Below, a geyser erupts covering the cliffside with a blanket of foamy water. As the water falls back down it creates a giant ripples. For a split second you can see the jagged rocks usually hidden below the surface before they are engulfed again.
+
+You take a deep breath.
+
+[[&quot;Double check each step and follow my lead&quot;-&gt;A2- Unsure Footing]]</tw-passagedata><tw-passagedata pid="4" name="A2- Archipelago Dilemma" tags="" position="25,532.5" size="100,100">(set: $injuryScore to 0)
 \(set: $GavinInjuryScore to 0)
 \(set: $MoiraInjuryScore to 0)
 \(set: $aggroScore to 0)
@@ -30,7 +34,7 @@ On the other hand I&#39;ve only travelled the hidden path alone. It&#39;s narrow
 
 (else:)
 [(replace:?choice)[[[&quot;Let&#39;s stick to the open path.&quot;-&gt;A2- Creature Start]]
-[[&quot;We should stay hidden from hungry eyes and take the hidden path.&quot;-&gt;A2- Environment Start]]]]</tw-passagedata><tw-passagedata pid="5" name="A2- Creature Start" tags="Stub" position="286,375.5" size="100,100">(transition:&quot;dissolve&quot;)[You continue walking across the rocky plateau streching as far as the eye can see. Your eyes dart back and fourth, looking for landmarks you&#39;ve studied on maps before. It would be so easy to get turned around if you take the wrong stone bridge. The last thing you want is to wander the Mistbreach Archipelago longer than you have to...]
+[[&quot;We should stay hidden from hungry eyes and take the hidden path.&quot;-&gt;A2- Environment Start]]]]</tw-passagedata><tw-passagedata pid="5" name="A2- Creature Start" tags="" position="286,375.5" size="100,100">(transition:&quot;dissolve&quot;)[You continue walking across the rocky plateau streching as far as the eye can see. Your eyes dart back and fourth, looking for landmarks you&#39;ve studied on maps before. It would be so easy to get turned around if you take the wrong stone bridge. The last thing you want is to wander the Mistbreach Archipelago longer than you have to...]
 
 (live: 10s)[(transition:&quot;dissolve&quot;)[A loose stone shifts under your weight, shaking you out of your thoughts. You realize no one has spoken in a while. This is the perfect time to ask the question you&#39;ve carried since the beginning of the journey...
 
@@ -41,7 +45,7 @@ On the other hand I&#39;ve only travelled the hidden path alone. It&#39;s narrow
 \
 (transition:&quot;dissolve&quot;)[A piercing //SCREECH// rings out over the open plateau, its echoes rolling over the plateau.](stop:)
 
-[[Look for the source.-&gt;A2- It&#39;s a Bird]]]</tw-passagedata><tw-passagedata pid="6" name="Variables used." tags="" position="241,219.5" size="100,100">(text-colour:grey)[//Variable has been set!//]
+[[Look for the source.-&gt;A2- It&#39;s a Bird]]]</tw-passagedata><tw-passagedata pid="6" name="Variables used." tags="" position="255,222.5" size="100,100">(text-colour:grey)[//Variable has been set!//]
 
 (set: $magicRevealed to false)
 (set: $a2_hiddenPathChosen to true)
@@ -54,10 +58,12 @@ On the other hand I&#39;ve only travelled the hidden path alone. It&#39;s narrow
 
 (set:$a2_GavinHelped to false)
 (set: $a2_MoiraSavedYou to false)
+(set: $a2_GavinSavedYou to false)
+(set: $a2_warnedOthers
 
 //(set: $injuryScore to $injuryScore + 1) (text-colour:grey)[You have received an injury...]//
 
-(text-colour:grey)[//Your powers have been revealed!//]</tw-passagedata><tw-passagedata pid="7" name="A2- Roc Dive 1" tags="Stub" position="573,676.5" size="100,100">Sprinting into a sliding crouch, you take cover behind the boulder.
+(set: $magicRevealed to true)(text-colour:grey)[//Your powers have been revealed!//]</tw-passagedata><tw-passagedata pid="7" name="A2- Roc Dive 1" tags="" position="573,676.5" size="100,100">Sprinting into a sliding crouch, you take cover behind the boulder.
 
 You hear another screech, fast approachig. You need to get eyes on the bird of prey.
 
@@ -78,7 +84,7 @@ You hear another screech, fast approachig. You need to get eyes on the bird of p
 			[[Run from cover and push Gavin out of the way.-&gt;A2- Bravery and Recklessness]]
 			[[Fire a psionic bolt at the bird!-&gt;A2- Roc Reveals Magic]]
 			[[Stay behind cover and do nothing.-&gt;A2- Tank Moira]]
-\		(if: $timer is 0)[(go-to:&quot;A2- Tank Moira&quot;)]]]]</tw-passagedata><tw-passagedata pid="8" name="A2- Roc Dive 2" tags="Stub" position="569.6666666666667,554.5" size="100,100">(if: $MoiraSavedYou is true)[(if: $a2_hiddenPathChosen is true)[Moira meets your gaze then looks up at the incoming danger. &quot;I made us come this way, and I just saved your ass. We&#39;re even. Now get ready.&quot;]
+\		(if: $timer is 0)[(go-to:&quot;A2- Tank Moira&quot;)]]]]</tw-passagedata><tw-passagedata pid="8" name="A2- Roc Dive 2" tags="" position="569.6666666666667,554.5" size="100,100">(if: $MoiraSavedYou is true)[(if: $a2_hiddenPathChosen is true)[Moira meets your gaze then looks up at the incoming danger. &quot;I made us come this way, and I just saved your ass. We&#39;re even. Now get ready.&quot;]
 \(else:)[Moira meets your gaze with fiery eyes. &quot;Get yourself together and be useful.&quot; She says in a low, forcefull voice.]]
 
 \You draw your sword from its sheath and hold it between you and the approaching bird. 
@@ -119,7 +125,7 @@ The bird crashes into the ground, sending debris in a wide radius. A large dust 
 
 (set: $aggroScore to $aggroScore + 1) (set: $magicRevealed to true) (text-colour:grey)[//Your powers have been revealed!//]
 
-[[Look for the others.-&gt;A2- Bird Down]]</tw-passagedata><tw-passagedata pid="12" name="A2- Low Initiative" tags="Stub" position="438,445.5" size="100,100">With blinding speed the bird is upon you before you can act. Talons dig deep into your shoulders as the bird flaps its pair of wings in a massive arc. The resulting massive wall of wind kicks up dust as you are beginning to lift off the ground, pain searing through your shoulder-blades.
+[[Look for the others.-&gt;A2- Bird Down]]</tw-passagedata><tw-passagedata pid="12" name="A2- Low Initiative" tags="" position="438,445.5" size="100,100">With blinding speed the bird is upon you before you can act. Talons dig deep into your shoulders as the bird flaps its pair of wings in a massive arc. The resulting massive wall of wind kicks up dust as you are beginning to lift off the ground, pain searing through your shoulder-blades.
 
 (live: 8s)[(transition:&quot;dissolve&quot;)[//(set: $injuryScore to $injuryScore + 2) (text-colour:grey)[You have received an injury...]//](stop:)]
 
@@ -132,7 +138,7 @@ As you land back on your feet, you look up to see the bird already high above, c
 (set: $a2_MoiraSavedYou to true)[[Hold your left shoulder, blood dripping down your fingers and look towards Moira.-&gt;A2- Roc Dive 2]]](stop:)]</tw-passagedata><tw-passagedata pid="13" name="Choice and Var" tags="" position="701,224.5" size="100,100">[Go up]&lt;choice1|
 [Go down]&lt;choice2|
 (click: ?choice1)[(set: $var to true), (go-to: &quot;A2- Roc Dive 1&quot;)]
-(click: ?choice2)[(set: $var to false), (go-to: &quot;A2- Roc Dive 2&quot;)]</tw-passagedata><tw-passagedata pid="14" name="A2- It&#39;s a Bird" tags="Stub" position="291,573.5" size="100,100">(transition:&quot;dissolve&quot;)[Whipping your head towards the sky and the source of the screech, you see a giant winged creature soaring above. Its body is accented with dark bone like material growing out from each part, encasing them for protection and camoflauge. Its avian form begins to dive towards the group. Dark talons grind open ready to strike. It&#39;s eyes locked onto you, peering through a bone wrapped head.]
+(click: ?choice2)[(set: $var to false), (go-to: &quot;A2- Roc Dive 2&quot;)]</tw-passagedata><tw-passagedata pid="14" name="A2- It&#39;s a Bird" tags="" position="291,573.5" size="100,100">(transition:&quot;dissolve&quot;)[Whipping your head towards the sky and the source of the screech, you see a giant winged creature soaring above. Its body is accented with dark bone like material growing out from each part, encasing them for protection and camoflauge. Its avian form begins to dive towards the group. Dark talons grind open ready to strike. It&#39;s eyes locked onto you, peering through a bone wrapped head.]
 
 [You must [&#39;&#39;act fast!&#39;&#39;]&lt;QTE|]
 
@@ -252,14 +258,70 @@ Blood is now dripping from the creature, painting the rocks beneath crimson.
 
 (if: $aggroScore &gt;= 3)[(replace:?BirdAttack)[Pulling back from the sudden assult, the bird lunges forward with its talons like  spears. You attempt to block it with your sword. As a result your skin is not pierced, but the impact breaks a few ribs.(set:$injuryScore to $injuryScore + 1)
 (if: $injuryScore &gt;= 3)[(replace:?choice)[[[Step back trying to keep a grip on your sword...-&gt;A2- Bird Death]]]]]]
-(else:)[(replace:?BirdAttack)[The bird attempts to use its left talon to grab behind it. You hear the snapping of closing talons and a yelp from Gavin.(set: $GavinInjuryScore to $GavinInjuryScore + 1)]]</tw-passagedata><tw-passagedata pid="26" name="A2- Final Strike" tags="" position="1867,595.5" size="100,100">(if: $aggroScore &gt;= 3)[You need to get the creatures attention off of you.] With a flick of you wrist, you create a blanket of dust to obscure the birds vision.
+(else:)[(replace:?BirdAttack)[The bird attempts to use its left talon to grab behind it. You hear the snapping of closing talons and a yelp from Gavin.(set: $GavinInjuryScore to $GavinInjuryScore + 1)]]</tw-passagedata><tw-passagedata pid="26" name="A2- Final Strike" tags="" position="1757,595.5" size="100,100">(if: $aggroScore &gt;= 3)[You need to get the creatures attention off of you.] With a flick of you wrist, you create a blanket of dust to obscure the birds vision.
 
 Seeing the opening, Moira lunges forward driving her sword upwards. The sword plunges into the birds throat with a sickening squelch. As the bird begins to screech, blood begins to poor from its mouth and muffles the sound. With a final scream of her own, Moira steps back and pulls the sword from the wound.
 
 The Bird falls with a shattering crash. Then just the breeze and quiet...
 
-[[Take a knee...-&gt;A2- Aftermath]]</tw-passagedata><tw-passagedata pid="27" name="A2- Aftermath" tags="" position="2084,597.5" size="100,100">(if:$magicRevealed)
-(else:)</tw-passagedata></tw-storydata>
+[[Take a knee...-&gt;A2- Aftermath]]</tw-passagedata><tw-passagedata pid="27" name="A2- Aftermath" tags="" position="2841,831.5" size="100,100">(if:$magicRevealed)
+(else:)</tw-passagedata><tw-passagedata pid="28" name="A2- Unsure Footing" tags="" position="412,1183.1666666666667" size="100,100">(live: 0s)[(transition:&quot;dissolve&quot;)[You must [&#39;&#39;act fast!&#39;&#39;]&lt;QTE|](stop:)]
+
+[]&lt;choice|
+\
+\(click: ?QTE)[
+\	(set: $timer to 7)
+\	(live: 1s)[
+\		(set: $timer to it - 1)
+\		(replace:?choice)[
+\			$timer]
+			[[Reach for the ledge.-&gt;A2- Initial Fall]]
+			[[Reach for Gavin.-&gt;A2- Gavin&#39;s Initiative]]
+			[[Cast stoneshape to grab on.-&gt;A2- Stoneshape]]
+\		(if: $timer is 0)[(go-to:&quot;A2- Initial Fall&quot;)]]]</tw-passagedata><tw-passagedata pid="29" name="A2- Initial Fall" tags="" position="576,1068" size="100,100">[[Reach up and grab the first stone.-&gt;A2- The Climb]]</tw-passagedata><tw-passagedata pid="30" name="A2- Gavin&#39;s Initiative" tags="" position="569,1201" size="100,100">[[Begin leading the party again.-&gt;A2- Rocks Above]]</tw-passagedata><tw-passagedata pid="31" name="A2- Stoneshape" tags="" position="567,1347" size="100,100">(set: $magicRevealed to true)(text-colour:grey)[//Your powers have been revealed!//]
+
+[[How will they react?-&gt;A2- Consequences]]</tw-passagedata><tw-passagedata pid="32" name="A2- The Climb" tags="" position="743,1064" size="100,100">(live: 0s)[(transition:&quot;dissolve&quot;)[You must [&#39;&#39;act fast!&#39;&#39;]&lt;QTE|](stop:)]
+
+[]&lt;choice|
+\
+\(click: ?QTE)[
+\	(set: $timer to 7)
+\	(live: 1s)[
+\		(set: $timer to it - 1)
+\		(replace:?choice)[
+\			$timer]
+			[[Pull youself towards the cliff wall.-&gt;A2- Geyser Eruption]]
+			[[Leap to the next set of handholds.-&gt;A2- Hidden Bridges]]
+\		(if: $timer is 0)[(go-to:&quot;A2- Geyser Eruption&quot;)]]]
+</tw-passagedata><tw-passagedata pid="33" name="A2- Geyser Eruption" tags="" position="901,1150" size="100,100">[[Take his hand and pull youself up.-&gt;A2- Hidden Bridges]]</tw-passagedata><tw-passagedata pid="34" name="A2- Rocks Above" tags="" position="895,1354" size="100,100">You must [&#39;&#39;act fast!&#39;&#39;]&lt;QTE|
+
+[]&lt;choice|
+\
+\(click: ?QTE)[
+\	(set: $timer to 7)
+\	(live: 1s)[
+\		(set: $timer to it - 1)
+\		(replace:?choice)[
+\			$timer]
+			[Pull yourself flat against the cliff side.]&lt;avoid|
+			[Raise your arms to cover your head.]&lt;brace|
+			[&quot;Take cover rocks above!&quot;]&lt;warn|
+			(click:?avoid)[(go-to:&quot;A2- Rocks Below&quot;)]
+			(click:?brace)[(go-to:&quot;A2- Rocks Below&quot;)]
+			(click:?warn)[(set:$a2_warnedOthers to true)(go-to:&quot;A2- Rocks Below&quot;)]
+\		(if: $timer is 0)[(go-to:&quot;A2- Rocks Below&quot;)]]]</tw-passagedata><tw-passagedata pid="35" name="A2- Consequences" tags="" position="736,1350" size="100,100">[[&quot;One more reason to always watch my back...&quot;-&gt;A2- Rocks Above]]</tw-passagedata><tw-passagedata pid="36" name="A2- Hidden Bridges" tags="" position="1240,1176" size="100,100">[[Step gingerly onto the bridge.-&gt;A2- Moira&#39;s Fall]]</tw-passagedata><tw-passagedata pid="37" name="A2- Bold and Reckless" tags="" position="1569,1032.5" size="100,100">[[-&gt;A2- Boarded Cliff Path]]
+[[-&gt;A2- Fall Death]]</tw-passagedata><tw-passagedata pid="38" name="A2- Let Her Fall" tags="" position="1566,1182.5" size="100,100">[[-&gt;A2- Friend or Foe]]</tw-passagedata><tw-passagedata pid="39" name="A2- Stone Hand" tags="" position="1568,1342.5" size="100,100">[[-&gt;A2- Friend or Foe]]</tw-passagedata><tw-passagedata pid="40" name="A2- Moira&#39;s Fall" tags="" position="1411,1176.5" size="100,100">[[-&gt;A2- Bold and Reckless]]
+[[-&gt;A2- Let Her Fall]]
+[[-&gt;A2- Stone Hand]]</tw-passagedata><tw-passagedata pid="41" name="A2- Boarded Cliff Path" tags="" position="1925,1172" size="100,100">[[-&gt;A2- Rotten Boards]]</tw-passagedata><tw-passagedata pid="42" name="A2- Friend or Foe" tags="" position="1730,1264.5" size="100,100">[[-&gt;A2- Boarded Cliff Path]]</tw-passagedata><tw-passagedata pid="43" name="A2- Gavin&#39;s Fall" tags="" position="2228,1171" size="100,100">[[-&gt;A2- Out of Danger]]</tw-passagedata><tw-passagedata pid="44" name="A2- Magic for the Magical" tags="" position="2225,1316" size="100,100">[[-&gt;A2- Distrust]]</tw-passagedata><tw-passagedata pid="45" name="A2- Sacrifice" tags="" position="2231,1029" size="100,100">[[-&gt;A2- Out of Danger]]
+[[-&gt;A2- Fall Death]]</tw-passagedata><tw-passagedata pid="46" name="A2- Rotten Boards" tags="" position="2076,1170" size="100,100">[[-&gt;A2- Gavin&#39;s Fall]]
+[[-&gt;A2- Sacrifice]]
+[[-&gt;A2- Magic for the Magical]]</tw-passagedata><tw-passagedata pid="47" name="A2- Fall Death" tags="Death" position="1937,943" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="48" name="A2- Out of Danger" tags="" position="2576,1214" size="100,100">[[-&gt;A2- Aftermath]]</tw-passagedata><tw-passagedata pid="49" name="A2- Distrust" tags="" position="2387,1323" size="100,100">[[-&gt;A2- Out of Danger]]</tw-passagedata><tw-passagedata pid="50" name="A2- Rocks Below" tags="" position="1045,1352.5" size="100,100">(if:$a2_warnedOthers is true)[Gavin reaches out and touches the stone. Then with a swift overhead motion, he shapes the stone of the cliff side into a small ledge above you all, protected you from the falling rocks.
+(if:$a2_hiddenPathChosen is true)[Gavin looks at you and with a wink says &quot;I backed you up on picking this path. I need to step up if something goes wrong right? Let&#39;s keep going.&quot;
+]
+(else:)[Gavin glances towards you and says &quot;You were right... This path is dangerous. Let&#39;s keep going.&quot;]]
+(else:)[//(set: $injuryScore to $injuryScore + 1) (text-colour:grey)[You have received an injury...]//]
+
+[[&quot;We need to press on.&quot;-&gt;A2- Hidden Bridges]]</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">"use strict";var _slicedToArray=function(){return function(e,t){if(Array.isArray(e))return e;if(Symbol.iterator in Object(e))return function(e,t){var n=[],r=!0,i=!1,a=void 0;try{for(var o,s=e[Symbol.iterator]();!(r=(o=s.next()).done)&&(n.push(o.value),!t||n.length!==t);r=!0);}catch(e){i=!0,a=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw a}}return n}(e,t);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}!function(){
 /**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
