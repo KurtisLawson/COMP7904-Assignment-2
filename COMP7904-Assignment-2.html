@@ -20,6 +20,7 @@
 
 You&#39;ve been working alongside them for years now...
 
+(click: ?page)[==
 But you&#39;ve recently fallen out of favour. You had gambled a debt with the Pride King on a heist that was to return three times it&#39;s cost...
 
 Didn&#39;t work out, the whole thing went belly up. And with all you know of their operation, you&#39;re a liability to them if left unchecked.</tw-passagedata><tw-passagedata pid="3" name=" A1- It Burns to Breathe" tags="" position="97.5,319.5" size="200,100">You try to catch your breath in heaving waves, as shadows pass by your vision, circling like wolves.
@@ -145,8 +146,6 @@ The other Guard draws a blade from his hip.
 
 The remaining thug shoots you a bewildered glance. He nods to you, as if to say he plans to make a stand against the Guard together.
 
-[[You can&#39;t leave these men to die, debt or no. Fight!-&gt; A1- Stand And Fight]]
-
 [[Fool, this is no time to fight, run!-&gt;A1- Escape!]]</tw-passagedata><tw-passagedata pid="15" name=" A1- Stand And Fight" tags="" position="1642.8333333333335,340.83333333333337" size="100,100">The thug yells and closes the distance with your assailants, attempting to draw a dagger and catch the Seeker unaware, but is intercepted by the other guard, who strikes at the thug with a long straight-sword, narrowly missing a fatal blow.
 
 You follow up behind him, and...
@@ -200,7 +199,7 @@ Another flash erupts from behind as you roll, taking a moment to glance upward t
 
 Despite the situation, those thugs were still Regent. Given different circumstances, they may have been allies.
 
-[[Leap the railing, descending to the rooftops.-&gt; A1- Escape Rooftops 2]] ]</tw-passagedata><tw-passagedata pid="22" name=" A1- Escape Market Street " tags="" position="2558.8333333333335,323" size="100,100">(if: $injuryScore is &gt;= 2)[Your injuries are burning as you stumble in place, taking a moment to lean on a moss-choked outcrop. Your whole body aches, and you&#39;re on the verge of passing out..
+[[Descend further, exiting to the streets.-&gt; A1- Escape Rooftops 2]] ]</tw-passagedata><tw-passagedata pid="22" name=" A1- Escape Market Street " tags="" position="2558.8333333333335,323" size="100,100">(if: $injuryScore is &gt;= 2)[Your injuries are burning as you stumble in place, taking a moment to lean on a moss-choked outcrop. Your whole body aches, and you&#39;re on the verge of passing out..
 
 Despite this, ]The Enclave guards have yet to form a full perimeter, and the denizens of the market are still quietly murmering to themselves about the commotion, while the street traders continue to attract customers.
 
@@ -497,7 +496,7 @@ Priya allows you to speak for a long while. Even after you&#39;re finished speak
 
 Finally, she chimes &quot;And now they&#39;re trying to kill you.&quot;
 
-[[&quot;Well, when you put it like that...&quot;-&gt; A1- Heart To Heart 5]]</tw-passagedata><tw-passagedata pid="57" name=" A1- Heart To Heart 5" tags="" position="1429,826.5" size="100,100">(if: $a1_toldPast is true)[Priya laughs, and you can&#39;t help but grin as well. It really is a desperate situation, but this made you feel better. At least, for a time.
+[[&quot;Well, when you put it like that...&quot;-&gt; A1- Heart To Heart 5]]</tw-passagedata><tw-passagedata pid="57" name=" A1- Heart To Heart 5" tags="" position="1450,823.5" size="100,100">(if: $a1_toldPast is true)[Priya laughs, and you can&#39;t help but grin as well. It really is a desperate situation, but this made you feel better. At least, for a time.
 
 ]She looks you in the eyes, until you finally gather the courage to meet her gaze.
 
@@ -557,11 +556,11 @@ Just be careful. I know you&#39;re resourceful, but you&#39;re not invincible. A
 
 (live: 3s)[(transition:&quot;dissolve&quot;)[(text-colour:grey)[//As you stride onto the streets, hood drawn over your brow...//]](stop:)]
 
-(live: 5s)[(transition:&quot;dissolve&quot;)[(text-colour:grey)[//You take a moment to appeicate this city&#39;s beauty...//]](stop:)]
+(live: 5s)[(transition:&quot;dissolve&quot;)[(text-colour:grey)[//You take a moment to appreicate this city&#39;s beauty...//]](stop:)]
 
 (live: 10s)[(transition:&quot;dissolve&quot;)[(text-colour:grey)[//And pray it won&#39;t be the last time you see it...//]](stop:)]
 
-(live: 10s)[(transition:&quot;dissolve&quot;)[ [[ Continue...-&gt; A2- Enter The Garrison]] ] ]</tw-passagedata><tw-passagedata pid="66" name=" A2- Enter The Garrison" tags="" position="100,2000.666666984558" size="100,100">&#39;&#39;The Enclave Garrison&#39;&#39;
+(live: 11s)[(transition:&quot;dissolve&quot;)[ [[ Continue...-&gt; A2- Enter The Garrison]] ] ]</tw-passagedata><tw-passagedata pid="66" name=" A2- Enter The Garrison" tags="" position="104,2002.666666984558" size="100,100">&#39;&#39;The Enclave Garrison&#39;&#39;
 &lt;img src=&quot;https://external-preview.redd.it/iRZrz6S2j1pPGG6FfjYkACahfLtp4zTJmGxJqK2_8yk.jpg?auto=webp&amp;s=7144be76be6d73f7d15caff5bd56020ce184a999&quot; width= &quot;100%&quot;&gt;
 
 The Garrison is beyond the canyons of the city, on the Eastern limits. If acts as the first line of defence from invaders should they descend from the Ashtooth, as well as an open trade checkpoint facilitating Southern travel towards the Xanthar Sultanate.
@@ -585,7 +584,7 @@ The man stops for a moment, eyeing you up and down. He speaks gently...
 [[Your heart begins to pound.. -&gt; A2- Gavin &amp; Moira 2]]
 
 (set: $a2_gavinInfo to 0)
-(set: $a2_moiraInfo to 0)</tw-passagedata><tw-passagedata pid="68" name=" A2- Gavin &amp; Moira 2" tags="Stub" position="402,2197.666666984558" size="100,100">&quot;You&#39;re Sachi&#39;s son, aren&#39;t you? The dock-worker?&quot;
+(set: $a2_moiraInfo to 0)</tw-passagedata><tw-passagedata pid="68" name=" A2- Gavin &amp; Moira 2" tags="Stub" position="295,2200.666666984558" size="100,100">&quot;You&#39;re Sachi&#39;s son, aren&#39;t you? The dock-worker?&quot;
 
 You can&#39;t tell if you look as off-guard as you feel, so you simply nod in affirmation.
 
@@ -595,11 +594,11 @@ Don&#39;t remember me? [[Gavin Stormweld-&gt;BIO - Gavin Stormweld]], at your se
 
 &quot;Sod off&quot; The woman retorts, her voice echoing through the helmet.
 
-Gavin laughs, seemingly unphased by the apparent hostility. &quot;Real sense of humour that one. Her bark is worse than her blade, just don&#39;t giver her a reason to hurt you and you&#39;ll be fine.
+Gavin laughs, seemingly unphased by the apparent hostility. &quot;Real sense of humour that one. Her bark is worse than her blade, just don&#39;t give her a reason to hurt you and you&#39;ll be fine.
 
-Apologize, but your name has slipped my mind. Started with an H.. Hammond, Harold?&quot;
+Apologize, but your name has slipped my mind. Started with an H... Hammond, Harold?&quot;
 
-[[&quot;Ashton.&quot;-&gt;  A2- Gavin &amp; Moira 3]]</tw-passagedata><tw-passagedata pid="69" name="BIO - Gavin Stormweld" tags="Info" position="528,2002.666666984558" size="100,100">=|=
+[[&quot;Ashton.&quot;-&gt;  A2- Gavin &amp; Moira 3]]</tw-passagedata><tw-passagedata pid="69" name="BIO - Gavin Stormweld" tags="Info" position="503,1999.666666984558" size="100,100">=|=
 &lt;img src=&quot;https://static.zerochan.net/Eldore.full.148667.jpg&quot; width= &quot;100%&quot;&gt;
 =|=
 &#39;&#39;Gavin Stormweld&#39;&#39;
@@ -615,7 +614,7 @@ When you think of what a Seeker represents: The fear invoked by the mention of t
 It never occurred to you that some seekers choose that path. You were always told that it is forced upon Arcanists who resist, their minds indoctrinated to think radically. Why would anyone choose to prevent something as wondorous as magic?
 ]
 (if: $a2_gavinInfo &lt; 3) [ (text-colour:grey)[//-- Perhaps more will be revealed with time. -- //] ]
-|==|</tw-passagedata><tw-passagedata pid="70" name="BIO - Moira De&#39;vallan" tags="Info" position="726,2002" size="100,100">=|=
+|==|</tw-passagedata><tw-passagedata pid="70" name="BIO - Moira De&#39;vallan" tags="Info" position="681,1999" size="100,100">=|=
 &lt;img src=&quot;https://i.imgur.com/PijclpY.jpg&quot; width= &quot;100%&quot;&gt;
 =|=
 &#39;&#39;Moira De&#39;vallan&#39;&#39;
@@ -632,29 +631,139 @@ It&#39;s clear that this life chose her, and her commitment to the decimation of
 Moira has an explicit hatred for Arcanists, yet she seems to tolerate Gavin. It&#39;s strange, but you suppose it&#39;s likely motivated by commitment to The Enclave more than her tolerance for what he is.
 ]
 (if: $a2_moiraInfo &lt; 3) [ (text-colour:grey)[//-- Perhaps more will be revealed with time. -- //] ]
-|==|</tw-passagedata><tw-passagedata pid="71" name="  A2- Gavin &amp; Moira 3" tags="" position="603,2196.666666984558" size="100,100">&quot;Ashton, right! That was my third guess. Ashton.&quot;
+|==|</tw-passagedata><tw-passagedata pid="71" name="  A2- Gavin &amp; Moira 3" tags="Stub" position="439,2202.666666984558" size="100,100">&quot;Ashton, right! That was my third guess. Ashton.&quot;
 
 Moira approaches, her voice booming through the brass plate. &quot;Are we really expected to believe this boy is fit to be our guide? Ridiculous. He looks as though a stray wind could knock him off his feet.&quot;
 
-&quot;He isn&#39;t here to wrestle with the wind, Moira. He&#39;s here to point us in the right direction. But I&#39;ll be honest, kid. I don&#39;t blame her for the doubt. Were time not of the essence, we&#39;d even consider sending you home. 
+&quot;He isn&#39;t here to wrestle with the wind, Moira. He&#39;s here to point us in the right direction. But I&#39;ll be honest, boy. I don&#39;t blame her for the doubt. Were time not of the essence, we&#39;d even consider sending you home. 
 
 Unfortunately, the nature of our mission requires immediacy, and we&#39;re not in a situation to be frugal with resources...
 
-So, I&#39;m to assume, as a Relic Hunter, you&#39;re familiar with the Archipelago? What kind of dangers can we expect?&quot;
+So, I&#39;m to assume, as a Relic Hunter, you&#39;re familiar with the Archipelago? Our destination lies within the Anor Faultline, To make it there from here, what kind of dangers can we expect?&quot;
 
-[[</tw-passagedata><tw-passagedata pid="72" name=" A2 - Relic Hunter Info" tags="Info" position="332,2025.666666984558" size="100,100">&lt;img src=&quot;https://i.pinimg.com/originals/50/21/53/5021537ab0babae8cdaac002c22d234c.jpg&quot; width= &quot;100%&quot;&gt;
+[[&quot;Well...&quot; -&gt; A2- Risky Business 1]]</tw-passagedata><tw-passagedata pid="72" name=" A2 - Relic Hunter Info" tags="Info" position="300,2001.666666984558" size="100,100">&lt;img src=&quot;https://i.pinimg.com/originals/50/21/53/5021537ab0babae8cdaac002c22d234c.jpg&quot; width= &quot;100%&quot;&gt;
 
 Much of the land is dotted with ruins of a distant age, bereft of civilization for what seems like an eternity. 
 
 Beyond the perception of mere travellers, or even those who frequent these places, there exist treasures that require a special eye for history in order to identify.
 
-These Relic Hunters delve into the fringes of established cities searching actively for these places. Many perish within these expeditions, but those who survive are rewarded with wealth offered by whomever pays the highest price for their spoils.</tw-passagedata><tw-passagedata pid="73" name=" A2- Info" tags="" position="834,2195" size="100,100">It&#39;s a large chasmous mass, water on wither side
+These Relic Hunters delve into the fringes of established cities searching actively for these places. Many perish within these expeditions, but those who survive are rewarded with wealth offered by whomever pays the highest price for their spoils.</tw-passagedata><tw-passagedata pid="73" name=" A2- Risky Business 1" tags="Stub" position="577,2202" size="100,100">You know that this is a test to gauge your knowledge. It&#39;s best to go into detail, otherwise they may send you away.
 
-Dangerous creatures frequent both land and sky
+&lt;img src=&quot;https://i.imgur.com/5Onw8s6.png&quot; width= &quot;100%&quot;&gt;
 
-Cliff faces are carved from uneven stone, and many outcrops exist
+&quot;The Archipelago is a towering network of stone canyons, with sea-water seeping in-between the islands. While the water itself isn&#39;t boiling as much as the open sea, it still holds much of it&#39;s temperature, so it&#39;s quite dangerous to be crossing by boat.&quot;
 
-</tw-passagedata></tw-storydata>
+Gavin chuckles, noting your explanation. &quot;A proper tour guide! So we intend to travel on foot?&quot;
+
+[[ &quot;Yes, but it won&#39;t be easy.&quot; -&gt; A2- Risky Business 2]]</tw-passagedata><tw-passagedata pid="74" name=" A2- Risky Business 2" tags="Stub" position="717,2200" size="100,100">&lt;img src=&quot;https://i.imgur.com/CIhqTa6.png&quot; width= &quot;100%&quot;&gt;
+
+&quot;With a bit of care, we can travel by along the fringes and plateaus. But we&#39;ll need to be wary. The place is crawling with beasts, patrolling both the land and the sea.&quot;
+
+Moira interjects, her voice dripping with sarcasm: &quot;Am I to believe you&#39;ve fended off the creatures that roam the wilds on your own? Very impressive, Ashton... How have you managed that, pray tell?&quot;
+
+She&#39;s clearly wary of you, and is asking leading questions in an attempt to catch you off-guard.
+
+[[ It won&#39;t work... -&gt; A2- Risky Business 3]]</tw-passagedata><tw-passagedata pid="75" name=" A2- Risky Business 3" tags="" position="863,2201" size="100,100">&quot;No! Of course not. I avoid them entirely.
+
+&lt;img src=&quot;https://i.imgur.com/9hfzPxZ.png&quot; width= &quot;100%&quot;&gt;
+
+There&#39;s a hidden route I frequent when making expeditions towards Anor. It descends below the common walkways, and circumvents most of the common hunting grounds. That, and we&#39;re unlikely to be seen by predators who roam the skies.&quot;
+
+Gavin smiles and places a hand on Moira&#39;s shoulder. &quot;See? Never judge a book by it&#39;s cover.&quot;
+
+Moira strikes his hand, to which he recoils, shaking it to dull the pain.
+
+&quot;Well, Ashton given all that, which route do you believe to be the most efficient?&quot;
+
+[[You think for a moment. -&gt;  A2- Route Choice]]</tw-passagedata><tw-passagedata pid="76" name="  A2- Route Choice" tags="" position="1005,2200" size="100,100">//(text-colour:grey)[You take a moment to decide a potential path...]//
+
+On one hand, the hidden route you&#39;ve used in the past is precarious. It overlooks jagged rocks and whirling sea-water,  requiring a fleet foot and dexterous agility. That said, you&#39;re unlikely to be attacked by roaming wildlife.
+
+[[Recommend the Hidden Route -&gt; A2- Recommend Hidden Route]]
+
+
+On the other hand, the open path is steady and requires little in the way of climbing. However, it is a common hunting ground for creatures, and combat with such native beasts would be more than likely.
+
+[[Recommend the Open Route -&gt; A2- Recommend Open Route]]
+</tw-passagedata><tw-passagedata pid="77" name=" A2- Recommend Hidden Route" tags="" position="1144,2092" size="100,100">//(text-colour:grey)[You&#39;ve favored the hidden route.]//(set: $a2_hiddenPathChosen to true)
+
+&quot;I wouldn&#39;t risk being seen by potential predators. The hidden route is ideal.&quot;
+
+Gavin smirks at Moira, and shoots her a wry glance.
+
+Moira looks uneven, as if the thought of your suggestion has broken her prickly exterior, if for but a moment.
+
+&quot;You said footing was rough there, yes? Why would we not favour a more stable route? Surely a few rampant beasts are no issue. Assuming of course, that blade is not just for show?&quot;
+
+Gavin eases his jesting demeanour, and faces her directly.
+
+&quot;Relax. If this boy can handle the route, I&#39;m sure it&#39;s reasonably stable. We&#39;ll be wary, and watch each other&#39;s backs, yes?&quot;
+
+Moira glances towards the floor, but nods and exhales sharply in agreement.
+
+You pull your hood over your head and grip the hilt at your belt, feigning  confidence.
+
+[[&quot;Shall we depart, then?&quot; -&gt;A2- To the Archipelago]]</tw-passagedata><tw-passagedata pid="78" name=" A2- Recommend Open Route" tags="" position="1140,2298" size="100,100">//(text-colour:grey)[You&#39;ve favored the open route.]//(set: $a2_hiddenPathChosen to false)
+
+&quot;With Moira here, we&#39;ll have no issue fending off the beasts.&quot;
+
+It&#39;s strange. there was a moment, despite your jab, that Moira almost seemed to relax. Gavin, on the other hand, seems to be unsure.
+
+&quot;I&#39;m a bit worried given the lack of force. Feral wildlife isn&#39;t to be trifled with, and given the current threat of-&quot;
+
+Moira turns sharply to Gavin, halting his speech. Gavin stumbles over his words for a moment, before falling silent completely.
+
+After a moment, Moira speaks: &quot;Relax. I won&#39;t allow any harm to befall either of you.&quot;
+
+Gavin meets Moira&#39;s gaze, nodding in appreciation.
+
+You pull your hood over your head and grip the hilt at your belt, feigning  confidence.
+
+[[&quot;Shall we depart, then?&quot; -&gt;A2- To the Archipelago]]</tw-passagedata><tw-passagedata pid="79" name=" A2 - Enter The Archipelago" tags="" position="1502,2200" size="100,100">&#39;&#39;The Mistbreach Archipelago&#39;&#39;
+&lt;img src=&quot;https://i.imgur.com/5Onw8s6.png&quot; width= &quot;100%&quot;&gt;
+
+As you crest the winding pathway, the view of the Archipelago finally comes into view, in all it&#39;s natural glory. The humidity has deteriorated due to the natural bulwark of stone formed between the coastline, but the islands on it&#39;s flank are still choked with overgrown ivy and hanging lichens.
+
+Continuing forward, you eventually arrive at the point where the junction branches into two distinct paths:
+
+One veers left over a natural formed stone bridge, crossing a narrow to an adjjacent island. You see a clear pathway that continues to ascend, the sky completely open, and footing sure.
+
+The other veers right, down to the undergrowth, where precarious outcrops and ancient scaffolds delineate the sea with nothing but sheer cliff-faces. You&#39;re sure to be well covered, but it likely won&#39;t be a smooth hike.
+
+(if: $a2_hiddenPathChosen is true) [
+//(text-colour:grey)[Moira seems nervous about the chosen route.]//
+
+&quot;A-are you certain this is wise? Even from here, It doesn&#39;t seem safe!&quot;
+
+[[&quot;Relax. I take this route all the time.&quot; -&gt; A2 - Reassure Moira]]
+
+[[&quot;What, are you afraid of heights?&quot; -&gt; A2 - Confront Moira]]
+] (else:) [
+	//(text-colour:grey)[Gavin seems wary about the chosen route.]//
+]</tw-passagedata><tw-passagedata pid="80" name="A2- To the Archipelago" tags="" position="1307,2199.5" size="100,100">(text-colour:grey)[//Gathering your equipment...//]
+
+(live: 3s)[(transition:&quot;dissolve&quot;)[(text-colour:grey)[//Gavin and Moira lead you onwards, escorting you from the edge of the encampment, through a towering gate carved from the cliff face of the canyon.//]](stop:)]
+
+(live: 9s)[(transition:&quot;dissolve&quot;)[(text-colour:grey)[//Steadily ascending...//]](stop:)]
+
+(live: 11s)[(transition:&quot;dissolve&quot;)[(text-colour:grey)[//It takes almost a half-day before you breach the coastline, the even fog of the Hissing Sea forming a blanket far below you, obscuring the masts of distant ships, docking in the harbour.//]](stop:)]
+
+(live: 16s)[(transition:&quot;dissolve&quot;)[(text-colour:grey)[//You collect youself, and keep repeating in your head...//]](stop:)]
+
+(live: 18s)[(transition:&quot;dissolve&quot;)[(text-colour:grey)[//No magic...//]](stop:)]
+(live: 20s)[(transition:&quot;dissolve&quot;)[(text-colour:grey)[//No magic...//]](stop:)]
+
+(live: 23s)[(transition:&quot;dissolve&quot;)[ [[ Your hand is already twitching...-&gt; A2 - Enter The Archipelago]] ] ]</tw-passagedata><tw-passagedata pid="81" name=" A2 - Reassure Moira" tags="" position="1742,2060" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="82" name=" A2 - Confront Moira" tags="" position="1631,2058" size="100,100">Moira takes a step towards you, throwing her shoulder forward in a confrontational stance, before suddenly shrinking down slightly.
+
+&quot;Theres... nothing I fear more. From the most vile of beasts, to bandits and thieves. Even Arcanists can be killed. But one wrong step, a short fall, and a sudden end?
+
+I can&#39;t defend myself against that.&quot;
+
+Gavin steps forward, reassuredly speaking.
+
+&quot;There&#39;s still time to choose. Ashton? You&#39;re our guide. The choice still falls to you.&quot;
+
+[[</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">"use strict";var _slicedToArray=function(){return function(e,t){if(Array.isArray(e))return e;if(Symbol.iterator in Object(e))return function(e,t){var n=[],r=!0,i=!1,a=void 0;try{for(var o,s=e[Symbol.iterator]();!(r=(o=s.next()).done)&&(n.push(o.value),!t||n.length!==t);r=!0);}catch(e){i=!0,a=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw a}}return n}(e,t);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}!function(){
 /**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
