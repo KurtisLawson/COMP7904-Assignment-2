@@ -9,16 +9,11 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Encounter-1.</tw-noscript></noscript></tw-story>
-<tw-storydata name="Encounter-1" startnode="4" creator="Twine" creator-version="2.3.13" ifid="1501C536-7734-4DA7-B797-45A1D2475853" zoom="1" format="Harlowe" format-version="3.2.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="Stub" color="yellow"></tw-tag>,<tw-tag name="Death" color="red"></tw-tag><tw-passagedata pid="1" name="Timer" tags="" position="403,221.5" size="100,100">(set: $timer to 10)
-(live: 1s)[
-	(set: $timer to it - 1)
-	$timer
-	(replace: ?amount)[$timer]
-]</tw-passagedata><tw-passagedata pid="2" name="Timed Passage" tags="" position="552,222.5" size="100,100">(live:10s)(go-to:&quot;Passage Name&quot;)</tw-passagedata><tw-passagedata pid="3" name="A2- Environment Start" tags="Stub" position="277,1099.1666666666667" size="100,100">After slow progress over the jagged terrain of the fjord, the path begins to narrow. Looking forwad, you see the path twisting with the cliff side. Below, a geyser erupts covering the cliffside with a blanket of foamy water. As the water falls back down it creates a giant ripples. For a split second you can see the jagged rocks usually hidden below the surface before they are engulfed again.
+<tw-storydata name="Encounter-1" startnode="2" creator="Twine" creator-version="2.3.13" ifid="1501C536-7734-4DA7-B797-45A1D2475853" zoom="1" format="Harlowe" format-version="3.2.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="Stub" color="yellow"></tw-tag>,<tw-tag name="Death" color="red"></tw-tag><tw-passagedata pid="1" name="A2- Environment Start" tags="" position="277,1099.1666666666667" size="100,100">After slow progress over the jagged terrain of the fjord, the path begins to narrow. Looking forwad, you see the path twisting with the cliff side. Below, a geyser erupts covering the cliffside with a blanket of foamy water. As the water falls back down it creates a giant ripples. For a split second you can see the jagged rocks usually hidden below the surface before they are engulfed again.
 
 You take a deep breath.
 
-[[&quot;Double check each step and follow my lead&quot;-&gt;A2- Unsure Footing]]</tw-passagedata><tw-passagedata pid="4" name="A2- Archipelago Dilemma" tags="" position="25,532.5" size="100,100">(set: $injuryScore to 0)
+[[&quot;Double check each step and follow my lead&quot;-&gt;A2- Unsure Footing]]</tw-passagedata><tw-passagedata pid="2" name="A2- Archipelago Dilemma" tags="" position="25,532.5" size="100,100">(set: $injuryScore to 0)
 \(set: $GavinInjuryScore to 0)
 \(set: $MoiraInjuryScore to 0)
 \(set: $aggroScore to 0)
@@ -34,7 +29,7 @@ On the other hand I&#39;ve only travelled the hidden path alone. It&#39;s narrow
 
 (else:)
 [(replace:?choice)[[[&quot;Let&#39;s stick to the open path.&quot;-&gt;A2- Creature Start]]
-[[&quot;We should stay hidden from hungry eyes and take the hidden path.&quot;-&gt;A2- Environment Start]]]]</tw-passagedata><tw-passagedata pid="5" name="A2- Creature Start" tags="" position="286,375.5" size="100,100">(transition:&quot;dissolve&quot;)[You continue walking across the rocky plateau streching as far as the eye can see. Your eyes dart back and fourth, looking for landmarks you&#39;ve studied on maps before. It would be so easy to get turned around if you take the wrong stone bridge. The last thing you want is to wander the Mistbreach Archipelago longer than you have to...]
+[[&quot;We should stay hidden from hungry eyes and take the hidden path.&quot;-&gt;A2- Environment Start]]]]</tw-passagedata><tw-passagedata pid="3" name="A2- Creature Start" tags="" position="286,375.5" size="100,100">(transition:&quot;dissolve&quot;)[You continue walking across the rocky plateau streching as far as the eye can see. Your eyes dart back and fourth, looking for landmarks you&#39;ve studied on maps before. It would be so easy to get turned around if you take the wrong stone bridge. The last thing you want is to wander the Mistbreach Archipelago longer than you have to...]
 
 (live: 10s)[(transition:&quot;dissolve&quot;)[A loose stone shifts under your weight, shaking you out of your thoughts. You realize no one has spoken in a while. This is the perfect time to ask the question you&#39;ve carried since the beginning of the journey...
 
@@ -45,25 +40,7 @@ On the other hand I&#39;ve only travelled the hidden path alone. It&#39;s narrow
 \
 (transition:&quot;dissolve&quot;)[A piercing //SCREECH// rings out over the open plateau, its echoes rolling over the plateau.](stop:)
 
-[[Look for the source.-&gt;A2- It&#39;s a Bird]]]</tw-passagedata><tw-passagedata pid="6" name="Variables used." tags="" position="255,222.5" size="100,100">(text-colour:grey)[//Variable has been set!//]
-
-(set: $magicRevealed to false)
-(set: $a2_hiddenPathChosen to true)
-(set: $a2_hiddenPathTraversed to false)
-
-(set: $injuryScore to 0)
-(set: $GavinInjuryScore to 0)
-(set: $MoiraInjuryScore to 0)
-(set: $aggroScore to 0)
-
-(set:$a2_GavinHelped to false)
-(set: $a2_MoiraSavedYou to false)
-(set: $a2_GavinSavedYou to false)
-(set: $a2_warnedOthers
-
-//(set: $injuryScore to $injuryScore + 1) (text-colour:grey)[You have received an injury...]//
-
-(set: $magicRevealed to true)(text-colour:grey)[//Your powers have been revealed!//]</tw-passagedata><tw-passagedata pid="7" name="A2- Roc Dive 1" tags="" position="573,676.5" size="100,100">Sprinting into a sliding crouch, you take cover behind the boulder.
+[[Look for the source.-&gt;A2- It&#39;s a Bird]]]</tw-passagedata><tw-passagedata pid="4" name="A2- Roc Dive 1" tags="" position="573,676.5" size="100,100">Sprinting into a sliding crouch, you take cover behind the boulder.
 
 You hear another screech, fast approachig. You need to get eyes on the bird of prey.
 
@@ -84,7 +61,7 @@ You hear another screech, fast approachig. You need to get eyes on the bird of p
 			[[Run from cover and push Gavin out of the way.-&gt;A2- Bravery and Recklessness]]
 			[[Fire a psionic bolt at the bird!-&gt;A2- Roc Reveals Magic]]
 			[[Stay behind cover and do nothing.-&gt;A2- Tank Moira]]
-\		(if: $timer is 0)[(go-to:&quot;A2- Tank Moira&quot;)]]]]</tw-passagedata><tw-passagedata pid="8" name="A2- Roc Dive 2" tags="" position="569.6666666666667,554.5" size="100,100">(if: $MoiraSavedYou is true)[(if: $a2_hiddenPathChosen is true)[Moira meets your gaze then looks up at the incoming danger. &quot;I made us come this way, and I just saved your ass. We&#39;re even. Now get ready.&quot;]
+\		(if: $timer is 0)[(go-to:&quot;A2- Tank Moira&quot;)]]]]</tw-passagedata><tw-passagedata pid="5" name="A2- Roc Dive 2" tags="" position="569.6666666666667,554.5" size="100,100">(if: $MoiraSavedYou is true)[(if: $a2_hiddenPathChosen is true)[Moira meets your gaze then looks up at the incoming danger. &quot;I made us come this way, and I just saved your ass. We&#39;re even. Now get ready.&quot;]
 \(else:)[Moira meets your gaze with fiery eyes. &quot;Get yourself together and be useful.&quot; She says in a low, forcefull voice.]]
 
 \You draw your sword from its sheath and hold it between you and the approaching bird. 
@@ -105,7 +82,7 @@ You must [&#39;&#39;act fast!&#39;&#39;]&lt;QTE|
 \			$timer]
 			[[Brace your sword with both hands for a parry.-&gt;A2- Parry Bird]]
 			[[Fire a psionic bolt at the bird!-&gt;A2- Roc Reveals Magic]]
-\		(if: $timer is 0)[(go-to:&quot;A2- Tank Moira&quot;)]]]</tw-passagedata><tw-passagedata pid="9" name="A2- Bravery and Recklessness" tags="" position="735,679.5" size="100,100">You kick up debris and dirt as you sprint towrads Gavin. Slipping slightly on the uneven terrain, you right yourself and continue dashing.
+\		(if: $timer is 0)[(go-to:&quot;A2- Tank Moira&quot;)]]]</tw-passagedata><tw-passagedata pid="6" name="A2- Bravery and Recklessness" tags="" position="735,679.5" size="100,100">You kick up debris and dirt as you sprint towrads Gavin. Slipping slightly on the uneven terrain, you right yourself and continue dashing.
 
 With a heavy //THUD// you tackle Gavin to the ground and away from the talons a split second before they pierced his body.
 
@@ -113,19 +90,19 @@ A searing pain shoots across your back as you realize you cut it closer than you
 
 //(set: $injuryScore to $injuryScore + 1) (text-colour:grey)[You have received an injury...]//
 
-(set:$a2_GavinHelped to true)[[Roll onto your back to face the bird.-&gt;A2- Moira Downs Bird]]</tw-passagedata><tw-passagedata pid="10" name="A2- Tank Moira" tags="" position="734,801.5" size="100,100">You first hear Moira let out an earthshattering battle cry, then see her charge between the bird and its target. She plants her feet wide and braces her shoulder for impact.
+(set:$a2_GavinHelped to true)[[Roll onto your back to face the bird.-&gt;A2- Moira Downs Bird]]</tw-passagedata><tw-passagedata pid="7" name="A2- Tank Moira" tags="" position="734,801.5" size="100,100">You first hear Moira let out an earthshattering battle cry, then see her charge between the bird and its target. She plants her feet wide and braces her shoulder for impact.
 
 As the birds talons scrape agains her pauldron sparks fly. Moira grunts and spins letting the pointed bones slide off her causing the bird to lose balance for a moment. Lifting her dented pauldron, she uses the opening to swing her sword at the birds head.
 
 With a rumbling crash, the bird impacts the ground.
 
-(set: $MoiraInjuryScore to $MoiraInjuryScore + 1)[[Peer through the dust cloud as you prepare to fight-&gt;A2- Bird Down]]</tw-passagedata><tw-passagedata pid="11" name="A2- Roc Reveals Magic" tags="" position="734,430.5" size="100,100">You focus your thoughts as you&#39;ve done countless times. Lifting your hand, ignoring the needles of eldrich pain in your mind, you release a ray of refracted light aimed at the birds skull-wrapped head. As the visions from beyond the Veil clear, (if:$injuryScore &gt;= 1)[lowering your bleeding arm ] you see the streak of light crash into the birds head, cracking the exterior bone shell.
+(set: $MoiraInjuryScore to $MoiraInjuryScore + 1)[[Peer through the dust cloud as you prepare to fight-&gt;A2- Bird Down]]</tw-passagedata><tw-passagedata pid="8" name="A2- Roc Reveals Magic" tags="" position="734,430.5" size="100,100">You focus your thoughts as you&#39;ve done countless times. Lifting your hand, ignoring the needles of eldrich pain in your mind, you release a ray of refracted light aimed at the birds skull-wrapped head. As the visions from beyond the Veil clear, (if:$injuryScore &gt;= 1)[lowering your bleeding arm ] you see the streak of light crash into the birds head, cracking the exterior bone shell.
 
 The bird crashes into the ground, sending debris in a wide radius. A large dust cloud covers the point of impact.
 
 (set: $aggroScore to $aggroScore + 1) (set: $magicRevealed to true) (text-colour:grey)[//Your powers have been revealed!//]
 
-[[Look for the others.-&gt;A2- Bird Down]]</tw-passagedata><tw-passagedata pid="12" name="A2- Low Initiative" tags="" position="438,445.5" size="100,100">With blinding speed the bird is upon you before you can act. Talons dig deep into your shoulders as the bird flaps its pair of wings in a massive arc. The resulting massive wall of wind kicks up dust as you are beginning to lift off the ground, pain searing through your shoulder-blades.
+[[Look for the others.-&gt;A2- Bird Down]]</tw-passagedata><tw-passagedata pid="9" name="A2- Low Initiative" tags="" position="438,445.5" size="100,100">With blinding speed the bird is upon you before you can act. Talons dig deep into your shoulders as the bird flaps its pair of wings in a massive arc. The resulting massive wall of wind kicks up dust as you are beginning to lift off the ground, pain searing through your shoulder-blades.
 
 (live: 8s)[(transition:&quot;dissolve&quot;)[//(set: $injuryScore to $injuryScore + 2) (text-colour:grey)[You have received an injury...]//](stop:)]
 
@@ -135,10 +112,7 @@ The bird crashes into the ground, sending debris in a wide radius. A large dust 
 
 As you land back on your feet, you look up to see the bird already high above, circling to dive again.
 
-(set: $a2_MoiraSavedYou to true)[[Hold your left shoulder, blood dripping down your fingers and look towards Moira.-&gt;A2- Roc Dive 2]]](stop:)]</tw-passagedata><tw-passagedata pid="13" name="Choice and Var" tags="" position="701,224.5" size="100,100">[Go up]&lt;choice1|
-[Go down]&lt;choice2|
-(click: ?choice1)[(set: $var to true), (go-to: &quot;A2- Roc Dive 1&quot;)]
-(click: ?choice2)[(set: $var to false), (go-to: &quot;A2- Roc Dive 2&quot;)]</tw-passagedata><tw-passagedata pid="14" name="A2- It&#39;s a Bird" tags="" position="291,573.5" size="100,100">(transition:&quot;dissolve&quot;)[Whipping your head towards the sky and the source of the screech, you see a giant winged creature soaring above. Its body is accented with dark bone like material growing out from each part, encasing them for protection and camoflauge. Its avian form begins to dive towards the group. Dark talons grind open ready to strike. It&#39;s eyes locked onto you, peering through a bone wrapped head.]
+(set: $a2_MoiraSavedYou to true)[[Hold your left shoulder, blood dripping down your fingers and look towards Moira.-&gt;A2- Roc Dive 2]]](stop:)]</tw-passagedata><tw-passagedata pid="10" name="A2- It&#39;s a Bird" tags="" position="291,573.5" size="100,100">(transition:&quot;dissolve&quot;)[Whipping your head towards the sky and the source of the screech, you see a giant winged creature soaring above. Its body is accented with dark bone like material growing out from each part, encasing them for protection and camoflauge. Its avian form begins to dive towards the group. Dark talons grind open ready to strike. It&#39;s eyes locked onto you, peering through a bone wrapped head.]
 
 [You must [&#39;&#39;act fast!&#39;&#39;]&lt;QTE|]
 
@@ -152,19 +126,7 @@ As you land back on your feet, you look up to see the bird already high above, c
 \			$timer]
 			[[Dive behind the large boulder to your left.-&gt;A2- Roc Dive 1]]
 			[[Draw your sword and brace for the fight.-&gt;A2- Roc Dive 2]]
-\		(if: $timer is 0)[(go-to:&quot;A2- Low Initiative&quot;)]]]</tw-passagedata><tw-passagedata pid="15" name="Act Fast" tags="" position="838,226" size="100,100">(live: 15s)[(transition:&quot;dissolve&quot;)[You must [&#39;&#39;act fast!&#39;&#39;]&lt;QTE|](stop:)]
-
-[]&lt;choice|
-\
-\(click: ?QTE)[
-\	(set: $timer to 7)
-\	(live: 1s)[
-\		(set: $timer to it - 1)
-\		(replace:?choice)[
-\			$timer]
-			[[Dive behind the large boulder to your left.-&gt;A2-]]
-			[[Draw your sword and brace for the fight.-&gt;A2-]]
-\		(if: $timer is 0)[(go-to:&quot;A2- Low Initiative&quot;)]]]</tw-passagedata><tw-passagedata pid="16" name="A2- Bird Death" tags="Death" position="1186,283" size="100,100">You take a step back, reeling from the impact...
+\		(if: $timer is 0)[(go-to:&quot;A2- Low Initiative&quot;)]]]</tw-passagedata><tw-passagedata pid="11" name="A2- Bird Death" tags="Death" position="1186,283" size="100,100">You take a step back, reeling from the impact...
 
 Your head begins to spin as your vision is engulfed with a curtain of darkness. [You hear nothing but your slowing heartbeat]&lt;Dying|.
 
@@ -172,7 +134,7 @@ Your head begins to spin as your vision is engulfed with a curtain of darkness. 
 Tha...Thump...
 //THUMP// you crash onto the ground, staring at sky being engulfed by blackness...
 
-(text-colour:grey)[//All goes dark.//]](stop:)]</tw-passagedata><tw-passagedata pid="17" name="A2- Bird Down" tags="" position="1063,610.5" size="100,100">[]&lt;consequence|
+(text-colour:grey)[//All goes dark.//]](stop:)]</tw-passagedata><tw-passagedata pid="12" name="A2- Bird Down" tags="" position="1063,610.5" size="100,100">[]&lt;consequence|
 {(if: $magicRevealed is true)[(replace:?consequence)[You find Moiras eyes. She squints and you can almost feel her stare pierce right through you. The sound of shifting rocks coming from the birds direction interrupts the intense moment]]
 (elseif: $a2_GavinHelped is true)[(replace:?consequence)[Uncovering your eyes, you see Gavin standing above you with his had extended towards you. You take it and let out a grunt through your clenched jaw as you get up.]]
 (else:)[(replace:?consequence)[Looking towards the bird, you bring yourself to your feet.]]}
@@ -182,7 +144,7 @@ Tha...Thump...
 As the dust clears, you see once again gain sight of the battle field. Gavin is behind the downed bird with some distance between them. Moira is directly to the right of the bird gripping her sword with both hands.
 
 [[Flank with Gavin.-&gt;A2- Face the Bird]]
-[[Flank with Moira.-&gt;A2- Wingside Battle]]</tw-passagedata><tw-passagedata pid="18" name="A2- Parry Bird" tags="" position="730.6666666666667,548.5" size="100,100">You manage to bring the sword up as the bird reaches you. Your blade makes contact with the talons in an attempt to guide them to one side as you step to the other.
+[[Flank with Moira.-&gt;A2- Wingside Battle]]</tw-passagedata><tw-passagedata pid="13" name="A2- Parry Bird" tags="" position="730.6666666666667,548.5" size="100,100">You manage to bring the sword up as the bird reaches you. Your blade makes contact with the talons in an attempt to guide them to one side as you step to the other.
 
 &#39;&#39;//CLANG//&#39;&#39;
 
@@ -194,13 +156,13 @@ Steel and bone clash as the impact sends shockwave down your arms.
 
 //(set: $injuryScore to $injuryScore + 1) (text-colour:grey)[You have received an injury...]//(set: $aggroScore to $aggroScore + 1)
 
-[[Roll onto your back-&gt;A2- Moira Downs Bird]]</tw-passagedata><tw-passagedata pid="19" name="A2- Moira Downs Bird" tags="" position="898.6666666666667,562.5" size="100,100">You roll onto your back, blood dripping over the rocky ground. Gritting your teeth you look at the bird as it begins to ascend once again.
+[[Roll onto your back-&gt;A2- Moira Downs Bird]]</tw-passagedata><tw-passagedata pid="14" name="A2- Moira Downs Bird" tags="" position="898.6666666666667,562.5" size="100,100">You roll onto your back, blood dripping over the rocky ground. Gritting your teeth you look at the bird as it begins to ascend once again.
 
 It barely moves moves before you hear Moira&#39;s yell beyond the dust cloud kicked up by the birds wings. You see her silhouette, backlit by the daylight as she leaps and grabs the birds legs. Lifting herself she thrusts her sword under the birds right wing.
 
 The bird lets out a blood curdling screech as they both come crashing down. You feel the ground beneath you rumble as the massive impact sends up an even thicker cloud of dust, small plant matter, and debris.
 
-(set:$MoiraInjuryScore to $MoiraInjuryScore + 1)[[Cover your face.-&gt;A2- Bird Down]]</tw-passagedata><tw-passagedata pid="20" name="A2- Face the Bird" tags="" position="1236,685.5" size="100,100">You position yourself in front of the bird, flanking with Gavin. The bird shakes itself, stone, blood, and feathers raining down from it. It looks at you from under its cracked bone head armour.
+(set:$MoiraInjuryScore to $MoiraInjuryScore + 1)[[Cover your face.-&gt;A2- Bird Down]]</tw-passagedata><tw-passagedata pid="15" name="A2- Face the Bird" tags="" position="1236,685.5" size="100,100">You position yourself in front of the bird, flanking with Gavin. The bird shakes itself, stone, blood, and feathers raining down from it. It looks at you from under its cracked bone head armour.
 
 &quot;I have his attention now! C&#39;mon do your worst!&quot; Hoping to avoid another full on clash, you grip your sword again. (set: $aggroScore to $aggroScore + 1)
 
@@ -212,7 +174,7 @@ There, an opening...
 
 [[Thrust your sword into the birds eye.-&gt;A2- Frontal Stab]]
 [[Reposition to the left of the bird, flanking with Moira.-&gt;A2- Wingside Battle]]
-[[Fire a psionic bolt at the bird!-&gt;A2- Frontal Blast]]</tw-passagedata><tw-passagedata pid="21" name="A2- Wingside Battle" tags="" position="1399,552.5" size="100,100">You quickly dash to the birds left, with Moira directly on the other side of its body.
+[[Fire a psionic bolt at the bird!-&gt;A2- Frontal Blast]]</tw-passagedata><tw-passagedata pid="16" name="A2- Wingside Battle" tags="" position="1399,552.5" size="100,100">You quickly dash to the birds left, with Moira directly on the other side of its body.
 
 Gavin lifts his right hand, and mutters an encantation. The final words echo in a deep gutteral voice. The bird lets out a yelp of pain as it shakes its head, blood trickling out of the cracks in its bone helmet.
 
@@ -224,7 +186,7 @@ Gavin lifts his right hand, and mutters an encantation. The final words echo in 
 (if:$aggroScore &gt;= 2)[(replace: ?BirdAttack)[You&#39;ve managed to hold onto its attention. With a lightning fast swipe, the birds left claw darts towards you. You manage to step back to avoid fatal damage, but the sharp tips of the bone talons still catch you on your arms.
 //(set: $injuryScore to $injuryScore + 1) (text-colour:grey)[You have received an injury...]//]
 (if: $injuryScore &gt;= 3)[(replace: ?choice)[[[Try to regain your footing...-&gt;A2- Bird Death]]]]]
-(else:)[(replace: ?BirdAttack)[The bird spins its head to face Moira, and with lightning fast speed, a piercing peck approaches her. Moira dodges the attack by stepping to one side. You can feel the vibrations from the impact between the ground and the creatures boned beak.]]</tw-passagedata><tw-passagedata pid="22" name="A2- Frontal Stab" tags="" position="1536,655.5" size="100,100">With the adrenaline pumping through your veins, you face down the bird and meet its gaze. You thrust your sword into its left eye, scraping the eye holes of the boned head. (set: $aggroScore to $aggroScore + 2)
+(else:)[(replace: ?BirdAttack)[The bird spins its head to face Moira, and with lightning fast speed, a piercing peck approaches her. Moira dodges the attack by stepping to one side. You can feel the vibrations from the impact between the ground and the creatures boned beak.]]</tw-passagedata><tw-passagedata pid="17" name="A2- Frontal Stab" tags="" position="1536,655.5" size="100,100">With the adrenaline pumping through your veins, you face down the bird and meet its gaze. You thrust your sword into its left eye, scraping the eye holes of the boned head. (set: $aggroScore to $aggroScore + 2)
 
 []&lt;BirdAttack|
 
@@ -234,11 +196,11 @@ Blood is now dripping from the creature, painting the rocks beneath crimson.
 
 (if: $aggroScore &gt;= 4)[(replace:?BirdAttack)[Pulling back from the sudden assult, the bird lunges forward with its beak like a spear. You attempt to block it with your sword. As a result the beak does not pierce your skin, but the impact breaks a few ribs.(set:$injuryScore to $injuryScore + 1)
 (if: $injuryScore &gt;= 3)[(replace:?choice)[[[Step back trying to keep a grip on your sword...-&gt;A2- Bird Death]]]]]]
-(else:)[(replace:?BirdAttack)[The bird attempts to use its left talon to grab behind it. You hear the snapping of closing talons and a yelp from Gavin.(set: $GavinInjuryScore to $GavinInjuryScore + 1)]]</tw-passagedata><tw-passagedata pid="23" name="A2- Frontal Blast" tags="" position="1535,773.5" size="100,100">You focus your thoughts as you&#39;ve done countless times. Lifting your hand, ignoring the needles of eldrich pain in your mind, you release a ray of refracted light aimed at the birds skull-wrapped head. As the visions from beyond the Veil clear, (if:$injuryScore &gt;= 1)[lowering your bleeding arm ] you see the streak of light crash into the birds head, cracking the exterior bone shell.
+(else:)[(replace:?BirdAttack)[The bird attempts to use its left talon to grab behind it. You hear the snapping of closing talons and a yelp from Gavin.(set: $GavinInjuryScore to $GavinInjuryScore + 1)]]</tw-passagedata><tw-passagedata pid="18" name="A2- Frontal Blast" tags="" position="1535,773.5" size="100,100">You focus your thoughts as you&#39;ve done countless times. Lifting your hand, ignoring the needles of eldrich pain in your mind, you release a ray of refracted light aimed at the birds skull-wrapped head. As the visions from beyond the Veil clear, (if:$injuryScore &gt;= 1)[lowering your bleeding arm ] you see the streak of light crash into the birds head, cracking the exterior bone shell.
 
 (set: $aggroScore to $aggroScore + 1) (set: $magicRevealed to true) (text-colour:grey)[//Your powers have been revealed!//]
 
-[[Step away from the bird and move behind it.-&gt;A2- Final Strike]]</tw-passagedata><tw-passagedata pid="24" name="A2- Clipped Wings" tags="" position="1535,541.5" size="100,100">With the adrenaline pumping through your veins, you look up the bird. You slice with your sword and cut open the flesh under the feathers.(set: $aggroScore to $aggroScore + 1)
+[[Step away from the bird and move behind it.-&gt;A2- Final Strike]]</tw-passagedata><tw-passagedata pid="19" name="A2- Clipped Wings" tags="" position="1535,541.5" size="100,100">With the adrenaline pumping through your veins, you look up the bird. You slice with your sword and cut open the flesh under the feathers.(set: $aggroScore to $aggroScore + 1)
 
 []&lt;BirdAttack|
 
@@ -248,7 +210,7 @@ Blood is now dripping from the creature, painting the rocks beneath crimson.
 
 (if: $aggroScore &gt;= 3)[(replace:?BirdAttack)[Pulling back from the sudden assult, the bird lunges forward with its talons like  spears. You attempt to block it with your sword. As a result your skin is not pierced, but the impact breaks a few ribs.(set:$injuryScore to $injuryScore + 1)
 (if: $injuryScore &gt;= 3)[(replace:?choice)[[[Step back trying to keep a grip on your sword...-&gt;A2- Bird Death]]]]]]
-(else:)[(replace:?BirdAttack)[The bird attempts to use its left talon to grab behind it. You hear the snapping of closing talons and a yelp from Gavin.(set: $GavinInjuryScore to $GavinInjuryScore + 1)]]</tw-passagedata><tw-passagedata pid="25" name="A2- Chest Stab" tags="" position="1536,429.5" size="100,100">With the adrenaline pumping through your veins, you look up the bird. You stab with your sword and cut open the flesh under the feathers.(set: $aggroScore to $aggroScore + 1)
+(else:)[(replace:?BirdAttack)[The bird attempts to use its left talon to grab behind it. You hear the snapping of closing talons and a yelp from Gavin.(set: $GavinInjuryScore to $GavinInjuryScore + 1)]]</tw-passagedata><tw-passagedata pid="20" name="A2- Chest Stab" tags="" position="1536,429.5" size="100,100">With the adrenaline pumping through your veins, you look up the bird. You stab with your sword and cut open the flesh under the feathers.(set: $aggroScore to $aggroScore + 1)
 
 []&lt;BirdAttack|
 
@@ -258,14 +220,26 @@ Blood is now dripping from the creature, painting the rocks beneath crimson.
 
 (if: $aggroScore &gt;= 3)[(replace:?BirdAttack)[Pulling back from the sudden assult, the bird lunges forward with its talons like  spears. You attempt to block it with your sword. As a result your skin is not pierced, but the impact breaks a few ribs.(set:$injuryScore to $injuryScore + 1)
 (if: $injuryScore &gt;= 3)[(replace:?choice)[[[Step back trying to keep a grip on your sword...-&gt;A2- Bird Death]]]]]]
-(else:)[(replace:?BirdAttack)[The bird attempts to use its left talon to grab behind it. You hear the snapping of closing talons and a yelp from Gavin.(set: $GavinInjuryScore to $GavinInjuryScore + 1)]]</tw-passagedata><tw-passagedata pid="26" name="A2- Final Strike" tags="" position="1757,595.5" size="100,100">(if: $aggroScore &gt;= 3)[You need to get the creatures attention off of you.] With a flick of you wrist, you create a blanket of dust to obscure the birds vision.
+(else:)[(replace:?BirdAttack)[The bird attempts to use its left talon to grab behind it. You hear the snapping of closing talons and a yelp from Gavin.(set: $GavinInjuryScore to $GavinInjuryScore + 1)]]</tw-passagedata><tw-passagedata pid="21" name="A2- Final Strike" tags="" position="1757,595.5" size="100,100">(if: $aggroScore &gt;= 3)[You need to get the creatures attention off of you.] With a flick of you wrist, you create a blanket of dust to obscure the birds vision.
+
+As you circle the bird, you notice Gavin kneeling, touching the stone terrain. Suddenly jagged pieces of the floor erupt and slam into the side of the creature as he finishes his encantation and stands up.
 
 Seeing the opening, Moira lunges forward driving her sword upwards. The sword plunges into the birds throat with a sickening squelch. As the bird begins to screech, blood begins to poor from its mouth and muffles the sound. With a final scream of her own, Moira steps back and pulls the sword from the wound.
 
 The Bird falls with a shattering crash. Then just the breeze and quiet...
 
-[[Take a knee...-&gt;A2- Aftermath]]</tw-passagedata><tw-passagedata pid="27" name="A2- Aftermath" tags="" position="2841,831.5" size="100,100">(if:$magicRevealed)
-(else:)</tw-passagedata><tw-passagedata pid="28" name="A2- Unsure Footing" tags="" position="412,1183.1666666666667" size="100,100">(live: 0s)[(transition:&quot;dissolve&quot;)[You must [&#39;&#39;act fast!&#39;&#39;]&lt;QTE|](stop:)]
+[[Take a knee...-&gt;A2- Aftermath]]</tw-passagedata><tw-passagedata pid="22" name="A2- Aftermath" tags="" position="2841,831.5" size="100,100">(if:$magicRevealed)
+(else:)</tw-passagedata><tw-passagedata pid="23" name="A2- Unsure Footing" tags="" position="418,1209.1666666666667" size="100,100">(text-colour:grey)[You begin leading the group, showing them the most secure footholds. Gavin follows behind you and Moira behind him.]
+
+(live: 5s)[(transition:&quot;dissolve&quot;)[(text-colour:grey)[//You continue moving alongside the cliff...//]](stop:)]
+
+(live: 7s)[(transition:&quot;dissolve&quot;)[(text-colour:grey)[//The jagged rocks at the bottom of the fjord and the surface of water begin to grow further and further away as the cliff gains height...//]](stop:)]
+
+(live: 10s)[(transition:&quot;dissolve&quot;)[(text-colour:grey)[//You pass under the giant stone arches and wonder if they are natural or...//]](stop:)]
+
+(live: 13s)[(transition:&quot;dissolve&quot;)[Suddenly a stone beneath your foot shifts. With a small crack, you hear the thin pathway beneath you begin to give way as rocks and stone roll and grind against each other.
+
+[You must [&#39;&#39;act fast!&#39;&#39;]&lt;QTE|](stop:)] ]
 
 []&lt;choice|
 \
@@ -278,9 +252,47 @@ The Bird falls with a shattering crash. Then just the breeze and quiet...
 			[[Reach for the ledge.-&gt;A2- Initial Fall]]
 			[[Reach for Gavin.-&gt;A2- Gavin&#39;s Initiative]]
 			[[Cast stoneshape to grab on.-&gt;A2- Stoneshape]]
-\		(if: $timer is 0)[(go-to:&quot;A2- Initial Fall&quot;)]]]</tw-passagedata><tw-passagedata pid="29" name="A2- Initial Fall" tags="" position="576,1068" size="100,100">[[Reach up and grab the first stone.-&gt;A2- The Climb]]</tw-passagedata><tw-passagedata pid="30" name="A2- Gavin&#39;s Initiative" tags="" position="569,1201" size="100,100">[[Begin leading the party again.-&gt;A2- Rocks Above]]</tw-passagedata><tw-passagedata pid="31" name="A2- Stoneshape" tags="" position="567,1347" size="100,100">(set: $magicRevealed to true)(text-colour:grey)[//Your powers have been revealed!//]
+\		(if: $timer is 0)[(go-to:&quot;A2- Initial Fall&quot;)]]]</tw-passagedata><tw-passagedata pid="24" name="A2- Initial Fall" tags="" position="572,1066" size="100,100">You reach out and grab at the wall, but the jagged rocks begin to slip out under your weight.
 
-[[How will they react?-&gt;A2- Consequences]]</tw-passagedata><tw-passagedata pid="32" name="A2- The Climb" tags="" position="743,1064" size="100,100">(live: 0s)[(transition:&quot;dissolve&quot;)[You must [&#39;&#39;act fast!&#39;&#39;]&lt;QTE|](stop:)]
+Not having a stable hold on anything, you begin to fall down the cliff side. Gavin reaches he hand out and barely misses yours.
+
+//Is this it?//
+
+You hit the side of steep side of the cliff and bounce off. Unable to grasp anythign again. Another hit.
+
+With an echoing //CRASH// you land on your back, the air leaving your body with an //OOMF//. The jagged rocks you landed on dig into your back. You feel dampness of blood beginning to soak into the fabric of your clothes.
+
+//(set: $injuryScore to $injuryScore + 1) (text-colour:grey)[You have received an injury...]//
+
+With a gasp, the air returns into your lungs bringing pain shooting through your torso. Broken ribs. Gritting your teeth, you sit up, and look at where you fell from.
+
+&quot;Ashton! Are you alright?&quot; Gavin&#39;s yells echo against the cliff walls. He stands on the path, 45 feet above you. You look down at the small platform you landed on. The bounces had broken your fall and then...
+
+&quot;Did I use Stoneshape without realizing it?&quot;
+
+&quot;ASHTON!&quot;
+
+&quot;Yes I&#39;m fine!&quot; Yelling back hurts your chest. If you did, they didn&#39;t notice. You stand up and look around. You see a possible path to climb up and forward which meets back with the path.
+
+&quot;Continue and I will meet you there!&quot; Pointing farther along the path. Gavin nods and starts moving. Moira takes a second before following.
+
+[[Reach up and grab the first stone.-&gt;A2- The Climb]]</tw-passagedata><tw-passagedata pid="25" name="A2- Gavin&#39;s Initiative" tags="" position="569,1201" size="100,100">Gavin had already started to reach for you. You clutch each other&#39;s hands and he pulls you back to him. He steps back to make room for you and bumps into Moira.
+
+&quot;WATCH IT!&quot; Moira forces her voice out from her clenched jaw.
+
+Gavin looks back at her. &quot;I got you both don&#39;t worry.&quot; He gives you a nod and looks past you.
+
+&quot;No time to talk now, lets get somewhere safe first.&quot;
+
+[[Begin leading the party again.-&gt;A2- Rocks Above]]</tw-passagedata><tw-passagedata pid="26" name="A2- Stoneshape" tags="" position="567,1347" size="100,100">You reach out and touch the stone of the cliffside. Grasping with your fingers, you mutter an encantation and the stone begins to shift. Jagged pieces reach out and envelope your hand. Using the solid hold, you pull yourself back.
+
+(set: $magicRevealed to true)(text-colour:grey)[//Your powers have been revealed!//]
+
+[[How will they react?-&gt;A2- Consequences]]</tw-passagedata><tw-passagedata pid="27" name="A2- The Climb" tags="" position="743,1064" size="100,100">You begin your slow and excruciating climb up. Suddenly, you feel vibrations in the sloped wall. Panicked, you look around for the source. Your eyes catch the water several hundred feet below you, and you can barely see water boiling.
+
+The geysers! One&#39;s about to erupt.
+
+You must [&#39;&#39;act fast!&#39;&#39;]&lt;QTE|
 
 []&lt;choice|
 \
@@ -290,10 +302,32 @@ The Bird falls with a shattering crash. Then just the breeze and quiet...
 \		(set: $timer to it - 1)
 \		(replace:?choice)[
 \			$timer]
-			[[Pull youself towards the cliff wall.-&gt;A2- Geyser Eruption]]
-			[[Leap to the next set of handholds.-&gt;A2- Hidden Bridges]]
+			[[Pull youself as close as possible to the cliff wall.-&gt;A2- Geyser Eruption]]
+			[[Speed up your climbing to get out of the way.-&gt;A2- Guardian Gavin]]
 \		(if: $timer is 0)[(go-to:&quot;A2- Geyser Eruption&quot;)]]]
-</tw-passagedata><tw-passagedata pid="33" name="A2- Geyser Eruption" tags="" position="901,1150" size="100,100">[[Take his hand and pull youself up.-&gt;A2- Hidden Bridges]]</tw-passagedata><tw-passagedata pid="34" name="A2- Rocks Above" tags="" position="895,1354" size="100,100">You must [&#39;&#39;act fast!&#39;&#39;]&lt;QTE|
+</tw-passagedata><tw-passagedata pid="28" name="A2- Geyser Eruption" tags="" position="901,1150" size="100,100">You pull yourself as close as you can to the cliff wall. There is a low gutteral //BOOM// from below you. The sound of rushing water approaches quickly. Rocks and stones fly past you which were broken off and shot by the geyser. The stones do not hit you, but the water splashes on you. The boiling water sizzles against your skin and it takes all you have to keep your mouth and eyes closed. The water stings your injuries.
+
+//(set: $injuryScore to $injuryScore + 1) (text-colour:grey)[You have received an injury...]//
+
+You begin climbing again after taking a moment. You speed up as you do not want to be splashed again. You reach the top and see Gavin holding his hand to you.
+
+[[Take his hand and pull youself up.-&gt;A2- Hidden Bridges]]</tw-passagedata><tw-passagedata pid="29" name="A2- Rocks Above" tags="" position="895,1354" size="100,100">(text-colour:grey)[You continue leading the group towards the next section of the hidden path.]
+
+(live: 5s)[(transition:&quot;dissolve&quot;)[(text-colour:grey)[//The path begins to widen...//]](stop:)]
+
+(live: 7s)[(transition:&quot;dissolve&quot;)[(text-colour:grey)[//You no longer have to sidestep and begin to walk forward...//]](stop:)]
+
+(live: 10s)[(transition:&quot;dissolve&quot;)[(text-colour:grey)[//You continue to walk along the path in silence except...//]](stop:)]
+
+(live: 13s)[(transition:&quot;dissolve&quot;)[(text-colour:grey)[//You hear the distant screeches of the creates that dwell above in the plateau...//]](stop:)]
+
+(live: 16s)[(transition:&quot;dissolve&quot;)[One seems to get close...
+Then with a sudden crash the earth rumbles. Whatever it is, it must be giant, but also far enough to not see you down here.
+
+The vibrations continue, and turn into a low rumble. You feel debris hit your arm and look up.
+
+Giant pieces of the cliff ledge have broken off and are heading towards you.
+[You must [&#39;&#39;act fast!&#39;&#39;]&lt;QTE|](stop:)] ]
 
 []&lt;choice|
 \
@@ -309,19 +343,150 @@ The Bird falls with a shattering crash. Then just the breeze and quiet...
 			(click:?avoid)[(go-to:&quot;A2- Rocks Below&quot;)]
 			(click:?brace)[(go-to:&quot;A2- Rocks Below&quot;)]
 			(click:?warn)[(set:$a2_warnedOthers to true)(go-to:&quot;A2- Rocks Below&quot;)]
-\		(if: $timer is 0)[(go-to:&quot;A2- Rocks Below&quot;)]]]</tw-passagedata><tw-passagedata pid="35" name="A2- Consequences" tags="" position="736,1350" size="100,100">[[&quot;One more reason to always watch my back...&quot;-&gt;A2- Rocks Above]]</tw-passagedata><tw-passagedata pid="36" name="A2- Hidden Bridges" tags="" position="1240,1176" size="100,100">[[Step gingerly onto the bridge.-&gt;A2- Moira&#39;s Fall]]</tw-passagedata><tw-passagedata pid="37" name="A2- Bold and Reckless" tags="" position="1569,1032.5" size="100,100">[[-&gt;A2- Boarded Cliff Path]]
-[[-&gt;A2- Fall Death]]</tw-passagedata><tw-passagedata pid="38" name="A2- Let Her Fall" tags="" position="1566,1182.5" size="100,100">[[-&gt;A2- Friend or Foe]]</tw-passagedata><tw-passagedata pid="39" name="A2- Stone Hand" tags="" position="1568,1342.5" size="100,100">[[-&gt;A2- Friend or Foe]]</tw-passagedata><tw-passagedata pid="40" name="A2- Moira&#39;s Fall" tags="" position="1411,1176.5" size="100,100">[[-&gt;A2- Bold and Reckless]]
-[[-&gt;A2- Let Her Fall]]
-[[-&gt;A2- Stone Hand]]</tw-passagedata><tw-passagedata pid="41" name="A2- Boarded Cliff Path" tags="" position="1925,1172" size="100,100">[[-&gt;A2- Rotten Boards]]</tw-passagedata><tw-passagedata pid="42" name="A2- Friend or Foe" tags="" position="1730,1264.5" size="100,100">[[-&gt;A2- Boarded Cliff Path]]</tw-passagedata><tw-passagedata pid="43" name="A2- Gavin&#39;s Fall" tags="" position="2228,1171" size="100,100">[[-&gt;A2- Out of Danger]]</tw-passagedata><tw-passagedata pid="44" name="A2- Magic for the Magical" tags="" position="2225,1316" size="100,100">[[-&gt;A2- Distrust]]</tw-passagedata><tw-passagedata pid="45" name="A2- Sacrifice" tags="" position="2231,1029" size="100,100">[[-&gt;A2- Out of Danger]]
-[[-&gt;A2- Fall Death]]</tw-passagedata><tw-passagedata pid="46" name="A2- Rotten Boards" tags="" position="2076,1170" size="100,100">[[-&gt;A2- Gavin&#39;s Fall]]
-[[-&gt;A2- Sacrifice]]
-[[-&gt;A2- Magic for the Magical]]</tw-passagedata><tw-passagedata pid="47" name="A2- Fall Death" tags="Death" position="1937,943" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="48" name="A2- Out of Danger" tags="" position="2576,1214" size="100,100">[[-&gt;A2- Aftermath]]</tw-passagedata><tw-passagedata pid="49" name="A2- Distrust" tags="" position="2387,1323" size="100,100">[[-&gt;A2- Out of Danger]]</tw-passagedata><tw-passagedata pid="50" name="A2- Rocks Below" tags="" position="1045,1352.5" size="100,100">(if:$a2_warnedOthers is true)[Gavin reaches out and touches the stone. Then with a swift overhead motion, he shapes the stone of the cliff side into a small ledge above you all, protected you from the falling rocks.
+\		(if: $timer is 0)[(go-to:&quot;A2- Rocks Below&quot;)]]]</tw-passagedata><tw-passagedata pid="30" name="A2- Consequences" tags="" position="736,1350" size="100,100">You look at Gavin who looks back at you with emotionless eyes. Behind him, Moira begins to move towards you with her hand on the hilt of her sword.
+
+Rocks shift beneath her foot and she stops in her tracks. Her eyes never leaving yours, burning a hole through you.
+
+Gavin extends his arm across he, protecting her from a potential fall. &quot;This is not the place for the conversation we will be having. Lets get somewhere safe first.&quot;
+
+Moira grunts &quot;Don&#39;t do anything stupid Ashton.&quot;
+
+[[Keep leading the group.-&gt;A2- Rocks Above]]</tw-passagedata><tw-passagedata pid="31" name="A2- Hidden Bridges" tags="" position="1240,1176" size="100,100">(text-colour:grey)[You press on through the end of the narrow path and...]
+
+(live: 2s)[(transition:&quot;dissolve&quot;)[You reach an outcropping of the cliff side which is formed into a small platform. Two wooden beams are sticking out from each corner of the ledge, and a wooden suspended bridge stretches out from them to the other side of the fjord.
+
+The bridge sways in the wind, and a wooden board detaches from it, falling into the depths below.
+
+&quot;And we&#39;re supposed to trust you with this?&quot; Moira walks up to Ashton, eyes never leaving his.
+
+&quot;We need to cross. This is narrowest section and I&#39;ve crossed the bridge before. Just not with heavy armour or other people.&quot;
+
+Moira glares at you. Then she turns towards the bridge and just waits.
+
+[[Step gingerly onto the bridge.-&gt;A2- Moira&#39;s Fall]]](stop:)]</tw-passagedata><tw-passagedata pid="32" name="A2- Bold and Reckless" tags="" position="1569,1032.5" size="100,100">You rush past Gavin who is hanging tightly onto the rope with one hand and extending his other. Moira spins around as she falls and manages to grab onto the bridge floor. You rush to Moira and dive to catch her arm. You grab her by the elbow just as the wooden board gives way to the weight of her armour and your impact. You reach out to grab the previous board and cling onto it, pulling your shoulder muscles and straining your body to its limit.
+
+//(set: $injuryScore to $injuryScore + 1) (text-colour:grey)[You have received an injury...]//
+
+(if: $injuryScore &gt;= 3)[Your body has gone passed it&#39;s limit. Bleeding from previous injuries, you lose conciousness for a second. That&#39;s enough to lose your grip and slip off the edge with Moira...
+
+[[Attempt to hold on to the edge of the bridge...-&gt;A2- Fall Death]]]
+(else:)[
+You let out a yell as you feel the veins in your head buldge with the effort. Then you see Gavin standing in the same spot, except now his eyes are focused on the slack rope beginning to slither across the floor and wrap around your arm. They pull you and Moira up. Gavin takes a sharp breath in and the rope goes slack again.
+
+How did he...
+
+&quot;Let&#39;s get over this bridge.&quot; Gavin stops any further questioning.
+
+[[Get up and continue across the bridge.-&gt;A2- Boarded Cliff Path]]]</tw-passagedata><tw-passagedata pid="33" name="A2- Let Her Fall" tags="" position="1566,1182.5" size="100,100">You remain rooted to place trying to find your own balance. Then you see Gavin hanging tightly onto the rope with one hand and extending his other. Moira spins around as she falls and manages to grab onto the bridge floor. The wooden board gives way to the weight of her armour.
+
+Standing in the same spot, Gavin has his eyes focused on the slack rope which begins to slither across the floor and wrap around her arm. They pull her up. Gavin takes a sharp breath in and the rope goes slack again.
+
+How did he...
+
+&quot;Let&#39;s get over this bridge.&quot; Gavin stops any further questioning.
+
+[[Continue across the bridge.-&gt;A2- Boarded Cliff Path]]]</tw-passagedata><tw-passagedata pid="34" name="A2- Stone Hand" tags="" position="1568,1342.5" size="100,100">You remain rooted to place and extend your arm towards the start of the bridge. You feel the sting of the Veil invade your mind as you call on your Stoneshape abilities. You move the wooden post back and fasten the rope using stone, stabilising the bridge. You see Gavin hanging tightly onto the rope with one hand and extending his other. Moira spins around as she falls and manages to grab onto the bridge floor. She quickly grabs the rope above and pulls herself back up.
+
+Both Gavin and Moira turn to look towards you.
+
+(set: $magicRevealed to true)(text-colour:grey)[//Your powers have been revealed!//]
+
+&quot;Let&#39;s get over this bridge.&quot; Gavin attempting to start any further questioning.
+
+[[Turn to continue crossing.-&gt;A2- Friend or Foe]]</tw-passagedata><tw-passagedata pid="35" name="A2- Moira&#39;s Fall" tags="" position="1411,1176.5" size="100,100">As you cross the bridge, testing each board before trusting your entire weight on it. The bridge continues to sway in the wind, like a deadly cradle calling you to the depth of the fjord. You glance up at the stone arch above you.
+
+&quot;That&#39;s how we would have crossed if we had gone over instead.&quot;
+
+Then suddenly, you hear a //CRACK// and the bridge ropes vibrate like a stringed instrument. The left rope under your hand goes slack. You look behind you to see one of the beems had cracked in half and shifted forward.
+
+You also see Moira losing her balance and begin to teeter off the bridge.
+
+(live: 10s)[(transition:&quot;dissolve&quot;)[You must [&#39;&#39;act fast!&#39;&#39;]&lt;QTE|](stop:)]
+
+[]&lt;choice|
+\
+\(click: ?QTE)[
+\	(set: $timer to 7)
+\	(live: 1s)[
+\		(set: $timer to it - 1)
+\		(replace:?choice)[
+\			$timer]
+			[[Run past Gavin to grab her hand.-&gt;A2- Bold and Reckless]]
+			[[Stay put. You don&#39;t want to make it worse.-&gt;A2- Let Her Fall]]
+			[[Use Stoneshape to secure the bridge.-&gt;A2- Stone Hand]]
+\		(if: $timer is 0)[(go-to:&quot;A2- Let Her Fall&quot;)]]]</tw-passagedata><tw-passagedata pid="36" name="A2- Boarded Cliff Path" tags="" position="1920,1273" size="100,100">Once you reach the end of the bridge, you look ahead on this new cliff side.
+
+&quot;You have got to be kidding...&quot; Moira&#39;s fixate on the path created out of boarded walkways alongside the cliff.
+
+&quot;Not much longer before we climb up and we&#39;ll be on solid ground and away from hunting creatures.&quot; You point off in the distance to where the boarded walkway ends. Above it a series of wood platforms adorn the cliff side each with ropes to climb up.
+
+[[Step on the wooden path.-&gt;A2- Rotten Boards]]</tw-passagedata><tw-passagedata pid="37" name="A2- Friend or Foe" tags="" position="1730,1264.5" size="100,100">Just before you take a step you feel the bridge shake once again. This time however, it quakes with rythm as Moira takes long strides towards you.
+
+&quot;Ashton you must pay for dragging us into this pit!
+(if:$a2_hiddenPathChosen is false)[You had to go and change our route!]
+You will especially pay now... You think I will overlook your transgressions just because you saved me?&quot;
+
+Gavin puts a firm hand on her shoulder, stopping her from passing him.
+
+&quot;Moira, unless you want to end up down there, we should hold this for when we are on solid ground. Ashton, lead the way and show us if you&#39;re actually friend or just foe.&quot;
+
+[[Turn around once again and lead the way.-&gt;A2- Boarded Cliff Path]]</tw-passagedata><tw-passagedata pid="38" name="A2- Gavin&#39;s Fall" tags="" position="2223,1272" size="100,100">You remain where you are in fear of falling yourself.
+
+Gavin extends his hands and clutches the cliff face. As he does, the stone grows out and envelopes his hand holding him in place.
+
+With this he steps onto the next wooden board.
+
+He looks at you and smiles. 
+&quot;We&#39;re almost there aren&#39;t we?&quot; He looks past you towards the platform now in his view.
+
+Moira uses the protruding stone Gavin created to cross the new gap in the walkway and together you all reach the platform.
+
+[[Begin your ascent up the ropes.-&gt;A2- Out of Danger]]]</tw-passagedata><tw-passagedata pid="39" name="A2- Sacrifice" tags="" position="2226,1130" size="100,100">You lean out and reach for Gavin&#39;s flailing hands. You clutch his arm and pull him towards you while gripping onto the wall yourself.
+
+(if: $injuryScore &gt;= 3)[Your body has gone passed it&#39;s limit. Bleeding from previous injuries, you lose conciousness for a second. That&#39;s enough to lose your grip...
+
+[[Attempt to grab a hold of anything in reach...-&gt;A2- Fall Death]]]
+(else:)[
+Grabbing onto Gavin and the cliff face, you give him enough time to reach out and grab touch the cliff face. As he does, the stone grows out and envelopes his hand holding him in place.
+
+With this he steps onto the next wooden board.
+
+He looks at you and smiles. 
+&quot;We&#39;re almost there aren&#39;t we?&quot; He looks past you towards the platform now in his view.
+
+Moira uses the protruding stone Gavin created to cross the new gap in the walkway and together you all reach the platform.
+
+[[Begin your ascent up the ropes.-&gt;A2- Out of Danger]]]</tw-passagedata><tw-passagedata pid="40" name="A2- Rotten Boards" tags="" position="2071,1271" size="100,100">You begin to make your way across the walkway. The wood creaking and bending under each footstep. You glance over the edge at the sheer drop to the jagged stones and water hundreds of feet below.
+
+After almost 30 minutes of travel at a crawling speed, you come around the bend and begin to see the first platform.
+
+You turn around to let the others know you&#39;re almost there.
+
+As you open your mouth, the rotten wooden platform under Gavin cracks in two. He begins to plummet and begins to claw at the sloped wall.
+
+[[Stay put.-&gt;A2- Gavin&#39;s Fall]]
+[[Lean out and reach for his hand.-&gt;A2- Sacrifice]]</tw-passagedata><tw-passagedata pid="41" name="A2- Fall Death" tags="Death" position="1932,1044" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="42" name="A2- Out of Danger" tags="" position="2576,1214" size="100,100">You feel the effects of the travel in your body as you climb the cliff face using the ropes. With only short rests at each platform, you soon begin aching all over. (if:$injuryScore &gt;= 1)[Your injuries begin to bleed once again.]
+
+After using the last bit of your energy, you manage to climb the remainer of the way and reach the ledge of the cliff. Finally solid ground.
+
+[[Take a moment to catch your breath.-&gt;A2- Aftermath]]</tw-passagedata><tw-passagedata pid="43" name="A2- Rocks Below" tags="" position="1045,1352.5" size="100,100">(if:$a2_warnedOthers is true)[Gavin reaches out and touches the stone. Then with a swift overhead motion, he shapes the stone of the cliff side into a small ledge above you all, protected you from the falling rocks.
 (if:$a2_hiddenPathChosen is true)[Gavin looks at you and with a wink says &quot;I backed you up on picking this path. I need to step up if something goes wrong right? Let&#39;s keep going.&quot;
 ]
 (else:)[Gavin glances towards you and says &quot;You were right... This path is dangerous. Let&#39;s keep going.&quot;]]
-(else:)[//(set: $injuryScore to $injuryScore + 1) (text-colour:grey)[You have received an injury...]//]
+(else:)[\
+The rocks plumet and crash all around you, taking pieces of the path with it. One strikes you across the head and hurls you against the wall. You hear Gavin and Moira grunt and cover as they are caught off gaurd by the falling rocks.
 
-[[&quot;We need to press on.&quot;-&gt;A2- Hidden Bridges]]</tw-passagedata></tw-storydata>
+//(set: $injuryScore to $injuryScore + 1) (set: $GavinInjuryScore to $GavinInjuryScore + 1)(set: $MoiraInjuryScore to $MoiraInjuryScore + 1)(text-colour:grey)[You have received an injury...]//
+
+The stone barrage ends as quickly as it had begun. You look around and see battered faces. Moira staring ahead intensly and Gavin rolls his shoulder and grimmaces.]
+
+[[&quot;We need to press on.&quot;-&gt;A2- Hidden Bridges]]</tw-passagedata><tw-passagedata pid="44" name="A2- Guardian Gavin" tags="" position="899,1018" size="100,100">You begin to climb quickly and recklessly. No time to check for solid holds. As you climb you can feel the vibrations intensifying. You quicken your pace, your muscles burning with each pull and your back aching. Suddenly you feel your grip shift as the stone under it begins to crack. Then just as suddenly, you see Gavin right above you extending his hand to you.
+
+In your panic, you had missed him climbing down to help you up. With his help you climb out of the way of the geysers blast as it spews boiling water and loose rocks hundreds of feet up.
+
+Gavin climbs quicker than you, without losing hold at all. At the top he climbs to the path and extends his hand once more.
+
+[[Take his hand and pull youself up.-&gt;A2- Hidden Bridges]]</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">"use strict";var _slicedToArray=function(){return function(e,t){if(Array.isArray(e))return e;if(Symbol.iterator in Object(e))return function(e,t){var n=[],r=!0,i=!1,a=void 0;try{for(var o,s=e[Symbol.iterator]();!(r=(o=s.next()).done)&&(n.push(o.value),!t||n.length!==t);r=!0);}catch(e){i=!0,a=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw a}}return n}(e,t);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}!function(){
 /**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
