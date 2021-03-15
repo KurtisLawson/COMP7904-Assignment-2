@@ -551,7 +551,7 @@ You realize that, better than anyone. But you&#39;re no slouch with a blade, in 
 
 [[ &quot;I know.&quot;-&gt; A1- The Enclave Bounty 4]]</tw-passagedata><tw-passagedata pid="64" name=" A1- The Enclave Bounty 4" tags="" position="1701,1199.666666984558" size="100,100">She folds the bounty notice, before handing it back to you with a sigh. There&#39;s a genuine worried look in her eye, but you can tell she isn&#39;t going to try and dissuade you.
 
-&quot;You&#39;d better get going. It says they&#39;re wanting potential bounty hunters to contact them at the Eastern Garrison, just outside the city limits. And it looks like time may be running out. If this is going to bring you back from the brink, then you have no choice...
+&quot;You&#39;d better get going. It says they&#39;re wanting potential Relic Hunters to contact them at the Eastern Garrison, just outside the city limits. And it looks like time may be running out. If this is going to bring you back from the brink, then you have no choice...
 
 Just be careful. I know you&#39;re resourceful, but you&#39;re not invincible. And know what will happen if they see you using your powers.&quot;
 
@@ -591,7 +591,7 @@ The man stops for a moment, eyeing you up and down. He speaks gently...
 
 You can&#39;t tell if you look as off-guard as you feel, so you simply nod in affirmation.
 
-&quot;Ah, right, then! Thought you looked familiar. Didn&#39;t realize you were a Relic Hunter, had I known maybe I woulda gone and asked you meself!&quot; He smiles warmly and pats you on the shoulder.
+&quot;Ah, right, then! Thought you looked familiar. Didn&#39;t realize you were a Relic Hunter! Had I known, maybe I woulda gone and asked you myself!&quot; He smiles warmly and pats you on the shoulder.
 
 Don&#39;t remember me? [[Gavin Stormweld-&gt;BIO - Gavin Stormweld]], at your service. This one&#39;s [[Moira De&#39;Vallan-&gt;BIO - Moira De&#39;vallan]], she&#39;s the charm of the group.&quot;
 
@@ -660,7 +660,7 @@ Gavin chuckles, noting your explanation. &quot;A proper tour guide! So we intend
 
 [[ &quot;Yes, but it won&#39;t be easy.&quot; -&gt; A2- Risky Business 2]]</tw-passagedata><tw-passagedata pid="74" name=" A2- Risky Business 2" tags="Stub" position="815,2199" size="100,100">&lt;img src=&quot;https://i.imgur.com/CIhqTa6.png&quot; width= &quot;100%&quot;&gt;
 
-&quot;With a bit of care, we can travel by along the fringes and plateaus. But we&#39;ll need to be wary. The place is crawling with beasts, patrolling both the land and the sea.&quot;
+&quot;With a bit of care, we can travel by along the fringes and plateaus. But we&#39;ll need to be wary. The place is crawling with beasts, patrolling both the land and the air.&quot;
 
 Moira interjects, her voice dripping with sarcasm: &quot;Am I to believe you&#39;ve fended off the creatures that roam the wilds on your own? Very impressive, Ashton... How have you managed that, pray tell?&quot;
 
@@ -795,7 +795,114 @@ Gavin presses his hand on her chest, holding her back. As she leans backward, se
 ]
 [[&quot;Let&#39;s stick to the open path.&quot;-&gt;A2- Environment Start]]
 
-[[&quot;... On second thought, you&#39;re right. Let&#39;s stay hidden from hungry eyes.&quot;-&gt;A2- Creature Start]]</tw-passagedata><tw-passagedata pid="83" name="A2- Environment Start" tags="" position="90,2847" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="84" name="A2- Creature Start" tags="" position="90,2647" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
+[[&quot;... On second thought, you&#39;re right. Let&#39;s stay hidden from hungry eyes.&quot;-&gt;A2- Creature Start]]</tw-passagedata><tw-passagedata pid="83" name="A2- Environment Start" tags="" position="106,2698" size="100,100">(set: $a2_hiddenPathTraversed to true)</tw-passagedata><tw-passagedata pid="84" name="A2- Creature Start" tags="" position="106,2498" size="100,100">(set: $a2_hiddenPathTraversed to false)</tw-passagedata><tw-passagedata pid="85" name="A2- Powers Revealed 1" tags="" position="486.5,3443.333251953125" size="100,100">You go to turn to Gavin and speak - &quot;You&#39;re a Seeker?&quot;
+	
+Before you can recover completely, Moira strikes you from behind, knocking you to the ground. You turn onto your back to face her, but her blade is already pressed against your chest. Her voice booms in judgement.
+	
+&quot;He&#39;s one of them! Regent! Unordained! You&#39;re a spy, a rat! Dammit, I knew there was something off about you! I will not let us suffer for my lapse in judgement!&quot;
+	
+[[&quot;Moira!&quot; Gavin shouts.-&gt; A2- Powers Revealed 2]]</tw-passagedata><tw-passagedata pid="86" name=" A2- Powers Revealed 2" tags="" position="633.5,3449.333251953125" size="100,100"> It&#39;s the first time you&#39;ve heard him raise his voice, and clearly it&#39;s an anomaly, as Moira immediately ceases her intervention.
+	
+&quot;That&#39;s enough. He&#39;s no use to us dead.&quot;
+
+Even as he speaks in defence of you, his hand is raised to cast should he need to. Any sudden movement, and both Blade and Veil will be thrust into you before you can act.
+
+[[You look to Gavin, meeting his gaze. -&gt;  A2- Powers Revealed 3]]</tw-passagedata><tw-passagedata pid="87" name="  A2- Powers Revealed 3" tags="" position="787.5,3446.333251953125" size="100,100">Gavin doesn&#39;t look angry. He looks disappointed.
+	
+The sun has begun to set, and darkness is enveloping the Archipelago.
+	
+&quot;Bind his hands. We still need him to lead us to Anor. We&#39;ll decide what to do with him once our task has been completed. For now, we make camp. Find a covered outcrop. We&#39;ll get some rest, Moira.
+
+I will not break watch.&quot;
+
+(If: $a2_hiddenPathTraversed is false) [ Your hands are bound behind your back with a length of climbing rope, secured tightly. Moira grips your shoulder and leads you forward, off the open path, swiftly, before you draw the ire of an even greater beast. ] (else:) [Your hands are bound behind your back with a length of climbing rope, secured tightly. Moira grips your shoulder and leads you upward, winding across an uneven switchback.
+	
+At one point, when the ascension is too steep, she lifts you over her shoulder and carries you as if you were weightless. All trust with these two has been atrophied...]
+	
+[[Eventually, you find a suitable site to camp... -&gt;A2-Revealed Camp Travel]]</tw-passagedata><tw-passagedata pid="88" name="A2 - Revealed Dialogue 1" tags="" position="1118.5,3444.333251953125" size="100,100">&quot;You acted to assist back there. You understand that us knowing about your powers could have led to your death, but you used them anyways. Why?&quot;
+
+[[&quot;I didn&#39;t want you to die.&quot; -&gt;A2- To Protect]]
+
+[[&quot;I had to protect myself.&quot; -&gt;A2- To Perservere]]
+
+[[&quot;I need you alive to get paid.&quot; -&gt;A2- To Be Paid]]</tw-passagedata><tw-passagedata pid="89" name="A2-Revealed Camp Travel" tags="" position="949.5,3449.333251953125" size="100,100">(text-colour:grey)[//Some time passes...//]
+
+(live: 3s)[(transition:&quot;dissolve&quot;)[(text-colour:grey)[//As camp is drawn, a fire is made...//]](stop:)]
+
+(live: 6s)[(transition:&quot;dissolve&quot;)[(text-colour:grey)[//Moira&#39;s eyes never leave you, intent with rage, //]](stop:)]
+
+(live: 9s)[(transition:&quot;dissolve&quot;)[(text-colour:grey)[//judgement, //]](stop:)]
+
+(live: 11s)[(transition:&quot;dissolve&quot;)[(text-colour:grey)[//and fear...//]](stop:)]
+
+(live: 14s)[(transition:&quot;dissolve&quot;)[(text-colour:grey)[//Ready to end you at a moment&#39;s notice.//]](stop:)]
+
+
+(live: 18s)[(transition:&quot;dissolve&quot;)[ [[ Eventually, Gavin approaches you... -&gt;A2 - Revealed Dialogue 1]] ] ]</tw-passagedata><tw-passagedata pid="90" name="A2- To Protect" tags="" position="1283.5,3244.333251953125" size="100,100">(text-colour:grey)[//You appealed to your morality. //](set: $a2_wishToProtect to true)
+
+&quot;You realize what I am, yeah? Surely, you understand that my duty to the Enclave is to put down rogue Arcanists? It&#39;s not a task I take lightly, nor is it one that I derive pleasure from... But.. Well, it is my duty. And Moira, well, she wouldn&#39;t lose sleep now if I let her loose, she&#39;d put you down in an instant.
+		
+Despite all that, you condemned yourself to my wrath in order to save us?&quot;
+		
+After a moment, Gavin seems to relax.
+		
+&quot;You have a good heart, Ashton. Are you Regent?&quot;
+		
+[[&quot;Not really. They want me dead, actually.&quot; -&gt;A2- The Regent Want Me Dead]]</tw-passagedata><tw-passagedata pid="91" name="A2- To Perservere" tags="" position="1280.5,3378.333251953125" size="100,100">(text-colour:grey)[//You appealed to self preservation. //](set: $a2_wishToProtect to false)
+
+&quot;You understand what I am, that I&#39;d kill you if you revealed your power, yet you revealed them to save yourself?
+
+That doesn&#39;t add up, Ashton. You need to think of far-reaching consequences of your actions, along with the immediate.
+		
+After a moment, Gavin seems to dial in, his words sharpen to a razors edge.
+		
+&quot;Here&#39;s what&#39;s going to happen. You&#39;re going to guide us to the Anor Faultline, where we&#39;ll execute our mission. You will not make any sudden movements, draw any sigils, or powers from the Veil. The moment you slip, or decide to act against us...
+		
+Then you leave me no choice. I don&#39;t want to end you, Ashton.
+		
+But cross us, and I will. Understand?&quot;
+		
+[[You nod silently. -&gt;A2- Revealed Camp Danger]]</tw-passagedata><tw-passagedata pid="92" name="A2- To Be Paid" tags="" position="1288.5,3508.333251953125" size="100,100">You appealed to greed. (set: $a2_wishToProtect to false)
+		
+&quot;Ah, so that&#39;s all? A payday.
+
+Going to be awful hard to get paid if you&#39;re dead, now, isn&#39;t it?
+		
+After a moment, Gavin seems to dial in, his words sharpen to a razors edge.
+		
+&quot;Here&#39;s what&#39;s going to happen. You&#39;re going to guide us to the Anor Faultline, where we&#39;ll execute our mission. You will not make any sudden movements, draw any sigils, or powers from the Veil. The moment you slip, or decide to act against us...
+		
+Then you leave me no choice. I don&#39;t want to end you, Ashton.
+		
+But cross us, and I will. Understand?&quot;
+		
+[[You nod silently. -&gt;A2- Revealed Camp Danger]]</tw-passagedata><tw-passagedata pid="93" name="A2- The Regent Want Me Dead" tags="" position="1435.5,3238.333251953125" size="100,100">Gavin chuckles, shaking his head.
+			
+&quot;Loyal to free Arcanists, so long as they lick the Pride King&#39;s boots, eh? Understand, knowing what I know now, my options are rather limited? As are your own.
+			
+But I don&#39;t want to end you, Ashton.
+
+Guide us to where we need to be, and can I guarantee your life. But after that, the only way we can rightfully allow you to live is to become a Seeker yourself.
+
+Allow the Enclave to invoke you as an Ordained Arcanist. I could even teach you what I know.
+			
+But deny that offer... I&#39;ll have no choice.&quot;
+
+[[You nod silently. -&gt;A2- Revealed Camp Danger]]</tw-passagedata><tw-passagedata pid="94" name="A2- Revealed Camp Danger" tags="" position="1600.5,3466.333251953125" size="100,100">All assurances aside, you&#39;re certain, if confronted, he&#39;s far more powerful than you are.
+
+&lt;img src=&quot;https://cdnb.artstation.com/p/assets/images/images/026/810/695/large/jerrin-varghese-the-mortal-gateway-to-the-dark-realm-6.jpg?1589804978&quot; width= &quot;100%&quot;&gt;
+
+
+He pauses for a moment, seemingly reading the worry from your face, and relaxes slightly. &quot;Have you been told about The Veil? The place where you draw your power? How it works? What it causes? The risk, not to you, but everything around you?&quot;
+	
+You&#39;re confused. This doesn&#39;t seem like the time for a lesson in Arcanum... What&#39;s his ploy?
+	
+	&quot;Gavin!&quot; Moira calls, gripping the hilt of her blade.
+	
+	Surprisingly, Moira is no longer worried with you. Her stance is facing opposite to you, towards the edge of the camp.
+	
+	A shadow crosses your vision, from where she faces. -&gt;
+</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">"use strict";var _slicedToArray=function(){return function(e,t){if(Array.isArray(e))return e;if(Symbol.iterator in Object(e))return function(e,t){var n=[],r=!0,i=!1,a=void 0;try{for(var o,s=e[Symbol.iterator]();!(r=(o=s.next()).done)&&(n.push(o.value),!t||n.length!==t);r=!0);}catch(e){i=!0,a=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw a}}return n}(e,t);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}!function(){
 /**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
