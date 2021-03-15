@@ -14,7 +14,7 @@
 
 (live: 3s)[(transition:&quot;dissolve&quot;)[Your head is ringing...](stop:)]
 
-(live: 6s)[(transition:&quot;dissolve&quot;)[Blood pours onto the sun-baked cobbles, carved from red-stone and pocked with inlaid moss, seeping with moisture. Your mouth tastes of iron and salt.](stop:)]
+(live: 6s)[(transition:&quot;dissolve&quot;)[Blood pours onto the sun-baked cobbles, carved from red-stone and pocked with inlaid moss. Your mouth tastes of iron and salt, but your vision reveals nothing but shadow.](stop:)]
 
 (live: 10s)[(transition:&quot;dissolve&quot;)[The air is thick with [[steam...-&gt; A1- It Burns to Breathe]]](stop:)]</tw-passagedata><tw-passagedata pid="2" name="A1- The Destitute Regent" tags="Info" position="361,117" size="100,100">The Destitute Regent is a coalition of underground Arcanists, led by a man known as the Pride King.
 
@@ -23,15 +23,15 @@ You&#39;ve been working alongside them for years now...
 (click: ?page)[==
 But you&#39;ve recently fallen out of favour. You had gambled a debt with the Pride King on a heist that was to return three times it&#39;s cost...
 
-Didn&#39;t work out, the whole thing went belly up. And with all you know of their operation, you&#39;re a liability to them if left unchecked.</tw-passagedata><tw-passagedata pid="3" name=" A1- It Burns to Breathe" tags="" position="97,319" size="200,100">You try to catch your breath in heaving waves, as shadows pass by your vision, circling like wolves.
+Didn&#39;t work out, the whole thing went belly up. And with all you know of their operation, you&#39;re a liability to them if left unchecked.</tw-passagedata><tw-passagedata pid="3" name=" A1- It Burns to Breathe" tags="" position="97,319" size="200,100">(transition:&quot;pulse&quot;)+(transition-time:10s)[You breathe in heaving waves, trying to recuperate.]
 
-The air burns your throat, a courtesy of the Hissing Sea, a boiling expanse of salt and sulphur that neighbors the city of Qui&#39;Lea.
+(live: 5s)[ (transition:&quot;dissolve&quot;) [Breathing in, the air burns your throat, as a thickened blanket of steam obscures either end of the dusty alley..
 
-(live: 5s)[(transition:&quot;dissolve&quot;)[ [[Another Strike...-&gt;A1- Another Strike]]](stop:)]</tw-passagedata><tw-passagedata pid="4" name="A1- Another Strike" tags="" position="323,317" size="100,100">You feel a sharp pain as a steel-toed boot drives into your gut, wrenching you onto your back. The light from the morning sun barely reaches you here. 
+A courtesy of the Hissing Sea, a boiling expanse of salt and sulphur that neighbors the arid city of Qui&#39;Lea.](stop:)]
 
-You back up against the wall of the alley, and cough.
+(live: 10s)[(transition:&quot;dissolve&quot;)[ [[Another Strike...-&gt;A1- Another Strike]]](stop:)]</tw-passagedata><tw-passagedata pid="4" name="A1- Another Strike" tags="" position="323,317" size="100,100">You feel a sharp pain as a steel-toed boot drives into your gut, wrenching you onto your back. The light from the morning sun barely reaches you here. 
 
-A cold blade bites into the side of your neck as one of the thugs grips a curved shamshir and shakes his head in disapointment.
+You back up against the wall of the alley, and cough. A cold blade bites into the side of your neck as one of the thugs grips a curved shamshir and shakes his head in disapointment.
 
 You know this man. An enforcer for the [[Destitute Regent-&gt;A1- The Destitute Regent]]... Theo, you think he went by?
 
@@ -162,7 +162,7 @@ You follow up behind him, and...
 The streets bellow in a whorl of heated air, as you draw it&#39;s energy and send the vapour spiralling within the confines of the alleyway!
 
 (set: $magicRevealed to false)[[Now&#39;s your chance to escape!-&gt;A1- Escape!]]</tw-passagedata><tw-passagedata pid="17" name="A1- Seeker Info" tags="Info" position="1476,291" size="100,100">=|=
-&lt;img src=&quot;https://i.imgur.com/kS8sWIe.jpg&quot; height= &quot;50%&quot;&gt;
+&lt;img src=&quot;https://i.imgur.com/kS8sWIe.jpg&quot; height= &quot;60%&quot;&gt;
 =|=
 &#39;&#39;Enclave Seeker&#39;&#39;
 
@@ -921,24 +921,26 @@ You&#39;re confused. This doesn&#39;t seem like the time for a lesson in Arcanum
 	
 	A shadow crosses your vision, from where she faces. -&gt;
 You take a deep breath.
-</tw-passagedata><tw-passagedata pid="94" name="A2- Creature Start" tags="" position="217,2745" size="100,100">(set: $a2_hiddenPathTraversed to false)(transition:&quot;dissolve&quot;)[You continue walking across the rocky plateau streching as far as the eye can see. Your eyes dart back and fourth, looking for landmarks you&#39;ve studied on maps before. It would be so easy to get turned around if you take the wrong stone bridge. The last thing you want is to wander the Mistbreach Archipelago longer than you have to...]
+</tw-passagedata><tw-passagedata pid="94" name="A2- Creature Start" tags="" position="217,2745" size="100,100">(set: $a2_hiddenPathTraversed to false)(transition:&quot;dissolve&quot;)[You continue walking across the rocky plateau, the colossal rockfaces stretching into far horizons. Your eyes dart back and forth, looking for landmarks you&#39;ve studied on maps before.
+
+The plateaus are connected by uneven networks of stone bridges, and It&#39;s far too easy to get turned around. The last thing you&#39;d want is to wander the Archipelago longer than you have to...]
 
 (live: 10s)[(transition:&quot;dissolve&quot;)[A loose stone shifts under your weight, shaking you out of your thoughts. You realize no one has spoken in a while. This is the perfect time to ask the question you&#39;ve carried since the beginning of the journey...
 
-[&quot;You think you could tell your guide what we&#39;re actually looking for?&quot;]&lt;ConvoAttempt|](stop:)]
+[&quot;So, why head to the Anor Faultline?&quot;]&lt;ConvoAttempt|](stop:)]
 
 \(click: ?ConvoAttempt)[
-\(replace: ?ConvoAttempt)[You think you could tell your guide what we&#39;re actually looki...]
+\(replace: ?ConvoAttempt)[So, why head to the Anor Fa-]
 \
-(transition:&quot;dissolve&quot;)[A piercing //SCREECH// rings out over the open plateau, its echoes rolling over the plateau.](stop:)
+(transition:&quot;dissolve&quot;)[A piercing //SCREECH// rings out over the open plateau, its echoes rippling along with the roiling waves below.](stop:)
 
 [[Look for the source.-&gt;A2- It&#39;s a Bird]]]</tw-passagedata><tw-passagedata pid="95" name="A2- Roc Dive 1" tags="" position="504,3046" size="100,100">Sprinting into a sliding crouch, you take cover behind the boulder.
 
-You hear another screech, fast approachig. You need to get eyes on the bird of prey.
+You hear another screech, fast approaching. You need to get eyes on the bird of prey!
 
-[Peak out from cover.]&lt;Peak|
+[Peek out from cover.]&lt;Peak|
 
-(click:?Peak)[You peak out from cover and see the bird diving towards Gavin. He might be in trouble...
+(click:?Peak)[You peek out from cover and see the bird diving towards Gavin. He might be in trouble...
 
 (live: 2s)[(transition:&quot;dissolve&quot;)[You must [&#39;&#39;act fast!&#39;&#39;]&lt;QTE|](stop:)]
 
@@ -950,17 +952,17 @@ You hear another screech, fast approachig. You need to get eyes on the bird of p
 \		(set: $timer to it - 1)
 \		(replace:?choice)[
 \			$timer]
-			[[Run from cover and push Gavin out of the way.-&gt;A2- Bravery and Recklessness]]
+			[[Run from cover, shoving Gavin out of the way.-&gt;A2- Bravery and Recklessness]]
 			[[Fire a psionic bolt at the bird!-&gt;A2- Roc Reveals Magic]]
 			[[Stay behind cover and do nothing.-&gt;A2- Tank Moira]]
-\		(if: $timer is 0)[(go-to:&quot;A2- Tank Moira&quot;)]]]]</tw-passagedata><tw-passagedata pid="96" name="A2- Roc Dive 2" tags="" position="500,2924" size="100,100">(if: $MoiraSavedYou is true)[(if: $a2_hiddenPathChosen is true)[Moira meets your gaze then looks up at the incoming danger. &quot;I made us come this way, and I just saved your ass. We&#39;re even. Now get ready.&quot;]
-\(else:)[Moira meets your gaze with fiery eyes. &quot;Get yourself together and be useful.&quot; She says in a low, forcefull voice.]]
+\		(if: $timer is 0)[(go-to:&quot;A2- Tank Moira&quot;)]]]]</tw-passagedata><tw-passagedata pid="96" name="A2- Roc Dive 2" tags="" position="500,2924" size="100,100">(if: $MoiraSavedYou is true)[(if: $a2_hiddenPathChosen is true)[Moira meets your gaze then looks up at the incoming danger. &quot;I made us come this way, but I saved your ass. We&#39;re even. Now, get ready!&quot;]
+\(else:)[Moira meets your gaze with fiery eyes. &quot;Pull yourself together, and start being useful!&quot; She says in a low, forceful voice.]]
 
 \You draw your sword from its sheath and hold it between you and the approaching bird. 
 
 You feel your pulse against the hilt in your grip. The massive predator bird is now diving right at you.
 
-(if: $injuryScore &gt;= 1)[The pain in your shoulders pulses through your body with each heartbeat. The sword becomes heavier to hold up with each passing second.]
+(if: $injuryScore &gt;= 1)[The pain in your shoulders pulses through your body with each heartbeat. Your sword becomes heavier to hold up with each passing second.]
 
 You must [&#39;&#39;act fast!&#39;&#39;]&lt;QTE|
 
@@ -974,37 +976,47 @@ You must [&#39;&#39;act fast!&#39;&#39;]&lt;QTE|
 \			$timer]
 			[[Brace your sword with both hands for a parry.-&gt;A2- Parry Bird]]
 			[[Fire a psionic bolt at the bird!-&gt;A2- Roc Reveals Magic]]
-\		(if: $timer is 0)[(go-to:&quot;A2- Tank Moira&quot;)]]]</tw-passagedata><tw-passagedata pid="97" name="A2- Bravery and Recklessness" tags="" position="666,3049" size="100,100">You kick up debris and dirt as you sprint towrads Gavin. Slipping slightly on the uneven terrain, you right yourself and continue dashing.
+\		(if: $timer is 0)[(go-to:&quot;A2- Tank Moira&quot;)]]]</tw-passagedata><tw-passagedata pid="97" name="A2- Bravery and Recklessness" tags="" position="666,3048" size="100,100">You kick up debris and dirt as you sprint towrads Gavin. Slipping slightly on the uneven terrain, you right yourself and continue dashing.
 
-With a heavy //THUD// you tackle Gavin to the ground and away from the talons a split second before they pierced his body.
+With a heavy //THUD// you tackle Gavin to the ground, away from the talons a split second before they pierced his body!
 
-A searing pain shoots across your back as you realize you cut it closer than you thought. The sharp talons had not been able to clutch prey, however they had been successful at slicing a bloody gash from shoulder blade to shoulder blad. Landing hard with Gavin, the air leaves your body as the impact sends a new wave of pain shooting from your open wound.
+Searing pain shoots across your back as you realize you cut it closer than you thought. While the sharp talons had been unable to clutch it&#39;s prey, they have sliced a bloody gash from shoulder blade to shoulder blade. Landing hard with Gavin, the air leaves your body as the impact sends a new wave of pain shooting from your open wound.
 
 //(set: $injuryScore to $injuryScore + 1) (text-colour:grey)[You have received an injury...]//
 
 (set:$a2_GavinHelped to true)[[Roll onto your back to face the bird.-&gt;A2- Moira Downs Bird]]</tw-passagedata><tw-passagedata pid="98" name="A2- Tank Moira" tags="" position="665,3171" size="100,100">You first hear Moira let out an earthshattering battle cry, then see her charge between the bird and its target. She plants her feet wide and braces her shoulder for impact.
 
-As the birds talons scrape agains her pauldron sparks fly. Moira grunts and spins letting the pointed bones slide off her causing the bird to lose balance for a moment. Lifting her dented pauldron, she uses the opening to swing her sword at the birds head.
+The birds&#39; talons scrape agains her forward pauldron, sending sparks into the air. Moira grunts in pain, shifting her weight and letting the pointed bones slide off her, causing the bird to lose balance for a moment. Lifting her dented pauldron, she uses the opening to drive her sword into the birds&#39; skull.
 
-With a rumbling crash, the bird impacts the ground.
+With a rumbling crash, the creature impacts the ground.
 
-(set: $MoiraInjuryScore to $MoiraInjuryScore + 1)[[Peer through the dust cloud as you prepare to fight-&gt;A2- Bird Down]]</tw-passagedata><tw-passagedata pid="99" name="A2- Roc Reveals Magic" tags="" position="665,2800" size="100,100">You focus your thoughts as you&#39;ve done countless times. Lifting your hand, ignoring the needles of eldrich pain in your mind, you release a ray of refracted light aimed at the birds skull-wrapped head. As the visions from beyond the Veil clear, (if:$injuryScore &gt;= 1)[lowering your bleeding arm ] you see the streak of light crash into the birds head, cracking the exterior bone shell.
+//(text-colour:grey)[Moira has received an injury...]//
+(set: $MoiraInjuryScore to $MoiraInjuryScore + 1)[[Peer through the dust cloud as you prepare to fight-&gt;A2- Bird Down]]</tw-passagedata><tw-passagedata pid="99" name="A2- Roc Reveals Magic" tags="" position="663,2791" size="100,100">You focus your thoughts as you&#39;ve done countless times...
 
-The bird crashes into the ground, sending debris in a wide radius. A large dust cloud covers the point of impact.
+Lifting your hand, ignoring the needles of eldrich pain in your mind, you release a ray of refracted light aimed at the birds portruding skull! As the visions from beyond the Veil clear, (if:$injuryScore &gt;= 1)[you lower your bleeding arm, ]watching the streak of light crash into the birds head, cracking the exterior bone shell in twain!
+
+The colossal bird crashes into the ground, sending a whorl of dust and debris cascading across the plateau!
 
 (set: $aggroScore to $aggroScore + 1) (set: $magicRevealed to true) (text-colour:grey)[//Your powers have been revealed!//]
 
-[[Look for the others.-&gt;A2- Bird Down]]</tw-passagedata><tw-passagedata pid="100" name="A2- Low Initiative" tags="" position="369,2815" size="100,100">With blinding speed the bird is upon you before you can act. Talons dig deep into your shoulders as the bird flaps its pair of wings in a massive arc. The resulting massive wall of wind kicks up dust as you are beginning to lift off the ground, pain searing through your shoulder-blades.
+[[Look for the others.-&gt;A2- Bird Down]]</tw-passagedata><tw-passagedata pid="100" name="A2- Low Initiative" tags="" position="369,2815" size="100,100">With blinding speed, the bird is upon you before you can act!
+
+Talons dig deep into your shoulders as the bird flaps its wings in a massive arc! The wall of wind kicks up plumes of roiling dust as you are pulled off the ground, pain searing through your shoulder-blades.
 
 (live: 8s)[(transition:&quot;dissolve&quot;)[//(set: $injuryScore to $injuryScore + 2) (text-colour:grey)[You have received an injury...]//](stop:)]
 
-(live: 10s)[(transition:&quot;dissolve&quot;)[A moment before your feet leave the ground, Moira&#39;s sword swings right above your head, crashing into the birds bone covered legs and bouncing off with a skull-cracking //CLANG//.](stop:)]
+(live: 10s)[(transition:&quot;dissolve&quot;)[A moment before you are pulled skyward, Moira&#39;s sword swings right above your head, crashing into the birds bone-covered legs, and bouncing off with a skull-cracking //CLANG//!](stop:)]
 
-(live: 18s)[(transition:&quot;dissolve&quot;)[The sheer force of the impact vibrates through your body and you are jolted free of the deadly grasp.
+(live: 18s)[(transition:&quot;dissolve&quot;)[The sheer force of the impact reverberates through your body, jolting you free of the deadly grasp.
 
 As you land back on your feet, you look up to see the bird already high above, circling to dive again.
 
-(set: $a2_MoiraSavedYou to true)[[Hold your left shoulder, blood dripping down your fingers and look towards Moira.-&gt;A2- Roc Dive 2]]](stop:)]</tw-passagedata><tw-passagedata pid="101" name="A2- It&#39;s a Bird" tags="" position="222,2943" size="100,100">(transition:&quot;dissolve&quot;)[Whipping your head towards the sky and the source of the screech, you see a giant winged creature soaring above. Its body is accented with dark bone like material growing out from each part, encasing them for protection and camoflauge. Its avian form begins to dive towards the group. Dark talons grind open ready to strike. It&#39;s eyes locked onto you, peering through a bone wrapped head.]
+(set: $a2_MoiraSavedYou to true)[[Grip your left shoulder, blood dripping down your fingers and look towards Moira.-&gt;A2- Roc Dive 2]]](stop:)]</tw-passagedata><tw-passagedata pid="101" name="A2- It&#39;s a Bird" tags="" position="222,2943" size="100,100">(transition:&quot;dissolve&quot;)[Whipping your head towards the sky, you see a giant winged creature soaring above.
+&lt;img src=&quot;https://pbs.twimg.com/media/D1SAkqyUwAEmQ5E.jpg&quot; width= &quot;100%&quot;&gt;
+
+Its body is accented with dark bone-like material, growing out from it&#39;s wings and claws, encasing them for protection and camoflauge. Its avian form dives swiftly towards the group. Dark talons grind open ready to strike. It&#39;s eyes locked onto you, peering through a bone wrapped head.
+
+]
 
 [You must [&#39;&#39;act fast!&#39;&#39;]&lt;QTE|]
 
@@ -1018,7 +1030,7 @@ As you land back on your feet, you look up to see the bird already high above, c
 \			$timer]
 			[[Dive behind the large boulder to your left.-&gt;A2- Roc Dive 1]]
 			[[Draw your sword and brace for the fight.-&gt;A2- Roc Dive 2]]
-\		(if: $timer is 0)[(go-to:&quot;A2- Low Initiative&quot;)]]]</tw-passagedata><tw-passagedata pid="102" name="A2- Bird Death" tags="Death" position="1117,2653" size="100,100">You take a step back, reeling from the impact...
+\		(if: $timer is 0)[(go-to:&quot;A2- Low Initiative&quot;)]]]</tw-passagedata><tw-passagedata pid="102" name="A2- Bird Death" tags="Death" position="1135,2649" size="100,100">You take a step back, reeling from the impact...
 
 Your head begins to spin as your vision is engulfed with a curtain of darkness. [You hear nothing but your slowing heartbeat]&lt;Dying|.
 
@@ -1027,58 +1039,74 @@ Tha...Thump...
 //THUMP// you crash onto the ground, staring at sky being engulfed by blackness...
 
 (text-colour:grey)[//All goes dark.//]](stop:)]</tw-passagedata><tw-passagedata pid="103" name="A2- Bird Down" tags="" position="994,2980" size="100,100">[]&lt;consequence|
-{(if: $magicRevealed is true)[(replace:?consequence)[You find Moiras eyes. She squints and you can almost feel her stare pierce right through you. The sound of shifting rocks coming from the birds direction interrupts the intense moment]]
+{(if: $magicRevealed is true)[(replace:?consequence)[You catch a glimpse of Moira&#39;s eyes through the shadows of her visor. You can almost feel her stare pierce right through you. However, the sound of shifting rocks exuding from the bird&#39;s crater interrupts the moment.]]
 (elseif: $a2_GavinHelped is true)[(replace:?consequence)[Uncovering your eyes, you see Gavin standing above you with his had extended towards you. You take it and let out a grunt through your clenched jaw as you get up.]]
 (else:)[(replace:?consequence)[Looking towards the bird, you bring yourself to your feet.]]}
 \
-\(if: $injuryScore &gt;= 2)[You momentarily lose balance and teeter backwards before catching yourself and planting your feet under you.]
+\(if: $injuryScore &gt;= 2)[You momentarily lose balance and teeter backwards before catching yourself, planting your feet under you...]
 
-As the dust clears, you see once again gain sight of the battle field. Gavin is behind the downed bird with some distance between them. Moira is directly to the right of the bird gripping her sword with both hands.
+As the dust settles, you once more gain sight of the battlefield. Gavin is facing the downed bird, maintaining some distance between them. Moira is directly to the right of the bird, gripping her sword with both hands.
 
-[[Flank with Gavin.-&gt;A2- Face the Bird]]
-[[Flank with Moira.-&gt;A2- Wingside Battle]]</tw-passagedata><tw-passagedata pid="104" name="A2- Parry Bird" tags="" position="661,2918" size="100,100">You manage to bring the sword up as the bird reaches you. Your blade makes contact with the talons in an attempt to guide them to one side as you step to the other.
+[[Assist Gavin, attacking from the front.-&gt;A2- Face the Bird]]
+[[Assist Moira, attacking from the flank.-&gt;A2- Wingside Battle]]</tw-passagedata><tw-passagedata pid="104" name="A2- Parry Bird" tags="" position="661,2918" size="100,100">You manage to bring up your sword, just as the bird reaches you. Your blade makes contact with the talons, and you follow through, attempting to guide them to one side as you step to the other.
 
 &#39;&#39;//CLANG//&#39;&#39;
 
 Steel and bone clash as the impact sends shockwave down your arms.
 
-(if: $injuryScore &gt;= 1)[The pain from your shoulders is overpowering and you are thrown, spinning onto the ground.]
+(if: $injuryScore &gt;= 1)[The pain from your previous injuries is overpowering, as you are thrown spinning onto the ground!]
 \
-\(else:)[Sparks fly as you spin and let the talons slide off the blade. However, it seems you underestimated the giant birds sheer power. You lose balance on the uneven terrain and fall to the ground. Your arms ache as you spit blood from your mouth.]
+\(else:)[Sparks fly, as you spin and let the talons slide off the blade. However, you underestimated the giant birds sheer power, losing balance on the uneven terrain and falling to the ground. Your arms ache, as you spit blood from your mouth.]
 
-//(set: $injuryScore to $injuryScore + 1) (text-colour:grey)[You have received an injury...]//(set: $aggroScore to $aggroScore + 1)
+//(set: $injuryScore to $injuryScore + 1) (text-colour:grey)[You have received an injury...]//
 
-[[Roll onto your back-&gt;A2- Moira Downs Bird]]</tw-passagedata><tw-passagedata pid="105" name="A2- Moira Downs Bird" tags="" position="829,2932" size="100,100">You roll onto your back, blood dripping over the rocky ground. Gritting your teeth you look at the bird as it begins to ascend once again.
+//(set: $aggroScore to $aggroScore + 1) (text-colour:grey)[You have drawn the creature&#39;s ire!]//
 
-It barely moves moves before you hear Moira&#39;s yell beyond the dust cloud kicked up by the birds wings. You see her silhouette, backlit by the daylight as she leaps and grabs the birds legs. Lifting herself she thrusts her sword under the birds right wing.
+[[Roll onto your back-&gt;A2- Moira Downs Bird]]</tw-passagedata><tw-passagedata pid="105" name="A2- Moira Downs Bird" tags="" position="829,2932" size="100,100">You roll onto your back, blood dripping over the rocky ground. Gritting your teeth, you look at the bird as it begins to ascend once again.
 
-The bird lets out a blood curdling screech as they both come crashing down. You feel the ground beneath you rumble as the massive impact sends up an even thicker cloud of dust, small plant matter, and debris.
+It barely moves before you hear Moira&#39;s yell from beyond the dust cloud kicked up by the birds wings. You see her silhouette, backlit by the daylight as she leaps and grabs the birds legs, lifting herself and thrusting her sword under the birds right wing!
 
-(set:$MoiraInjuryScore to $MoiraInjuryScore + 1)[[Cover your face.-&gt;A2- Bird Down]]</tw-passagedata><tw-passagedata pid="106" name="A2- Face the Bird" tags="" position="1167,3055" size="100,100">You position yourself in front of the bird, flanking with Gavin. The bird shakes itself, stone, blood, and feathers raining down from it. It looks at you from under its cracked bone head armour.
+The bird lets out a blood-curdling screech as they both come crashing down. The ground beneath you rumbles, as the impact sends a whorl of dust and debris cascading across the plateau!
 
-&quot;I have his attention now! C&#39;mon do your worst!&quot; Hoping to avoid another full on clash, you grip your sword again. (set: $aggroScore to $aggroScore + 1)
+(text-colour:grey)[//Moira has received an injury...//]
+(set:$MoiraInjuryScore to $MoiraInjuryScore + 1)[[Cover your face.-&gt;A2- Bird Down]]</tw-passagedata><tw-passagedata pid="106" name="A2- Face the Bird" tags="" position="1202,3118" size="100,100">You position yourself in front of the bird, backing up Gavin. The bird shakes itself, stone, blood, and feathers raining down from it. It&#39;s head snaps to you, the cracked bone shifting ominously.
 
-Suddenly you see rocks rocks shifting beneath the birds talons. It had sunken them deep into the stone for grip, but now the rocks crack open as they become red, then molten. The molten rock moves up the birds right leg and solidifies, rooting it in a stone grip.
+//(set: $aggroScore to $aggroScore + 1) (text-colour:grey)[You have drawn the creature&#39;s ire!]//
+&quot;I have her attention now!&quot;
 
-The bird lets out another screech of pain, but before it could lash out, Moira swings her sword, slicing the underside of its right wing. Blood now poors freely down its feathers.
+Hoping to avoid another full on clash, you grip your sword again. &quot;C&#39;mon, do your worst!&quot; (if: $injuryScore &gt;= 2)[knowing full well you are unlikely to take it.]
+
+Suddenly, as the bird drives it&#39;s right talon into the stone for grip, the rocks shift, erupting into a molten geyser and rapidly solidifying, rooting it in place! You turn to see Gavin, eyes flared in heated tones, commanding the Veil to manipulate the environment!
+
+He&#39;s an Arcanist!
+
+... He&#39;s a Seeker ...(set: $a2_gavinIsAnArcanist to true)
+
+The bird lets out another screech of pain, but before it can lash out, Moira cleaves across it&#39;s torso, slicing the underside of its right wing. Blood pours freely down its feathers.
 
 There, an opening...
 
-[[Thrust your sword into the birds eye.-&gt;A2- Frontal Stab]]
+[[Thrust your sword into the birds eye!-&gt;A2- Frontal Stab]]
 [[Reposition to the left of the bird, flanking with Moira.-&gt;A2- Wingside Battle]]
-[[Fire a psionic bolt at the bird!-&gt;A2- Frontal Blast]]</tw-passagedata><tw-passagedata pid="107" name="A2- Wingside Battle" tags="" position="1330,2922" size="100,100">You quickly dash to the birds left, with Moira directly on the other side of its body.
+[[Fire a psionic bolt at the bird!-&gt;A2- Frontal Blast]]</tw-passagedata><tw-passagedata pid="107" name="A2- Wingside Battle" tags="" position="1321,2919" size="100,100">You swiftly dash to the birds left, with Moira directly on the other side of its body.
 
-Gavin lifts his right hand, and mutters an encantation. The final words echo in a deep gutteral voice. The bird lets out a yelp of pain as it shakes its head, blood trickling out of the cracks in its bone helmet.
+Gavin lifts his right hand, muttering an incantation. The final words echo in a deep guttural voice, as a psionic lance pierces the bird&#39;s skull, violently shaking its head! Blood pours from the cracks of its bone.
+(if: $a2_gavinIsAnArcanist is false)[
+He&#39;s an Arcanist!
 
+... He&#39;s a Seeker ...
+]
 []&lt;BirdAttack|
 
 [[[Slice under the birds left wing, where it connects to the body.-&gt;A2- Clipped Wings]]
 [[Stab the bird in its chest, aiming between the ribs.-&gt;A2- Chest Stab]]]&lt;choice|
 
-(if:$aggroScore &gt;= 2)[(replace: ?BirdAttack)[You&#39;ve managed to hold onto its attention. With a lightning fast swipe, the birds left claw darts towards you. You manage to step back to avoid fatal damage, but the sharp tips of the bone talons still catch you on your arms.
+(if:$aggroScore &gt;= 2)[(replace: ?BirdAttack)[You&#39;ve managed to maintain its ire. With a lightning fast swipe, the bird&#39;s left claw darts towards you! You weave, stepping back to avoid fatal damage, but the sharp tips of the bone talons still catch you on your arms.
 //(set: $injuryScore to $injuryScore + 1) (text-colour:grey)[You have received an injury...]//]
 (if: $injuryScore &gt;= 3)[(replace: ?choice)[[[Try to regain your footing...-&gt;A2- Bird Death]]]]]
-(else:)[(replace: ?BirdAttack)[The bird spins its head to face Moira, and with lightning fast speed, a piercing peck approaches her. Moira dodges the attack by stepping to one side. You can feel the vibrations from the impact between the ground and the creatures boned beak.]]</tw-passagedata><tw-passagedata pid="108" name="A2- Frontal Stab" tags="" position="1467,3025" size="100,100">With the adrenaline pumping through your veins, you face down the bird and meet its gaze. You thrust your sword into its left eye, scraping the eye holes of the boned head. (set: $aggroScore to $aggroScore + 2)
+(else:)[(replace: ?BirdAttack)[The bird spins its head to face Moira, and with lightning speed, a piercing peck descends upon her. Moira weaves to one side as the vibrations cascade from the impacting stone!]]</tw-passagedata><tw-passagedata pid="108" name="A2- Frontal Stab" tags="" position="1466,3026" size="100,100">With the adrenaline pumping through your veins, you face down the bird and meet its gaze. You thrust your sword into its left eye, scraping the eye holes of the boned head.
+
+//(set: $aggroScore to $aggroScore + 2) (text-colour:grey)[You have drawn the creature&#39;s ire!]//
 
 []&lt;BirdAttack|
 
@@ -1086,13 +1114,19 @@ Blood is now dripping from the creature, painting the rocks beneath crimson.
 
 [[[The bird is hurt, this is it!-&gt;A2- Final Strike]]]&lt;choice|
 
-(if: $aggroScore &gt;= 4)[(replace:?BirdAttack)[Pulling back from the sudden assult, the bird lunges forward with its beak like a spear. You attempt to block it with your sword. As a result the beak does not pierce your skin, but the impact breaks a few ribs.(set:$injuryScore to $injuryScore + 1)
+(if: $aggroScore &gt;= 4)[(replace:?BirdAttack)[Pulling back from the sudden assult, the bird lunges forward with its talons like spears. You attempt to block it with your sword, preventing perforation, but the impact cracks a few ribs!(set:$injuryScore to $injuryScore + 1)
 (if: $injuryScore &gt;= 3)[(replace:?choice)[[[Step back trying to keep a grip on your sword...-&gt;A2- Bird Death]]]]]]
-(else:)[(replace:?BirdAttack)[The bird attempts to use its left talon to grab behind it. You hear the snapping of closing talons and a yelp from Gavin.(set: $GavinInjuryScore to $GavinInjuryScore + 1)]]</tw-passagedata><tw-passagedata pid="109" name="A2- Frontal Blast" tags="" position="1466,3143" size="100,100">You focus your thoughts as you&#39;ve done countless times. Lifting your hand, ignoring the needles of eldrich pain in your mind, you release a ray of refracted light aimed at the birds skull-wrapped head. As the visions from beyond the Veil clear, (if:$injuryScore &gt;= 1)[lowering your bleeding arm ] you see the streak of light crash into the birds head, cracking the exterior bone shell.
+(else:)[(replace:?BirdAttack)[The bird attempts to use its left talon to lash behind it. You hear the snapping of closing talons and a pained yelp from Gavin.
+
+//(text-colour:grey)[Gavin has received an injury...]//(set: $GavinInjuryScore to $GavinInjuryScore + 1)] ]</tw-passagedata><tw-passagedata pid="109" name="A2- Frontal Blast" tags="" position="1466,3143" size="100,100">You focus your thoughts to distant planes, as you&#39;ve done countless times.
+
+Lifting your hand, ignoring the needles of eldrich pain in your mind, you release a ray of refracted light aimed at the birds portruding skull! As the visions from beyond the Veil clear, (if:$injuryScore &gt;= 1)[you lower your bleeding arm, ]watching an eruption of force crash into the birds head, sending it&#39;s neck twisting!
 
 (set: $aggroScore to $aggroScore + 1) (set: $magicRevealed to true) (text-colour:grey)[//Your powers have been revealed!//]
 
-[[Step away from the bird and move behind it.-&gt;A2- Final Strike]]</tw-passagedata><tw-passagedata pid="110" name="A2- Clipped Wings" tags="" position="1466,2911" size="100,100">With the adrenaline pumping through your veins, you look up the bird. You slice with your sword and cut open the flesh under the feathers.(set: $aggroScore to $aggroScore + 1)
+[[Step away from the bird and move behind it.-&gt;A2- Final Strike]]</tw-passagedata><tw-passagedata pid="110" name="A2- Clipped Wings" tags="" position="1466,2911" size="100,100">With the adrenaline pumping through your veins, you look up the bird. You cleave with your sword, cuting open the flesh under the feathers!
+
+//(set: $aggroScore to $aggroScore + 1) (text-colour:grey)[You have drawn the creature&#39;s ire!]//
 
 []&lt;BirdAttack|
 
@@ -1100,9 +1134,13 @@ Blood is now dripping from the creature, painting the rocks beneath crimson.
 
 [[[The bird is hurt, this is it!-&gt;A2- Final Strike]]]&lt;choice|
 
-(if: $aggroScore &gt;= 3)[(replace:?BirdAttack)[Pulling back from the sudden assult, the bird lunges forward with its talons like  spears. You attempt to block it with your sword. As a result your skin is not pierced, but the impact breaks a few ribs.(set:$injuryScore to $injuryScore + 1)
+(if: $aggroScore &gt;= 3)[(replace:?BirdAttack)[Pulling back from the sudden assult, the bird lunges forward with its talons like spears. You attempt to block it with your sword, preventing perforation, but the impact cracks a few ribs!(set:$injuryScore to $injuryScore + 1)
 (if: $injuryScore &gt;= 3)[(replace:?choice)[[[Step back trying to keep a grip on your sword...-&gt;A2- Bird Death]]]]]]
-(else:)[(replace:?BirdAttack)[The bird attempts to use its left talon to grab behind it. You hear the snapping of closing talons and a yelp from Gavin.(set: $GavinInjuryScore to $GavinInjuryScore + 1)]]</tw-passagedata><tw-passagedata pid="111" name="A2- Chest Stab" tags="" position="1467,2799" size="100,100">With the adrenaline pumping through your veins, you look up the bird. You stab with your sword and cut open the flesh under the feathers.(set: $aggroScore to $aggroScore + 1)
+(else:)[(replace:?BirdAttack)[The bird attempts to use its left talon to lash behind it. You hear the snapping of closing talons and a pained yelp from Gavin.
+
+//(text-colour:grey)[Gavin has received an injury...]//(set: $GavinInjuryScore to $GavinInjuryScore + 1)]]</tw-passagedata><tw-passagedata pid="111" name="A2- Chest Stab" tags="" position="1467,2799" size="100,100">With the adrenaline pumping through your veins, you look up the bird. You thrust with your blade and cutting open the flesh under the feathers!
+
+//(set: $aggroScore to $aggroScore + 1) (text-colour:grey)[You have drawn the creature&#39;s ire!]//
 
 []&lt;BirdAttack|
 
@@ -1110,15 +1148,21 @@ Blood is now dripping from the creature, painting the rocks beneath crimson.
 
 [[[The bird is hurt, this is it!-&gt;A2- Final Strike]]]&lt;choice|
 
-(if: $aggroScore &gt;= 3)[(replace:?BirdAttack)[Pulling back from the sudden assult, the bird lunges forward with its talons like  spears. You attempt to block it with your sword. As a result your skin is not pierced, but the impact breaks a few ribs.(set:$injuryScore to $injuryScore + 1)
+(if: $aggroScore &gt;= 3)[(replace:?BirdAttack)[Pulling back from the sudden assult, the bird lunges forward with its talons like spears. You attempt to block it with your sword, preventing perforation, but the impact cracks a few ribs!(set:$injuryScore to $injuryScore + 1)
 (if: $injuryScore &gt;= 3)[(replace:?choice)[[[Step back trying to keep a grip on your sword...-&gt;A2- Bird Death]]]]]]
-(else:)[(replace:?BirdAttack)[The bird attempts to use its left talon to grab behind it. You hear the snapping of closing talons and a yelp from Gavin.(set: $GavinInjuryScore to $GavinInjuryScore + 1)]]</tw-passagedata><tw-passagedata pid="112" name="A2- Final Strike" tags="" position="1688,2965" size="100,100">(if: $aggroScore &gt;= 3)[You need to get the creatures attention off of you.] With a flick of you wrist, you create a blanket of dust to obscure the birds vision.
+(else:)[(replace:?BirdAttack)[The bird attempts to use its left talon to lash behind it. You hear the snapping of closing talons and a pained yelp from Gavin.
 
-As you circle the bird, you notice Gavin kneeling, touching the stone terrain. Suddenly jagged pieces of the floor erupt and slam into the side of the creature as he finishes his encantation and stands up.
+//(text-colour:grey)[Gavin has received an injury...]//(set: $GavinInjuryScore to $GavinInjuryScore + 1)]]</tw-passagedata><tw-passagedata pid="112" name="A2- Final Strike" tags="" position="1688,2965" size="100,100">(if: $aggroScore &gt;= 3)[You need to get the creatures attention off of you.] You drive your blade into loose stone before cleaving upward, sending a  blanket of dust into the air, obscuring the bird&#39;s vision.
 
-Seeing the opening, Moira lunges forward driving her sword upwards. The sword plunges into the birds throat with a sickening squelch. As the bird begins to screech, blood begins to poor from its mouth and muffles the sound. With a final scream of her own, Moira steps back and pulls the sword from the wound.
+You circle it&#39;s flank, noticing Gavin kneeling, resting his glowing palm along the stone terrain. Suddenly, jagged spires erupt, slamming the side of the creature as he finishes his incantation with a flourish!
 
-The Bird falls with a shattering crash. Then just the breeze and quiet...
+Seeing the opening, Moira lunges forward driving her sword to the sky. The blade plunges into the bird&#39;s throat with a sickening squelch!
+
+As the bird begins to screech, blood begins to pour from its mouth, muffling the sound. With a victorious scream, Moira steps back and pulls the sword from the wound...
+
+... Driving the Bird to the ground with a shattering crash.
+
+Silence rings across the plateau...
 
 [[Take a knee...-&gt;A2- Aftermath]]</tw-passagedata><tw-passagedata pid="113" name="A2- Aftermath" tags="" position="3002,3395" size="100,100">(if:$magicRevealed is true) [(go-to: &quot;A2- Powers Revealed 1&quot;)]
 (else:) [(go-to: &quot;A2- Powers Hidden 1&quot;)]</tw-passagedata><tw-passagedata pid="114" name="A2- Unsure Footing" tags="" position="412,3584" size="100,100">(text-colour:grey)[You begin leading the group, showing them the most secure footholds. Gavin follows behind you and Moira behind him.]
