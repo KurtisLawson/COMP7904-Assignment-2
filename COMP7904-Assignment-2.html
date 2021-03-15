@@ -3,31 +3,31 @@
 <head>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1" name="viewport">
-<title>COMP7904-Assignment-2</title>
+<title>IntegrationTest</title>
 <style title="Twine CSS">@keyframes appear{0%{opacity:0}to{opacity:1}}@keyframes fade-in-out{0%,to{opacity:0}50%{opacity:1}}@keyframes rumble{25%{top:-0.1em}75%{top:0.1em}0%,to{top:0px}}@keyframes shudder{25%{left:0.1em}75%{left:-0.1em}0%,to{left:0px}}@keyframes buoy{25%{top:0.25em}75%{top:-0.25em}0%,to{top:0px}}@keyframes sway{25%{left:0.25em}75%{left:-0.25em}0%,to{left:0px}}@keyframes pulse{0%{transform:scale(0, 0)}20%{transform:scale(1.2, 1.2)}40%{transform:scale(0.9, 0.9)}60%{transform:scale(1.05, 1.05)}80%{transform:scale(0.925, 0.925)}to{transform:scale(1, 1)}}@keyframes zoom-in{0%{transform:scale(0, 0)}to{transform:scale(1, 1)}}@keyframes shudder-in{0%, to{transform:translateX(0em)}5%, 25%, 45%{transform:translateX(-1em)}15%, 35%, 55%{transform:translateX(1em)}65%{transform:translateX(-0.6em)}75%{transform:translateX(0.6em)}85%{transform:translateX(-0.2em)}95%{transform:translateX(0.2em)}}@keyframes rumble-in{0%, to{transform:translateY(0em)}5%, 25%, 45%{transform:translateY(-1em)}15%, 35%, 55%{transform:translateY(1em)}65%{transform:translateY(-0.6em)}75%{transform:translateY(0.6em)}85%{transform:translateY(-0.2em)}95%{transform:translateY(0.2em)}}@keyframes fidget{0%, 8.1%, 82.1%, 31.1%, 38.1%, 44.1%, 40.1%, 47.1%, 74.1%, 16.1%, 27.1%, 72.1%, 24.1%, 95.1%, 6.1%, 36.1%, 20.1%, 4.1%, 91.1%, 14.1%, 87.1%, to{left:0px;top:0px}8%, 82%, 31%, 38%, 44%{left:-1px}40%, 47%, 74%, 16%, 27%{left:1px}72%, 24%, 95%, 6%, 36%{top:-1px}20%, 4%, 91%, 14%, 87%{top:1px}}@keyframes slide-right{0%{transform:translateX(-100vw)}}@keyframes slide-left{0%{transform:translateX(100vw)}}@keyframes slide-up{0%{transform:translateY(100vh)}}@keyframes slide-down{0%{transform:translateY(-100vh)}}@keyframes fade-right{0%{opacity:0;transform:translateX(-1em)}to{opacity:1}}@keyframes fade-left{0%{opacity:0;transform:translateX(1em)}to{opacity:1}}@keyframes fade-up{0%{opacity:0;transform:translateY(1em)}to{opacity:1}}@keyframes fade-down{0%{opacity:0;transform:translateY(-1em)}to{opacity:1}}@keyframes flicker{0%,29%,31%,63%,65%,77%,79%,86%,88%,91%,93%{opacity:0}30%{opacity:0.2}64%{opacity:0.4}78%{opacity:0.6}87%{opacity:0.8}92%, to{opacity:1}}@keyframes blur{0%{filter:blur(2rem);opacity:0}25%{opacity:1}to{filter:blur(0rem);opacity:1}}.dom-debug-mode tw-story,.dom-debug-mode tw-passage,.dom-debug-mode tw-sidebar,.dom-debug-mode tw-include,.dom-debug-mode tw-hook,.dom-debug-mode tw-expression,.dom-debug-mode tw-link,.dom-debug-mode tw-dialog,.dom-debug-mode tw-columns,.dom-debug-mode tw-column,.dom-debug-mode tw-align{outline:1px solid #f5a3da;min-height:32px;display:block !important}.dom-debug-mode tw-story::before,.dom-debug-mode tw-passage::before,.dom-debug-mode tw-sidebar::before,.dom-debug-mode tw-include::before,.dom-debug-mode tw-hook::before,.dom-debug-mode tw-expression::before,.dom-debug-mode tw-link::before,.dom-debug-mode tw-dialog::before,.dom-debug-mode tw-columns::before,.dom-debug-mode tw-column::before,.dom-debug-mode tw-align::before{position:absolute;top:0;left:0;height:16px;background-color:#f5a3da;color:black;font-size:16px;font-weight:normal;font-style:normal;font-family:monospace;display:inline-block;line-height:100%;white-space:pre;z-index:999997}.dom-debug-mode tw-story:hover,.dom-debug-mode tw-passage:hover,.dom-debug-mode tw-sidebar:hover,.dom-debug-mode tw-include:hover,.dom-debug-mode tw-hook:hover,.dom-debug-mode tw-expression:hover,.dom-debug-mode tw-link:hover,.dom-debug-mode tw-dialog:hover,.dom-debug-mode tw-columns:hover,.dom-debug-mode tw-column:hover,.dom-debug-mode tw-align:hover{outline:1px solid #fc9}.dom-debug-mode tw-story:hover::before,.dom-debug-mode tw-passage:hover::before,.dom-debug-mode tw-sidebar:hover::before,.dom-debug-mode tw-include:hover::before,.dom-debug-mode tw-hook:hover::before,.dom-debug-mode tw-expression:hover::before,.dom-debug-mode tw-link:hover::before,.dom-debug-mode tw-dialog:hover::before,.dom-debug-mode tw-columns:hover::before,.dom-debug-mode tw-column:hover::before,.dom-debug-mode tw-align:hover::before{background-color:#fc9;transition:background-color 1s}.dom-debug-mode tw-passage,.dom-debug-mode tw-include,.dom-debug-mode tw-hook,.dom-debug-mode tw-expression,.dom-debug-mode tw-link,.dom-debug-mode tw-dialog,.dom-debug-mode tw-columns,.dom-debug-mode tw-column,.dom-debug-mode tw-align{padding:1em;margin:0}.dom-debug-mode tw-story::before{content:'<tw-story tags="' attr(tags) '">'}.dom-debug-mode tw-passage::before{top:-16px;content:'<tw-passage tags="' attr(tags) '">'}.dom-debug-mode tw-sidebar::before{top:-16px;content:"<tw-sidebar>"}.dom-debug-mode tw-hook::before{content:'<tw-hook name="' attr(name) '">'}.dom-debug-mode tw-expression::before{content:'<tw-expression name="' attr(name) '">'}.dom-debug-mode tw-link::before{content:'<tw-link name="' attr(name) '">'}.dom-debug-mode tw-dialog::before{content:"<tw-dialog>"}.dom-debug-mode tw-columns::before{content:"<tw-columns>"}.dom-debug-mode tw-column::before{content:"<tw-column>"}.dom-debug-mode tw-align::before{content:"<tw-align>"}.dom-debug-mode tw-include::before{content:'<tw-include type="' attr(type) '" title="' attr(title) '">'}.debug-mode tw-expression{display:inline-block !important}.debug-mode tw-expression[type=variable]::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"$" attr(name)}.debug-mode tw-expression[type=tempVariable]::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"_" attr(name)}.debug-mode tw-expression[return=boolean]{background-color:rgba(179,179,179,0.2)}.debug-mode tw-expression[return=array]{background-color:rgba(255,102,102,0.2)}.debug-mode tw-expression[return=dataset]{background-color:rgba(255,128,0,0.2)}.debug-mode tw-expression[return=number]{background-color:rgba(255,179,102,0.2)}.debug-mode tw-expression[return=datamap]{background-color:rgba(255,255,102,0.2)}.debug-mode tw-expression[return=changer]{background-color:rgba(179,255,102,0.2)}.debug-mode tw-expression[return=lambda]{background-color:rgba(102,255,102,0.2)}.debug-mode tw-expression[return=hookname]{background-color:rgba(102,255,204,0.2)}.debug-mode tw-expression[return=string]{background-color:rgba(102,255,255,0.2)}.debug-mode tw-expression[return=datatype]{background-color:rgba(102,153,255,0.2)}.debug-mode tw-expression[return=gradient],.debug-mode tw-expression[return=colour]{background-color:rgba(204,102,255,0.2)}.debug-mode tw-expression[return=instant],.debug-mode tw-expression[return=macro]{background-color:rgba(240,117,199,0.2)}.debug-mode tw-expression[return=command]{background-color:rgba(153,153,255,0.2)}.debug-mode tw-expression.false{background-color:rgba(255,0,0,0.2) !important}.debug-mode tw-expression[type=macro]::before{content:"(" attr(name) ":)";padding:0 0.5rem;font-size:1rem;vertical-align:middle;line-height:normal;background-color:inherit;border:1px solid rgba(255,255,255,0.5)}.debug-mode tw-hook{background-color:rgba(0,85,255,0.1) !important}.debug-mode tw-hook::before{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"["}.debug-mode tw-hook::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"]"}.debug-mode tw-hook[name]::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"]<" attr(name) "|"}.debug-mode tw-pseudo-hook{background-color:rgba(255,170,0,0.1) !important}.debug-mode tw-collapsed::before{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"{"}.debug-mode tw-collapsed::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"}"}.debug-mode tw-verbatim::before,.debug-mode tw-verbatim::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"`"}.debug-mode tw-align[style*="text-align: center"]{background:linear-gradient(to right, rgba(255,204,189,0) 0%, rgba(255,204,189,0.25) 50%, rgba(255,204,189,0) 100%)}.debug-mode tw-align[style*="text-align: left"]{background:linear-gradient(to right, rgba(255,204,189,0.25) 0%, rgba(255,204,189,0) 100%)}.debug-mode tw-align[style*="text-align: right"]{background:linear-gradient(to right, rgba(255,204,189,0) 0%, rgba(255,204,189,0.25) 100%)}.debug-mode tw-column{background-color:rgba(189,228,255,0.2)}.debug-mode tw-enchantment{animation:enchantment 0.5s infinite;border:1px solid}.debug-mode tw-link::after,.debug-mode tw-broken-link::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:attr(passage-name)}.debug-mode tw-include{background-color:rgba(204,128,51,0.1)}.debug-mode tw-include::before{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:attr(type) ' "' attr(title) '"'}@keyframes enchantment{0%,to{border-color:#ffb366}50%{border-color:#6fc}}tw-debugger{position:fixed;box-sizing:border-box;bottom:0;right:0;z-index:999999;min-width:10em;min-height:1em;padding:0em 0.5em 0.5em 1em;font-size:1.25em;font-family:sans-serif;color:#000;border-left:solid #000 2px;border-top:solid #000 2px;border-top-left-radius:.5em;background:#fff;opacity:1}tw-debugger select{margin-right:1em;width:12em}tw-debugger button{border-radius:3px;border:solid #999 1px;margin:auto 4px;background-color:#fff;font-size:inherit;color:#000}tw-debugger button.enabled{background-color:#eee;box-shadow:inset #ddd 3px 5px 0.5em}tw-debugger .panel{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;position:absolute;bottom:100%;left:-2px;right:0;padding:1em;max-height:40vh;overflow-y:scroll;overflow-x:hidden;z-index:999998;background:#fff;border:inherit;border-bottom:solid #999 2px;border-top-left-radius:.5em;border-bottom-left-radius:.5em;font-size:0.8em}tw-debugger .panel:empty,tw-debugger .panel[hidden]{display:none}tw-debugger .panel-source,tw-debugger .panel-row-source{font-family:monospace;overflow-x:scroll;white-space:pre;-ms-flex-preferred-size:100%;flex-basis:100%}tw-debugger .panel-row-source{margin:5px 0}tw-debugger .panel-rows{width:100%;overflow-x:scroll}tw-debugger .panel-rows>*{display:table-row}tw-debugger .panel-rows>div:nth-of-type(2n){background:#EEE}tw-debugger .panel-row-buttons{text-align:right}tw-debugger .panel-variables .panel-rows:empty::before{content:"~ No variables ~";font-style:italic;color:#888;text-align:center}tw-debugger .panel-enchantments .panel-rows:empty::before{content:"~ No enchantments ~";font-style:italic;color:#888;text-align:center}tw-debugger .panel-errors .panel-rows:empty::before{content:"~ No errors... for now. ~";font-style:italic;color:#888;text-align:center}tw-debugger .panel-rows:empty+.panel-variables-bottom{display:none}tw-debugger .panel-storylets:not(.panel-exclusive) .storylet-exclusive,tw-debugger .panel-storylets:not(.panel-urgent) .storylet-urgent{display:none}tw-debugger .panel-variables-bottom{padding-top:5px}tw-debugger .enchantment-row{min-height:1.5em}tw-debugger .variable-path{opacity:0.4}tw-debugger .temporary-variable-scope,tw-debugger .enchantment-local{font-family:sans-serif;font-weight:normal;opacity:0.8;font-size:0.75em}tw-debugger .temporary-variable-scope:not(:empty)::before,tw-debugger .enchantment-local:not(:empty)::before{content:" in "}tw-debugger .variable-name,tw-debugger .enchantment-name{font-family:monospace;font-weight:bold}tw-debugger .variable-type{color:#444;font-weight:normal;text-overflow:ellipsis;overflow:hidden;max-width:10em}tw-debugger .error-row{display:table-row;background-color:rgba(230,101,204,0.3)}tw-debugger .error-row:nth-of-type(2n){background-color:rgba(237,145,219,0.3)}tw-debugger .error-row>*{display:table-cell;padding:0.25em 0.5em}tw-debugger .error-row .error-message{cursor:help}tw-debugger .error-row .error-passage{color:#444}tw-debugger .storylet-row{background-color:rgba(201,233,222,0.3)}tw-debugger .storylet-row:nth-child(2n){background-color:rgba(128,203,178,0.3)}tw-debugger .storylet-row.storylet-closed{font-style:italic;opacity:0.4;background-color:rgba(217,217,217,0.3)}tw-debugger .storylet-row.storylet-closed:nth-child(2n){background-color:rgba(166,166,166,0.3)}.storylet-error tw-debugger .storylet-row{background-color:rgba(230,101,204,0.3)}.storylet-error tw-debugger .storylet-row:nth-child(2n){background-color:rgba(237,145,219,0.3)}tw-debugger .storylet-row .storylet-name,tw-debugger .storylet-row .storylet-value{display:inline-block;width:50%}tw-debugger .tabs{padding-bottom:0.5em}tw-debugger .tab{border-radius:0px 0px 0.5em 0.5em;border-top:none}tw-debugger .resizer{position:absolute;height:3em;border-left:2px solid #ccc;border-right:2px solid #ccc;top:10px;left:4px;width:8px;cursor:ew-resize}tw-dialog{z-index:999997;border:#fff solid 2px;padding:2em;color:#fff;background-color:#000;display:block}@media (min-width: 576px){tw-dialog{max-width:50vw}}tw-dialog input[type=text]{font-size:inherit;width:100%}tw-dialog-links{text-align:right;display:-ms-flexbox;display:flex;-ms-flex-pack:end;justify-content:flex-end}tw-backdrop{z-index:999996;position:fixed;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,0.8);display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center}tw-backdrop ~ tw-backdrop{display:none}tw-link,.link,tw-icon,.enchantment-clickblock{cursor:pointer}tw-link,.enchantment-link{color:#4169E1;font-weight:bold;text-decoration:none;transition:color 0.2s ease-in-out}tw-passage [style^="color"] tw-link:not(:hover),tw-passage [style*=" color"] tw-link:not(:hover),tw-passage [style^="color"][hover="true"] tw-link:hover,tw-passage [style*=" color"][hover="true"] tw-link:hover,tw-passage [style^="color"] .enchantment-link:not(:hover),tw-passage [style*=" color"] .enchantment-link:not(:hover),tw-passage [style^="color"][hover="true"] .enchantment-link:hover,tw-passage [style*=" color"][hover="true"] .enchantment-link:hover{color:inherit}tw-link:hover,.enchantment-link:hover{color:#00bfff}tw-link:active,.enchantment-link:active{color:#DD4B39}.visited{color:#6941e1}tw-passage [style^="color"] .visited:not(:hover),tw-passage [style*=" color"] .visited:not(:hover),tw-passage [style^="color"][hover="true"] .visited:hover,tw-passage [style*=" color"][hover="true"] .visited:hover{color:inherit}.visited:hover{color:#E3E}tw-broken-link{color:#993333;border-bottom:2px solid #993333;cursor:not-allowed}tw-passage [style^="color"] tw-broken-link:not(:hover),tw-passage [style*=" color"] tw-broken-link:not(:hover),tw-passage [style^="color"][hover="true"] tw-broken-link:hover,tw-passage [style*=" color"][hover="true"] tw-broken-link:hover{color:inherit}.enchantment-mouseover{border-bottom:2px dashed #999}.enchantment-mouseout{border:rgba(64,149,191,0.6) 1px solid}.enchantment-mouseout:hover{background-color:rgba(175,197,207,0.75);border:transparent 1px solid;border-radius:0.2em}.enchantment-clickblock{width:100%;height:100%;display:block}.enchantment-clickblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;color:rgba(65,105,225,0.5);transition:color 0.2s ease-in-out}.enchantment-clickblock>:not(tw-enchantment):hover::after{color:rgba(0,191,255,0.5)}.enchantment-clickblock>:not(tw-enchantment):active::after{color:rgba(222,78,59,0.5)}.enchantment-clickblock>:not(tw-enchantment)::after{box-shadow:inset 0 0 0 0.5vmax}.enchantment-clickblock>tw-passage::after,.enchantment-clickblock>tw-sidebar::after{box-shadow:0 0 0 0.5vmax}.enchantment-mouseoverblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;border:2px dashed #999}.enchantment-mouseoutblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;border:rgba(64,149,191,0.6) 2px solid}.enchantment-mouseoutblock:hover>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;background-color:rgba(175,197,207,0.75);border:transparent 2px solid;border-radius:0.2em}tw-link.enchantment-button,.enchantment-link.enchantment-button,.enchantment-button:not(.enchantment-link) tw-link,.enchantment-button:not(.enchantment-link) .enchantment-link{border-radius:16px;border-style:solid;border-width:2px;text-align:center;padding:0px 8px;display:block}tw-dialog-links{padding-top:1.5em}tw-dialog-links tw-link{border-radius:16px;border-style:solid;border-width:2px;text-align:center;padding:0px 8px;display:block;display:inline-block}html{margin:0;height:100%;overflow-x:hidden}*,:before,:after{position:relative;box-sizing:inherit}body{margin:0;height:100%}tw-storydata{display:none}tw-story{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;font:100% Georgia, serif;box-sizing:border-box;width:100%;min-height:100%;font-size:1.5em;line-height:1.5em;padding:5% 5%;overflow:hidden;background-color:#000;color:#fff}tw-story [style*=content-box] *{box-sizing:border-box}@media (min-width: 576px){tw-story{padding:5% 20%}}tw-story tw-consecutive-br{display:block;height:1.6ex;visibility:hidden}tw-story select{background-color:transparent;font:inherit;border-style:solid;padding:2px}tw-story select:not([disabled]){color:inherit}tw-story textarea{resize:none;background-color:transparent;font:inherit;color:inherit;border-style:none;padding:2px}tw-story input[type=checkbox]{transform:scale(1.5);margin:0 0.5em}tw-story tw-noscript{animation:appear 0.8s}tw-passage{display:block}tw-sidebar{text-align:center;display:-ms-flexbox;display:flex;-ms-flex-pack:justify;justify-content:space-between}@media (min-width: 576px){tw-sidebar{left:-5em;width:3em;position:absolute;-ms-flex-direction:column;flex-direction:column}}tw-icon{display:inline-block;margin:0.5em 0;font-size:66px;font-family:"Verdana",sans-serif}tw-icon[alt]{opacity:0.2}tw-icon[alt]:hover{opacity:0.4}tw-icon[data-label]::after{font-weight:bold;content:attr(data-label);font-size:20px;bottom:-20px;left:-50%;white-space:nowrap}tw-meter{display:block}tw-hook:empty,tw-expression:empty{display:none}tw-error{display:inline-block;border-radius:0.2em;padding:0.2em;font-size:1rem;cursor:help;white-space:pre-wrap}tw-error.error{background-color:rgba(223,58,190,0.6);color:#fff}tw-error.warning{background-color:rgba(223,140,58,0.6);color:#fff;display:none}.debug-mode tw-error.warning{display:inline}tw-error-explanation{display:block;font-size:0.8rem;line-height:1rem}tw-open-button,tw-folddown{cursor:pointer;line-height:0em;border-radius:1px;border:1px solid black;font-size:0.8rem;margin:0 0.4rem;padding:2px;white-space:pre}tw-folddown::after{content:"\25b6"}tw-folddown.open::after{content:"\25bc"}tw-open-button::after{content:"Open"}tw-notifier{border-radius:0.2em;padding:0.2em;font-size:1rem;background-color:rgba(223,182,58,0.4);display:none}.debug-mode tw-notifier{display:inline}tw-notifier::before{content:attr(message)}tw-colour{border:1px solid black;display:inline-block;width:1em;height:1em}h1{font-size:3em}h2{font-size:2.25em}h3{font-size:1.75em}h1,h2,h3,h4,h5,h6{line-height:1em;margin:0.3em 0 0.6em 0}pre{font-size:1rem;line-height:initial}small{font-size:70%}big{font-size:120%}mark{color:rgba(0,0,0,0.6);background-color:#ff9}ins{color:rgba(0,0,0,0.6);background-color:rgba(255,242,204,0.5);border-radius:0.5em;box-shadow:0em 0em 0.2em #ffe699;text-decoration:none}center{text-align:center;margin:0 auto;width:60%}blink{text-decoration:none;animation:fade-in-out 1s steps(1, end) infinite alternate}tw-align{display:block}tw-columns{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;-ms-flex-pack:justify;justify-content:space-between}.transition-in{animation:appear 0ms step-start}.transition-out{animation:appear 0ms step-end}[data-t8n^=dissolve].transition-in,[data-t8n=fade].transition-in{animation:appear .8s}[data-t8n^=dissolve].transition-out,[data-t8n=fade].transition-out{animation:appear .8s reverse}[data-t8n^=shudder].transition-in{display:inline-block !important;animation:shudder-in .8s}[data-t8n^=shudder].transition-out{display:inline-block !important;animation:shudder-in .8s reverse}[data-t8n^=rumble].transition-in{display:inline-block !important;animation:rumble-in .8s}[data-t8n^=rumble].transition-out{display:inline-block !important;animation:rumble-in .8s reverse}[data-t8n^=pulse].transition-in{animation:pulse .8s;display:inline-block !important}[data-t8n^=pulse].transition-out{animation:pulse .8s reverse;display:inline-block !important}[data-t8n^=zoom].transition-in{animation:zoom-in .8s;display:inline-block !important}[data-t8n^=zoom].transition-out{animation:zoom-in .8s reverse;display:inline-block !important}[data-t8n^=blur].transition-in{animation:blur .8s;display:inline-block !important}[data-t8n^=blur].transition-out{animation:blur .8s reverse;display:inline-block !important}[data-t8n^=slideleft].transition-in{animation:slide-left .8s;display:inline-block !important}[data-t8n^=slideleft].transition-out{animation:slide-right .8s reverse;display:inline-block !important}[data-t8n^=slideright].transition-in{animation:slide-right .8s;display:inline-block !important}[data-t8n^=slideright].transition-out{animation:slide-left .8s reverse;display:inline-block !important}[data-t8n^=slideup].transition-in{animation:slide-up .8s;display:inline-block !important}[data-t8n^=slideup].transition-out{animation:slide-down .8s reverse;display:inline-block !important}[data-t8n^=slidedown].transition-in{animation:slide-down .8s;display:inline-block !important}[data-t8n^=slidedown].transition-out{animation:slide-up .8s reverse;display:inline-block !important}[data-t8n^=fadeleft].transition-in{animation:fade-left .8s;display:inline-block !important}[data-t8n^=fadeleft].transition-out{animation:fade-right .8s reverse;display:inline-block !important}[data-t8n^=faderight].transition-in{animation:fade-right .8s;display:inline-block !important}[data-t8n^=faderight].transition-out{animation:fade-left .8s reverse;display:inline-block !important}[data-t8n^=fadeup].transition-in{animation:fade-up .8s;display:inline-block !important}[data-t8n^=fadeup].transition-out{animation:fade-down .8s reverse;display:inline-block !important}[data-t8n^=fadedown].transition-in{animation:fade-down .8s;display:inline-block !important}[data-t8n^=fadedown].transition-out{animation:fade-up .8s reverse;display:inline-block !important}[data-t8n^=flicker].transition-in{animation:flicker .8s}[data-t8n^=flicker].transition-out{animation:flicker .8s reverse}
 </style>
 </head>
 <body>
-<tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play COMP7904-Assignment-2.</tw-noscript></noscript></tw-story>
-<tw-storydata name="COMP7904-Assignment-2" startnode="1" creator="Twine" creator-version="2.3.13" ifid="65D906CE-08C7-4C1C-8CA8-25DF2AC3FFAA" zoom="1" format="Harlowe" format-version="3.2.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="Death" color="red"></tw-tag>,<tw-tag name="Info" color="green"></tw-tag>,<tw-tag name="Stub" color="yellow"></tw-tag>,<tw-tag name="Exploration" color="blue"></tw-tag><tw-passagedata pid="1" name="A1- Ringing Head." tags="" position="102.5,199.5" size="200,100">(set: $magicRevealed to false)
+<tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play IntegrationTest.</tw-noscript></noscript></tw-story>
+<tw-storydata name="IntegrationTest" startnode="1" creator="Twine" creator-version="2.3.13" ifid="65D906CE-08C7-4C1C-8CA8-25DF2AC3FFAA" zoom="1" format="Harlowe" format-version="3.2.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="Death" color="red"></tw-tag>,<tw-tag name="Info" color="green"></tw-tag>,<tw-tag name="Stub" color="yellow"></tw-tag>,<tw-tag name="Exploration" color="blue"></tw-tag><tw-passagedata pid="1" name="A1- Ringing Head." tags="" position="102,199" size="200,100">(set: $magicRevealed to false)
 (set: $injuryScore to 0)
 
 (live: 3s)[(transition:&quot;dissolve&quot;)[Your head is ringing...](stop:)]
 
 (live: 6s)[(transition:&quot;dissolve&quot;)[Blood pours onto the sun-baked cobbles, carved from red-stone and pocked with inlaid moss, seeping with moisture. Your mouth tastes of iron and salt.](stop:)]
 
-(live: 10s)[(transition:&quot;dissolve&quot;)[The air is thick with [[steam...-&gt; A1- It Burns to Breathe]]](stop:)]</tw-passagedata><tw-passagedata pid="2" name="A1- The Destitute Regent" tags="Info" position="361.5,117.5" size="100,100">The Destitute Regent is a coalition of underground Arcanists, led by a man known as the Pride King.
+(live: 10s)[(transition:&quot;dissolve&quot;)[The air is thick with [[steam...-&gt; A1- It Burns to Breathe]]](stop:)]</tw-passagedata><tw-passagedata pid="2" name="A1- The Destitute Regent" tags="Info" position="361,117" size="100,100">The Destitute Regent is a coalition of underground Arcanists, led by a man known as the Pride King.
 
 You&#39;ve been working alongside them for years now...
 
 (click: ?page)[==
 But you&#39;ve recently fallen out of favour. You had gambled a debt with the Pride King on a heist that was to return three times it&#39;s cost...
 
-Didn&#39;t work out, the whole thing went belly up. And with all you know of their operation, you&#39;re a liability to them if left unchecked.</tw-passagedata><tw-passagedata pid="3" name=" A1- It Burns to Breathe" tags="" position="97.5,319.5" size="200,100">You try to catch your breath in heaving waves, as shadows pass by your vision, circling like wolves.
+Didn&#39;t work out, the whole thing went belly up. And with all you know of their operation, you&#39;re a liability to them if left unchecked.</tw-passagedata><tw-passagedata pid="3" name=" A1- It Burns to Breathe" tags="" position="97,319" size="200,100">You try to catch your breath in heaving waves, as shadows pass by your vision, circling like wolves.
 
 The air burns your throat, a courtesy of the Hissing Sea, a boiling expanse of salt and sulphur that neighbors the city of Qui&#39;Lea.
 
-(live: 5s)[(transition:&quot;dissolve&quot;)[ [[Another Strike...-&gt;A1- Another Strike]]](stop:)]</tw-passagedata><tw-passagedata pid="4" name="A1- Another Strike" tags="" position="323.5,317.1666666666667" size="100,100">You feel a sharp pain as a steel-toed boot drives into your gut, wrenching you onto your back. The light from the morning sun barely reaches you here. 
+(live: 5s)[(transition:&quot;dissolve&quot;)[ [[Another Strike...-&gt;A1- Another Strike]]](stop:)]</tw-passagedata><tw-passagedata pid="4" name="A1- Another Strike" tags="" position="323,317" size="100,100">You feel a sharp pain as a steel-toed boot drives into your gut, wrenching you onto your back. The light from the morning sun barely reaches you here. 
 
 You back up against the wall of the alley, and cough.
 
@@ -39,19 +39,19 @@ The other thug is leaning back on the opposite end of the alley. He&#39;s younge
 
 You feign confidence, and grin. This isn&#39;t the first time you&#39;ve had a blade against your neck.
 
-[[It might be your last.-&gt;A1- Confrontation]]</tw-passagedata><tw-passagedata pid="5" name="A1- Confrontation" tags="" position="447.16666666666663,316.8333333333333" size="100,100">&quot;Didn&#39;t think this one through, now did &#39;ya, Ashton? The [[Pride King-&gt;A1- The Pride King]] is loyal, true. But he ain&#39;t one for being swindled.
+[[It might be your last.-&gt;A1- Confrontation]]</tw-passagedata><tw-passagedata pid="5" name="A1- Confrontation" tags="" position="447,316" size="100,100">&quot;Didn&#39;t think this one through, now did &#39;ya, Ashton? The [[Pride King-&gt;A1- The Pride King]] is loyal, true. But he ain&#39;t one for being swindled.
 
 He&#39;s always liked you, kid. You had gumption. I didn&#39;t want to be the one to carry out these orders, but here we are.&quot; 
 
 [[&quot;C&#39;mon, told him I&#39;d get the money!&quot; -&gt; A1- Promise To Pay]]
 
-[[&quot;Did he send you to collect?&quot; -&gt; A1- You To Collect?]]</tw-passagedata><tw-passagedata pid="6" name=" A1- Promise To Pay" tags="" position="611.8333333333334,264.8333333333333" size="100,100">&quot;The money you gambled on a complete whim? Yeah, I remember the terms. His operations in Qui&#39;Lea aren&#39;t cheap. If you had reimbursed his losses on you when he asked, we wouldn&#39;t be here.
+[[&quot;Did he send you to collect?&quot; -&gt; A1- You To Collect?]]</tw-passagedata><tw-passagedata pid="6" name=" A1- Promise To Pay" tags="" position="611,264" size="100,100">&quot;The money you gambled on a complete whim? Yeah, I remember the terms. His operations in Qui&#39;Lea aren&#39;t cheap. If you had reimbursed his losses on you when he asked, we wouldn&#39;t be here.
 
 Your time is up.&quot;
 
 You rest your head on the stone for a moment, tonguing a loose tooth. In hindsight, borrowing money from a ruthless crime-lord still seemed a reasonable risk, given a chance of exponential payout. You played the odds, nothing new there.
 
-[[It didn&#39;t turn up. -&gt; A1- The Heist]]</tw-passagedata><tw-passagedata pid="7" name=" A1- You To Collect?" tags="" position="618.5,389.83333333333337" size="100,100">&quot;He sent us to end you. His patience has run out.. 
+[[It didn&#39;t turn up. -&gt; A1- The Heist]]</tw-passagedata><tw-passagedata pid="7" name=" A1- You To Collect?" tags="" position="618,389" size="100,100">&quot;He sent us to end you. His patience has run out.. 
 
 You had a month. And the Pride King, he trusted you. You, better than anyone, know the risks of operating in Qui&#39;Lea. He took you in when no one else would have.
 
@@ -59,7 +59,7 @@ The Pride King seemed to have a soft spot for you. Maybe it was the value you of
 
 Either way, you still need more time to get the money...
 
-[[And time isn&#39;t on your side. -&gt; A1- The Heist]] </tw-passagedata><tw-passagedata pid="8" name=" A1- Take Action" tags="" position="1200.8333333333335,298.83333333333337" size="100,100">Suddenly, the sound of heavy armored footfalls from the nearby street catch your assailants by surprise. Enclave Guards are approaching, drawn by the disturbance. The thug&#39;s eyes dart to the end of the Alley...
+[[And time isn&#39;t on your side. -&gt; A1- The Heist]] </tw-passagedata><tw-passagedata pid="8" name=" A1- Take Action" tags="" position="1200,298" size="100,100">Suddenly, the sound of heavy armored footfalls from the nearby street catch your assailants by surprise. Enclave Guards are approaching, drawn by the disturbance. The thug&#39;s eyes dart to the end of the Alley...
 
 Damn! The last thing you wanted was Enclave intervention, but the situation has grown dire. 
 
@@ -70,9 +70,9 @@ Your hand pulses as you draw power from the Veil.
 [[Swiftly heat the metal of Theo&#39;s blade, disarming him.-&gt;A1- Molten Metal ]]
 
 [[Cast a Flare, drawing the Enclave guards as a distraction.-&gt;A1- Flash And Feint]]
-</tw-passagedata><tw-passagedata pid="9" name="A1- The Pride King" tags="Info" position="520.1666666666666,119.83333333333331" size="100,100">The ruthless owner of the Destitute Regent, a faction of criminals who study the venerated secrets of Arcanum.
+</tw-passagedata><tw-passagedata pid="9" name="A1- The Pride King" tags="Info" position="520,119" size="100,100">The ruthless owner of the Destitute Regent, a faction of criminals who study the venerated secrets of Arcanum.
 
-Ruthless as he is, he&#39;s fiercly loyal to his own, including you. Despite everything, all Arcanists are equal in his eyes.</tw-passagedata><tw-passagedata pid="10" name="A1- Molten Metal " tags="" position="1346.8333333333335,407.83333333333337" size="100,100">(set: $magicRevealed to true) You focus metallurgic energy on the hilt of Theo&#39;s blade, which erupts in a flaming, red-hot mass of metal. He seethes and pulls his hand back, as it clatters to the ground.
+Ruthless as he is, he&#39;s fiercly loyal to his own, including you. Despite everything, all Arcanists are equal in his eyes.</tw-passagedata><tw-passagedata pid="10" name="A1- Molten Metal " tags="" position="1346,407" size="100,100">(set: $magicRevealed to true) You focus metallurgic energy on the hilt of Theo&#39;s blade, which erupts in a flaming, red-hot mass of metal. He seethes and pulls his hand back, as it clatters to the ground.
 
 Your eyes flare as you continue to channel the Veil, and the other thug prepares a sigil to retaliate, when...
 
@@ -82,7 +82,7 @@ A shout from the end of the alley, as the Enclave Guards turn to see you, now re
 
 (text-colour:grey)[//Your powers have been revealed!//]
 
-[[Quickly pull up your hood and speak: &quot;We need to run, Theo.&quot;-&gt;A1- Seeker Revealed 2]]</tw-passagedata><tw-passagedata pid="11" name="A1- Flash And Feint" tags="" position="1347.8333333333335,173.83333333333337" size="100,100">(set: $magicRevealed to false)(set: $a1_guardsDrawn to true)BANG!
+[[Quickly pull up your hood and speak: &quot;We need to run, Theo.&quot;-&gt;A1- Seeker Revealed 2]]</tw-passagedata><tw-passagedata pid="11" name="A1- Flash And Feint" tags="" position="1347,173" size="100,100">(set: $magicRevealed to false)(set: $a1_guardsDrawn to true)BANG!
 
 The energy discharges from your palm, exuding a white-hot flash of power that shakes the stones of the alley.
 
@@ -100,7 +100,7 @@ You dart away as the Theo drives his blade into the stone, catching your leg wit
 
 //(set: $injuryScore to $injuryScore + 1) (text-colour:grey)[You have received an injury...]//
 
-[[Pulling up your hood, you speak: &quot;You need to run, Theo.&quot;-&gt;A1- Seeker Revealed 1]]</tw-passagedata><tw-passagedata pid="12" name="A1- Seeker Revealed 1" tags="" position="1472.8333333333335,171.83333333333337" size="100,100">The forward guard, donned in brass regalia, barks a brief order:
+[[Pulling up your hood, you speak: &quot;You need to run, Theo.&quot;-&gt;A1- Seeker Revealed 1]]</tw-passagedata><tw-passagedata pid="12" name="A1- Seeker Revealed 1" tags="" position="1472,171" size="100,100">The forward guard, donned in brass regalia, barks a brief order:
 
 &quot;Halt, Arcanists! By order of the Mistress Sovereign, lay down and-&quot;
 
@@ -116,7 +116,7 @@ The other Guard draws a blade from his hip.
 
 [[You can&#39;t leave these thugs to die, debt or no. Fight!-&gt; A1- Stand And Fight]]
 
-[[Fool, this is no time to fight, run!-&gt;A1- Escape!]]</tw-passagedata><tw-passagedata pid="13" name="A1- Escape!" tags="" position="1938.8333333333335,180.83333333333337" size="100,100">(if: $magicRevealed is true)[(text-colour:grey)[//FAILED: The Seeker prevents your escape!//]
+[[Fool, this is no time to fight, run!-&gt;A1- Escape!]]</tw-passagedata><tw-passagedata pid="13" name="A1- Escape!" tags="" position="1938,180" size="100,100">(if: $magicRevealed is true)[(text-colour:grey)[//FAILED: The Seeker prevents your escape!//]
 
 As you turn to flee, with a deft flick of the wrist, the Seeker erupts the stone wall to your flank, showering you with smoke and rubble. You are flung into the adjacent building, and collapse into a pile of wooden crates.
 
@@ -134,7 +134,7 @@ You cough and roll onto the floor, briefly dazed. You must act quickly!
 You dash to the opposite end of the alley, arriving at a switchback walkway that descends into the under-market district. Glancing over the  railing, it may be possible to land on the rooftops below.
 
 [[Race down the pathway, exiting to street level.-&gt; A1- Escape Switchback]] 
-[[Leap the railing, descending to the rooftops.-&gt; A1- Escape Rooftops 1]] ]</tw-passagedata><tw-passagedata pid="14" name="A1- Seeker Revealed 2" tags="" position="1479.8333333333335,411.83333333333337" size="100,100">Seeing the latent magic still hanging in the air, the rear guard, a hooded woman, takes immediate and unexpected action.
+[[Leap the railing, descending to the rooftops.-&gt; A1- Escape Rooftops 1]] ]</tw-passagedata><tw-passagedata pid="14" name="A1- Seeker Revealed 2" tags="" position="1479,411" size="100,100">Seeing the latent magic still hanging in the air, the rear guard, a hooded woman, takes immediate and unexpected action.
 
 She draws a rapid sigil in the air, and a fractured sheen of sparks erupts, arcing through the alleyway and thrusting Theo, still gripping his seared flesh, into the nearby building.
 
@@ -146,31 +146,31 @@ The other Guard draws a blade from his hip.
 
 The remaining thug shoots you a bewildered glance. He nods to you, as if to say he plans to make a stand against the Guard together.
 
-[[Fool, this is no time to fight, run!-&gt;A1- Escape!]]</tw-passagedata><tw-passagedata pid="15" name=" A1- Stand And Fight" tags="" position="1642.8333333333335,340.83333333333337" size="100,100">The thug yells and closes the distance with your assailants, attempting to draw a dagger and catch the Seeker unaware, but is intercepted by the other guard, who strikes at the thug with a long straight-sword, narrowly missing a fatal blow.
+[[Fool, this is no time to fight, run!-&gt;A1- Escape!]]</tw-passagedata><tw-passagedata pid="15" name=" A1- Stand And Fight" tags="" position="1642,340" size="100,100">The thug yells and closes the distance with your assailants, attempting to draw a dagger and catch the Seeker unaware, but is intercepted by the other guard, who strikes at the thug with a long straight-sword, narrowly missing a fatal blow.
 
 You follow up behind him, and...
 
 [[ Assist the thug attacking the armed guard.-&gt; A1- Attack Guard]]
 
-[[ Fire a psionic bolt at the Seeker.-&gt; A1- Attack Seeker]]</tw-passagedata><tw-passagedata pid="16" name=" A1- Screen of Steam" tags="" position="1950.8333333333335,41.83333333333337" size="100,100">As the thug engages with the armed guard, you channel the Veil to pull the steam of the air to your advantage!
+[[ Fire a psionic bolt at the Seeker.-&gt; A1- Attack Seeker]]</tw-passagedata><tw-passagedata pid="16" name=" A1- Screen of Steam" tags="" position="1950,41" size="100,100">As the thug engages with the armed guard, you channel the Veil to pull the steam of the air to your advantage!
 
 The streets bellow in a whorl of heated air, as you draw it&#39;s energy and send the vapour spiralling within the confines of the alleyway!
 
-(set: $magicRevealed to false)[[Now&#39;s your chance to escape!-&gt;A1- Escape!]]</tw-passagedata><tw-passagedata pid="17" name="A1- Seeker Info" tags="Info" position="1476.8333333333335,292.83333333333337" size="100,100">Seekers are dangerous hunters of rogue Arcanists in the city of Qui&#39;Lea, operating under the orders of the Enclave.
+(set: $magicRevealed to false)[[Now&#39;s your chance to escape!-&gt;A1- Escape!]]</tw-passagedata><tw-passagedata pid="17" name="A1- Seeker Info" tags="Info" position="1476,292" size="100,100">Seekers are dangerous hunters of rogue Arcanists in the city of Qui&#39;Lea, operating under the orders of the Enclave.
 
-A direct confrontation with one could easily spell your demise.</tw-passagedata><tw-passagedata pid="18" name=" A1- Attack Guard" tags="" position="1838.8333333333335,348.83333333333337" size="100,100">Following the thug, you take an opposing angle, swiftly unsheathe your blade and feint a strike, drawing the guard&#39;s eye for but a moment before disengaging.
+A direct confrontation with one could easily spell your demise.</tw-passagedata><tw-passagedata pid="18" name=" A1- Attack Guard" tags="" position="1838,348" size="100,100">Following the thug, you take an opposing angle, swiftly unsheathe your blade and feint a strike, drawing the guard&#39;s eye for but a moment before disengaging.
 
 The hesitation was all you needed, for just long enough for the thug to drive a dagger under the gap in the armor.
 
 The guard stumbles backward, gripping his chest, wounded.
 
-[[The Seeker Retaliates-&gt;A1- Seeker Retaliation]]</tw-passagedata><tw-passagedata pid="19" name=" A1- Attack Seeker" tags="" position="1686.8333333333335,508.83333333333337" size="100,100">As you focus your thoughts into a paracausal weapon, needles of eldrich pain wrack your mind, and visions of beyond the Veil draw you into distant mindscapes, before...
+[[The Seeker Retaliates-&gt;A1- Seeker Retaliation]]</tw-passagedata><tw-passagedata pid="19" name=" A1- Attack Seeker" tags="" position="1686,508" size="100,100">As you focus your thoughts into a paracausal weapon, needles of eldrich pain wrack your mind, and visions of beyond the Veil draw you into distant mindscapes, before...
 
 A searing needle of refracted light pierces the steam of the alley, parting dust and debris, streaking towards the Seeker.
 
 She ushers an echoed incantation, and a ward of light shatters the bolt, sending particles of sparking energy past her like rays off a falling star.
 
-[[She Retaliates. -&gt;A1- Seeker Death]]</tw-passagedata><tw-passagedata pid="20" name=" A1- Escape Switchback" tags="" position="2333.8333333333335,298.83333333333337" size="100,100">You decide against the risk, and make a break down the switchback. Your chest is burning as you descend, already out of breath, before voices from a parapet far above shout:
+[[She Retaliates. -&gt;A1- Seeker Death]]</tw-passagedata><tw-passagedata pid="20" name=" A1- Escape Switchback" tags="" position="2333,298" size="100,100">You decide against the risk, and make a break down the switchback. Your chest is burning as you descend, already out of breath, before voices from a parapet far above shout:
 
 &quot;Halt! Go no further! We will rain steel upon you!&quot;
 
@@ -178,7 +178,7 @@ Infantrymen loyal to the Enclave have begun posting up on the vantage point, cro
 
 This has gone from bad to worse..
 
-[[Make a break downward to the market street, rushing to avoid the crossbows!-&gt;A1- Crossbow]]</tw-passagedata><tw-passagedata pid="21" name=" A1- Escape Rooftops 1" tags="" position="2359.8333333333335,51" size="100,100">(if: $injuryScore is &gt;= 1)[ (text-colour:grey) [//FAILED: Your injury hinders your progress!// ]
+[[Make a break downward to the market street, rushing to avoid the crossbows!-&gt;A1- Crossbow]]</tw-passagedata><tw-passagedata pid="21" name=" A1- Escape Rooftops 1" tags="" position="2359,51" size="100,100">(if: $injuryScore is &gt;= 1)[ (text-colour:grey) [//FAILED: Your injury hinders your progress!// ]
 
 As you mount on the railing and leap, your leg buckles from your earlier injury, and you plummet from the switchback!
 
@@ -199,19 +199,19 @@ Another flash erupts from behind as you roll, taking a moment to glance upward t
 
 Despite the situation, those thugs were still Regent. Given different circumstances, they may have been allies.
 
-[[Descend further, exiting to the streets.-&gt; A1- Escape Rooftops 2]] ]</tw-passagedata><tw-passagedata pid="22" name=" A1- Escape Market Street " tags="" position="2558.8333333333335,323" size="100,100">(if: $injuryScore is &gt;= 2)[Your injuries are burning as you stumble in place, taking a moment to lean on a moss-choked outcrop. Your whole body aches, and you&#39;re on the verge of passing out..
+[[Descend further, exiting to the streets.-&gt; A1- Escape Rooftops 2]] ]</tw-passagedata><tw-passagedata pid="22" name=" A1- Escape Market Street " tags="" position="2558,323" size="100,100">(if: $injuryScore is &gt;= 2)[Your injuries are burning as you stumble in place, taking a moment to lean on a moss-choked outcrop. Your whole body aches, and you&#39;re on the verge of passing out..
 
 Despite this, ]The Enclave guards have yet to form a full perimeter, and the denizens of the market are still quietly murmering to themselves about the commotion, while the street traders continue to attract customers.
 
 However, the shouts from above tell you it won&#39;t be long before they&#39;re swarming the street! You need to get out of sight, fast!
 
-[[You&#39;ve successfully escaped...-&gt;A1- Encounter conclusion]]</tw-passagedata><tw-passagedata pid="23" name=" A1- Escape Rooftops 2" tags="" position="2535.8333333333335,26" size="100,100">You waste no time in gaining more distance, dashing across the rooftops while the steam cover you&#39;ve created billows from the upper alleyway.
+[[You&#39;ve successfully escaped...-&gt;A1- Encounter conclusion]]</tw-passagedata><tw-passagedata pid="23" name=" A1- Escape Rooftops 2" tags="" position="2535,26" size="100,100">You waste no time in gaining more distance, dashing across the rooftops while the steam cover you&#39;ve created billows from the upper alleyway.
 
 More armored footesteps and distant shouts can be heard over the confused murmur of the crowds below.
 
 Jumping from roof to roof, fueled by adrenaline, you eventually make it down to street level several blocks away, where you quickly blend into the dense crowd of Qui&#39;Lean denizens, amdists the shaded street bazaars of the Under-Market district...
 
-[[You&#39;ve successfully escaped...-&gt;A1- Encounter conclusion]]</tw-passagedata><tw-passagedata pid="24" name="A1- Encounter conclusion" tags="" position="44.833333333333485,18" size="100,100">&lt;img src=&quot;https://i.imgur.com/H5H4zwm.jpg&quot; width= &quot;100%&quot;&gt;
+[[You&#39;ve successfully escaped...-&gt;A1- Encounter conclusion]]</tw-passagedata><tw-passagedata pid="24" name="A1- Encounter conclusion" tags="" position="44,18" size="100,100">&lt;img src=&quot;https://i.imgur.com/H5H4zwm.jpg&quot; width= &quot;100%&quot;&gt;
 
 The circumstances of your encounter weighs heavily on you as you weave through the crowds of the Under-Market district, the shouts of the Enclave soldiers still echoing over the cacophony of voices that fill the busy streets...
 
@@ -225,7 +225,7 @@ Start with the debt. You need to find a way to pay back The Pride King. From the
 
 He&#39;s not unreasonable, you just need some time.
 
-[[You just need to find a job. -&gt; A1- From Ochre Origin]]</tw-passagedata><tw-passagedata pid="25" name="A1- Crossbow" tags="" position="2416.8333333333335,455.83333333333337" size="100,100">The stone clatters violently as bolts are cast towards your feet, raining down from above in a hail!
+[[You just need to find a job. -&gt; A1- From Ochre Origin]]</tw-passagedata><tw-passagedata pid="25" name="A1- Crossbow" tags="" position="2416,455" size="100,100">The stone clatters violently as bolts are cast towards your feet, raining down from above in a hail!
 
 Some manage to graze your legs and torso, but only one finds purchase, sinking into your arm with a sharp //thud!//
 
@@ -235,7 +235,7 @@ Some manage to graze your legs and torso, but only one finds purchase, sinking i
 [[You Collapse...-&gt; A1- Crossbow Death]]
 
 ] (else:) [ [[Almost through the storm...-&gt; A1- Escape Market Street ]]
-]</tw-passagedata><tw-passagedata pid="26" name=" A1- Crossbow Death" tags="Death" position="2500.8333333333335,599.8333333333334" size="100,100">You stumble from the first bolt as it sinks into your flesh, and fall harshly onto your side.
+]</tw-passagedata><tw-passagedata pid="26" name=" A1- Crossbow Death" tags="Death" position="2500,599" size="100,100">You stumble from the first bolt as it sinks into your flesh, and fall harshly onto your side.
 
 Several more pangs of metal and stone rain before you feel a sudden and sickening flash of pain.
 
@@ -243,13 +243,13 @@ Another.
 
 And Another..
 
-(text-colour:grey)[//All goes dark.//]</tw-passagedata><tw-passagedata pid="27" name="A1- Seeker Death" tags="Death" position="1902.8333333333335,602.8333333333334" size="100,100">The sky, for but a moment, goes dark, before the remains of your vision succumb to an unnaturally invoked blindness.
+(text-colour:grey)[//All goes dark.//]</tw-passagedata><tw-passagedata pid="27" name="A1- Seeker Death" tags="Death" position="1902,602" size="100,100">The sky, for but a moment, goes dark, before the remains of your vision succumb to an unnaturally invoked blindness.
 
 Your mind connects to the Seeker&#39;s, as she redirects your psionic attack back towards you, enveloping your mind with the remnant shards of your own failed strike.
 
 Before you can scream, you feel as though your entire body is consumed in a radiating heat, a flash of searing pain that lasts only for an instant.
 
-(text-colour:grey)[//All goes dark.//]</tw-passagedata><tw-passagedata pid="28" name="A1- Seeker Retaliation" tags="" position="2010.8333333333335,411.83333333333337" size="100,100">(set: $magicRevealed to false) The thug follows through with the attack, gripping his blade and rushing the Seeker with a deft stroke...
+(text-colour:grey)[//All goes dark.//]</tw-passagedata><tw-passagedata pid="28" name="A1- Seeker Retaliation" tags="" position="2010,411" size="100,100">(set: $magicRevealed to false) The thug follows through with the attack, gripping his blade and rushing the Seeker with a deft stroke...
 
 She weaves to the side, gathering a fount of crackling energy, before discharhing it with a //THOOM//, sending the thug toppling down the street, unconcious.
 
@@ -257,7 +257,7 @@ You have a final moment to act...
 
 [[ Fire a psionic bolt at the Seeker! -&gt; A1- Attack Seeker]]
 
-[[ Attempt to flee! -&gt;A1- Escape!]]</tw-passagedata><tw-passagedata pid="29" name=" A1- The Heist" tags="" position="750.5,265.83333333333337" size="100,100">&quot;Three Regent Arcanists were lined up before [[The Enclave-&gt;A1- The Enclave of Brass]] due to your carelessness. Two of them were killed outright. The other? We haven&#39;t heard a thing.
+[[ Attempt to flee! -&gt;A1- Escape!]]</tw-passagedata><tw-passagedata pid="29" name=" A1- The Heist" tags="" position="750,265" size="100,100">&quot;Three Regent Arcanists were lined up before [[The Enclave-&gt;A1- The Enclave of Brass]] due to your carelessness. Two of them were killed outright. The other? We haven&#39;t heard a thing.
 
 Yet you made it out just fine. What happened there? Did you cut a deal with them?&quot;
 
@@ -267,7 +267,7 @@ Someone had sold you out.
 
 [[ &quot;We all knew what we were getting into. It wasn&#39;t my fault!-&gt; A1- Denial of Guilt]]
 
-[[ &quot;I still carry that failure. I&#39;m trying to make it right!&quot;.-&gt; A1- Acceptance of Guilt]]</tw-passagedata><tw-passagedata pid="30" name=" A1- Denial of Guilt" tags="" position="896.5,397.83333333333337" size="100,100">Theo  twists his grip on the blade and swipes the pommel through the air, catching your jaw with a //CRACK//.
+[[ &quot;I still carry that failure. I&#39;m trying to make it right!&quot;.-&gt; A1- Acceptance of Guilt]]</tw-passagedata><tw-passagedata pid="30" name=" A1- Denial of Guilt" tags="" position="896,397" size="100,100">Theo  twists his grip on the blade and swipes the pommel through the air, catching your jaw with a //CRACK//.
 
 You crumple into a heap, gripping your face. He seems to break for a moment.
 
@@ -277,7 +277,7 @@ You offered him that, and you blew it! Don&#39;t you dare pretend those deaths a
 
 His motivations for carrying out these orders appear to be personal: He needs someone to blame. The truth is more complciated than what he believes, but you doub&#39;t you&#39;d be able to convince him at this point.
 
-[[And his orders still stand... -&gt;A1- Theo Enraged]]</tw-passagedata><tw-passagedata pid="31" name=" A1- Acceptance of Guilt" tags="" position="897.5,193.83333333333337" size="100,100">Theo seems to ease his grip on the blade. He looks you in the eyes for a moment, to try and gauge if you&#39;re lying.
+[[And his orders still stand... -&gt;A1- Theo Enraged]]</tw-passagedata><tw-passagedata pid="31" name=" A1- Acceptance of Guilt" tags="" position="897,193" size="100,100">Theo seems to ease his grip on the blade. He looks you in the eyes for a moment, to try and gauge if you&#39;re lying.
 
 After a moment, he speaks:
 
@@ -287,7 +287,7 @@ You offered him that... But we still don&#39;t know who sold you out.&quot;
 
 His motivations for carrying out these orders appear to be personal: He needs someone to blame. The truth is more complciated than what he believes, but you doub&#39;t you&#39;d be able to convince him at this point.
 
-[[And his orders still stand... -&gt; A1-Theo Trepidatious]]</tw-passagedata><tw-passagedata pid="32" name="A1- Theo Enraged" tags="" position="1039.5,395.83333333333337" size="100,100">The blade once again resting on your neck, Theo is shaking with sorrow.
+[[And his orders still stand... -&gt; A1-Theo Trepidatious]]</tw-passagedata><tw-passagedata pid="32" name="A1- Theo Enraged" tags="" position="1039,395" size="100,100">The blade once again resting on your neck, Theo is shaking with sorrow.
 
 &quot;At first I was unsure. Killing one of our own? We protect people like you! Surely The Pride King had to be mistaken.
 
@@ -295,7 +295,7 @@ Now I&#39;m starting to doubt. I had heard there was a rat on that mission, who 
 
 The Pride King vouched for your honesty, so I held back. But he can&#39;t risk you waltzing around behind his back when you won&#39;t even own up and pay him back his losses.&quot;
 
-[[Theo, I- -&gt; A1- Take Action]]</tw-passagedata><tw-passagedata pid="33" name="A1 - Rumor: The Sweeping Plague" tags="Stub" position="377.5,1727.3333282470703" size="100,100">(set: $a1_RumourHeard_Plague to true)
+[[Theo, I- -&gt; A1- Take Action]]</tw-passagedata><tw-passagedata pid="33" name="A1 - Rumor: The Sweeping Plague" tags="Stub" position="377,1727" size="100,100">(set: $a1_RumourHeard_Plague to true)
 
 &quot;... And Igrette, and Farrah, it&#39;s spreadin&#39; to &#39;em! More and more croppin&#39; up with some odd sickness! I&#39;ve been keepin&#39; away from people, don&#39; wan&#39; catch it! Right end o&#39; the world, t&#39;is!&quot;
 
@@ -305,15 +305,15 @@ Another one swigs a mug, most of the ale dripping down his beard.
 
 &quot;One of the dockworkers mentions the Mistress Sovereign&#39;s son had fallen ill some time ago, but no one has been able to hear the details of the ailment.&quot;
 
-[[Return -&gt; A1- Eavesdropping]]</tw-passagedata><tw-passagedata pid="34" name="A1 - Rumor: Mistress Sovereign Lasaar" tags="Info" position="599.5,1700.3333282470703" size="100,100">&quot;Lasaar&quot;, the sailor had said...
+[[Return -&gt; A1- Eavesdropping]]</tw-passagedata><tw-passagedata pid="34" name="A1 - Rumor: Mistress Sovereign Lasaar" tags="Info" position="599,1700" size="100,100">&quot;Lasaar&quot;, the sailor had said...
 
 The ruler of Qui&#39;Lea, a woman known as Mirrim Lasaar, &quot;The Mistress Sovereign&quot;, is the reason the Enclave has been so present as of late. In the past, they were content operating in the Southern regions, but she openly brought The Enclave into Qui&#39;Lea as a military force to defend the people.
 
 If the Enclave is wanting something found within a specific region, it would be a safe assumption that Mirrim Lasaar was the one who gave the order.
 
-[[Continue listening... -&gt;A1 - Rumor: The Enclave Job]]</tw-passagedata><tw-passagedata pid="35" name="A1- The Enclave of Brass" tags="Info" position="764.5,101" size="100,100">The Enclave of Brass is the acting military force in the city of Qui&#39;Lea, who condemn the free use of magic within the region.
+[[Continue listening... -&gt;A1 - Rumor: The Enclave Job]]</tw-passagedata><tw-passagedata pid="35" name="A1- The Enclave of Brass" tags="Info" position="764,101" size="100,100">The Enclave of Brass is the acting military force in the city of Qui&#39;Lea, who condemn the free use of magic within the region.
 
-Arcanists who don&#39;t conform to their rule are subjugated and often killed. As an Arcanist yourself, they represent the largets threat to your freedom within the city.</tw-passagedata><tw-passagedata pid="36" name=" A1-Theo Trepidatious" tags="" position="1041.5,191.83333333333337" size="100,100">Theo&#39;s hand is steady.
+Arcanists who don&#39;t conform to their rule are subjugated and often killed. As an Arcanist yourself, they represent the largets threat to your freedom within the city.</tw-passagedata><tw-passagedata pid="36" name=" A1-Theo Trepidatious" tags="" position="1041,191" size="100,100">Theo&#39;s hand is steady.
 
 &quot;I didn&#39;t want to carry out these orders, Ashton. Killing one of our own? We protect people like you! Surely The Pride King had to be mistaken.
 
@@ -333,7 +333,7 @@ To no surprise, two of the tables are filled with hardened dockworkers, who glan
 
 At the bar, you see Priya, an old friend. You know you can trust her to cover for you, no matter who comes looking.
 
-[[Continue... -&gt; A1-Ochre Origin Commons]]</tw-passagedata><tw-passagedata pid="38" name=" A1- From Ochre Origin" tags="" position="16.5,1294" size="100,100">&lt;img src=&quot;https://i.imgur.com/DYTrqXJ.png&quot; width= &quot;100%&quot;&gt;
+[[Continue... -&gt; A1-Ochre Origin Commons]]</tw-passagedata><tw-passagedata pid="38" name=" A1- From Ochre Origin" tags="" position="16,1294" size="100,100">&lt;img src=&quot;https://i.imgur.com/DYTrqXJ.png&quot; width= &quot;100%&quot;&gt;
 
 You stumble through the streets of [[Qui&#39;Lea-&gt;A1- Qui&#39;Lea]] to a place you know you&#39;ll be safe, for a time:
 
@@ -355,11 +355,11 @@ The skies draped in vibrant orange and red linens, which dance in the warm winds
 
 The air of the city is thick with salt, spice and the fragrant intoxicating vapours that pour from the many taverns, and smoking houses, frequented by those seeking opulent trips of hallucinogenics, or calming moments of fleeting euphoria.
 
-Despite the desert-like climate, the constant humidity formed by it&#39;s proximity to the Hissing Sea generates lush pockets of overgrown ivy and oasis-like vegetation that coats the edges of the city, leading it to it&#39;s near un-adulterated beauty.</tw-passagedata><tw-passagedata pid="40" name="A1- The Enclave Bounty 1" tags="" position="1300,1201.666666984558" size="100,100">You spread the bounty notice out on a table, and she immediately shoots a glance of utter bewilderment.
+Despite the desert-like climate, the constant humidity formed by it&#39;s proximity to the Hissing Sea generates lush pockets of overgrown ivy and oasis-like vegetation that coats the edges of the city, leading it to it&#39;s near un-adulterated beauty.</tw-passagedata><tw-passagedata pid="40" name="A1- The Enclave Bounty 1" tags="" position="1300,1201" size="100,100">You spread the bounty notice out on a table, and she immediately shoots a glance of utter bewilderment.
 
 &quot;You&#39;re not seriously thinking...&quot;
 
-[[&quot;It&#39;s exactly what I need! This is it!&quot;-&gt; A1- The Enclave Bounty 2]]</tw-passagedata><tw-passagedata pid="41" name="A1- Mistbreach Archipelago" tags="Info" position="707,1543.666666984558" size="100,100">(set: $a1_archipelagoHeard to true)You perk up slightly when you hear the sailor mention the &quot;Archipelago&quot;.
+[[&quot;It&#39;s exactly what I need! This is it!&quot;-&gt; A1- The Enclave Bounty 2]]</tw-passagedata><tw-passagedata pid="41" name="A1- Mistbreach Archipelago" tags="Info" position="707,1543" size="100,100">(set: $a1_archipelagoHeard to true)You perk up slightly when you hear the sailor mention the &quot;Archipelago&quot;.
 
 For your entire life, your main source of gold has been delving into ruins on the fringes of the city, recovering treasures that can be sold by both collectors and researchers alike...
 
@@ -433,13 +433,13 @@ You allow those words to hang in the air, for a time...
 	
 You allow those words to hang in the air, for a time...
 	
-[[Is that how Arcanists are seen to others? -&gt;A1-Some Time Passes]]</tw-passagedata><tw-passagedata pid="50" name="A1-Some Time Passes" tags="" position="641,821.5" size="100,100">After several silent moments, she sits in front of you with some first aid supplies.
+[[Is that how Arcanists are seen to others? -&gt;A1-Some Time Passes]]</tw-passagedata><tw-passagedata pid="50" name="A1-Some Time Passes" tags="" position="641,821" size="100,100">After several silent moments, she sits in front of you with some first aid supplies.
 
 &quot;Hold still. You&#39;re bleeding.&quot;
 
 (set: $injuryScore to 0)(text-colour:grey)[//Your injuries are treated by Priya.//]
 
-[[Some time passes...-&gt;A1- Heart To Heart 2]]</tw-passagedata><tw-passagedata pid="51" name="A1- Heart To Heart 2" tags="" position="770,824.5" size="100,100">As Priya goes to work, she asks you questions. About how you were accosted by the Regent, only for the Enclave to intervene. You recount the events in detail. She has a way of disarming you, making you far more open, willing to divulge the truth where you&#39;d often dance around it.
+[[Some time passes...-&gt;A1- Heart To Heart 2]]</tw-passagedata><tw-passagedata pid="51" name="A1- Heart To Heart 2" tags="" position="770,824" size="100,100">As Priya goes to work, she asks you questions. About how you were accosted by the Regent, only for the Enclave to intervene. You recount the events in detail. She has a way of disarming you, making you far more open, willing to divulge the truth where you&#39;d often dance around it.
 
 You recount how you acted in haste. You weren&#39;t expecting a Seeker. It makes no sense, why was she there? Did she know they were Regent? Was Theo followed?
 (if: $a1_guardsDrawn is true) [
@@ -451,13 +451,13 @@ Priya looks to your eyes, while you try to avoid her gaze.
 ]
 &quot; You couldn&#39;t have known what would happen.&quot; Priya reassures. &quot;It wasn&#39;t fair, but life often isn&#39;t. All you can do is try and do right by those who support you. And try to live happily.&quot;
 
-[[&quot;Easier said than done.&quot; -&gt;A1- Heart To Heart 3]]</tw-passagedata><tw-passagedata pid="52" name="A1- Heart To Heart 3" tags="" position="901,824.5" size="100,100">&quot;It&#39;s hard to live happily if The Regent have condemned me. I need to be able to speak to The Pride King, but there&#39;s no use begging forgiveness if I can&#39;t even pay my debt.&quot;
+[[&quot;Easier said than done.&quot; -&gt;A1- Heart To Heart 3]]</tw-passagedata><tw-passagedata pid="52" name="A1- Heart To Heart 3" tags="" position="901,824" size="100,100">&quot;It&#39;s hard to live happily if The Regent have condemned me. I need to be able to speak to The Pride King, but there&#39;s no use begging forgiveness if I can&#39;t even pay my debt.&quot;
 
 Priya wrings a wet towel into a nearby copper pan and smiles wryly.
 		
 &quot;So you owe them money, ah? Well, I&#39;m by no means wealthy, but I&#39;ve accrued a reasonable stash. Maybe I could-&quot;
 		
-[[&quot;It&#39;s 4500 Crowns, Priya.&quot; -&gt;A1- Heart To Heart 4]]</tw-passagedata><tw-passagedata pid="53" name="A1- Heart To Heart 4" tags="" position="1025,826.5" size="100,100">Pirya nearly drops a glass vial.
+[[&quot;It&#39;s 4500 Crowns, Priya.&quot; -&gt;A1- Heart To Heart 4]]</tw-passagedata><tw-passagedata pid="53" name="A1- Heart To Heart 4" tags="" position="1025,826" size="100,100">Pirya nearly drops a glass vial.
 		
 &quot;Why not just leave? Run somewhere? Maybe North, across the Hissing Sea? Fellrim, Verdan perhaps? Debt or no, you don&#39;t owe the Regent your life. The Pride King is trying to kill you, you said it yourself.&quot;
 		
@@ -469,7 +469,7 @@ You find it difficult to come up with the words plainly.
 [[Tell her about your youth.-&gt;A1- Divulge your Past 1]]
 
 [[Keep it to yourself.-&gt;A1- Hide your past]]
-</tw-passagedata><tw-passagedata pid="54" name="A1- Divulge your Past 1" tags="" position="1153,737.5" size="100,100">(text-colour:grey)[//You decided to tell Priya about your past.//](set: $a1_toldPast to true)
+</tw-passagedata><tw-passagedata pid="54" name="A1- Divulge your Past 1" tags="" position="1153,737" size="100,100">(text-colour:grey)[//You decided to tell Priya about your past.//](set: $a1_toldPast to true)
 
 &quot;When I was young, I didn&#39;t understand what magic was. All I knew was that I could do things that others couldn&#39;t. I heard voices when no one was around. Sometimes, I saw people. People I didn&#39;t know. They would bring me places, call my name.
 		
@@ -479,7 +479,7 @@ Eventually, I was seen by some passerby. I could imagine the sight: An orphan bo
 		
 They submitted me to The Enclave, and I was to be taken to be dealt with in their Epitaph Archive. I think I was ready for it, too. At the time, I didn&#39;t really care what happened to me. The voices told me it was fine in the place beyond, and I believed them.
 		
-[[It was The Pride King that pulled me out.-&gt;A1- Divulge your Past 2]]</tw-passagedata><tw-passagedata pid="55" name="A1- Hide your past" tags="" position="1282,903.5" size="100,100">(text-colour:grey)[//You decided to hide your past from Priya.//](set: $a1_toldPast to false)
+[[It was The Pride King that pulled me out.-&gt;A1- Divulge your Past 2]]</tw-passagedata><tw-passagedata pid="55" name="A1- Hide your past" tags="" position="1282,903" size="100,100">(text-colour:grey)[//You decided to hide your past from Priya.//](set: $a1_toldPast to false)
 
 The air is void of sound for a time, aside from the muted clatter of mugs and beleagoured sailors exuding from the commons.
 
@@ -487,7 +487,7 @@ You draw your gaze to the floor.
 
 Priya breaks the silence: &quot;You don&#39;t have to tell me if you don&#39;t want to. Maybe it would be better for me not to know.&quot;
 
-[[Maybe it would be...-&gt; A1- Heart To Heart 5]]</tw-passagedata><tw-passagedata pid="56" name="A1- Divulge your Past 2" tags="" position="1298,730.5" size="100,100">&quot;I was so young, I had no one.
+[[Maybe it would be...-&gt; A1- Heart To Heart 5]]</tw-passagedata><tw-passagedata pid="56" name="A1- Divulge your Past 2" tags="" position="1298,730" size="100,100">&quot;I was so young, I had no one.
 
 Now, all of a sudden, someone cared if I lived or died. He risked his life to hide me, bring me into The Regent. He taught me things about the nature of my power, and the amazing capabilities.
 		
@@ -499,7 +499,7 @@ Priya allows you to speak for a long while. Even after you&#39;re finished speak
 
 Finally, she chimes &quot;And now they&#39;re trying to kill you.&quot;
 
-[[&quot;Well, when you put it like that...&quot;-&gt; A1- Heart To Heart 5]]</tw-passagedata><tw-passagedata pid="57" name=" A1- Heart To Heart 5" tags="" position="1450,823.5" size="100,100">(if: $a1_toldPast is true)[Priya laughs, and you can&#39;t help but grin as well. It really is a desperate situation, but this made you feel better. At least, for a time.
+[[&quot;Well, when you put it like that...&quot;-&gt; A1- Heart To Heart 5]]</tw-passagedata><tw-passagedata pid="57" name=" A1- Heart To Heart 5" tags="" position="1450,823" size="100,100">(if: $a1_toldPast is true)[Priya laughs, and you can&#39;t help but grin as well. It really is a desperate situation, but this made you feel better. At least, for a time.
 
 ]She looks you in the eyes, until you finally gather the courage to meet her gaze.
 
@@ -513,7 +513,7 @@ I&#39;ll do whatever I can to help you get out of this alive, but ultimately, on
 
 You nod, examining your newly bandaged wounds.
 
-(if: $a1_toldPast is true) [ [[ &quot;Thank you for listening, Priya.&quot;-&gt;A1- Thank Priya]] ] (else:) [ [[ &quot;This is fine work, Priya.&quot;-&gt;A1- Acknowledge Priya]] ]</tw-passagedata><tw-passagedata pid="58" name="A1- Thank Priya" tags="" position="1603,734.5" size="100,100">&quot;That&#39;ll be 50 Crowns.&quot;
+(if: $a1_toldPast is true) [ [[ &quot;Thank you for listening, Priya.&quot;-&gt;A1- Thank Priya]] ] (else:) [ [[ &quot;This is fine work, Priya.&quot;-&gt;A1- Acknowledge Priya]] ]</tw-passagedata><tw-passagedata pid="58" name="A1- Thank Priya" tags="" position="1603,734" size="100,100">&quot;That&#39;ll be 50 Crowns.&quot;
 
 You shoot a sudden glance of confusion. She&#39;s only capable of holding a stern face for moment before her lip twitches, revealing the jest. A smile forms, before she begins ushering you back to the commons.
 
@@ -523,7 +523,7 @@ Some dock workers have decided to spend their morning here. Maybe you can find s
 
 [[You nod, as you both return to the tavern proper..-&gt; A1-Ochre Origin Commons]]
 
-(if: $a1_bountyReceived is true) [ [[ &quot;Actually, about that..&quot; -&gt;A1- The Enclave Bounty 1]] ]</tw-passagedata><tw-passagedata pid="59" name="A1- Acknowledge Priya" tags="" position="1594,912.5" size="100,100">&quot;Plenty of practice on idiots. Try not to be one of them, in the future, hm?
+(if: $a1_bountyReceived is true) [ [[ &quot;Actually, about that..&quot; -&gt;A1- The Enclave Bounty 1]] ]</tw-passagedata><tw-passagedata pid="59" name="A1- Acknowledge Priya" tags="" position="1594,912" size="100,100">&quot;Plenty of practice on idiots. Try not to be one of them, in the future, hm?
 
 Some dock workers have decided to spend their morning here. Maybe you can find some leads on a job, eh?&quot;
 
@@ -539,23 +539,23 @@ The Xanthari hands you a rolled up bounty notice, stamped with the Mistress Sove
 
 &quot;For completed guide of a light Enclave Escort through the Mistbreach Archipelago, the appointed crew will be liable to earn...&quot;
 
-[[The price listed is 5,000 Crowns...-&gt; A1-Ochre Origin Commons]]</tw-passagedata><tw-passagedata pid="62" name=" A1- The Enclave Bounty 2" tags="" position="1434,1198.666666984558" size="100,100">(if: $a1_toldPast is true) [&quot;You were just telling me how The Enclave nearly killed you as a child, and now you want to work for them?
+[[The price listed is 5,000 Crowns...-&gt; A1-Ochre Origin Commons]]</tw-passagedata><tw-passagedata pid="62" name=" A1- The Enclave Bounty 2" tags="" position="1434,1198" size="100,100">(if: $a1_toldPast is true) [&quot;You were just telling me how The Enclave nearly killed you as a child, and now you want to work for them?
 
 ]&quot;This is crazy, Ashton. You&#39;re an Arcanist! And not one of theirs! I don&#39;t know if you&#39;ve taken one too many strikes to that thick skull of yours, but they&#39;ll kill you the moment they learn!&quot;
 
 You realize that, better than anyone. But you&#39;re no slouch with a blade, in a pinch. And besides, they&#39;re only looking for a crew to guide them. If things get dicey, you can let the Enclave do the heavy lifting.
 
-[[&quot;They won&#39;t learn! I have no other options.&quot; -&gt; A1- The Enclave Bounty 3]]</tw-passagedata><tw-passagedata pid="63" name=" A1- The Enclave Bounty 3" tags="" position="1575,1201.666666984558" size="100,100">Priya pores over the document, shaking her head. You can tell she&#39;s noticed the payout, and is beginning to realize the full gravity of your plan.
+[[&quot;They won&#39;t learn! I have no other options.&quot; -&gt; A1- The Enclave Bounty 3]]</tw-passagedata><tw-passagedata pid="63" name=" A1- The Enclave Bounty 3" tags="" position="1575,1201" size="100,100">Priya pores over the document, shaking her head. You can tell she&#39;s noticed the payout, and is beginning to realize the full gravity of your plan.
 
 &quot;You cannot get caught. If they find out...&quot;
 
-[[ &quot;I know.&quot;-&gt; A1- The Enclave Bounty 4]]</tw-passagedata><tw-passagedata pid="64" name=" A1- The Enclave Bounty 4" tags="" position="1701,1199.666666984558" size="100,100">She folds the bounty notice, before handing it back to you with a sigh. There&#39;s a genuine worried look in her eye, but you can tell she isn&#39;t going to try and dissuade you.
+[[ &quot;I know.&quot;-&gt; A1- The Enclave Bounty 4]]</tw-passagedata><tw-passagedata pid="64" name=" A1- The Enclave Bounty 4" tags="" position="1701,1199" size="100,100">She folds the bounty notice, before handing it back to you with a sigh. There&#39;s a genuine worried look in her eye, but you can tell she isn&#39;t going to try and dissuade you.
 
 &quot;You&#39;d better get going. It says they&#39;re wanting potential Relic Hunters to contact them at the Eastern Garrison, just outside the city limits. And it looks like time may be running out. If this is going to bring you back from the brink, then you have no choice...
 
 Just be careful. I know you&#39;re resourceful, but you&#39;re not invincible. And know what will happen if they see you using your powers.&quot;
 
-[[After today&#39;s encounter, you know that better than anyone...-&gt;END OF ACT 1]]</tw-passagedata><tw-passagedata pid="65" name="END OF ACT 1" tags="" position="1703,1799.666666984558" size="100,100">(text-colour:grey)[//Some time passes...//]
+[[After today&#39;s encounter, you know that better than anyone...-&gt;END OF ACT 1]]</tw-passagedata><tw-passagedata pid="65" name="END OF ACT 1" tags="" position="1703,1799" size="100,100">(text-colour:grey)[//Some time passes...//]
 
 (live: 3s)[(transition:&quot;dissolve&quot;)[(text-colour:grey)[//As you stride onto the streets, hood drawn over your brow...//]](stop:)]
 
@@ -563,7 +563,7 @@ Just be careful. I know you&#39;re resourceful, but you&#39;re not invincible. A
 
 (live: 10s)[(transition:&quot;dissolve&quot;)[(text-colour:grey)[//And pray it won&#39;t be the last time you see it...//]](stop:)]
 
-(live: 11s)[(transition:&quot;dissolve&quot;)[ [[ Continue...-&gt; A2- Enter The Garrison]] ] ]</tw-passagedata><tw-passagedata pid="66" name=" A2- Enter The Garrison" tags="" position="202,2001.666666984558" size="100,100">&#39;&#39;The Enclave Garrison&#39;&#39;
+(live: 11s)[(transition:&quot;dissolve&quot;)[ [[ Continue...-&gt; A2- Enter The Garrison]] ] ]</tw-passagedata><tw-passagedata pid="66" name=" A2- Enter The Garrison" tags="" position="202,2001" size="100,100">&#39;&#39;The Enclave Garrison&#39;&#39;
 &lt;img src=&quot;https://external-preview.redd.it/iRZrz6S2j1pPGG6FfjYkACahfLtp4zTJmGxJqK2_8yk.jpg?auto=webp&amp;s=7144be76be6d73f7d15caff5bd56020ce184a999&quot; width= &quot;100%&quot;&gt;
 
 The Garrison is beyond the canyons of the city, on the Eastern limits. If acts as the first line of defence from invaders should they descend from the Ashtooth, as well as an open trade checkpoint facilitating Southern travel towards the Xanthar Sultanate.
@@ -574,7 +574,7 @@ After stating your business with a forward operator, you explain that you&#39;re
 
 Showing the bounty notice to signal your intent, you are ushered into the Garrison proper. You wait for a time, before being approached by two figures in brilliant brass regalia.
 
-[[Meet the figures-&gt; A2- Gavin &amp; Moira 1]]</tw-passagedata><tw-passagedata pid="67" name=" A2- Gavin &amp; Moira 1" tags="" position="198,2197.666666984558" size="100,100">A man and a woman, each armed with long blades and donned in Enclave colors, halt you as you approach.
+[[Meet the figures-&gt; A2- Gavin &amp; Moira 1]]</tw-passagedata><tw-passagedata pid="67" name=" A2- Gavin &amp; Moira 1" tags="" position="198,2197" size="100,100">A man and a woman, each armed with long blades and donned in Enclave colors, halt you as you approach.
 
 The man appears to be in lighter equipment, with a form-fitting cuirass and faulds, adorned with brass pauldrons and a light cloak: A scout, by the looks of him. He doesn&#39;t wear a helmet, allowing his wild unkempt hair and beard to rest fully in view.
 
@@ -587,7 +587,7 @@ The man stops for a moment, eyeing you up and down. He speaks gently...
 [[Your heart begins to pound.. -&gt; A2- Gavin &amp; Moira 2]]
 
 (set: $a2_gavinInfo to 0)
-(set: $a2_moiraInfo to 0)</tw-passagedata><tw-passagedata pid="68" name=" A2- Gavin &amp; Moira 2" tags="Stub" position="393,2199.666666984558" size="100,100">&quot;You&#39;re Sachi&#39;s son, aren&#39;t you? The dock-worker?&quot;
+(set: $a2_moiraInfo to 0)</tw-passagedata><tw-passagedata pid="68" name=" A2- Gavin &amp; Moira 2" tags="Stub" position="393,2199" size="100,100">&quot;You&#39;re Sachi&#39;s son, aren&#39;t you? The dock-worker?&quot;
 
 You can&#39;t tell if you look as off-guard as you feel, so you simply nod in affirmation.
 
@@ -601,7 +601,7 @@ Gavin laughs, seemingly unphased by the apparent hostility. &quot;Real sense of 
 
 Apologize, but your name has slipped my mind. Started with an H... Hammond, Harold?&quot;
 
-[[&quot;Ashton.&quot;-&gt;  A2- Gavin &amp; Moira 3]]</tw-passagedata><tw-passagedata pid="69" name="BIO - Gavin Stormweld" tags="Info" position="601,1998.666666984558" size="100,100">=|=
+[[&quot;Ashton.&quot;-&gt;  A2- Gavin &amp; Moira 3]]</tw-passagedata><tw-passagedata pid="69" name="BIO - Gavin Stormweld" tags="Info" position="601,1998" size="100,100">=|=
 &lt;img src=&quot;https://static.zerochan.net/Eldore.full.148667.jpg&quot; width= &quot;100%&quot;&gt;
 =|=
 &#39;&#39;Gavin Stormweld&#39;&#39;
@@ -634,7 +634,7 @@ It&#39;s clear that this life chose her, and her commitment to the decimation of
 Moira has an explicit hatred for Arcanists, yet she seems to tolerate Gavin. It&#39;s strange, but you suppose it&#39;s likely motivated by commitment to The Enclave more than her tolerance for what he is.
 ]
 (if: $a2_moiraInfo &lt; 3) [ (text-colour:grey)[//-- Perhaps more will be revealed with time. -- //] ]
-|==|</tw-passagedata><tw-passagedata pid="71" name="  A2- Gavin &amp; Moira 3" tags="Stub" position="537,2201.666666984558" size="100,100">&quot;Ashton, right! That was my third guess. Ashton.&quot;
+|==|</tw-passagedata><tw-passagedata pid="71" name="  A2- Gavin &amp; Moira 3" tags="Stub" position="537,2201" size="100,100">&quot;Ashton, right! That was my third guess. Ashton.&quot;
 
 Moira approaches, her voice booming through the brass plate. &quot;Are we really expected to believe this boy is fit to be our guide? Ridiculous. He looks as though a stray wind could knock him off his feet.&quot;
 
@@ -644,7 +644,7 @@ Unfortunately, the nature of our mission requires immediacy, and we&#39;re not i
 
 So, I&#39;m to assume, as a Relic Hunter, you&#39;re familiar with the Archipelago? Our destination lies within the Anor Faultline, To make it there from here, what kind of dangers can we expect?&quot;
 
-[[&quot;Well...&quot; -&gt; A2- Risky Business 1]]</tw-passagedata><tw-passagedata pid="72" name=" A2 - Relic Hunter Info" tags="Info" position="398,2000.666666984558" size="100,100">&lt;img src=&quot;https://i.pinimg.com/originals/50/21/53/5021537ab0babae8cdaac002c22d234c.jpg&quot; width= &quot;100%&quot;&gt;
+[[&quot;Well...&quot; -&gt; A2- Risky Business 1]]</tw-passagedata><tw-passagedata pid="72" name=" A2 - Relic Hunter Info" tags="Info" position="398,2000" size="100,100">&lt;img src=&quot;https://i.pinimg.com/originals/50/21/53/5021537ab0babae8cdaac002c22d234c.jpg&quot; width= &quot;100%&quot;&gt;
 
 Much of the land is dotted with ruins of a distant age, bereft of civilization for what seems like an eternity. 
 
@@ -758,7 +758,7 @@ The other veers right, down to the undergrowth, where precarious outcrops and an
 
 (click: ?gReassure)[ (set: $a2_gavinReassured to true), (go-to: &quot;A2 - Confront Gavin&quot;)]
 (click: ?gConfront)[ (set: $a2_gavinReassured to false), (go-to: &quot;A2 - Confront Gavin&quot;) ]
-]</tw-passagedata><tw-passagedata pid="80" name="A2- To the Archipelago" tags="" position="1405,2198.5" size="100,100">(text-colour:grey)[//Gathering your equipment...//]
+]</tw-passagedata><tw-passagedata pid="80" name="A2- To the Archipelago" tags="" position="1405,2198" size="100,100">(text-colour:grey)[//Gathering your equipment...//]
 
 (live: 3s)[(transition:&quot;dissolve&quot;)[(text-colour:grey)[//Gavin and Moira lead you onwards, escorting you from the edge of the encampment, through a towering gate carved from the cliff face of the canyon.//]](stop:)]
 
@@ -795,19 +795,23 @@ Gavin presses his hand on her chest, holding her back. As she leans backward, se
 ]
 [[&quot;Let&#39;s stick to the open path.&quot;-&gt;A2- Environment Start]]
 
-[[&quot;... On second thought, you&#39;re right. Let&#39;s stay hidden from hungry eyes.&quot;-&gt;A2- Creature Start]]</tw-passagedata><tw-passagedata pid="83" name="A2- Environment Start" tags="" position="106,2698" size="100,100">(set: $a2_hiddenPathTraversed to true)</tw-passagedata><tw-passagedata pid="84" name="A2- Creature Start" tags="" position="106,2498" size="100,100">(set: $a2_hiddenPathTraversed to false)</tw-passagedata><tw-passagedata pid="85" name="A2- Powers Revealed 1" tags="" position="486.5,3443.333251953125" size="100,100">You go to turn to Gavin and speak - &quot;You&#39;re a Seeker?&quot;
+[[&quot;... On second thought, you&#39;re right. Let&#39;s stay hidden from hungry eyes.&quot;-&gt;A2- Creature Start]]</tw-passagedata><tw-passagedata pid="83" name="A2- Environment Start" tags="" position="158,3547" size="100,100">(set: $a2_hiddenPathTraversed to true) After slow progress over the jagged terrain of the fjord, the path begins to narrow. Looking forwad, you see the path twisting with the cliff side. Below, a geyser erupts covering the cliffside with a blanket of foamy water. As the water falls back down it creates a giant ripples. For a split second you can see the jagged rocks usually hidden below the surface before they are engulfed again.
+
+You take a deep breath.
+
+[[&quot;Double check each step and follow my lead&quot;-&gt;A2- Unsure Footing]]</tw-passagedata><tw-passagedata pid="84" name="A2- Powers Revealed 1" tags="" position="488,4277" size="100,100">You go to turn to Gavin and speak - &quot;You&#39;re a Seeker?&quot;
 	
 Before you can recover completely, Moira strikes you from behind, knocking you to the ground. You turn onto your back to face her, but her blade is already pressed against your chest. Her voice booms in judgement.
 	
 &quot;He&#39;s one of them! Regent! Unordained! You&#39;re a spy, a rat! Dammit, I knew there was something off about you! I will not let us suffer for my lapse in judgement!&quot;
 	
-[[&quot;Moira!&quot; Gavin shouts.-&gt; A2- Powers Revealed 2]]</tw-passagedata><tw-passagedata pid="86" name=" A2- Powers Revealed 2" tags="" position="633.5,3449.333251953125" size="100,100"> It&#39;s the first time you&#39;ve heard him raise his voice, and clearly it&#39;s an anomaly, as Moira immediately ceases her intervention.
+[[&quot;Moira!&quot; Gavin shouts.-&gt; A2- Powers Revealed 2]]</tw-passagedata><tw-passagedata pid="85" name=" A2- Powers Revealed 2" tags="" position="635,4283" size="100,100"> It&#39;s the first time you&#39;ve heard him raise his voice, and clearly it&#39;s an anomaly, as Moira immediately ceases her intervention.
 	
 &quot;That&#39;s enough. He&#39;s no use to us dead.&quot;
 
 Even as he speaks in defence of you, his hand is raised to cast should he need to. Any sudden movement, and both Blade and Veil will be thrust into you before you can act.
 
-[[You look to Gavin, meeting his gaze. -&gt;  A2- Powers Revealed 3]]</tw-passagedata><tw-passagedata pid="87" name="  A2- Powers Revealed 3" tags="" position="787.5,3446.333251953125" size="100,100">Gavin doesn&#39;t look angry. He looks disappointed.
+[[You look to Gavin, meeting his gaze. -&gt;  A2- Powers Revealed 3]]</tw-passagedata><tw-passagedata pid="86" name="  A2- Powers Revealed 3" tags="" position="789,4280" size="100,100">Gavin doesn&#39;t look angry. He looks disappointed.
 	
 The sun has begun to set, and darkness is enveloping the Archipelago.
 	
@@ -819,13 +823,13 @@ I will not break watch.&quot;
 	
 At one point, when the ascension is too steep, she lifts you over her shoulder and carries you as if you were weightless. All trust with these two has been atrophied...]
 	
-[[Eventually, you find a suitable site to camp... -&gt;A2-Revealed Camp Travel]]</tw-passagedata><tw-passagedata pid="88" name="A2 - Revealed Dialogue 1" tags="" position="1118.5,3444.333251953125" size="100,100">&quot;You acted to assist back there. You understand that us knowing about your powers could have led to your death, but you used them anyways. Why?&quot;
+[[Eventually, you find a suitable site to camp... -&gt;A2-Revealed Camp Travel]]</tw-passagedata><tw-passagedata pid="87" name="A2 - Revealed Dialogue 1" tags="" position="1120,4278" size="100,100">&quot;You acted to assist back there. You understand that us knowing about your powers could have led to your death, but you used them anyways. Why?&quot;
 
 [[&quot;I didn&#39;t want you to die.&quot; -&gt;A2- To Protect]]
 
 [[&quot;I had to protect myself.&quot; -&gt;A2- To Perservere]]
 
-[[&quot;I need you alive to get paid.&quot; -&gt;A2- To Be Paid]]</tw-passagedata><tw-passagedata pid="89" name="A2-Revealed Camp Travel" tags="" position="949.5,3449.333251953125" size="100,100">(text-colour:grey)[//Some time passes...//]
+[[&quot;I need you alive to get paid.&quot; -&gt;A2- To Be Paid]]</tw-passagedata><tw-passagedata pid="88" name="A2-Revealed Camp Travel" tags="" position="951,4283" size="100,100">(text-colour:grey)[//Some time passes...//]
 
 (live: 3s)[(transition:&quot;dissolve&quot;)[(text-colour:grey)[//As camp is drawn, a fire is made...//]](stop:)]
 
@@ -838,7 +842,7 @@ At one point, when the ascension is too steep, she lifts you over her shoulder a
 (live: 14s)[(transition:&quot;dissolve&quot;)[(text-colour:grey)[//Ready to end you at a moment&#39;s notice.//]](stop:)]
 
 
-(live: 18s)[(transition:&quot;dissolve&quot;)[ [[ Eventually, Gavin approaches you... -&gt;A2 - Revealed Dialogue 1]] ] ]</tw-passagedata><tw-passagedata pid="90" name="A2- To Protect" tags="" position="1283.5,3244.333251953125" size="100,100">(text-colour:grey)[//You appealed to your morality. //](set: $a2_wishToProtect to true)
+(live: 18s)[(transition:&quot;dissolve&quot;)[ [[ Eventually, Gavin approaches you... -&gt;A2 - Revealed Dialogue 1]] ] ]</tw-passagedata><tw-passagedata pid="89" name="A2- To Protect" tags="" position="1285,4078" size="100,100">(text-colour:grey)[//You appealed to your morality. //](set: $a2_wishToProtect to true)
 
 &quot;You realize what I am, yeah? Surely, you understand that my duty to the Enclave is to put down rogue Arcanists? It&#39;s not a task I take lightly, nor is it one that I derive pleasure from... But.. Well, it is my duty. And Moira, well, she wouldn&#39;t lose sleep now if I let her loose, she&#39;d put you down in an instant.
 		
@@ -848,7 +852,7 @@ After a moment, Gavin seems to relax.
 		
 &quot;You have a good heart, Ashton. Are you Regent?&quot;
 		
-[[&quot;Not really. They want me dead, actually.&quot; -&gt;A2- The Regent Want Me Dead]]</tw-passagedata><tw-passagedata pid="91" name="A2- To Perservere" tags="" position="1280.5,3378.333251953125" size="100,100">(text-colour:grey)[//You appealed to self preservation. //](set: $a2_wishToProtect to false)
+[[&quot;Not really. They want me dead, actually.&quot; -&gt;A2- The Regent Want Me Dead]]</tw-passagedata><tw-passagedata pid="90" name="A2- To Perservere" tags="" position="1282,4212" size="100,100">(text-colour:grey)[//You appealed to self preservation. //](set: $a2_wishToProtect to false)
 
 &quot;You understand what I am, that I&#39;d kill you if you revealed your power, yet you revealed them to save yourself?
 
@@ -862,7 +866,7 @@ Then you leave me no choice. I don&#39;t want to end you, Ashton.
 		
 But cross us, and I will. Understand?&quot;
 		
-[[You nod silently. -&gt;A2- Revealed Camp Danger]]</tw-passagedata><tw-passagedata pid="92" name="A2- To Be Paid" tags="" position="1288.5,3508.333251953125" size="100,100">You appealed to greed. (set: $a2_wishToProtect to false)
+[[You nod silently. -&gt;A2- Revealed Camp Danger]]</tw-passagedata><tw-passagedata pid="91" name="A2- To Be Paid" tags="" position="1290,4342" size="100,100">You appealed to greed. (set: $a2_wishToProtect to false)
 		
 &quot;Ah, so that&#39;s all? A payday.
 
@@ -876,7 +880,7 @@ Then you leave me no choice. I don&#39;t want to end you, Ashton.
 		
 But cross us, and I will. Understand?&quot;
 		
-[[You nod silently. -&gt;A2- Revealed Camp Danger]]</tw-passagedata><tw-passagedata pid="93" name="A2- The Regent Want Me Dead" tags="" position="1435.5,3238.333251953125" size="100,100">Gavin chuckles, shaking his head.
+[[You nod silently. -&gt;A2- Revealed Camp Danger]]</tw-passagedata><tw-passagedata pid="92" name="A2- The Regent Want Me Dead" tags="" position="1437,4072" size="100,100">Gavin chuckles, shaking his head.
 			
 &quot;Loyal to free Arcanists, so long as they lick the Pride King&#39;s boots, eh? Understand, knowing what I know now, my options are rather limited? As are your own.
 			
@@ -888,7 +892,7 @@ Allow the Enclave to invoke you as an Ordained Arcanist. I could even teach you 
 			
 But deny that offer... I&#39;ll have no choice.&quot;
 
-[[You nod silently. -&gt;A2- Revealed Camp Danger]]</tw-passagedata><tw-passagedata pid="94" name="A2- Revealed Camp Danger" tags="" position="1600.5,3466.333251953125" size="100,100">All assurances aside, you&#39;re certain, if confronted, he&#39;s far more powerful than you are.
+[[You nod silently. -&gt;A2- Revealed Camp Danger]]</tw-passagedata><tw-passagedata pid="93" name="A2- Revealed Camp Danger" tags="" position="1602,4300" size="100,100">All assurances aside, you&#39;re certain, if confronted, he&#39;s far more powerful than you are.
 
 &lt;img src=&quot;https://cdnb.artstation.com/p/assets/images/images/026/810/695/large/jerrin-varghese-the-mortal-gateway-to-the-dark-realm-6.jpg?1589804978&quot; width= &quot;100%&quot;&gt;
 
@@ -902,7 +906,486 @@ You&#39;re confused. This doesn&#39;t seem like the time for a lesson in Arcanum
 	Surprisingly, Moira is no longer worried with you. Her stance is facing opposite to you, towards the edge of the camp.
 	
 	A shadow crosses your vision, from where she faces. -&gt;
-</tw-passagedata></tw-storydata>
+You take a deep breath.
+</tw-passagedata><tw-passagedata pid="94" name="A2- Creature Start" tags="" position="217,2745" size="100,100">(set: $a2_hiddenPathTraversed to false)(transition:&quot;dissolve&quot;)[You continue walking across the rocky plateau streching as far as the eye can see. Your eyes dart back and fourth, looking for landmarks you&#39;ve studied on maps before. It would be so easy to get turned around if you take the wrong stone bridge. The last thing you want is to wander the Mistbreach Archipelago longer than you have to...]
+
+(live: 10s)[(transition:&quot;dissolve&quot;)[A loose stone shifts under your weight, shaking you out of your thoughts. You realize no one has spoken in a while. This is the perfect time to ask the question you&#39;ve carried since the beginning of the journey...
+
+[&quot;You think you could tell your guide what we&#39;re actually looking for?&quot;]&lt;ConvoAttempt|](stop:)]
+
+\(click: ?ConvoAttempt)[
+\(replace: ?ConvoAttempt)[You think you could tell your guide what we&#39;re actually looki...]
+\
+(transition:&quot;dissolve&quot;)[A piercing //SCREECH// rings out over the open plateau, its echoes rolling over the plateau.](stop:)
+
+[[Look for the source.-&gt;A2- It&#39;s a Bird]]]</tw-passagedata><tw-passagedata pid="95" name="A2- Roc Dive 1" tags="" position="504,3046" size="100,100">Sprinting into a sliding crouch, you take cover behind the boulder.
+
+You hear another screech, fast approachig. You need to get eyes on the bird of prey.
+
+[Peak out from cover.]&lt;Peak|
+
+(click:?Peak)[You peak out from cover and see the bird diving towards Gavin. He might be in trouble...
+
+(live: 2s)[(transition:&quot;dissolve&quot;)[You must [&#39;&#39;act fast!&#39;&#39;]&lt;QTE|](stop:)]
+
+[]&lt;choice|
+\
+\(click: ?QTE)[
+\	(set: $timer to 7)
+\	(live: 1s)[
+\		(set: $timer to it - 1)
+\		(replace:?choice)[
+\			$timer]
+			[[Run from cover and push Gavin out of the way.-&gt;A2- Bravery and Recklessness]]
+			[[Fire a psionic bolt at the bird!-&gt;A2- Roc Reveals Magic]]
+			[[Stay behind cover and do nothing.-&gt;A2- Tank Moira]]
+\		(if: $timer is 0)[(go-to:&quot;A2- Tank Moira&quot;)]]]]</tw-passagedata><tw-passagedata pid="96" name="A2- Roc Dive 2" tags="" position="500,2924" size="100,100">(if: $MoiraSavedYou is true)[(if: $a2_hiddenPathChosen is true)[Moira meets your gaze then looks up at the incoming danger. &quot;I made us come this way, and I just saved your ass. We&#39;re even. Now get ready.&quot;]
+\(else:)[Moira meets your gaze with fiery eyes. &quot;Get yourself together and be useful.&quot; She says in a low, forcefull voice.]]
+
+\You draw your sword from its sheath and hold it between you and the approaching bird. 
+
+You feel your pulse against the hilt in your grip. The massive predator bird is now diving right at you.
+
+(if: $injuryScore &gt;= 1)[The pain in your shoulders pulses through your body with each heartbeat. The sword becomes heavier to hold up with each passing second.]
+
+You must [&#39;&#39;act fast!&#39;&#39;]&lt;QTE|
+
+[]&lt;choice|
+\
+\(click: ?QTE)[
+\	(set: $timer to 7)
+\	(live: 1s)[
+\		(set: $timer to it - 1)
+\		(replace:?choice)[
+\			$timer]
+			[[Brace your sword with both hands for a parry.-&gt;A2- Parry Bird]]
+			[[Fire a psionic bolt at the bird!-&gt;A2- Roc Reveals Magic]]
+\		(if: $timer is 0)[(go-to:&quot;A2- Tank Moira&quot;)]]]</tw-passagedata><tw-passagedata pid="97" name="A2- Bravery and Recklessness" tags="" position="666,3049" size="100,100">You kick up debris and dirt as you sprint towrads Gavin. Slipping slightly on the uneven terrain, you right yourself and continue dashing.
+
+With a heavy //THUD// you tackle Gavin to the ground and away from the talons a split second before they pierced his body.
+
+A searing pain shoots across your back as you realize you cut it closer than you thought. The sharp talons had not been able to clutch prey, however they had been successful at slicing a bloody gash from shoulder blade to shoulder blad. Landing hard with Gavin, the air leaves your body as the impact sends a new wave of pain shooting from your open wound.
+
+//(set: $injuryScore to $injuryScore + 1) (text-colour:grey)[You have received an injury...]//
+
+(set:$a2_GavinHelped to true)[[Roll onto your back to face the bird.-&gt;A2- Moira Downs Bird]]</tw-passagedata><tw-passagedata pid="98" name="A2- Tank Moira" tags="" position="665,3171" size="100,100">You first hear Moira let out an earthshattering battle cry, then see her charge between the bird and its target. She plants her feet wide and braces her shoulder for impact.
+
+As the birds talons scrape agains her pauldron sparks fly. Moira grunts and spins letting the pointed bones slide off her causing the bird to lose balance for a moment. Lifting her dented pauldron, she uses the opening to swing her sword at the birds head.
+
+With a rumbling crash, the bird impacts the ground.
+
+(set: $MoiraInjuryScore to $MoiraInjuryScore + 1)[[Peer through the dust cloud as you prepare to fight-&gt;A2- Bird Down]]</tw-passagedata><tw-passagedata pid="99" name="A2- Roc Reveals Magic" tags="" position="665,2800" size="100,100">You focus your thoughts as you&#39;ve done countless times. Lifting your hand, ignoring the needles of eldrich pain in your mind, you release a ray of refracted light aimed at the birds skull-wrapped head. As the visions from beyond the Veil clear, (if:$injuryScore &gt;= 1)[lowering your bleeding arm ] you see the streak of light crash into the birds head, cracking the exterior bone shell.
+
+The bird crashes into the ground, sending debris in a wide radius. A large dust cloud covers the point of impact.
+
+(set: $aggroScore to $aggroScore + 1) (set: $magicRevealed to true) (text-colour:grey)[//Your powers have been revealed!//]
+
+[[Look for the others.-&gt;A2- Bird Down]]</tw-passagedata><tw-passagedata pid="100" name="A2- Low Initiative" tags="" position="369,2815" size="100,100">With blinding speed the bird is upon you before you can act. Talons dig deep into your shoulders as the bird flaps its pair of wings in a massive arc. The resulting massive wall of wind kicks up dust as you are beginning to lift off the ground, pain searing through your shoulder-blades.
+
+(live: 8s)[(transition:&quot;dissolve&quot;)[//(set: $injuryScore to $injuryScore + 2) (text-colour:grey)[You have received an injury...]//](stop:)]
+
+(live: 10s)[(transition:&quot;dissolve&quot;)[A moment before your feet leave the ground, Moira&#39;s sword swings right above your head, crashing into the birds bone covered legs and bouncing off with a skull-cracking //CLANG//.](stop:)]
+
+(live: 18s)[(transition:&quot;dissolve&quot;)[The sheer force of the impact vibrates through your body and you are jolted free of the deadly grasp.
+
+As you land back on your feet, you look up to see the bird already high above, circling to dive again.
+
+(set: $a2_MoiraSavedYou to true)[[Hold your left shoulder, blood dripping down your fingers and look towards Moira.-&gt;A2- Roc Dive 2]]](stop:)]</tw-passagedata><tw-passagedata pid="101" name="A2- It&#39;s a Bird" tags="" position="222,2943" size="100,100">(transition:&quot;dissolve&quot;)[Whipping your head towards the sky and the source of the screech, you see a giant winged creature soaring above. Its body is accented with dark bone like material growing out from each part, encasing them for protection and camoflauge. Its avian form begins to dive towards the group. Dark talons grind open ready to strike. It&#39;s eyes locked onto you, peering through a bone wrapped head.]
+
+[You must [&#39;&#39;act fast!&#39;&#39;]&lt;QTE|]
+
+[]&lt;choice|
+\
+\(click: ?QTE)[
+\	(set: $timer to 7)
+\	(live: 1s)[
+\		(set: $timer to it - 1)
+\		(replace:?choice)[
+\			$timer]
+			[[Dive behind the large boulder to your left.-&gt;A2- Roc Dive 1]]
+			[[Draw your sword and brace for the fight.-&gt;A2- Roc Dive 2]]
+\		(if: $timer is 0)[(go-to:&quot;A2- Low Initiative&quot;)]]]</tw-passagedata><tw-passagedata pid="102" name="A2- Bird Death" tags="Death" position="1117,2653" size="100,100">You take a step back, reeling from the impact...
+
+Your head begins to spin as your vision is engulfed with a curtain of darkness. [You hear nothing but your slowing heartbeat]&lt;Dying|.
+
+(click:?Dying)[(transition:&quot;dissolve&quot;)[ThaThump... 
+Tha...Thump...
+//THUMP// you crash onto the ground, staring at sky being engulfed by blackness...
+
+(text-colour:grey)[//All goes dark.//]](stop:)]</tw-passagedata><tw-passagedata pid="103" name="A2- Bird Down" tags="" position="994,2980" size="100,100">[]&lt;consequence|
+{(if: $magicRevealed is true)[(replace:?consequence)[You find Moiras eyes. She squints and you can almost feel her stare pierce right through you. The sound of shifting rocks coming from the birds direction interrupts the intense moment]]
+(elseif: $a2_GavinHelped is true)[(replace:?consequence)[Uncovering your eyes, you see Gavin standing above you with his had extended towards you. You take it and let out a grunt through your clenched jaw as you get up.]]
+(else:)[(replace:?consequence)[Looking towards the bird, you bring yourself to your feet.]]}
+\
+\(if: $injuryScore &gt;= 2)[You momentarily lose balance and teeter backwards before catching yourself and planting your feet under you.]
+
+As the dust clears, you see once again gain sight of the battle field. Gavin is behind the downed bird with some distance between them. Moira is directly to the right of the bird gripping her sword with both hands.
+
+[[Flank with Gavin.-&gt;A2- Face the Bird]]
+[[Flank with Moira.-&gt;A2- Wingside Battle]]</tw-passagedata><tw-passagedata pid="104" name="A2- Parry Bird" tags="" position="661,2918" size="100,100">You manage to bring the sword up as the bird reaches you. Your blade makes contact with the talons in an attempt to guide them to one side as you step to the other.
+
+&#39;&#39;//CLANG//&#39;&#39;
+
+Steel and bone clash as the impact sends shockwave down your arms.
+
+(if: $injuryScore &gt;= 1)[The pain from your shoulders is overpowering and you are thrown, spinning onto the ground.]
+\
+\(else:)[Sparks fly as you spin and let the talons slide off the blade. However, it seems you underestimated the giant birds sheer power. You lose balance on the uneven terrain and fall to the ground. Your arms ache as you spit blood from your mouth.]
+
+//(set: $injuryScore to $injuryScore + 1) (text-colour:grey)[You have received an injury...]//(set: $aggroScore to $aggroScore + 1)
+
+[[Roll onto your back-&gt;A2- Moira Downs Bird]]</tw-passagedata><tw-passagedata pid="105" name="A2- Moira Downs Bird" tags="" position="829,2932" size="100,100">You roll onto your back, blood dripping over the rocky ground. Gritting your teeth you look at the bird as it begins to ascend once again.
+
+It barely moves moves before you hear Moira&#39;s yell beyond the dust cloud kicked up by the birds wings. You see her silhouette, backlit by the daylight as she leaps and grabs the birds legs. Lifting herself she thrusts her sword under the birds right wing.
+
+The bird lets out a blood curdling screech as they both come crashing down. You feel the ground beneath you rumble as the massive impact sends up an even thicker cloud of dust, small plant matter, and debris.
+
+(set:$MoiraInjuryScore to $MoiraInjuryScore + 1)[[Cover your face.-&gt;A2- Bird Down]]</tw-passagedata><tw-passagedata pid="106" name="A2- Face the Bird" tags="" position="1167,3055" size="100,100">You position yourself in front of the bird, flanking with Gavin. The bird shakes itself, stone, blood, and feathers raining down from it. It looks at you from under its cracked bone head armour.
+
+&quot;I have his attention now! C&#39;mon do your worst!&quot; Hoping to avoid another full on clash, you grip your sword again. (set: $aggroScore to $aggroScore + 1)
+
+Suddenly you see rocks rocks shifting beneath the birds talons. It had sunken them deep into the stone for grip, but now the rocks crack open as they become red, then molten. The molten rock moves up the birds right leg and solidifies, rooting it in a stone grip.
+
+The bird lets out another screech of pain, but before it could lash out, Moira swings her sword, slicing the underside of its right wing. Blood now poors freely down its feathers.
+
+There, an opening...
+
+[[Thrust your sword into the birds eye.-&gt;A2- Frontal Stab]]
+[[Reposition to the left of the bird, flanking with Moira.-&gt;A2- Wingside Battle]]
+[[Fire a psionic bolt at the bird!-&gt;A2- Frontal Blast]]</tw-passagedata><tw-passagedata pid="107" name="A2- Wingside Battle" tags="" position="1330,2922" size="100,100">You quickly dash to the birds left, with Moira directly on the other side of its body.
+
+Gavin lifts his right hand, and mutters an encantation. The final words echo in a deep gutteral voice. The bird lets out a yelp of pain as it shakes its head, blood trickling out of the cracks in its bone helmet.
+
+[]&lt;BirdAttack|
+
+[[[Slice under the birds left wing, where it connects to the body.-&gt;A2- Clipped Wings]]
+[[Stab the bird in its chest, aiming between the ribs.-&gt;A2- Chest Stab]]]&lt;choice|
+
+(if:$aggroScore &gt;= 2)[(replace: ?BirdAttack)[You&#39;ve managed to hold onto its attention. With a lightning fast swipe, the birds left claw darts towards you. You manage to step back to avoid fatal damage, but the sharp tips of the bone talons still catch you on your arms.
+//(set: $injuryScore to $injuryScore + 1) (text-colour:grey)[You have received an injury...]//]
+(if: $injuryScore &gt;= 3)[(replace: ?choice)[[[Try to regain your footing...-&gt;A2- Bird Death]]]]]
+(else:)[(replace: ?BirdAttack)[The bird spins its head to face Moira, and with lightning fast speed, a piercing peck approaches her. Moira dodges the attack by stepping to one side. You can feel the vibrations from the impact between the ground and the creatures boned beak.]]</tw-passagedata><tw-passagedata pid="108" name="A2- Frontal Stab" tags="" position="1467,3025" size="100,100">With the adrenaline pumping through your veins, you face down the bird and meet its gaze. You thrust your sword into its left eye, scraping the eye holes of the boned head. (set: $aggroScore to $aggroScore + 2)
+
+[]&lt;BirdAttack|
+
+Blood is now dripping from the creature, painting the rocks beneath crimson.
+
+[[[The bird is hurt, this is it!-&gt;A2- Final Strike]]]&lt;choice|
+
+(if: $aggroScore &gt;= 4)[(replace:?BirdAttack)[Pulling back from the sudden assult, the bird lunges forward with its beak like a spear. You attempt to block it with your sword. As a result the beak does not pierce your skin, but the impact breaks a few ribs.(set:$injuryScore to $injuryScore + 1)
+(if: $injuryScore &gt;= 3)[(replace:?choice)[[[Step back trying to keep a grip on your sword...-&gt;A2- Bird Death]]]]]]
+(else:)[(replace:?BirdAttack)[The bird attempts to use its left talon to grab behind it. You hear the snapping of closing talons and a yelp from Gavin.(set: $GavinInjuryScore to $GavinInjuryScore + 1)]]</tw-passagedata><tw-passagedata pid="109" name="A2- Frontal Blast" tags="" position="1466,3143" size="100,100">You focus your thoughts as you&#39;ve done countless times. Lifting your hand, ignoring the needles of eldrich pain in your mind, you release a ray of refracted light aimed at the birds skull-wrapped head. As the visions from beyond the Veil clear, (if:$injuryScore &gt;= 1)[lowering your bleeding arm ] you see the streak of light crash into the birds head, cracking the exterior bone shell.
+
+(set: $aggroScore to $aggroScore + 1) (set: $magicRevealed to true) (text-colour:grey)[//Your powers have been revealed!//]
+
+[[Step away from the bird and move behind it.-&gt;A2- Final Strike]]</tw-passagedata><tw-passagedata pid="110" name="A2- Clipped Wings" tags="" position="1466,2911" size="100,100">With the adrenaline pumping through your veins, you look up the bird. You slice with your sword and cut open the flesh under the feathers.(set: $aggroScore to $aggroScore + 1)
+
+[]&lt;BirdAttack|
+
+Blood is now dripping from the creature, painting the rocks beneath crimson.
+
+[[[The bird is hurt, this is it!-&gt;A2- Final Strike]]]&lt;choice|
+
+(if: $aggroScore &gt;= 3)[(replace:?BirdAttack)[Pulling back from the sudden assult, the bird lunges forward with its talons like  spears. You attempt to block it with your sword. As a result your skin is not pierced, but the impact breaks a few ribs.(set:$injuryScore to $injuryScore + 1)
+(if: $injuryScore &gt;= 3)[(replace:?choice)[[[Step back trying to keep a grip on your sword...-&gt;A2- Bird Death]]]]]]
+(else:)[(replace:?BirdAttack)[The bird attempts to use its left talon to grab behind it. You hear the snapping of closing talons and a yelp from Gavin.(set: $GavinInjuryScore to $GavinInjuryScore + 1)]]</tw-passagedata><tw-passagedata pid="111" name="A2- Chest Stab" tags="" position="1467,2799" size="100,100">With the adrenaline pumping through your veins, you look up the bird. You stab with your sword and cut open the flesh under the feathers.(set: $aggroScore to $aggroScore + 1)
+
+[]&lt;BirdAttack|
+
+Blood is now dripping from the creature, painting the rocks beneath crimson.
+
+[[[The bird is hurt, this is it!-&gt;A2- Final Strike]]]&lt;choice|
+
+(if: $aggroScore &gt;= 3)[(replace:?BirdAttack)[Pulling back from the sudden assult, the bird lunges forward with its talons like  spears. You attempt to block it with your sword. As a result your skin is not pierced, but the impact breaks a few ribs.(set:$injuryScore to $injuryScore + 1)
+(if: $injuryScore &gt;= 3)[(replace:?choice)[[[Step back trying to keep a grip on your sword...-&gt;A2- Bird Death]]]]]]
+(else:)[(replace:?BirdAttack)[The bird attempts to use its left talon to grab behind it. You hear the snapping of closing talons and a yelp from Gavin.(set: $GavinInjuryScore to $GavinInjuryScore + 1)]]</tw-passagedata><tw-passagedata pid="112" name="A2- Final Strike" tags="" position="1688,2965" size="100,100">(if: $aggroScore &gt;= 3)[You need to get the creatures attention off of you.] With a flick of you wrist, you create a blanket of dust to obscure the birds vision.
+
+As you circle the bird, you notice Gavin kneeling, touching the stone terrain. Suddenly jagged pieces of the floor erupt and slam into the side of the creature as he finishes his encantation and stands up.
+
+Seeing the opening, Moira lunges forward driving her sword upwards. The sword plunges into the birds throat with a sickening squelch. As the bird begins to screech, blood begins to poor from its mouth and muffles the sound. With a final scream of her own, Moira steps back and pulls the sword from the wound.
+
+The Bird falls with a shattering crash. Then just the breeze and quiet...
+
+[[Take a knee...-&gt;A2- Aftermath]]</tw-passagedata><tw-passagedata pid="113" name="A2- Aftermath" tags="" position="2954,3379" size="100,100">(if:$magicRevealed)
+(else:)</tw-passagedata><tw-passagedata pid="114" name="A2- Unsure Footing" tags="" position="412,3584" size="100,100">(text-colour:grey)[You begin leading the group, showing them the most secure footholds. Gavin follows behind you and Moira behind him.]
+
+(live: 5s)[(transition:&quot;dissolve&quot;)[(text-colour:grey)[//You continue moving alongside the cliff...//]](stop:)]
+
+(live: 7s)[(transition:&quot;dissolve&quot;)[(text-colour:grey)[//The jagged rocks at the bottom of the fjord and the surface of water begin to grow further and further away as the cliff gains height...//]](stop:)]
+
+(live: 10s)[(transition:&quot;dissolve&quot;)[(text-colour:grey)[//You pass under the giant stone arches and wonder if they are natural or...//]](stop:)]
+
+(live: 13s)[(transition:&quot;dissolve&quot;)[Suddenly a stone beneath your foot shifts. With a small crack, you hear the thin pathway beneath you begin to give way as rocks and stone roll and grind against each other.
+
+[You must [&#39;&#39;act fast!&#39;&#39;]&lt;QTE|](stop:)] ]
+
+[]&lt;choice|
+\
+\(click: ?QTE)[
+\	(set: $timer to 7)
+\	(live: 1s)[
+\		(set: $timer to it - 1)
+\		(replace:?choice)[
+\			$timer]
+			[[Reach for the ledge.-&gt;A2- Initial Fall]]
+			[[Reach for Gavin.-&gt;A2- Gavin&#39;s Initiative]]
+			[[Cast stoneshape to grab on.-&gt;A2- Stoneshape]]
+\		(if: $timer is 0)[(go-to:&quot;A2- Initial Fall&quot;)]]]</tw-passagedata><tw-passagedata pid="115" name="A2- Initial Fall" tags="" position="566,3441" size="100,100">You reach out and grab at the wall, but the jagged rocks begin to slip out under your weight.
+
+Not having a stable hold on anything, you begin to fall down the cliff side. Gavin reaches he hand out and barely misses yours.
+
+//Is this it?//
+
+You hit the side of steep side of the cliff and bounce off. Unable to grasp anythign again. Another hit.
+
+With an echoing //CRASH// you land on your back, the air leaving your body with an //OOMF//. The jagged rocks you landed on dig into your back. You feel dampness of blood beginning to soak into the fabric of your clothes.
+
+//(set: $injuryScore to $injuryScore + 1) (text-colour:grey)[You have received an injury...]//
+
+With a gasp, the air returns into your lungs bringing pain shooting through your torso. Broken ribs. Gritting your teeth, you sit up, and look at where you fell from.
+
+&quot;Ashton! Are you alright?&quot; Gavin&#39;s yells echo against the cliff walls. He stands on the path, 45 feet above you. You look down at the small platform you landed on. The bounces had broken your fall and then...
+
+&quot;Did I use Stoneshape without realizing it?&quot;
+
+&quot;ASHTON!&quot;
+
+&quot;Yes I&#39;m fine!&quot; Yelling back hurts your chest. If you did, they didn&#39;t notice. You stand up and look around. You see a possible path to climb up and forward which meets back with the path.
+
+&quot;Continue and I will meet you there!&quot; Pointing farther along the path. Gavin nods and starts moving. Moira takes a second before following.
+
+[[Reach up and grab the first stone.-&gt;A2- The Climb]]</tw-passagedata><tw-passagedata pid="116" name="A2- Gavin&#39;s Initiative" tags="" position="563,3576" size="100,100">Gavin had already started to reach for you. You clutch each other&#39;s hands and he pulls you back to him. He steps back to make room for you and bumps into Moira.
+
+&quot;WATCH IT!&quot; Moira forces her voice out from her clenched jaw.
+
+Gavin looks back at her. &quot;I got you both don&#39;t worry.&quot; He gives you a nod and looks past you.
+
+&quot;No time to talk now, lets get somewhere safe first.&quot;
+
+[[Begin leading the party again.-&gt;A2- Rocks Above]]</tw-passagedata><tw-passagedata pid="117" name="A2- Stoneshape" tags="" position="561,3722" size="100,100">You reach out and touch the stone of the cliffside. Grasping with your fingers, you mutter an encantation and the stone begins to shift. Jagged pieces reach out and envelope your hand. Using the solid hold, you pull yourself back.
+
+(set: $magicRevealed to true)(text-colour:grey)[//Your powers have been revealed!//]
+
+[[How will they react?-&gt;A2- Consequences]]</tw-passagedata><tw-passagedata pid="118" name="A2- The Climb" tags="" position="737,3439" size="100,100">You begin your slow and excruciating climb up. Suddenly, you feel vibrations in the sloped wall. Panicked, you look around for the source. Your eyes catch the water several hundred feet below you, and you can barely see water boiling.
+
+The geysers! One&#39;s about to erupt.
+
+You must [&#39;&#39;act fast!&#39;&#39;]&lt;QTE|
+
+[]&lt;choice|
+\
+\(click: ?QTE)[
+\	(set: $timer to 7)
+\	(live: 1s)[
+\		(set: $timer to it - 1)
+\		(replace:?choice)[
+\			$timer]
+			[[Pull youself as close as possible to the cliff wall.-&gt;A2- Geyser Eruption]]
+			[[Speed up your climbing to get out of the way.-&gt;A2- Guardian Gavin]]
+\		(if: $timer is 0)[(go-to:&quot;A2- Geyser Eruption&quot;)]]]
+</tw-passagedata><tw-passagedata pid="119" name="A2- Geyser Eruption" tags="" position="895,3525" size="100,100">You pull yourself as close as you can to the cliff wall. There is a low gutteral //BOOM// from below you. The sound of rushing water approaches quickly. Rocks and stones fly past you which were broken off and shot by the geyser. The stones do not hit you, but the water splashes on you. The boiling water sizzles against your skin and it takes all you have to keep your mouth and eyes closed. The water stings your injuries.
+
+//(set: $injuryScore to $injuryScore + 1) (text-colour:grey)[You have received an injury...]//
+
+You begin climbing again after taking a moment. You speed up as you do not want to be splashed again. You reach the top and see Gavin holding his hand to you.
+
+[[Take his hand and pull youself up.-&gt;A2- Hidden Bridges]]</tw-passagedata><tw-passagedata pid="120" name="A2- Rocks Above" tags="" position="889,3729" size="100,100">(text-colour:grey)[You continue leading the group towards the next section of the hidden path.]
+
+(live: 5s)[(transition:&quot;dissolve&quot;)[(text-colour:grey)[//The path begins to widen...//]](stop:)]
+
+(live: 7s)[(transition:&quot;dissolve&quot;)[(text-colour:grey)[//You no longer have to sidestep and begin to walk forward...//]](stop:)]
+
+(live: 10s)[(transition:&quot;dissolve&quot;)[(text-colour:grey)[//You continue to walk along the path in silence except...//]](stop:)]
+
+(live: 13s)[(transition:&quot;dissolve&quot;)[(text-colour:grey)[//You hear the distant screeches of the creates that dwell above in the plateau...//]](stop:)]
+
+(live: 16s)[(transition:&quot;dissolve&quot;)[One seems to get close...
+Then with a sudden crash the earth rumbles. Whatever it is, it must be giant, but also far enough to not see you down here.
+
+The vibrations continue, and turn into a low rumble. You feel debris hit your arm and look up.
+
+Giant pieces of the cliff ledge have broken off and are heading towards you.
+[You must [&#39;&#39;act fast!&#39;&#39;]&lt;QTE|](stop:)] ]
+
+[]&lt;choice|
+\
+\(click: ?QTE)[
+\	(set: $timer to 7)
+\	(live: 1s)[
+\		(set: $timer to it - 1)
+\		(replace:?choice)[
+\			$timer]
+			[Pull yourself flat against the cliff side.]&lt;avoid|
+			[Raise your arms to cover your head.]&lt;brace|
+			[&quot;Take cover rocks above!&quot;]&lt;warn|
+			(click:?avoid)[(go-to:&quot;A2- Rocks Below&quot;)]
+			(click:?brace)[(go-to:&quot;A2- Rocks Below&quot;)]
+			(click:?warn)[(set:$a2_warnedOthers to true)(go-to:&quot;A2- Rocks Below&quot;)]
+\		(if: $timer is 0)[(go-to:&quot;A2- Rocks Below&quot;)]]]</tw-passagedata><tw-passagedata pid="121" name="A2- Consequences" tags="" position="730,3725" size="100,100">You look at Gavin who looks back at you with emotionless eyes. Behind him, Moira begins to move towards you with her hand on the hilt of her sword.
+
+Rocks shift beneath her foot and she stops in her tracks. Her eyes never leaving yours, burning a hole through you.
+
+Gavin extends his arm across he, protecting her from a potential fall. &quot;This is not the place for the conversation we will be having. Lets get somewhere safe first.&quot;
+
+Moira grunts &quot;Don&#39;t do anything stupid Ashton.&quot;
+
+[[Keep leading the group.-&gt;A2- Rocks Above]]</tw-passagedata><tw-passagedata pid="122" name="A2- Hidden Bridges" tags="" position="1234,3551" size="100,100">(text-colour:grey)[You press on through the end of the narrow path and...]
+
+(live: 2s)[(transition:&quot;dissolve&quot;)[You reach an outcropping of the cliff side which is formed into a small platform. Two wooden beams are sticking out from each corner of the ledge, and a wooden suspended bridge stretches out from them to the other side of the fjord.
+
+The bridge sways in the wind, and a wooden board detaches from it, falling into the depths below.
+
+&quot;And we&#39;re supposed to trust you with this?&quot; Moira walks up to Ashton, eyes never leaving his.
+
+&quot;We need to cross. This is narrowest section and I&#39;ve crossed the bridge before. Just not with heavy armour or other people.&quot;
+
+Moira glares at you. Then she turns towards the bridge and just waits.
+
+[[Step gingerly onto the bridge.-&gt;A2- Moira&#39;s Fall]]](stop:)]</tw-passagedata><tw-passagedata pid="123" name="A2- Bold and Reckless" tags="" position="1563,3407" size="100,100">You rush past Gavin who is hanging tightly onto the rope with one hand and extending his other. Moira spins around as she falls and manages to grab onto the bridge floor. You rush to Moira and dive to catch her arm. You grab her by the elbow just as the wooden board gives way to the weight of her armour and your impact. You reach out to grab the previous board and cling onto it, pulling your shoulder muscles and straining your body to its limit.
+
+//(set: $injuryScore to $injuryScore + 1) (text-colour:grey)[You have received an injury...]//
+
+(if: $injuryScore &gt;= 3)[Your body has gone passed it&#39;s limit. Bleeding from previous injuries, you lose conciousness for a second. That&#39;s enough to lose your grip and slip off the edge with Moira...
+
+[[Attempt to hold on to the edge of the bridge...-&gt;A2- Fall Death]]]
+(else:)[
+You let out a yell as you feel the veins in your head buldge with the effort. Then you see Gavin standing in the same spot, except now his eyes are focused on the slack rope beginning to slither across the floor and wrap around your arm. They pull you and Moira up. Gavin takes a sharp breath in and the rope goes slack again.
+
+How did he...
+
+&quot;Let&#39;s get over this bridge.&quot; Gavin stops any further questioning.
+
+[[Get up and continue across the bridge.-&gt;A2- Boarded Cliff Path]]]</tw-passagedata><tw-passagedata pid="124" name="A2- Let Her Fall" tags="" position="1560,3557" size="100,100">You remain rooted to place trying to find your own balance. Then you see Gavin hanging tightly onto the rope with one hand and extending his other. Moira spins around as she falls and manages to grab onto the bridge floor. The wooden board gives way to the weight of her armour.
+
+Standing in the same spot, Gavin has his eyes focused on the slack rope which begins to slither across the floor and wrap around her arm. They pull her up. Gavin takes a sharp breath in and the rope goes slack again.
+
+How did he...
+
+&quot;Stop gawking!&quot; Gavin commands, snapping you back into the moment. &quot;Let&#39;s get over this bridge, before it gives way!&quot; 
+
+[[Continue across the bridge.-&gt;A2- Boarded Cliff Path]]]</tw-passagedata><tw-passagedata pid="125" name="A2- Stone Hand" tags="" position="1562,3717" size="100,100">You remain rooted to place and extend your arm towards the start of the bridge. You feel the sting of the Veil invade your mind as you call on your Stoneshape abilities. You move the wooden post back and fasten the rope using stone, stabilising the bridge. You see Gavin hanging tightly onto the rope with one hand and extending his other. Moira spins around as she falls and manages to grab onto the bridge floor. She quickly grabs the rope above and pulls herself back up.
+
+Both Gavin and Moira turn to look towards you.
+
+(set: $magicRevealed to true)(text-colour:grey)[//Your powers have been revealed!//]
+
+&quot;Let&#39;s get over this bridge.&quot; Gavin attempting to start any further questioning.
+
+[[Turn to continue crossing.-&gt;A2- Friend or Foe]]</tw-passagedata><tw-passagedata pid="126" name="A2- Moira&#39;s Fall" tags="" position="1405,3551" size="100,100">As you cross the bridge, testing each board before trusting your entire weight on it. The bridge continues to sway in the wind, like a deadly cradle calling you to the depth of the fjord. You glance up at the stone arch above you.
+
+&quot;That&#39;s how we would have crossed if we had gone over instead.&quot;
+
+Then suddenly, you hear a //CRACK// and the bridge ropes vibrate like a stringed instrument. The left rope under your hand goes slack. You look behind you to see one of the beems had cracked in half and shifted forward.
+
+You also see Moira losing her balance and begin to teeter off the bridge.
+
+(live: 10s)[(transition:&quot;dissolve&quot;)[You must [&#39;&#39;act fast!&#39;&#39;]&lt;QTE|](stop:)]
+
+[]&lt;choice|
+\
+\(click: ?QTE)[
+\	(set: $timer to 7)
+\	(live: 1s)[
+\		(set: $timer to it - 1)
+\		(replace:?choice)[
+\			$timer]
+			[[Run past Gavin to grab her hand.-&gt;A2- Bold and Reckless]]
+			[[Stay put. You don&#39;t want to make it worse.-&gt;A2- Let Her Fall]]
+			[[Use Stoneshape to secure the bridge.-&gt;A2- Stone Hand]]
+\		(if: $timer is 0)[(go-to:&quot;A2- Let Her Fall&quot;)]]]</tw-passagedata><tw-passagedata pid="127" name="A2- Boarded Cliff Path" tags="" position="1914,3648" size="100,100">Once you reach the end of the bridge, you look ahead on this new cliff side.
+
+&quot;You have got to be kidding...&quot; Moira&#39;s fixate on the path created out of boarded walkways alongside the cliff.
+
+&quot;Not much longer before we climb up and we&#39;ll be on solid ground and away from hunting creatures.&quot; You point off in the distance to where the boarded walkway ends. Above it a series of wood platforms adorn the cliff side each with ropes to climb up.
+
+[[Step on the wooden path.-&gt;A2- Rotten Boards]]</tw-passagedata><tw-passagedata pid="128" name="A2- Friend or Foe" tags="" position="1724,3639" size="100,100">Just before you take a step you feel the bridge shake once again. This time however, it quakes with rythm as Moira takes long strides towards you.
+
+&quot;Ashton, you&#39;ll pay for dragging us into this pit!
+(if:$a2_hiddenPathChosen is false)[You just had to go and change our route!]
+Regent Rat! You think I will overlook your transgressions just because you saved me?&quot;
+
+Gavin puts a firm hand on her shoulder, stopping her from passing him.
+
+&quot;Moira, unless you want to end up down there, we should hold this for when we are on solid ground. Ashton, quick, lead the way! Regent or not, we&#39;ll all be even as stains on the side of a chasm!&quot;
+
+[[Turn around once again and lead the way.-&gt;A2- Boarded Cliff Path]]</tw-passagedata><tw-passagedata pid="129" name="A2- Gavin&#39;s Fall" tags="" position="2217,3647" size="100,100">You remain where you are in fear of falling yourself.
+
+Gavin extends his hands and clutches the cliff face. As he does, the stone grows out and envelopes his hand holding him in place.
+
+With this he steps onto the next wooden board.
+
+He looks at you and smiles. 
+&quot;We&#39;re almost there aren&#39;t we?&quot; He looks past you towards the platform now in his view.
+
+Moira uses the protruding stone Gavin created to cross the new gap in the walkway and together you all reach the platform.
+
+[[Begin your ascent up the ropes.-&gt;A2- Out of Danger]]]</tw-passagedata><tw-passagedata pid="130" name="A2- Sacrifice" tags="" position="2220,3505" size="100,100">You lean out and reach for Gavin&#39;s flailing hands. You clutch his arm and pull him towards you while gripping onto the wall yourself.
+
+(if: $injuryScore &gt;= 3)[Your body has gone passed it&#39;s limit. Bleeding from previous injuries, you lose conciousness for a second. That&#39;s enough to lose your grip...
+
+[[Attempt to grab a hold of anything in reach...-&gt;A2- Fall Death]]]
+(else:)[
+Grabbing onto Gavin and the cliff face, you give him enough time to reach out and grab touch the cliff face. As he does, the stone grows out and envelopes his hand holding him in place.
+
+With this he steps onto the next wooden board.
+
+He looks at you and smiles. 
+&quot;We&#39;re almost there aren&#39;t we?&quot; He looks past you towards the platform now in his view.
+
+Moira uses the protruding stone Gavin created to cross the new gap in the walkway and together you all reach the platform.
+
+[[Begin your ascent up the ropes.-&gt;A2- Out of Danger]]]</tw-passagedata><tw-passagedata pid="131" name="A2- Rotten Boards" tags="" position="2065,3646" size="100,100">You begin to make your way across the walkway. The wood creaking and bending under each footstep. You glance over the edge at the sheer drop to the jagged stones and water hundreds of feet below.
+
+After almost 30 minutes of travel at a crawling speed, you come around the bend and begin to see the first platform.
+
+You turn around to let the others know you&#39;re almost there.
+
+As you open your mouth, the rotten wooden platform under Gavin cracks in two. He begins to plummet and begins to claw at the sloped wall.
+
+[[Stay put.-&gt;A2- Gavin&#39;s Fall]]
+[[Lean out and reach for his hand.-&gt;A2- Sacrifice]]</tw-passagedata><tw-passagedata pid="132" name="A2- Fall Death" tags="Death" position="1926,3419" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="133" name="A2- Out of Danger" tags="" position="2570,3589" size="100,100">You feel the effects of the travel in your body as you climb the cliff face using the ropes. With only short rests at each platform, you soon begin aching all over. (if:$injuryScore &gt;= 1)[Your injuries begin to bleed once again.]
+
+After using the last bit of your energy, you manage to climb the remainer of the way and reach the ledge of the cliff. Finally solid ground.
+
+[[Take a moment to catch your breath.-&gt;A2- Aftermath]]</tw-passagedata><tw-passagedata pid="134" name="A2- Rocks Below" tags="" position="1039,3727" size="100,100">(if:$a2_warnedOthers is true)[Gavin reaches out and touches the stone. Then with a swift overhead motion, he shapes the stone of the cliff side into a small ledge above you all, protected you from the falling rocks.
+(if:$a2_hiddenPathChosen is true)[Gavin looks at you and with a wink says &quot;I backed you up on picking this path. I need to step up if something goes wrong right? Let&#39;s keep going.&quot;
+]
+(else:)[Gavin glances towards you and says &quot;You were right... This path is dangerous. Let&#39;s keep going.&quot;]]
+(else:)[\
+The rocks plumet and crash all around you, taking pieces of the path with it. One strikes you across the head and hurls you against the wall. You hear Gavin and Moira grunt and cover as they are caught off gaurd by the falling rocks.
+
+//(set: $injuryScore to $injuryScore + 1) (set: $GavinInjuryScore to $GavinInjuryScore + 1)(set: $MoiraInjuryScore to $MoiraInjuryScore + 1)(text-colour:grey)[You have received an injury...]//
+
+The stone barrage ends as quickly as it had begun. You look around and see battered faces. Moira staring ahead intensly and Gavin rolls his shoulder and grimmaces.]
+
+[[&quot;We need to press on.&quot;-&gt;A2- Hidden Bridges]]</tw-passagedata><tw-passagedata pid="135" name="A2- Guardian Gavin" tags="" position="893,3393" size="100,100">You begin to climb quickly and recklessly. No time to check for solid holds. As you climb you can feel the vibrations intensifying. You quicken your pace, your muscles burning with each pull and your back aching. Suddenly you feel your grip shift as the stone under it begins to crack. Then just as suddenly, you see Gavin right above you extending his hand to you.
+
+In your panic, you had missed him climbing down to help you up. With his help you climb out of the way of the geysers blast as it spews boiling water and loose rocks hundreds of feet up.
+
+Gavin climbs quicker than you, without losing hold at all. At the top he climbs to the path and extends his hand once more.
+
+[[Take his hand and pull youself up.-&gt;A2- Hidden Bridges]]</tw-passagedata><tw-passagedata pid="136" name="A2- Powers Hidden 1" tags="" position="486,4607" size="100,100">You turn to Gavin and speak: &quot;You&#39;re a Seeker?&quot;
+	
+(If: $a2_hiddenPathTraversed is false) [
+Gavin approaches, patting you on the back and exuding a laugh from under his breath. &quot;Don&#39;t want to say I told you so, but... Well, I told you so.&quot; He speaks, despite the clear fatigue he&#39;s feeling.
+	
+Moira approaches, speaking softly, as if she&#39;s worried someone will overhear. &quot;I wasn&#39;t expecting you to pull your weight. I suppose it&#39;s easy when you&#39;re light as a feather.&quot;
+	
+&quot;We shouldn&#39;t stay here,&quot; you interject. &quot;We&#39;re bound to draw the ire of more beasts, and the carcass will surely attract carnivores to feast.&quot;
+
+There will be time for questions later... ] (else:) [Moira grips the side of the stone wall, almost hard enough to break it under the pressure, as she sidles the edge up to solid ground.
+	
+&quot;I... Told you... I...&quot; She seems to be having trouble speaking.
+	
+Gavin approaches, speaking softly.  &quot;Relax, Moira, we made it! You can rest easy now.&quot;
+	
+&quot;We shouldn&#39;t stay here,&quot; You interject. &quot;There&#39;s no telling if this structure will hold either. We should get to solid footing, and fast.&quot;
+
+There will be time for questions later... ]
+	
+The sun has begun to set, and darkness is enveloping the Archipelago.
+	
+Eventually, you find a suitable site to camp... -&gt;</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">"use strict";var _slicedToArray=function(){return function(e,t){if(Array.isArray(e))return e;if(Symbol.iterator in Object(e))return function(e,t){var n=[],r=!0,i=!1,a=void 0;try{for(var o,s=e[Symbol.iterator]();!(r=(o=s.next()).done)&&(n.push(o.value),!t||n.length!==t);r=!0);}catch(e){i=!0,a=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw a}}return n}(e,t);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}!function(){
 /**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
