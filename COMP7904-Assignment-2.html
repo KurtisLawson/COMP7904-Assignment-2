@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1" name="viewport">
-<title>IntegrationTest</title>
+<title>IntegrationTest2</title>
 <style title="Twine CSS">@keyframes appear{0%{opacity:0}to{opacity:1}}@keyframes fade-in-out{0%,to{opacity:0}50%{opacity:1}}@keyframes rumble{25%{top:-0.1em}75%{top:0.1em}0%,to{top:0px}}@keyframes shudder{25%{left:0.1em}75%{left:-0.1em}0%,to{left:0px}}@keyframes buoy{25%{top:0.25em}75%{top:-0.25em}0%,to{top:0px}}@keyframes sway{25%{left:0.25em}75%{left:-0.25em}0%,to{left:0px}}@keyframes pulse{0%{transform:scale(0, 0)}20%{transform:scale(1.2, 1.2)}40%{transform:scale(0.9, 0.9)}60%{transform:scale(1.05, 1.05)}80%{transform:scale(0.925, 0.925)}to{transform:scale(1, 1)}}@keyframes zoom-in{0%{transform:scale(0, 0)}to{transform:scale(1, 1)}}@keyframes shudder-in{0%, to{transform:translateX(0em)}5%, 25%, 45%{transform:translateX(-1em)}15%, 35%, 55%{transform:translateX(1em)}65%{transform:translateX(-0.6em)}75%{transform:translateX(0.6em)}85%{transform:translateX(-0.2em)}95%{transform:translateX(0.2em)}}@keyframes rumble-in{0%, to{transform:translateY(0em)}5%, 25%, 45%{transform:translateY(-1em)}15%, 35%, 55%{transform:translateY(1em)}65%{transform:translateY(-0.6em)}75%{transform:translateY(0.6em)}85%{transform:translateY(-0.2em)}95%{transform:translateY(0.2em)}}@keyframes fidget{0%, 8.1%, 82.1%, 31.1%, 38.1%, 44.1%, 40.1%, 47.1%, 74.1%, 16.1%, 27.1%, 72.1%, 24.1%, 95.1%, 6.1%, 36.1%, 20.1%, 4.1%, 91.1%, 14.1%, 87.1%, to{left:0px;top:0px}8%, 82%, 31%, 38%, 44%{left:-1px}40%, 47%, 74%, 16%, 27%{left:1px}72%, 24%, 95%, 6%, 36%{top:-1px}20%, 4%, 91%, 14%, 87%{top:1px}}@keyframes slide-right{0%{transform:translateX(-100vw)}}@keyframes slide-left{0%{transform:translateX(100vw)}}@keyframes slide-up{0%{transform:translateY(100vh)}}@keyframes slide-down{0%{transform:translateY(-100vh)}}@keyframes fade-right{0%{opacity:0;transform:translateX(-1em)}to{opacity:1}}@keyframes fade-left{0%{opacity:0;transform:translateX(1em)}to{opacity:1}}@keyframes fade-up{0%{opacity:0;transform:translateY(1em)}to{opacity:1}}@keyframes fade-down{0%{opacity:0;transform:translateY(-1em)}to{opacity:1}}@keyframes flicker{0%,29%,31%,63%,65%,77%,79%,86%,88%,91%,93%{opacity:0}30%{opacity:0.2}64%{opacity:0.4}78%{opacity:0.6}87%{opacity:0.8}92%, to{opacity:1}}@keyframes blur{0%{filter:blur(2rem);opacity:0}25%{opacity:1}to{filter:blur(0rem);opacity:1}}.dom-debug-mode tw-story,.dom-debug-mode tw-passage,.dom-debug-mode tw-sidebar,.dom-debug-mode tw-include,.dom-debug-mode tw-hook,.dom-debug-mode tw-expression,.dom-debug-mode tw-link,.dom-debug-mode tw-dialog,.dom-debug-mode tw-columns,.dom-debug-mode tw-column,.dom-debug-mode tw-align{outline:1px solid #f5a3da;min-height:32px;display:block !important}.dom-debug-mode tw-story::before,.dom-debug-mode tw-passage::before,.dom-debug-mode tw-sidebar::before,.dom-debug-mode tw-include::before,.dom-debug-mode tw-hook::before,.dom-debug-mode tw-expression::before,.dom-debug-mode tw-link::before,.dom-debug-mode tw-dialog::before,.dom-debug-mode tw-columns::before,.dom-debug-mode tw-column::before,.dom-debug-mode tw-align::before{position:absolute;top:0;left:0;height:16px;background-color:#f5a3da;color:black;font-size:16px;font-weight:normal;font-style:normal;font-family:monospace;display:inline-block;line-height:100%;white-space:pre;z-index:999997}.dom-debug-mode tw-story:hover,.dom-debug-mode tw-passage:hover,.dom-debug-mode tw-sidebar:hover,.dom-debug-mode tw-include:hover,.dom-debug-mode tw-hook:hover,.dom-debug-mode tw-expression:hover,.dom-debug-mode tw-link:hover,.dom-debug-mode tw-dialog:hover,.dom-debug-mode tw-columns:hover,.dom-debug-mode tw-column:hover,.dom-debug-mode tw-align:hover{outline:1px solid #fc9}.dom-debug-mode tw-story:hover::before,.dom-debug-mode tw-passage:hover::before,.dom-debug-mode tw-sidebar:hover::before,.dom-debug-mode tw-include:hover::before,.dom-debug-mode tw-hook:hover::before,.dom-debug-mode tw-expression:hover::before,.dom-debug-mode tw-link:hover::before,.dom-debug-mode tw-dialog:hover::before,.dom-debug-mode tw-columns:hover::before,.dom-debug-mode tw-column:hover::before,.dom-debug-mode tw-align:hover::before{background-color:#fc9;transition:background-color 1s}.dom-debug-mode tw-passage,.dom-debug-mode tw-include,.dom-debug-mode tw-hook,.dom-debug-mode tw-expression,.dom-debug-mode tw-link,.dom-debug-mode tw-dialog,.dom-debug-mode tw-columns,.dom-debug-mode tw-column,.dom-debug-mode tw-align{padding:1em;margin:0}.dom-debug-mode tw-story::before{content:'<tw-story tags="' attr(tags) '">'}.dom-debug-mode tw-passage::before{top:-16px;content:'<tw-passage tags="' attr(tags) '">'}.dom-debug-mode tw-sidebar::before{top:-16px;content:"<tw-sidebar>"}.dom-debug-mode tw-hook::before{content:'<tw-hook name="' attr(name) '">'}.dom-debug-mode tw-expression::before{content:'<tw-expression name="' attr(name) '">'}.dom-debug-mode tw-link::before{content:'<tw-link name="' attr(name) '">'}.dom-debug-mode tw-dialog::before{content:"<tw-dialog>"}.dom-debug-mode tw-columns::before{content:"<tw-columns>"}.dom-debug-mode tw-column::before{content:"<tw-column>"}.dom-debug-mode tw-align::before{content:"<tw-align>"}.dom-debug-mode tw-include::before{content:'<tw-include type="' attr(type) '" title="' attr(title) '">'}.debug-mode tw-expression{display:inline-block !important}.debug-mode tw-expression[type=variable]::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"$" attr(name)}.debug-mode tw-expression[type=tempVariable]::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"_" attr(name)}.debug-mode tw-expression[return=boolean]{background-color:rgba(179,179,179,0.2)}.debug-mode tw-expression[return=array]{background-color:rgba(255,102,102,0.2)}.debug-mode tw-expression[return=dataset]{background-color:rgba(255,128,0,0.2)}.debug-mode tw-expression[return=number]{background-color:rgba(255,179,102,0.2)}.debug-mode tw-expression[return=datamap]{background-color:rgba(255,255,102,0.2)}.debug-mode tw-expression[return=changer]{background-color:rgba(179,255,102,0.2)}.debug-mode tw-expression[return=lambda]{background-color:rgba(102,255,102,0.2)}.debug-mode tw-expression[return=hookname]{background-color:rgba(102,255,204,0.2)}.debug-mode tw-expression[return=string]{background-color:rgba(102,255,255,0.2)}.debug-mode tw-expression[return=datatype]{background-color:rgba(102,153,255,0.2)}.debug-mode tw-expression[return=gradient],.debug-mode tw-expression[return=colour]{background-color:rgba(204,102,255,0.2)}.debug-mode tw-expression[return=instant],.debug-mode tw-expression[return=macro]{background-color:rgba(240,117,199,0.2)}.debug-mode tw-expression[return=command]{background-color:rgba(153,153,255,0.2)}.debug-mode tw-expression.false{background-color:rgba(255,0,0,0.2) !important}.debug-mode tw-expression[type=macro]::before{content:"(" attr(name) ":)";padding:0 0.5rem;font-size:1rem;vertical-align:middle;line-height:normal;background-color:inherit;border:1px solid rgba(255,255,255,0.5)}.debug-mode tw-hook{background-color:rgba(0,85,255,0.1) !important}.debug-mode tw-hook::before{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"["}.debug-mode tw-hook::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"]"}.debug-mode tw-hook[name]::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"]<" attr(name) "|"}.debug-mode tw-pseudo-hook{background-color:rgba(255,170,0,0.1) !important}.debug-mode tw-collapsed::before{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"{"}.debug-mode tw-collapsed::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"}"}.debug-mode tw-verbatim::before,.debug-mode tw-verbatim::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"`"}.debug-mode tw-align[style*="text-align: center"]{background:linear-gradient(to right, rgba(255,204,189,0) 0%, rgba(255,204,189,0.25) 50%, rgba(255,204,189,0) 100%)}.debug-mode tw-align[style*="text-align: left"]{background:linear-gradient(to right, rgba(255,204,189,0.25) 0%, rgba(255,204,189,0) 100%)}.debug-mode tw-align[style*="text-align: right"]{background:linear-gradient(to right, rgba(255,204,189,0) 0%, rgba(255,204,189,0.25) 100%)}.debug-mode tw-column{background-color:rgba(189,228,255,0.2)}.debug-mode tw-enchantment{animation:enchantment 0.5s infinite;border:1px solid}.debug-mode tw-link::after,.debug-mode tw-broken-link::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:attr(passage-name)}.debug-mode tw-include{background-color:rgba(204,128,51,0.1)}.debug-mode tw-include::before{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:attr(type) ' "' attr(title) '"'}@keyframes enchantment{0%,to{border-color:#ffb366}50%{border-color:#6fc}}tw-debugger{position:fixed;box-sizing:border-box;bottom:0;right:0;z-index:999999;min-width:10em;min-height:1em;padding:0em 0.5em 0.5em 1em;font-size:1.25em;font-family:sans-serif;color:#000;border-left:solid #000 2px;border-top:solid #000 2px;border-top-left-radius:.5em;background:#fff;opacity:1}tw-debugger select{margin-right:1em;width:12em}tw-debugger button{border-radius:3px;border:solid #999 1px;margin:auto 4px;background-color:#fff;font-size:inherit;color:#000}tw-debugger button.enabled{background-color:#eee;box-shadow:inset #ddd 3px 5px 0.5em}tw-debugger .panel{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;position:absolute;bottom:100%;left:-2px;right:0;padding:1em;max-height:40vh;overflow-y:scroll;overflow-x:hidden;z-index:999998;background:#fff;border:inherit;border-bottom:solid #999 2px;border-top-left-radius:.5em;border-bottom-left-radius:.5em;font-size:0.8em}tw-debugger .panel:empty,tw-debugger .panel[hidden]{display:none}tw-debugger .panel-source,tw-debugger .panel-row-source{font-family:monospace;overflow-x:scroll;white-space:pre;-ms-flex-preferred-size:100%;flex-basis:100%}tw-debugger .panel-row-source{margin:5px 0}tw-debugger .panel-rows{width:100%;overflow-x:scroll}tw-debugger .panel-rows>*{display:table-row}tw-debugger .panel-rows>div:nth-of-type(2n){background:#EEE}tw-debugger .panel-row-buttons{text-align:right}tw-debugger .panel-variables .panel-rows:empty::before{content:"~ No variables ~";font-style:italic;color:#888;text-align:center}tw-debugger .panel-enchantments .panel-rows:empty::before{content:"~ No enchantments ~";font-style:italic;color:#888;text-align:center}tw-debugger .panel-errors .panel-rows:empty::before{content:"~ No errors... for now. ~";font-style:italic;color:#888;text-align:center}tw-debugger .panel-rows:empty+.panel-variables-bottom{display:none}tw-debugger .panel-storylets:not(.panel-exclusive) .storylet-exclusive,tw-debugger .panel-storylets:not(.panel-urgent) .storylet-urgent{display:none}tw-debugger .panel-variables-bottom{padding-top:5px}tw-debugger .enchantment-row{min-height:1.5em}tw-debugger .variable-path{opacity:0.4}tw-debugger .temporary-variable-scope,tw-debugger .enchantment-local{font-family:sans-serif;font-weight:normal;opacity:0.8;font-size:0.75em}tw-debugger .temporary-variable-scope:not(:empty)::before,tw-debugger .enchantment-local:not(:empty)::before{content:" in "}tw-debugger .variable-name,tw-debugger .enchantment-name{font-family:monospace;font-weight:bold}tw-debugger .variable-type{color:#444;font-weight:normal;text-overflow:ellipsis;overflow:hidden;max-width:10em}tw-debugger .error-row{display:table-row;background-color:rgba(230,101,204,0.3)}tw-debugger .error-row:nth-of-type(2n){background-color:rgba(237,145,219,0.3)}tw-debugger .error-row>*{display:table-cell;padding:0.25em 0.5em}tw-debugger .error-row .error-message{cursor:help}tw-debugger .error-row .error-passage{color:#444}tw-debugger .storylet-row{background-color:rgba(201,233,222,0.3)}tw-debugger .storylet-row:nth-child(2n){background-color:rgba(128,203,178,0.3)}tw-debugger .storylet-row.storylet-closed{font-style:italic;opacity:0.4;background-color:rgba(217,217,217,0.3)}tw-debugger .storylet-row.storylet-closed:nth-child(2n){background-color:rgba(166,166,166,0.3)}.storylet-error tw-debugger .storylet-row{background-color:rgba(230,101,204,0.3)}.storylet-error tw-debugger .storylet-row:nth-child(2n){background-color:rgba(237,145,219,0.3)}tw-debugger .storylet-row .storylet-name,tw-debugger .storylet-row .storylet-value{display:inline-block;width:50%}tw-debugger .tabs{padding-bottom:0.5em}tw-debugger .tab{border-radius:0px 0px 0.5em 0.5em;border-top:none}tw-debugger .resizer{position:absolute;height:3em;border-left:2px solid #ccc;border-right:2px solid #ccc;top:10px;left:4px;width:8px;cursor:ew-resize}tw-dialog{z-index:999997;border:#fff solid 2px;padding:2em;color:#fff;background-color:#000;display:block}@media (min-width: 576px){tw-dialog{max-width:50vw}}tw-dialog input[type=text]{font-size:inherit;width:100%}tw-dialog-links{text-align:right;display:-ms-flexbox;display:flex;-ms-flex-pack:end;justify-content:flex-end}tw-backdrop{z-index:999996;position:fixed;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,0.8);display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center}tw-backdrop ~ tw-backdrop{display:none}tw-link,.link,tw-icon,.enchantment-clickblock{cursor:pointer}tw-link,.enchantment-link{color:#4169E1;font-weight:bold;text-decoration:none;transition:color 0.2s ease-in-out}tw-passage [style^="color"] tw-link:not(:hover),tw-passage [style*=" color"] tw-link:not(:hover),tw-passage [style^="color"][hover="true"] tw-link:hover,tw-passage [style*=" color"][hover="true"] tw-link:hover,tw-passage [style^="color"] .enchantment-link:not(:hover),tw-passage [style*=" color"] .enchantment-link:not(:hover),tw-passage [style^="color"][hover="true"] .enchantment-link:hover,tw-passage [style*=" color"][hover="true"] .enchantment-link:hover{color:inherit}tw-link:hover,.enchantment-link:hover{color:#00bfff}tw-link:active,.enchantment-link:active{color:#DD4B39}.visited{color:#6941e1}tw-passage [style^="color"] .visited:not(:hover),tw-passage [style*=" color"] .visited:not(:hover),tw-passage [style^="color"][hover="true"] .visited:hover,tw-passage [style*=" color"][hover="true"] .visited:hover{color:inherit}.visited:hover{color:#E3E}tw-broken-link{color:#993333;border-bottom:2px solid #993333;cursor:not-allowed}tw-passage [style^="color"] tw-broken-link:not(:hover),tw-passage [style*=" color"] tw-broken-link:not(:hover),tw-passage [style^="color"][hover="true"] tw-broken-link:hover,tw-passage [style*=" color"][hover="true"] tw-broken-link:hover{color:inherit}.enchantment-mouseover{border-bottom:2px dashed #999}.enchantment-mouseout{border:rgba(64,149,191,0.6) 1px solid}.enchantment-mouseout:hover{background-color:rgba(175,197,207,0.75);border:transparent 1px solid;border-radius:0.2em}.enchantment-clickblock{width:100%;height:100%;display:block}.enchantment-clickblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;color:rgba(65,105,225,0.5);transition:color 0.2s ease-in-out}.enchantment-clickblock>:not(tw-enchantment):hover::after{color:rgba(0,191,255,0.5)}.enchantment-clickblock>:not(tw-enchantment):active::after{color:rgba(222,78,59,0.5)}.enchantment-clickblock>:not(tw-enchantment)::after{box-shadow:inset 0 0 0 0.5vmax}.enchantment-clickblock>tw-passage::after,.enchantment-clickblock>tw-sidebar::after{box-shadow:0 0 0 0.5vmax}.enchantment-mouseoverblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;border:2px dashed #999}.enchantment-mouseoutblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;border:rgba(64,149,191,0.6) 2px solid}.enchantment-mouseoutblock:hover>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;background-color:rgba(175,197,207,0.75);border:transparent 2px solid;border-radius:0.2em}tw-link.enchantment-button,.enchantment-link.enchantment-button,.enchantment-button:not(.enchantment-link) tw-link,.enchantment-button:not(.enchantment-link) .enchantment-link{border-radius:16px;border-style:solid;border-width:2px;text-align:center;padding:0px 8px;display:block}tw-dialog-links{padding-top:1.5em}tw-dialog-links tw-link{border-radius:16px;border-style:solid;border-width:2px;text-align:center;padding:0px 8px;display:block;display:inline-block}html{margin:0;height:100%;overflow-x:hidden}*,:before,:after{position:relative;box-sizing:inherit}body{margin:0;height:100%}tw-storydata{display:none}tw-story{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;font:100% Georgia, serif;box-sizing:border-box;width:100%;min-height:100%;font-size:1.5em;line-height:1.5em;padding:5% 5%;overflow:hidden;background-color:#000;color:#fff}tw-story [style*=content-box] *{box-sizing:border-box}@media (min-width: 576px){tw-story{padding:5% 20%}}tw-story tw-consecutive-br{display:block;height:1.6ex;visibility:hidden}tw-story select{background-color:transparent;font:inherit;border-style:solid;padding:2px}tw-story select:not([disabled]){color:inherit}tw-story textarea{resize:none;background-color:transparent;font:inherit;color:inherit;border-style:none;padding:2px}tw-story input[type=checkbox]{transform:scale(1.5);margin:0 0.5em}tw-story tw-noscript{animation:appear 0.8s}tw-passage{display:block}tw-sidebar{text-align:center;display:-ms-flexbox;display:flex;-ms-flex-pack:justify;justify-content:space-between}@media (min-width: 576px){tw-sidebar{left:-5em;width:3em;position:absolute;-ms-flex-direction:column;flex-direction:column}}tw-icon{display:inline-block;margin:0.5em 0;font-size:66px;font-family:"Verdana",sans-serif}tw-icon[alt]{opacity:0.2}tw-icon[alt]:hover{opacity:0.4}tw-icon[data-label]::after{font-weight:bold;content:attr(data-label);font-size:20px;bottom:-20px;left:-50%;white-space:nowrap}tw-meter{display:block}tw-hook:empty,tw-expression:empty{display:none}tw-error{display:inline-block;border-radius:0.2em;padding:0.2em;font-size:1rem;cursor:help;white-space:pre-wrap}tw-error.error{background-color:rgba(223,58,190,0.6);color:#fff}tw-error.warning{background-color:rgba(223,140,58,0.6);color:#fff;display:none}.debug-mode tw-error.warning{display:inline}tw-error-explanation{display:block;font-size:0.8rem;line-height:1rem}tw-open-button,tw-folddown{cursor:pointer;line-height:0em;border-radius:1px;border:1px solid black;font-size:0.8rem;margin:0 0.4rem;padding:2px;white-space:pre}tw-folddown::after{content:"\25b6"}tw-folddown.open::after{content:"\25bc"}tw-open-button::after{content:"Open"}tw-notifier{border-radius:0.2em;padding:0.2em;font-size:1rem;background-color:rgba(223,182,58,0.4);display:none}.debug-mode tw-notifier{display:inline}tw-notifier::before{content:attr(message)}tw-colour{border:1px solid black;display:inline-block;width:1em;height:1em}h1{font-size:3em}h2{font-size:2.25em}h3{font-size:1.75em}h1,h2,h3,h4,h5,h6{line-height:1em;margin:0.3em 0 0.6em 0}pre{font-size:1rem;line-height:initial}small{font-size:70%}big{font-size:120%}mark{color:rgba(0,0,0,0.6);background-color:#ff9}ins{color:rgba(0,0,0,0.6);background-color:rgba(255,242,204,0.5);border-radius:0.5em;box-shadow:0em 0em 0.2em #ffe699;text-decoration:none}center{text-align:center;margin:0 auto;width:60%}blink{text-decoration:none;animation:fade-in-out 1s steps(1, end) infinite alternate}tw-align{display:block}tw-columns{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;-ms-flex-pack:justify;justify-content:space-between}.transition-in{animation:appear 0ms step-start}.transition-out{animation:appear 0ms step-end}[data-t8n^=dissolve].transition-in,[data-t8n=fade].transition-in{animation:appear .8s}[data-t8n^=dissolve].transition-out,[data-t8n=fade].transition-out{animation:appear .8s reverse}[data-t8n^=shudder].transition-in{display:inline-block !important;animation:shudder-in .8s}[data-t8n^=shudder].transition-out{display:inline-block !important;animation:shudder-in .8s reverse}[data-t8n^=rumble].transition-in{display:inline-block !important;animation:rumble-in .8s}[data-t8n^=rumble].transition-out{display:inline-block !important;animation:rumble-in .8s reverse}[data-t8n^=pulse].transition-in{animation:pulse .8s;display:inline-block !important}[data-t8n^=pulse].transition-out{animation:pulse .8s reverse;display:inline-block !important}[data-t8n^=zoom].transition-in{animation:zoom-in .8s;display:inline-block !important}[data-t8n^=zoom].transition-out{animation:zoom-in .8s reverse;display:inline-block !important}[data-t8n^=blur].transition-in{animation:blur .8s;display:inline-block !important}[data-t8n^=blur].transition-out{animation:blur .8s reverse;display:inline-block !important}[data-t8n^=slideleft].transition-in{animation:slide-left .8s;display:inline-block !important}[data-t8n^=slideleft].transition-out{animation:slide-right .8s reverse;display:inline-block !important}[data-t8n^=slideright].transition-in{animation:slide-right .8s;display:inline-block !important}[data-t8n^=slideright].transition-out{animation:slide-left .8s reverse;display:inline-block !important}[data-t8n^=slideup].transition-in{animation:slide-up .8s;display:inline-block !important}[data-t8n^=slideup].transition-out{animation:slide-down .8s reverse;display:inline-block !important}[data-t8n^=slidedown].transition-in{animation:slide-down .8s;display:inline-block !important}[data-t8n^=slidedown].transition-out{animation:slide-up .8s reverse;display:inline-block !important}[data-t8n^=fadeleft].transition-in{animation:fade-left .8s;display:inline-block !important}[data-t8n^=fadeleft].transition-out{animation:fade-right .8s reverse;display:inline-block !important}[data-t8n^=faderight].transition-in{animation:fade-right .8s;display:inline-block !important}[data-t8n^=faderight].transition-out{animation:fade-left .8s reverse;display:inline-block !important}[data-t8n^=fadeup].transition-in{animation:fade-up .8s;display:inline-block !important}[data-t8n^=fadeup].transition-out{animation:fade-down .8s reverse;display:inline-block !important}[data-t8n^=fadedown].transition-in{animation:fade-down .8s;display:inline-block !important}[data-t8n^=fadedown].transition-out{animation:fade-up .8s reverse;display:inline-block !important}[data-t8n^=flicker].transition-in{animation:flicker .8s}[data-t8n^=flicker].transition-out{animation:flicker .8s reverse}
 </style>
 </head>
 <body>
-<tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play IntegrationTest.</tw-noscript></noscript></tw-story>
-<tw-storydata name="IntegrationTest" startnode="1" creator="Twine" creator-version="2.3.13" ifid="65D906CE-08C7-4C1C-8CA8-25DF2AC3FFAA" zoom="1" format="Harlowe" format-version="3.2.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="Death" color="red"></tw-tag>,<tw-tag name="Info" color="green"></tw-tag>,<tw-tag name="Stub" color="yellow"></tw-tag>,<tw-tag name="Exploration" color="blue"></tw-tag><tw-passagedata pid="1" name="A1- Ringing Head." tags="" position="102,199" size="200,100">(set: $magicRevealed to false)
+<tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play IntegrationTest2.</tw-noscript></noscript></tw-story>
+<tw-storydata name="IntegrationTest2" startnode="1" creator="Twine" creator-version="2.3.13" ifid="65D906CE-08C7-4C1C-8CA8-25DF2AC3FFAA" zoom="1" format="Harlowe" format-version="3.2.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="Death" color="red"></tw-tag>,<tw-tag name="Info" color="green"></tw-tag>,<tw-tag name="Stub" color="yellow"></tw-tag>,<tw-tag name="Exploration" color="blue"></tw-tag><tw-passagedata pid="1" name="A1- Ringing Head." tags="" position="102,199" size="200,100">(set: $magicRevealed to false)
 (set: $injuryScore to 0)
 
 (live: 3s)[(transition:&quot;dissolve&quot;)[Your head is ringing...](stop:)]
@@ -1618,7 +1618,7 @@ A hulking shadow is crossing the edge of the camp, circling slowly around it&#39
 (t8n: &quot;dissolve&quot;) [(text-colour:grey)[This creature looks to be a Stonestrider, a type of wild hound common to this region, but something is abnormal. It&#39;s far larger than any natural subspecies, and it&#39;s eyes a vacant and dark, refracting almost no light from the flames, a void of all intent, vacant, and seemingly unaware...]] 
 
 (click: ?page)[==
-(t8n: &quot;dissolve&quot;) [[[The eyes of a corpse.-&gt; Creature Reveal]] ]</tw-passagedata><tw-passagedata pid="148" name=" Creature Reveal" tags="" position="400,4805" size="100,100">&lt;img src=&quot;https://pbs.twimg.com/media/EHwKAvYXkAQ7ohE.jpg&quot; width= &quot;100%&quot;&gt;
+(t8n: &quot;dissolve&quot;) [[[The eyes of a corpse.-&gt; Creature Reveal]] ]</tw-passagedata><tw-passagedata pid="148" name=" Creature Reveal" tags="" position="223,4964" size="100,100">&lt;img src=&quot;https://pbs.twimg.com/media/EHwKAvYXkAQ7ohE.jpg&quot; width= &quot;100%&quot;&gt;
 
 Shadows seem to recoil at it&#39;s approach, only to be consumed as whipping tendrils perforate it&#39;s back, incorporeal extremities that twitch like the feelers of an insect, stroking the air with ravenous intent.
 
@@ -1635,7 +1635,7 @@ Squelching, as it&#39;s neck continues to open, and pop, uneven teeth lining it&
 ](If: $magicRevealed is true or $a2_toldGavin is true) [ &quot;Remember what I said! You&#39;ll never survive this thing alone, so no funny business!&quot;
 
 ]Bounding with deft leaps, the beast crosses the air in mere seconds, before crashing into the camp. Moira charges, dashing towards it without fear. You draw your blade from your hip, as Gavin&#39;s eyes flare with eldritch power.
-</tw-passagedata><tw-passagedata pid="149" name="A3- Enclave&#39;s Plea 1" tags="" position="622.5,6649.5" size="100,100">&lt;img src=&quot;https://papers.co/wallpaper/papers.co-bc37-galaxy-night-sky-star-art-illustration-samsung-dark-bw-29-wallpaper.jpg&quot; width= &quot;100%&quot;&gt;
+</tw-passagedata><tw-passagedata pid="149" name="A3- Enclave&#39;s Plea 1" tags="" position="707,6088" size="100,100">&lt;img src=&quot;https://papers.co/wallpaper/papers.co-bc37-galaxy-night-sky-star-art-illustration-samsung-dark-bw-29-wallpaper.jpg&quot; width= &quot;100%&quot;&gt;
 
 You awake to be staring at the distant sky. It&#39;s nearing morning, and the dawn is just beginning to consume the stars. You begin realizing that, in just a single day, your life has been threatened more time than you care to give count.
 
@@ -1647,7 +1647,7 @@ Gavin&#39;s face has gone from it&#39;s usual casual smirk to something far more
 
 You think for a moment. You&#39;ve been told by the Pride King that it&#39;s source is another place that exists beyond your own known as **The Veil**: A place of complete ambiguity, where not even the most proficient Arcanists understand it&#39;s true nature.
 
-[[&quot;It&#39;s the Veil, Isn&#39;t it?&quot;-&gt;A3- Enclave&#39;s Plea 2]]</tw-passagedata><tw-passagedata pid="150" name="END OF ACT 2" tags="" position="420.5,6648.5" size="100,100">(text-colour:grey)[//Gripping your head in sharp waves of pain...//]
+[[&quot;It&#39;s the Veil, Isn&#39;t it?&quot;-&gt;A3- Enclave&#39;s Plea 2]]</tw-passagedata><tw-passagedata pid="150" name="END OF ACT 2" tags="" position="505,6087" size="100,100">(text-colour:grey)[//Gripping your head in sharp waves of pain...//]
 
 (live: 3s)[(transition:&quot;dissolve&quot;)[(text-colour:grey)[//You fall unconcious...//]](stop:)]
 
@@ -1655,11 +1655,11 @@ You think for a moment. You&#39;ve been told by the Pride King that it&#39;s sou
 
 (live: 10s)[(transition:&quot;dissolve&quot;)[(text-colour:grey)[//Your journey is nearing it&#39;s end.//]](stop:)]
 
-(live: 11s)[(transition:&quot;dissolve&quot;)[ [[ Continue...-&gt;A3- Enclave&#39;s Plea 1]] ] ]</tw-passagedata><tw-passagedata pid="151" name="A3- Enclave&#39;s Plea 2" tags="" position="817.5,6654.5" size="100,100">&quot;So you&#39;ve been taught as much. What I doubt you know is that humans were not meant to commune with such places. And the mortal realm, the Prime Material... It wasn&#39;t meant to house it.
+(live: 11s)[(transition:&quot;dissolve&quot;)[ [[ Continue...-&gt;A3- Enclave&#39;s Plea 1]] ] ]</tw-passagedata><tw-passagedata pid="151" name="A3- Enclave&#39;s Plea 2" tags="" position="902,6093" size="100,100">&quot;So you&#39;ve been taught as much. What I doubt you know is that humans were not meant to commune with such places. And the mortal realm, the Prime Material... It wasn&#39;t meant to house it.
 
 Whenever you, or I, reach into that place, we inevitably pull something back. At best, the matter dissipates, unable to maintain it&#39;s form. Harmless, like a plume of smoke.&quot;
 
-[[&quot;If it&#39;s harmless, then why hunt Arcanists?&quot; -&gt;A3- Enclave&#39;s Plea 3]]</tw-passagedata><tw-passagedata pid="152" name="A3- Enclave&#39;s Plea 3" tags="" position="1017.5,6655.5" size="100,100">&lt;img src=&quot;https://i.imgur.com/6Xz0FdJ.jpg&quot; width= &quot;100%&quot;&gt;
+[[&quot;If it&#39;s harmless, then why hunt Arcanists?&quot; -&gt;A3- Enclave&#39;s Plea 3]]</tw-passagedata><tw-passagedata pid="152" name="A3- Enclave&#39;s Plea 3" tags="" position="1102,6094" size="100,100">&lt;img src=&quot;https://i.imgur.com/6Xz0FdJ.jpg&quot; width= &quot;100%&quot;&gt;
 
 What if you pulled back something that hungered? What if the essence of some great being slipped through the cracks, and began searching for the nearest body to consume?
 
@@ -1671,7 +1671,7 @@ A larger spell, or even a full communion will shear through the bag like a knife
 
 Pouring, and pouring...
 
-[[...and pouring. -&gt; A3- Enclave&#39;s Plea 4]]</tw-passagedata><tw-passagedata pid="153" name=" A3- Enclave&#39;s Plea 4" tags="" position="1218.5,6652.5" size="100,100">That will pull far more than just smoke over to our side of the spectrum. And as the Veil begins to leak, like a sickness, it&#39;s inhabitants will begin searching for worthy hosts within our plane.
+[[...and pouring. -&gt; A3- Enclave&#39;s Plea 4]]</tw-passagedata><tw-passagedata pid="153" name=" A3- Enclave&#39;s Plea 4" tags="" position="1303,6091" size="100,100">That will pull far more than just smoke over to our side of the spectrum. And as the Veil begins to leak, like a sickness, it&#39;s inhabitants will begin searching for worthy hosts within our plane.
 
 Plant life, flora, and fauna, receive the smallest of beings from the Veil. &quot;Microbes&quot;, I believe the Watchers call them.
 
@@ -1686,17 +1686,17 @@ That thing we fought? That was a greater being, a juvenile old one, which had fo
 (click: ?page)[== (t8n: &quot;dissolve&quot;)[ [[Why would the Regent do that? -&gt;A3-Moral Confusion]]
 
 [[You hypocrite! You&#39;re no different! -&gt;A3-Moral Indignation]]
-]</tw-passagedata><tw-passagedata pid="154" name="A3-Moral Confusion" tags="" position="1416.5,6555.5" size="100,100">&quot;Why they do it doesn&#39;t matter.&quot; Moira says bluntly, still sitting and running a whetstone over her blade in steady motions.
+]</tw-passagedata><tw-passagedata pid="154" name="A3-Moral Confusion" tags="" position="1501,5994" size="100,100">&quot;Why they do it doesn&#39;t matter.&quot; Moira says bluntly, still sitting and running a whetstone over her blade in steady motions.
 		
 &quot;They openly endanger the lands they inhabit. They poison the world with their interventions. It&#39;s always for power. They&#39;ll tell you otherwise, of course, but they&#39;re lying. Always lying! There&#39;s no excuses for tampering with the natural order.&quot;
 
 Silence rings through the upturned camp, before you ask.
 	
-[[&quot;Is there a way to close Veil Leaks?&quot; -&gt;A3- Can We Close Them?]]</tw-passagedata><tw-passagedata pid="155" name="A3-Moral Indignation" tags="" position="1418.5,6679.5" size="100,100">&quot;It&#39;s true... Our powers are a curse, Ashton. But those of the Regent, the &#39;free Arcanists&#39;... In battle, they are unstoppable. The power the Veil holds cannot be matched by mere steel. If we are to end their corruption, we need to tap into the same well of power. It&#39;s a great responsibility, and one I don&#39;t take lightly.&quot;
+[[&quot;Is there a way to close Veil Leaks?&quot; -&gt;A3- Can We Close Them?]]</tw-passagedata><tw-passagedata pid="155" name="A3-Moral Indignation" tags="" position="1503,6118" size="100,100">&quot;It&#39;s true... Our powers are a curse, Ashton. But those of the Regent, the &#39;free Arcanists&#39;... In battle, they are unstoppable. The power the Veil holds cannot be matched by mere steel. If we are to end their corruption, we need to tap into the same well of power. It&#39;s a great responsibility, and one I don&#39;t take lightly.&quot;
 
 Silence rings through the upturned camp, before you ask.
 	
-[[&quot;Is there a way to close Veil Leaks?&quot; -&gt;A3- Can We Close Them?]]</tw-passagedata><tw-passagedata pid="156" name="A3- Can We Close Them?" tags="" position="1619.5,6649.5" size="100,100">&quot;To close it?&quot;
+[[&quot;Is there a way to close Veil Leaks?&quot; -&gt;A3- Can We Close Them?]]</tw-passagedata><tw-passagedata pid="156" name="A3- Can We Close Them?" tags="" position="1704,6088" size="100,100">&quot;To close it?&quot;
 
 Gavin leans backward, thinking for a moment before explaining.
 
@@ -1712,19 +1712,19 @@ He smiles, clearly trying to think of an analogy involving grain.
 
 [[Covering the broken bag with a new one?-&gt;A3- Correct Analogy]]
 
-[[Pouring out the broken bag into a new one?-&gt;A3- Incorrect Analogy]]</tw-passagedata><tw-passagedata pid="157" name="A3- Correct Analogy" tags="" position="1778.5,6552.5" size="100,100">&lt;img src=&quot;https://www.treehugger.com/thmb/xMBVryBCoKOgXiRlPYM03buJyNQ=/1600x900/smart/filters:no_upscale()/__opt__aboutcom__coeus__resources__content_migration__mnn__images__2016__02__deepsea-a1932712b35741808136e1f7f98b67c0.jpg&quot; width= &quot;100%&quot;&gt;
+[[Pouring out the broken bag into a new one?-&gt;A3- Incorrect Analogy]]</tw-passagedata><tw-passagedata pid="157" name="A3- Correct Analogy" tags="" position="1863,5991" size="100,100">&lt;img src=&quot;https://www.treehugger.com/thmb/xMBVryBCoKOgXiRlPYM03buJyNQ=/1600x900/smart/filters:no_upscale()/__opt__aboutcom__coeus__resources__content_migration__mnn__images__2016__02__deepsea-a1932712b35741808136e1f7f98b67c0.jpg&quot; width= &quot;100%&quot;&gt;
 
 &quot;Aha, exactly! The Veil is boundless in it&#39;s depth, like a great sea. However, our new bag acts as a second layer, halting the leak. The original tear never really disappears, but it&#39;s no longer an issue when contained underneath our replacement.
 		
 See, you&#39;re a bright kid! It&#39;s a shame what The Regent have made you associate with. They&#39;d be happier if you never knew the truth. It&#39;s unfair: You deserve better. &quot;
 
-[[&quot;Are you eggheads done yet?&quot;-&gt;A3-Depart the Camp]]</tw-passagedata><tw-passagedata pid="158" name="A3- Incorrect Analogy" tags="" position="1778.5,6726.5" size="100,100">&lt;img src=&quot;https://www.treehugger.com/thmb/xMBVryBCoKOgXiRlPYM03buJyNQ=/1600x900/smart/filters:no_upscale()/__opt__aboutcom__coeus__resources__content_migration__mnn__images__2016__02__deepsea-a1932712b35741808136e1f7f98b67c0.jpg&quot; width= &quot;100%&quot;&gt;
+[[&quot;Are you eggheads done yet?&quot;-&gt;A3-Depart the Camp]]</tw-passagedata><tw-passagedata pid="158" name="A3- Incorrect Analogy" tags="" position="1863,6165" size="100,100">&lt;img src=&quot;https://www.treehugger.com/thmb/xMBVryBCoKOgXiRlPYM03buJyNQ=/1600x900/smart/filters:no_upscale()/__opt__aboutcom__coeus__resources__content_migration__mnn__images__2016__02__deepsea-a1932712b35741808136e1f7f98b67c0.jpg&quot; width= &quot;100%&quot;&gt;
 
 &quot;No, no, Ashton! The Arcanist would be consumed. The Veil is boundless in it&#39;s depth, like a great sea. You&#39;d be pouring until the new vessel overflowed, and we&#39;d be right back where we started.
 		
 You see? This is the problem. You couldn&#39;t understand the ramifications of your actions until someone explained it, and the Regent held this information from you, allowing you to run rampant, no worry for the greater harm they&#39;d cause.&quot;
 
-[[&quot;Are you eggheads done yet?&quot;-&gt;A3-Depart the Camp]]</tw-passagedata><tw-passagedata pid="159" name="A3-Depart the Camp" tags="" position="1967.5,6651.5" size="100,100">Moira interrupts the conversation, packed and preparing to leave. &quot;So sorry to end the lesson, but there may very well be more of those things. We need to finish this. And we&#39;re close. The ruins are nearby, according to the intel.&quot;
+[[&quot;Are you eggheads done yet?&quot;-&gt;A3-Depart the Camp]]</tw-passagedata><tw-passagedata pid="159" name="A3-Depart the Camp" tags="" position="2052,6090" size="100,100">Moira interrupts the conversation, packed and preparing to leave. &quot;So sorry to end the lesson, but there may very well be more of those things. We need to finish this. And we&#39;re close. The ruins are nearby, according to the intel.&quot;
 
 Gavin turns to you. &quot;The Anor Faultline is our destination. If you can guide us as close to it as you can safely, we can navigate to the ruins that house the source of these creatures.&quot;
 
@@ -1732,7 +1732,7 @@ Gavin turns to you. &quot;The Anor Faultline is our destination. If you can guid
 
 If the Regent is left unchecked, humans will inevitebly be consumed by those creatures...
 
-[[... The horrors of the Veil.&quot; -&gt; A3- Travel to the Ruins]]</tw-passagedata><tw-passagedata pid="160" name=" A3- Travel to the Ruins" tags="" position="425.5,7001.5" size="100,100">(text-colour:grey)[//Approaching the Anor Faultline, the Seekers suddenly take lead...//]
+[[... The horrors of the Veil.&quot; -&gt; A3- Travel to the Ruins]]</tw-passagedata><tw-passagedata pid="160" name=" A3- Travel to the Ruins" tags="" position="510,6440" size="100,100">(text-colour:grey)[//Approaching the Anor Faultline, the Seekers suddenly take lead...//]
 
 (live: 3s)[(transition:&quot;dissolve&quot;)[(text-colour:grey)[//After a brief diversion, comparing landmarks with the intel ,
 //]](stop:)]
@@ -1741,7 +1741,7 @@ If the Regent is left unchecked, humans will inevitebly be consumed by those cre
 
 (live: 10s)[(transition:&quot;dissolve&quot;)[(text-colour:grey)[//Cavernous networks wind through choking moss and vine...//]](stop:)]
 
-(live: 11s)[(transition:&quot;dissolve&quot;)[ [[ The Regent awaits, hidden away...-&gt;A3- Enter the Ruins]] ] ]</tw-passagedata><tw-passagedata pid="161" name="A3- Enter the Ruins" tags="" position="648.5,7012.5" size="100,100">&#39;&#39;The Anor Ruins&#39;&#39;
+(live: 11s)[(transition:&quot;dissolve&quot;)[ [[ The Regent awaits, hidden away...-&gt;A3- Enter the Ruins]] ] ]</tw-passagedata><tw-passagedata pid="161" name="A3- Enter the Ruins" tags="" position="733,6451" size="100,100">&#39;&#39;The Anor Ruins&#39;&#39;
 &lt;img src=&quot;https://i.imgur.com/EyMQ0x0.png&quot; width= &quot;100%&quot;&gt;
 
 Moira takes a forward position, blade drawn and ready as she steadily advances, signalling you and Gavin to follow.
@@ -1750,7 +1750,7 @@ You and Gavin remain at a reasonable distance, advancing slowly and carefully, a
 
 At it&#39;s heart lies a towering gate, left open, leading further into what must be the research camp. Distant voices can be heard, echoing through the caverns as dissonant remnants of conversations, barely audible over the crashing water.
 
-[[Enter the Ruins -&gt; A3- Regent&#39;s Plea 1]]</tw-passagedata><tw-passagedata pid="162" name=" A3- Regent&#39;s Plea 1" tags="" position="852.5,7016.5" size="100,100">At it&#39;s heart lies a towering gate, left open, leading further into what must be the research camp. Distant voices can be heard, echoing through the caverns as dissonant remnants of conversations, barely audible over the crashing water.
+[[Enter the Ruins -&gt; A3- Regent&#39;s Plea 1]]</tw-passagedata><tw-passagedata pid="162" name=" A3- Regent&#39;s Plea 1" tags="" position="937,6455" size="100,100">At it&#39;s heart lies a towering gate, left open, leading further into what must be the research camp. Distant voices can be heard, echoing through the caverns as dissonant remnants of conversations, barely audible over the crashing water.
 
 You look around the camp, seeing holding pens for wild hounds, their bodies have been twisted in unnatural ways. Studious Arcanists gather around the beasts, some writing notes scrawled on scraps of parchment, while others still apply founts of restorative magic to the afflicted beasts.
 
@@ -1758,7 +1758,7 @@ In a nearby cage, a beast as large and twisted as the one you encountered earlie
 
 One of the cages is torn open, seemingly from the inside, it&#39;s bars bent outward as if the creature within had forced it&#39;s way out.
 
-[[&quot;Wait, s-s-stop! Please!&quot;-&gt; A3- Regent&#39;s Plea 2]]</tw-passagedata><tw-passagedata pid="163" name=" A3- Regent&#39;s Plea 2" tags="" position="1047.5,7017.5" size="100,100">=|=
+[[&quot;Wait, s-s-stop! Please!&quot;-&gt; A3- Regent&#39;s Plea 2]]</tw-passagedata><tw-passagedata pid="163" name=" A3- Regent&#39;s Plea 2" tags="" position="1132,6456" size="100,100">=|=
 &lt;img src=&quot;https://i.imgur.com/u1nUQ7b.jpg&quot; width= &quot;100%&quot;&gt;
 =|=
 A hooded man, clearly the lead researcher, approaches you hastily, hands above his head in a disarming stance, clearly attempting to stop your advance.
@@ -1777,7 +1777,7 @@ After all you&#39;ve learned of the Veil, and the Regent, you consider acting...
 [[Gavin &amp; Moira are right... Draw your blade. This ends here.-&gt;A3 - Side With Enclave]]
 |==|
 
-</tw-passagedata><tw-passagedata pid="164" name="A3- Hear The Regent&#39;s Plea" tags="" position="1244.5,6919.5" size="100,100">Gavin turns to you, worry in his eyes. &quot;Ashton? Please. These men will try to deceive you.&quot;
+</tw-passagedata><tw-passagedata pid="164" name="A3- Hear The Regent&#39;s Plea" tags="" position="1329,6358" size="100,100">Gavin turns to you, worry in his eyes. &quot;Ashton? Please. These men will try to deceive you.&quot;
 	
 The lead researcher lowers his hands, trying to get a look at you. &quot;Ashton? I-I know you! The Pride King has spoken much of you! I know you&#39;re going through a tough time with him, but we can fix it, together! If these studies are not carried out, many more will die! My daughter! My daughter is ill with this plague. I cannot stop now!
 	
@@ -1785,11 +1785,11 @@ The ailment that inhabits these beasts is due to the beings from The Veil, &#39;
 
 [[&quot;Have you seen any success?&quot;-&gt;A3- Success?]]
 
-[[&quot;No, The Pride King wants me dead!&quot;-&gt;A3- Deny!]]</tw-passagedata><tw-passagedata pid="165" name="A3 - Side With Enclave" tags="" position="1289.5,7302.5" size="100,100">(set: $a3_EnclaveChosen to true)</tw-passagedata><tw-passagedata pid="166" name="A3- Success?" tags="" position="1499.5,6905.5" size="100,100">&quot;With the more juvenile beasts, yes. But the larger ones have yet to yield results.. We&#39;re so close, we need more time! Ashton, please! These ones are unreasonable, unable to see the bigger picture! This could change the world!&quot;
+[[&quot;No, The Pride King wants me dead!&quot;-&gt;A3- Deny!]]</tw-passagedata><tw-passagedata pid="165" name="A3 - Side With Enclave" tags="" position="1374,6741" size="100,100">(set: $a3_EnclaveChosen to true)</tw-passagedata><tw-passagedata pid="166" name="A3- Success?" tags="" position="1584,6344" size="100,100">&quot;With the more juvenile beasts, yes. But the larger ones have yet to yield results.. We&#39;re so close, we need more time! Ashton, please! These ones are unreasonable, unable to see the bigger picture! This could change the world!&quot;
 
-[[Moira Looks to you...-&gt;A3- Final Ultimatum 1]]</tw-passagedata><tw-passagedata pid="167" name="A3- Deny!" tags="" position="1494.5,7123.5" size="100,100">&quot;Help us! You&#39;re one of us! A free Arcanist! What do you think these Enclave dogs will do once your usefulness has run out? We&#39;re here at the Pride King&#39;s direct will! Help us protect our research, and we&#39;ll settle your debt with him! You&#39;ll be free to operate in Qui&#39;Lea with our blessing! Please!&quot;
+[[Moira Looks to you...-&gt;A3- Final Ultimatum 1]]</tw-passagedata><tw-passagedata pid="167" name="A3- Deny!" tags="" position="1579,6562" size="100,100">&quot;Help us! You&#39;re one of us! A free Arcanist! What do you think these Enclave dogs will do once your usefulness has run out? We&#39;re here at the Pride King&#39;s direct will! Help us protect our research, and we&#39;ll settle your debt with him! You&#39;ll be free to operate in Qui&#39;Lea with our blessing! Please!&quot;
 
-[[Moira Looks to you...-&gt;A3- Final Ultimatum 1]]</tw-passagedata><tw-passagedata pid="168" name="A3- Final Ultimatum 1" tags="" position="1700.5,7198.5" size="100,100">Moira addresses you directly. &quot;Ashton. The Pride King will not stop, he has no morals for the greater good. The forces of The Veil cannot be reasoned with, they cannot be controlled! They can only be supressed. If we do not take action here, countless people in Qui&#39;Lea will die. It&#39;s only a matter of time.&quot;
+[[Moira Looks to you...-&gt;A3- Final Ultimatum 1]]</tw-passagedata><tw-passagedata pid="168" name="A3- Final Ultimatum 1" tags="" position="1785,6637" size="100,100">Moira addresses you directly. &quot;Ashton. The Pride King will not stop, he has no morals for the greater good. The forces of The Veil cannot be reasoned with, they cannot be controlled! They can only be supressed. If we do not take action here, countless people in Qui&#39;Lea will die. It&#39;s only a matter of time.&quot;
 	
 &quot;Please Ashton! Don&#39;t let them take her from me! We can fix this!&quot; The lead researcher shouts, drawing a sigil in the air.
 	
@@ -1800,33 +1800,33 @@ Caught in the crashing whorl of two opposing worlds, the time has come to choose
 [[The Regent is right... Draw the Veil. The Enclave will not manipulate you.-&gt;A3 - Defend the Regent]]
 
 [[Gavin &amp; Moira are right... Draw your blade. The Regent&#39;s corruption ends here.-&gt;A3 - Side With Enclave]]
-</tw-passagedata><tw-passagedata pid="169" name="A3 - Defend the Regent" tags="" position="1497.5,7300.5" size="100,100">(set: $a3_EnclaveChosen to false)
+</tw-passagedata><tw-passagedata pid="169" name="A3 - Defend the Regent" tags="" position="1582,6739" size="100,100">(set: $a3_EnclaveChosen to false)
 
-</tw-passagedata><tw-passagedata pid="170" name="A3- Regent Denouement" tags="" position="797.5,9235" size="100,100">Gavin lies bloodied, halfway drenched in the falling water. He coughs as you approach, and shoots you a look of resentment. However, there is not anger in his eyes. He simply seems tired.
+</tw-passagedata><tw-passagedata pid="170" name="A3- Regent Denouement" tags="" position="983,8245" size="100,100">Gavin lies bloodied, halfway drenched in the falling water. He coughs as you approach, and shoots you a look of resentment. However, there is not anger in his eyes. He simply seems tired.
 	
 His words are nearly silent. He&#39;s barely able to expel the air for them.
 	
 [[Listen to his Final Words... -&gt;A3- Regent Doubts]]
 
-[[Walk away. This was the right thing to do. -&gt;A3-Regent Conviction]]</tw-passagedata><tw-passagedata pid="171" name="A3- Enclave Denouement 1" tags="" position="810.5,9686" size="100,100">You look upon the carnage, only just now fully grasping the gravity of what you have achieved today. If The Pride King wanted you dead before, he&#39;ll likely have other plans now. Death may be too kind for you.
+[[Walk away. This was the right thing to do. -&gt;A3-Regent Conviction]]</tw-passagedata><tw-passagedata pid="171" name="A3- Enclave Denouement 1" tags="" position="996,8696" size="100,100">You look upon the carnage, only just now fully grasping the gravity of what you have achieved today. If The Pride King wanted you dead before, he&#39;ll likely have other plans now. Death may be too kind for you.
 	
 You feel a pit rising in your stomach...
 
 [[What have you done? -&gt;A3- Enclave Doubts]]
 
-[[No, this was the right thing to do -&gt;A3- Enclave Conviction]]</tw-passagedata><tw-passagedata pid="172" name="A3- Enclave Doubts" tags="" position="996.5,9783" size="100,100">Free Arcanists have been studying the past for years, attempting to uncover it&#39;s secrets. There is a chapter in  history that has not been laid bare for anyone: A time of power and unbridled glory for mages, who held back nothing of themselves, manipulating the world as they saw fit.
+[[No, this was the right thing to do -&gt;A3- Enclave Conviction]]</tw-passagedata><tw-passagedata pid="172" name="A3- Enclave Doubts" tags="" position="1182,8793" size="100,100">Free Arcanists have been studying the past for years, attempting to uncover it&#39;s secrets. There is a chapter in  history that has not been laid bare for anyone: A time of power and unbridled glory for mages, who held back nothing of themselves, manipulating the world as they saw fit.
 		
 And now you have cast that study down, ruthlessly butchered it&#39;s facilitators. And the man who you once saw as a father, he will likely stop at nothing  until you are dealt grim retribution.
 		
 These people were working in the name of healing. The people who have been poisoned by the Veil will likely die, as the only hope of a cure now rests far beyond the realm of possibility. The only cure for them now is to track them down and end them like these creatures...
 		
-[[Continue -&gt;A3- Enclave Denouement 2]]</tw-passagedata><tw-passagedata pid="173" name="A3- Enclave Conviction" tags="" position="999.5,9635" size="100,100">These researchers were manipulating the natural order... You begin to realize the gravity of what you are: an anomaly. The distant, golden age the Pride King promised? What makes you believe it was Arcanists who ruled it?
+[[Continue -&gt;A3- Enclave Denouement 2]]</tw-passagedata><tw-passagedata pid="173" name="A3- Enclave Conviction" tags="" position="1185,8645" size="100,100">These researchers were manipulating the natural order... You begin to realize the gravity of what you are: an anomaly. The distant, golden age the Pride King promised? What makes you believe it was Arcanists who ruled it?
 		
 Looking around you, at the corpses of the beasts in cages, seeped in Veil sickness and vile affliction... You begin to wonder if maybe it was Arcanists who caused the great calamity that brought the world here from that oh-so distant age.
 		
 Be it beast or man afflicted by this corruption, it all stemmed from here. With their influence halted, the land around this region may begin to heal...
 
-[[Continue -&gt;A3- Enclave Denouement 2]]</tw-passagedata><tw-passagedata pid="174" name="A3- Enclave Denouement 2" tags="" position="1199.5,9697" size="100,100">Gavin approaches, sensing your conflict, as you gaze vacantly across the carnage.
+[[Continue -&gt;A3- Enclave Denouement 2]]</tw-passagedata><tw-passagedata pid="174" name="A3- Enclave Denouement 2" tags="" position="1385,8707" size="100,100">Gavin approaches, sensing your conflict, as you gaze vacantly across the carnage.
 	
 &quot;I know it&#39;s difficult, but you&#39;ve made the right decision!&quot; He wraps his arm around your shoulder, walking you through the ruins. &quot;What we are is a great responsibility: it&#39;s our obligation to ensure that this power is not abused. And you&#39;ve done a noble job.&quot;
 	
@@ -1836,7 +1836,7 @@ Gavin continues &quot;Besides, you&#39;ll never be wanting for gold again. Any o
 	
 As a Seeker.
 	
-[[ Welcome to the Enclave of Brass. -&gt;END - Enclave of Brass]]</tw-passagedata><tw-passagedata pid="175" name="END - Enclave of Brass" tags="" position="1600.5,9738" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="176" name="A3- Regent Doubts" tags="" position="999.5,9335" size="100,100">You crouch beside him, placing a hand on his shoulder. It begins to dawn on you that the corruption of the land will continue to spread, far beyond the point when these researchers are finished.
+[[ Welcome to the Enclave of Brass. -&gt;END - Enclave of Brass]]</tw-passagedata><tw-passagedata pid="175" name="END - Enclave of Brass" tags="" position="1786,8748" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="176" name="A3- Regent Doubts" tags="" position="1185,8345" size="100,100">You crouch beside him, placing a hand on his shoulder. It begins to dawn on you that the corruption of the land will continue to spread, far beyond the point when these researchers are finished.
 	
 &quot;Ah, kid... Moira was right to doubt you. It was me who talked her into trusting you... I should have listened. I was sure you were different than them ... She&#39;s dead because of my stupidity.
 		
@@ -1848,7 +1848,7 @@ When I see you on the other side?
 		
 I&#39;ll get to say &#39;I told you so&#39;.&quot; 
 		
-[[Continue -&gt;A3- Regent Denouement 2]]</tw-passagedata><tw-passagedata pid="177" name="A3-Regent Conviction" tags="" position="1002.5,9138" size="100,100">You aren&#39;t about to let him sour your mind with talks of final regrets. That man was Enclave. The same Enclave that has been putting down your kind like dogs since it&#39;s inception. The same Enclave who would happily kill you were you not to conform to their ideals.
+[[Continue -&gt;A3- Regent Denouement 2]]</tw-passagedata><tw-passagedata pid="177" name="A3-Regent Conviction" tags="" position="1188,8148" size="100,100">You aren&#39;t about to let him sour your mind with talks of final regrets. That man was Enclave. The same Enclave that has been putting down your kind like dogs since it&#39;s inception. The same Enclave who would happily kill you were you not to conform to their ideals.
 		
 That&#39;s no way to live.
 		
@@ -1856,7 +1856,7 @@ Now, these researchers will go on to find the secrets of Veil corruption, and ho
 		
 And your debt with the Pride King? Paid for in retribution and loyalty. You need to speak with him, soon. The terms must still be settled. You&#39;ve been tested today, your loyalties laid bare. Even if your actions are not venerated by the Pride King, you can rest easy knowing you&#39;ve made the right choice.
 
-[[Continue -&gt;A3- Regent Denouement 2]]</tw-passagedata><tw-passagedata pid="178" name="A3- Regent Denouement 2" tags="" position="1200.5,9238" size="100,100">The lead researcher escorts you back to Qui&#39;Lea following the defence of the researchers. You are smuggled through the catacombs that stretch below the city, and eventually arrive at a Regent safehouse in the Noble District of the city.
+[[Continue -&gt;A3- Regent Denouement 2]]</tw-passagedata><tw-passagedata pid="178" name="A3- Regent Denouement 2" tags="" position="1386,8248" size="100,100">The lead researcher escorts you back to Qui&#39;Lea following the defence of the researchers. You are smuggled through the catacombs that stretch below the city, and eventually arrive at a Regent safehouse in the Noble District of the city.
 	
 You wait in a long and lavish hall, a branch of an underground bathhouse, surrounded by fellow Regent, mingling idly as if you belonged there all along. 
 	
@@ -1864,7 +1864,7 @@ Eventually, the lead researcher returns. The man accompanying him is towering, d
 	
 He grasps your shoulder and begins walking alongside you, through the halls of the Regent bathhouse. Revelry amidst the Regent extends across many floors, which you gaze upon as he speaks, his voice rumbling like a landslide.
 	
-[[Continue. -&gt;A3- Regent Denouement 3]]</tw-passagedata><tw-passagedata pid="179" name="A3- Regent Denouement 3" tags="" position="1404.5,9238" size="100,100">&quot;Ashton... I&#39;ll admit, you&#39;ve surprised me.
+[[Continue. -&gt;A3- Regent Denouement 3]]</tw-passagedata><tw-passagedata pid="179" name="A3- Regent Denouement 3" tags="" position="1590,8248" size="100,100">&quot;Ashton... I&#39;ll admit, you&#39;ve surprised me.
 	
 For years, I believed you would end up straying. When you began to avoid my family members, and deny my requests, I feared the worst.
 	
@@ -1882,7 +1882,213 @@ He suddenly stops, leaning down close, such that his booming voice will not carr
 	
 &quot;... You have nowhere else to go.&quot;
 	
-[[Welcome to the Regent. -&gt;END - The Destitute Regent]]</tw-passagedata><tw-passagedata pid="180" name="END - The Destitute Regent" tags="" position="1603.5,9236" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
+[[Welcome to the Regent. -&gt;END - The Destitute Regent]]</tw-passagedata><tw-passagedata pid="180" name="END - The Destitute Regent" tags="" position="1789,8246" size="100,100"></tw-passagedata><tw-passagedata pid="181" name="A2- Moira Pinned" tags="" position="1000,5293" size="100,100">As you move behind the beast, it takes notice of you and begins to leap towards you. Moira takes the opening and steps in with an attack of her own. She slices the hindlegs of the beast, stopping its advance. It quickly pivots and brings down a claw, slamming and pinning Moira under its muscular form.
+
+(live: 5s)[(transition:&quot;dissolve&quot;)[You must [&#39;&#39;act fast!&#39;&#39;]&lt;QTE|](stop:)]
+
+[]&lt;choice|
+\
+\(click: ?QTE)[
+\	(set: $timer to 7)
+\	(live: 1s)[
+\		(set: $timer to it - 1)
+\		(replace:?choice)[
+\			$timer]
+		[[Attack the arm with your sword in an attempt you free Moira.-&gt;A2- Moira&#39;s Saviour]]
+		[[Stay behind the beast and slice at it.-&gt;A2- Indifference]]
+\		(if: $timer is 0)[(go-to:&quot;A2- Indifference&quot;)]]]
+</tw-passagedata><tw-passagedata pid="182" name="A2- Quick Feet" tags="" position="1089,5599" size="100,100">As you step away from the bite, the beast follows with raising its claw, striking at you from below. Your sword is laying on the ground under the beast.
+
+(live: 2s)[(transition:&quot;dissolve&quot;)[You must [&#39;&#39;act fast!&#39;&#39;]&lt;QTE|](stop:)]
+
+[]&lt;choice|
+\
+\(click: ?QTE)[
+\	(set: $timer to 4)
+\	(live: 1s)[
+\		(set: $timer to it - 1)
+\		(replace:?choice)[
+\			$timer]
+			[[Roll past the claw and grab your sword.-&gt;A2- Swift Hands]]
+\		(if: $timer is 0)[(go-to:&quot;A2- Damaged but Armed&quot;)]]]
+</tw-passagedata><tw-passagedata pid="183" name="A2- Daredevil" tags="" position="1090,5464" size="100,100">Your sword is stuck firmly under the beasts muscular and massive form. Before you can pull the sword or react, the beasts jaws clamp shut on your shoulder, sending a new wave of pain rolling through your body. You feel the darkness of the Veil reach out through fron the teeth into your wounds bringing you screeching pain within your mind, causing you to shut your eyes and grit your teeth.
+
+//(set: $injuryScore to $injuryScore + 1) (text-colour:grey)[You have received an injury...]//
+
+[[Focus to clear the visions of beyond the Veil.-&gt;A2- Rising Heat]]</tw-passagedata><tw-passagedata pid="184" name="A2- Moira&#39;s Saviour" tags="" position="1282,5193" size="100,100">You run forward towards Moira. &quot;AARGH&quot; You hear her grunt under the beasts weight as she attempts to hold back the beasts bites by jamming her sword across the beasts mouth, keeping the fangs at bay. You use your momentum to slice at the beasts legs, slicing the muscle and tendons as your sword cuts deep. The beast leaps away from you, freeing Moira of its clutches. Its body is lopsided for a second before the shadows crawl into the wound and the beast finds strenght again.
+
+You extend your hand to Moira and pull her to her feet.
+
+[[You hear the roar of flames once again.-&gt;A2- Rising Heat]]</tw-passagedata><tw-passagedata pid="185" name="A2- Indifference" tags="" position="1283,5323" size="100,100">You remain behid the beast and use this as an opportunity to cut at the beast. You blade glides across the beasts back, leaving behind a streak of red. The tendrils of shadow once again begin to repair the damage almost immediately.
+
+&quot;AARGH&quot; You hear Moira grunt under the beasts weight as she attempts to hold back the beasts bites by jamming her sword across the beasts mouth, keeping the fangs at bay.
+
+[[You hear the roar of flames once again.-&gt;A2- Rising Heat]]</tw-passagedata><tw-passagedata pid="186" name="A2- Wall of Campfire" tags="" position="1656,5369" size="100,100">As Gavin twists his hands, the flames begin to burn brighter and extend. Embers begin twirling around the campfire and Gavin, spinning faster and faster. You notice the rocks at his feet rumbling as he throws his arms out and the flames expand rapidly in a roaring blaze. The fire licks the night sky, standing taller than Gavin himself with brightness that causes your eyes to tear. You raise your hand to shield your vision from the burning light.
+
+With sheer ferocity you have not seen from him yet, Gavin plants his feet and pushes his arms forward, and the wall of flames rolls over the rocky ground towards the beast.
+
+The beacon of light and roaring inferno of the fire draws the beasts attention. You can see its muscles tense in a moment of hesitation. Just before the hellfire engulfes its body, the beast turns its undamaged shoulder towards the flames and sinks its claws into the ground. The flames slam into its body with an audible //WHOOSH// and the beast yelps in pain.
+
+You lower your hands and blink, trying to get a clear vision of the beast. It stands several feet farther than it had been a moment ago. The stone below him gouged from claws ripping through them as the beast was pushed back. You look up at the beasts face and see burned flesh sizzling and the shadows dripping from its body retreating for a moment as the smell of burnt rotting fur and flesh singes your nose. Then you see the the darkness returning to its form, curling across the beasts body while encasing the fresh charcoaled wounds as the beast lets out an echoing roar spilling over the plateau&#39;s edge.
+
+It stands on its legs, its wounds and cuts being licked at by the shadowy tendrils. It must be feeling cornered... and it&#39;s chosen fight rather than flight.
+
+[[&quot;How is it still standing after that?&quot;-&gt;A2- Seeker&#39;s Intellect]]</tw-passagedata><tw-passagedata pid="187" name="A2- Rising Heat" tags="" position="1483,5372" size="100,100">The dark sky lights up once again as each of the four remaining flames around the battle swerve towards the beast. The arches of flame meet above the beast and form a bright streak of fire befoe slamming into the beast between its shoulder blades. 
+
+The beast is knocked into the rocks below it, its legs crumbling beneath the imapct. Then with an earth shattering roar, pulls him self up again, the tendrils of shadow sprouting from its back dancing in the fire light. The fur at the site of impact has burned away, leaving exposed hide. The Veil shadow begins to engulf the beasts hide once more and the tendrils obscure the exposed hide. Then the shadows begin to close the beasts wounds once more.
+
+As you and Moira take the moment to catch your breath, you see Gavin&#39;s eyes flare as he flicks his hands up above the campfire and towards the beas, gripping the air.
+
+[[Brace for the attack.-&gt;A2- Wall of Campfire]]</tw-passagedata><tw-passagedata pid="188" name="A2- Damaged but Armed" tags="" position="1268,5682" size="100,100">You begin to roll, but the beast is faster. The claws catch your legs as you roll towards your sword. You summon all your willpower to ignore the pain in your leg as the blood soaks into your clothes and your mind is stabbed with edlrich energy. You reach for your sword and slice at the beast from under. The open wound you cause is immediately swarming with shadows of the Veil and you crawl back from the beast.
+
+//(set: $injuryScore to $injuryScore + 1) (text-colour:grey)[You have received an injury...]//
+
+[[You hear the roar of flames once again.-&gt;A2- Rising Heat]]</tw-passagedata><tw-passagedata pid="189" name="A2- Swift Hands" tags="" position="1268,5550" size="100,100">The beast is fast, but you are faster. The claws graze your legs as you roll towards your sword. You reach for your sword and slice at the beast from under. The open wound you cause is immediately swarming with shadows of the Veil and you crawl back from the beast.
+
+[[You hear the roar of flames once again.-&gt;A2- Rising Heat]]</tw-passagedata><tw-passagedata pid="190" name="A2- Seeker&#39;s Intellect" tags="" position="1830,5368" size="100,100">Gavin keeps his eyes on the beast while shouting &quot;This creature cannot be brought down by natural means any longer. We must tap into the Veil and use arcane means to burn at its wounds.&quot;
+
+You&#39;ve noticed it too. The cuts from you and Moira had fully healed and the burns were already scarring on its body. Yet the flames embued with eldirch power slowed down the shadows crawling on its body.
+
+&quot;The flames were intended to hit the wounds you left on its body. It seems to be protecting cuts even if it means burning himself.&quot;
+
+At this moment the beast pounces, snarling with hatred. Moira charges once more to meet the bounding creature with a battle cry of her own. The two clash in a flurry of claws, fangs, and steel. Moira lets out a blood curdling scream as the beast grazes her, and continues to carve at the flesh in front of her.
+
+The shadow around the beast begin to flare up. The tendrils pulse with energy. The beast picks up speed and begins to advance, forcing Moira to shift into defensive strikes.
+
+&quot;Gavin... HAAH... slow this thing... HNG... DOWN!&quot; Moira yells in between swings.
+
+Gavin kneels and grasps the stone terrain with one hand and points his other towards the beast. Earth begins to rise beneath the beast, rocks wrapping around the beasts legs. The beast slows down for a moment before shattering the rocky clutches with powerful swings of its claws. Gavin does not relent and continues his assult on the creatures legs. Simultanously he he begins muttering encantations and you feel the breeze pick up. Walls of wind begin slamming into the beast, moving against his advance on Moira.
+
+Moira takes this opportunity to step in and deal massive arching blows into the beasts flesh.
+
+[]&lt;CallToAction|
+
+[[Clutch your sword and attack alongside Moira.-&gt;A2- Stubborn Nature]]
+[[Focus your mind on the embers remaining from the campfire and unleash your powers.-&gt;A2- Answer the Call]]
+
+(if:$a2_toldGavin is true)[(replace:?CallToAction)[&quot;Ashton! We cannot finish this fight without your abilities. I will hold him as best as I can. Help Moira kill this damn beast!&quot; You hear Gavin grunt through his teeth.]]
+(else:)[(replace:?CallToAction)[&quot;Curse the Veil, I can&#39;t hold it and attack at the same time. If only we had more Seekers with us to burn the beast and send it back to where it came from. I will hold him as best as I can. Ashton, help Moira in any way you can!&quot; You hear Gavin grunt through his teeth.]]</tw-passagedata><tw-passagedata pid="191" name="A2- Stubborn Nature" tags="" position="1992,5241" size="100,100">You move to Moira side, slicing with your sword and defending against the onslaught of claws and bites. You both manage to put a dozen open wounds on the creatures body. Darkness moving to undo you work.
+
+This is not without paying with blood. You feel your mind buzz with eldrich energy as the claws and bits pierce your skin and leave with stabbing pains.
+
+//(set: $injuryScore to $injuryScore + 1) (text-colour:grey)[You have received an injury...]//
+
+With Gavin still slowing the beast down, its now your chance to deal some damage.
+
+[[[Focus your mind on the embers remaining from the campfire and unleash your powers.-&gt;A2- Answer the Call]]]&lt;choice|
+
+(if:$injuryScore &gt;= 3)[(replace:?choice)[[[With your existing injuries, you feel overwhelmed...-&gt;A2- Fanged Death]]]]</tw-passagedata><tw-passagedata pid="192" name="A2- Fire and Blood" tags="" position="2313,5362" size="100,100">The beast screams in agony and rage as the tendrils attempt to spread across the burned gashes, but the fail to stab into the flesh and withdraw. You swear you can hear a hiss as they do so.
+
+You begin to conjur your energy again as the beast turns to face you. Before it can bound towards you, Moira sinks her blade into the beasts eye with a barbaric scream.
+
+Stone spikes erupt from the floor and sink into the beasts chest. With audible cracks, it is lifted off the ground as it claws for traction in the air. Gavin then closes his fist and the rocks turn molten.
+
+This is your chance.
+
+[[Heat Moira&#39;s Blade.-&gt;A2- Beast Down]]</tw-passagedata><tw-passagedata pid="193" name="A2- Answer the Call" tags="" position="2144,5369" size="100,100">As you feel the rush of the visions from beyond the Veil, you use the pain and anger it causes you as fuel to stoke the flames. With pulses of eldrich energy you begin feeling the heat of the embers bursting into flames once more. You turn your gaze towards the beast, slowed down by Gavin and shredded by Moira. With a practiced flick of your wrist, you send five streaks of flame towrads the monstrosity. The bolts weave through the air and meet to create a scorching ray of flame. The beast screeches as the flame connects with bleeding gashes left behind by Moira.
+
+You have hurt the abomination.
+
+[[Prepare to fire again.-&gt;A2- Fire and Blood]]</tw-passagedata><tw-passagedata pid="194" name="A2- Beast Down" tags="" position="2487,5367" size="100,100">you feel your fingertips tingle with the energy as you release it to form a psionic connection with the heat in the air surrounding the beast. You concentrate and manipulate the vibration between particles and focus them on Moira&#39;s blade.
+
+The sword begins to glow red within the beasts eye and the fur around it bursts into flames. The beast begins to thrash against the stone spikes holding it off the ground. The stone cracks under its weight with a &quot;CRACK&quot; and it falls to the ground. Moira lets the hilt of her sword go and leaps away from the swining beast. Molten rock poors from its wounds left behind by the piercing rock. It claws at his eye engulfed in flames before tumbling to the ground. A final deafening //SCREECH// leaves its gnarled lips.
+
+Silence...
+
+Moira walks up to the beast and pulls her blade from its sizzling eye. Gavin pulls you from your knees by your arm. The body of the beast unmoving, with the only shadows dancing being those from the flames.</tw-passagedata><tw-passagedata pid="195" name="A2- Fanged Death" tags="Death" position="2141,5182" size="100,100">The scorchign pain within your mind begins to envelope your thoughts. You cannot shake the visions of beyond the Veil as they cloud your vision. With each wound you recieve, your body slows. Eventually you lose the grip on your sword and the stength in your legs. As you fall to your knees holding on to your head, you hear as if from afar muffled screams from Moira. Then you slowly feel your grip over sanity leave as you plunge into the darkness...</tw-passagedata><tw-passagedata pid="196" name="A2- Double Attack" tags="" position="586,5233" size="100,100">Stepping in you lunge forward with your sword. Your blade sinks into the beasts flesh behind its left front leg. With a twist, then a slice you pull your blade from its torso as blood begins to coat the white fur. You notice the incorporeal tendrils begin to slither and crawl over the wound immediately. They lick at your blade as you pull it back, then stab into the beasts exposed flesh. Pulling taut, they stretch the beast&#39;s skin over the wound, squeezing the cut closed.
+
+A low growl pulls your attention to the beast&#39;s snarling face. You backstep as quickly as possible, but the beast&#39;s bite is quciker than you are. It&#39;s teeth sink into your left arm as you attempt to block the bite from reaching your head and throat. The countless teeth pierce your skin and the pain flares up your arm. You swing with your sword at the beasts head and it lets go, ducking out of reach. The moment the teeth leave your arm, you see the same dark tendrils linger and stick to your wound for a moment before pulling back to the beast. Then you feel the familiar pain of the eldrich energy stabbing your brain. Except this time, the pain paralyzing as vision from beyond the Veil cloud your vision. Your ears ring and you clutch your head.
+
+//(set: $injuryScore to $injuryScore + 1) (text-colour:grey)[You have received an injury...]//
+
+As the pain and ringing subsides, you look up to see the others move in to attack.
+
+[[Grip your sword and look for an opening.-&gt;A2- Ambush Retaliation]]</tw-passagedata><tw-passagedata pid="197" name="A2- Fire Distraction" tags="" position="587,5364" size="100,100">You step towards the campfire and grab a burning gnarled piece of wood from it, sending embers flying through the dark air. You begin swinging the fire as you step between the beast and Moira. The beast snaps its teeth at you and lowers itself, lips pulled back in a snarl revealing twisted yet sharp teeth once again. You realize what seemed to be the dancing light causing shadows in its jaws move is actually the result of the same incorporeal shadow moving like mist within its mouth. You take a swing with your sword in your other hand.
+
+The beast leaps backwards at an angle and out of your reach. As it turns, the light from the fire dances across the carved flesh from Moira&#39;s sword. You notice the incorporeal tendrils slither and crawl over the wound. They lick at the blood, then stab into the beasts exposed flesh. Pulling taut, they stretch the beast&#39;s skin over the wound, squeezing the cut closed. The beast then turns to face you again, hiding the the gruesome sight from view.
+
+[[Throw the log to the left in an attempt to limit the beasts space.-&gt;A2- Ambush Retaliation]]</tw-passagedata><tw-passagedata pid="198" name="A2- Composure" tags="" position="585,5493" size="100,100">You take a deep breath to calm yourself after the initial shock of the attack. You begin moving around the beast is it unleashes a flurry of attacks on Moira. You hear Gavin begin an encantation beside the campfire. You turn you attention back to the beast as you move to flank with Moira.
+
+She is still on the defensive as the beast unleashes a storm of fangs and claws. Using its muscular hindlegs it lunges forward as it slashes at Moira. She manages to sidestep, and roll out of the way. A bite follow, the beasts lips extending past where natural as it opens its jaws to snap at Moira. On one knee, Moira brings her sword up to slice the beasts face, forcing it to one side. As the teeth miss their mark and before Moira can recover from her attack, the beasts claws slam into her arm and torso throwing her on her back. She lands with moss and dislodged debris flying around. She begins to get up clutching her ribs with the bloodied arm. A moment later she falls back on one knee screaming and clutching her head.
+
+&quot;Curse the Veil!&quot; She snarls as she gets back to her feet.
+
+The beast backs off in an attempt to stop you from flanking it.
+
+As it turns, the light from the fire dances across the carved flesh from Moira&#39;s sword. You notice the incorporeal tendrils slither and crawl over the wound. They lick at the blood, then stab into the beasts exposed flesh. Pulling taut, they stretch the beast&#39;s skin over the wound, squeezing the cut closed. The beast then turns to face all three of you as best as it can.
+
+(set: $MoiraInjuryScore to $MoiraInjuryScore + 1)
+
+[[Grip your sword and continue moving around the beast.-&gt;A2- Ambush Retaliation]]</tw-passagedata><tw-passagedata pid="199" name="A2- Ambush Retaliation" tags="" position="745,5367" size="100,100">Moira is the first to attack again. She lunges forward, and beast follows with its own pounce. Moira slides on one knee getting under the beasts bite and plunges her sword upwards into the beasts chest. She pushes with one leg and rolls to the side, avoiding the beasts claw and slicing open the flesh with blood arching from her sword.
+
+The shadow sprouting from the beasts form begin to pull its wound shut again.
+
+Then you hear the roar of fire as Gavin raises his hands and throws them outword. Five streaks of flame shoot out from the campfire and arch across the night sky. Four of these archs land around you and remain lit, fueled by magic and lighting the surroundings. The final fire bolt streaks towards the beast. Turning to see the flames, the beast pounces back and lowers its fresh wound to the ground. The bolt of fire whooshes through the air and hits the ground where the beast used to be. Unlike the other streaks, the flame does not stay and stead burns out, boiling the pool of blood left behind by the beast.
+
+Its eyes dart between its adversaries and the flames and it lets out a low rumbling growl.
+
+[[Take the opening to move opposite to Moira.-&gt;A2- Moira Pinned]]
+[[Take the opening and follow up with an attack.-&gt;A2- Rock and a Hard Place]]</tw-passagedata><tw-passagedata pid="200" name="A2- Rock and a Hard Place" tags="" position="904,5450" size="100,100">You move in keeping the beast between you and the flames. As you begin to swing your sword, the beast brings down its claw onto your arm. You manage to pull back before impact, however changing trajectory mid strike slowed your movement down enough for your sword to be pinned between the beasts claw and the rocky ground.
+
+The beasts relentless counter attack continues as it opens its jaw and bites at you.
+
+(live: 5s)[(transition:&quot;dissolve&quot;)[You must [&#39;&#39;act fast!&#39;&#39;]&lt;QTE|](stop:)]
+
+[]&lt;choice|
+\
+\(click: ?QTE)[
+\	(set: $timer to 7)
+\	(live: 1s)[
+\		(set: $timer to it - 1)
+\		(replace:?choice)[
+\			$timer]
+			[[Attempt to pull your sword out and slice at the beast.-&gt;A2- Daredevil]]
+			[[Let go of the sword and dodge backwards.-&gt;A2- Quick Feet]]
+\		(if: $timer is 0)[(go-to:&quot;A2- Daredevil&quot;)]]]
+</tw-passagedata><tw-passagedata pid="201" name="A2- Stonestrider Attack" tags="" position="349,5349" size="100,100">Moira crashes into the beast at an angle as it charges your camp. The beast loses balance for a split second. With a swift spin, Moira carves deep into its hide just above the left shoulder. Moira takes a step back as a whirlwind of teeth and fangs snap the air in front of her in retaliation. The beast begins to advance on Moira.
+
+[[Use the opening and strike with your sword.-&gt;A2- Double Attack]]
+[[Use burnign wood from the campfire to force the beast back.-&gt;A2- Fire Distraction]]
+[[Begin moving to flank the beast and gain your composure.-&gt;A2- Composure]]</tw-passagedata><tw-passagedata pid="202" name="A3- Moira Thrown" tags="" position="828,7439" size="100,100">[[-&gt;Untitled Passage 11]]
+[[-&gt;Untitled Passage 10]]
+
+[[-&gt;Untitled Passage 12]]
+[[-&gt;Untitled Passage 13]]
+</tw-passagedata><tw-passagedata pid="203" name="A3- Gavin Burned" tags="" position="1234,7438" size="100,100">[[-&gt;Untitled Passage 16]]
+[[-&gt;Untitled Passage 14]]
+
+[[-&gt;Untitled Passage 15]]
+[[-&gt;Untitled Passage 17]]</tw-passagedata><tw-passagedata pid="204" name="A3- Stonestrider Released" tags="" position="1630,7438" size="100,100">[[-&gt;Untitled Passage 21]]
+[[-&gt;Untitled Passage 18]]
+
+[[-&gt;Untitled Passage 19]]
+[[-&gt;Untitled Passage 20]]</tw-passagedata><tw-passagedata pid="205" name="A3- Massacre" tags="" position="2032,7436" size="100,100">[[-&gt;Untitled Passage 23]]
+[[-&gt;Untitled Passage 24]]
+
+[[-&gt;Untitled Passage 22]]
+[[-&gt;Untitled Passage 25]]</tw-passagedata><tw-passagedata pid="206" name="A3- Threat Down" tags="" position="2434,7439" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="207" name="Untitled Passage 6" tags="" position="634,7208" size="100,100">[[-&gt;A3- Moira Thrown]]</tw-passagedata><tw-passagedata pid="208" name="Untitled Passage 7" tags="" position="634,7338" size="100,100">[[-&gt;A3- Moira Thrown]]</tw-passagedata><tw-passagedata pid="209" name="Untitled Passage 8" tags="" position="633,7668" size="100,100">[[-&gt;A3- Moira Thrown]]</tw-passagedata><tw-passagedata pid="210" name="Untitled Passage 9" tags="" position="632,7541" size="100,100">[[-&gt;A3- Moira Thrown]]</tw-passagedata><tw-passagedata pid="211" name="Untitled Passage 10" tags="" position="1031,7338" size="100,100">[[-&gt;A3- Gavin Burned]]</tw-passagedata><tw-passagedata pid="212" name="Untitled Passage 11" tags="" position="1033,7212" size="100,100">[[-&gt;A3- Gavin Burned]]</tw-passagedata><tw-passagedata pid="213" name="Untitled Passage 12" tags="" position="1031,7541" size="100,100">[[-&gt;A3- Gavin Burned]]</tw-passagedata><tw-passagedata pid="214" name="Untitled Passage 13" tags="" position="1031,7668" size="100,100">[[-&gt;A3- Gavin Burned]]</tw-passagedata><tw-passagedata pid="215" name="Untitled Passage 14" tags="" position="1433,7337" size="100,100">[[-&gt;A3- Stonestrider Released]]
+
+[[-&gt;A3- TPK]]</tw-passagedata><tw-passagedata pid="216" name="Untitled Passage 15" tags="" position="1432,7543" size="100,100">[[-&gt;A3- Stonestrider Released]]
+
+[[-&gt;A3- Red Turncoat]]</tw-passagedata><tw-passagedata pid="217" name="Untitled Passage 16" tags="" position="1432,7211" size="100,100">[[-&gt;A3- Stonestrider Released]]
+
+[[-&gt;A3- TPK]]</tw-passagedata><tw-passagedata pid="218" name="Untitled Passage 17" tags="" position="1434,7671" size="100,100">[[-&gt;A3- Red Turncoat]]</tw-passagedata><tw-passagedata pid="219" name="Untitled Passage 18" tags="" position="1832,7338" size="100,100">[[-&gt;A3- Massacre]]
+
+[[-&gt;A3- TPK]]</tw-passagedata><tw-passagedata pid="220" name="Untitled Passage 19" tags="" position="1833,7537" size="100,100">[[-&gt;A3- Massacre]]
+
+[[-&gt;A3- Red Turncoat]]</tw-passagedata><tw-passagedata pid="221" name="Untitled Passage 20" tags="" position="1835,7666" size="100,100">[[-&gt;A3- Massacre]]
+
+[[-&gt;A3- Red Turncoat]]</tw-passagedata><tw-passagedata pid="222" name="Untitled Passage 21" tags="" position="1830,7215" size="100,100">[[-&gt;A3- Massacre]]
+
+[[-&gt;A3- TPK]]</tw-passagedata><tw-passagedata pid="223" name="Untitled Passage 22" tags="" position="2232,7544" size="100,100">[[-&gt;A3- Threat Down]]
+
+[[-&gt;A3- Red Turncoat]]</tw-passagedata><tw-passagedata pid="224" name="Untitled Passage 23" tags="" position="2229,7210" size="100,100">[[-&gt;A3- Threat Down]]
+
+[[-&gt;A3- TPK]]</tw-passagedata><tw-passagedata pid="225" name="Untitled Passage 24" tags="" position="2230,7337" size="100,100">[[-&gt;A3- Threat Down]]
+
+[[-&gt;A3- TPK]]</tw-passagedata><tw-passagedata pid="226" name="Untitled Passage 25" tags="" position="2233,7667" size="100,100">[[-&gt;A3- Threat Down]]
+
+[[-&gt;A3- Red Turncoat]]</tw-passagedata><tw-passagedata pid="227" name="A3- TPK" tags="Death" position="2034,6939" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="228" name="A3- Red Turncoat" tags="Death" position="2039,7935" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">"use strict";var _slicedToArray=function(){return function(e,t){if(Array.isArray(e))return e;if(Symbol.iterator in Object(e))return function(e,t){var n=[],r=!0,i=!1,a=void 0;try{for(var o,s=e[Symbol.iterator]();!(r=(o=s.next()).done)&&(n.push(o.value),!t||n.length!==t);r=!0);}catch(e){i=!0,a=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw a}}return n}(e,t);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}!function(){
 /**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
