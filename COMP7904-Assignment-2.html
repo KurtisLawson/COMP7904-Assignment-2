@@ -162,7 +162,7 @@ You follow up behind him, and...
 The streets bellow in a whorl of heated air, as you draw it&#39;s energy and send the vapour spiralling within the confines of the alleyway!
 
 (set: $magicRevealed to false)[[Now&#39;s your chance to escape!-&gt;A1- Escape!]]</tw-passagedata><tw-passagedata pid="17" name="A1- Seeker Info" tags="Info" position="1476,291" size="100,100">=|=
-&lt;img src=&quot;https://i.imgur.com/kS8sWIe.jpg&quot; height= &quot;60%&quot;&gt;
+&lt;img src=&quot;https://i.imgur.com/kS8sWIe.jpg&quot; width= &quot;50%&quot;&gt;
 =|=
 &#39;&#39;Enclave Seeker&#39;&#39;
 
@@ -809,11 +809,13 @@ Gavin presses his hand on her chest, holding her back. As she leans backward, se
 ]
 [[&quot;Let&#39;s stick to the open path.&quot;-&gt;A2- Creature Start]]
 
-[[&quot;... On second thought, you&#39;re right. Let&#39;s stay hidden from hungry eyes.&quot;-&gt;A2- Environment Start]]</tw-passagedata><tw-passagedata pid="83" name="A2- Environment Start" tags="" position="158,3547" size="100,100">(set: $a2_hiddenPathTraversed to true) After slow progress over the jagged terrain of the fjord, the path begins to narrow. Looking forwad, you see the path twisting with the cliff side. Below, a geyser erupts covering the cliffside with a blanket of foamy water. As the water falls back down it creates a giant ripples. For a split second you can see the jagged rocks usually hidden below the surface before they are engulfed again.
+[[&quot;... On second thought, you&#39;re right. Let&#39;s stay hidden from hungry eyes.&quot;-&gt;A2- Environment Start]]</tw-passagedata><tw-passagedata pid="83" name="A2- Environment Start" tags="" position="158,3547" size="100,100">(set: $a2_hiddenPathTraversed to true) After steady progress over the jagged bends and twisted knolls of the fjord, the path begins to narrow. Looking forward, you see the path twisting with the cliff side.
 
-You take a deep breath.
+Below, a geyser erupts, drenching the cliffside with a blanket of roiling salt and foam. As the water comes to rest, ripples billow from the impact. For a moment, through the upturned sea, you see the jagged rocks, usually hidden below the surface, before they are engulfed once more.
 
-[[&quot;Double check each step and follow my lead&quot;-&gt;A2- Unsure Footing]]</tw-passagedata><tw-passagedata pid="84" name="A2- Powers Revealed 1" tags="" position="395,4198" size="100,100">You go to turn to Gavin and speak - &quot;You&#39;re a Seeker?&quot;
+You take a deep breath...
+
+[[&quot;Check each step, and follow my lead!&quot;-&gt;A2- Unsure Footing]]</tw-passagedata><tw-passagedata pid="84" name="A2- Powers Revealed 1" tags="" position="395,4198" size="100,100">You go to turn to Gavin and speak - &quot;You&#39;re a Seeker?&quot;
 	
 Before you can recover completely, Moira strikes you from behind, knocking you to the ground. You turn onto your back to face her, but her blade is already pressed against your chest. Her voice booms in judgement.
 	
@@ -1165,15 +1167,15 @@ As the bird begins to screech, blood begins to pour from its mouth, muffling the
 Silence rings across the plateau...
 
 [[Take a knee...-&gt;A2- Aftermath]]</tw-passagedata><tw-passagedata pid="113" name="A2- Aftermath" tags="" position="3002,3395" size="100,100">(if:$magicRevealed is true) [(go-to: &quot;A2- Powers Revealed 1&quot;)]
-(else:) [(go-to: &quot;A2- Powers Hidden 1&quot;)]</tw-passagedata><tw-passagedata pid="114" name="A2- Unsure Footing" tags="" position="412,3584" size="100,100">(text-colour:grey)[You begin leading the group, showing them the most secure footholds. Gavin follows behind you and Moira behind him.]
+(else:) [(go-to: &quot;A2- Powers Hidden 1&quot;)]</tw-passagedata><tw-passagedata pid="114" name="A2- Unsure Footing" tags="" position="413,3584" size="100,100">(text-colour:grey)[You begin leading the group, showing them the most secure footholds. Gavin follows behind you, with Moira securing the rear.]
 
-(live: 5s)[(transition:&quot;dissolve&quot;)[(text-colour:grey)[//You continue moving alongside the cliff...//]](stop:)]
+(live: 5s)[(transition:&quot;dissolve&quot;)[(text-colour:grey)[//You continue treading alongside the cliff-face...//]](stop:)]
 
-(live: 7s)[(transition:&quot;dissolve&quot;)[(text-colour:grey)[//The jagged rocks at the bottom of the fjord and the surface of water begin to grow further and further away as the cliff gains height...//]](stop:)]
+(live: 7s)[(transition:&quot;dissolve&quot;)[(text-colour:grey)[//The roiling maw of the sea begin to grow further and further away as the cliff steadily ascends...//]](stop:)]
 
-(live: 10s)[(transition:&quot;dissolve&quot;)[(text-colour:grey)[//You pass under the giant stone arches and wonder if they are natural or...//]](stop:)]
+(live: 10s)[(transition:&quot;dissolve&quot;)[(text-colour:grey)[//You pass under giant stone arches, wondering if they&#39;re natural or...//]](stop:)]
 
-(live: 13s)[(transition:&quot;dissolve&quot;)[Suddenly a stone beneath your foot shifts. With a small crack, you hear the thin pathway beneath you begin to give way as rocks and stone roll and grind against each other.
+(live: 13s)[(transition:&quot;dissolve&quot;)[Suddenly, a stone beneath your foot shifts! With a small crack, you hear the thin pathway beneath you begin to give way as rocks and stone roll and grind against each other!
 
 [You must [&#39;&#39;act fast!&#39;&#39;]&lt;QTE|](stop:)] ]
 
@@ -1187,46 +1189,58 @@ Silence rings across the plateau...
 \			$timer]
 			[[Reach for the ledge.-&gt;A2- Initial Fall]]
 			[[Reach for Gavin.-&gt;A2- Gavin&#39;s Initiative]]
-			[[Cast stoneshape to grab on.-&gt;A2- Stoneshape]]
-\		(if: $timer is 0)[(go-to:&quot;A2- Initial Fall&quot;)]]]</tw-passagedata><tw-passagedata pid="115" name="A2- Initial Fall" tags="" position="566,3441" size="100,100">You reach out and grab at the wall, but the jagged rocks begin to slip out under your weight.
+			[[Grip the stone with the Veil.-&gt;A2- Stoneshape]]
+\		(if: $timer is 0)[(go-to:&quot;A2- Initial Fall&quot;)]]]</tw-passagedata><tw-passagedata pid="115" name="A2- Initial Fall" tags="" position="566,3441" size="100,100">You reach out, grasping desperately, but the jagged rocks slip out under your weight!
 
-Not having a stable hold on anything, you begin to fall down the cliff side. Gavin reaches he hand out and barely misses yours.
+Not having a stable hold on anything, you begin to plummet down the cliff side.
 
-//Is this it?//
+Gavin reaches out his hand... barely missing your own.
 
-You hit the side of steep side of the cliff and bounce off. Unable to grasp anythign again. Another hit.
+//You fall.//
 
-With an echoing //CRASH// you land on your back, the air leaving your body with an //OOMF//. The jagged rocks you landed on dig into your back. You feel dampness of blood beginning to soak into the fabric of your clothes.
+You strike the side of the cliff, tumbling outward, desperately grasping! Another strike, and another...
+
+//You feel the psionic prescence of distant whispers...//
+
+With an echoing //CRASH// you land on your back, expelling the air from your lungs with a muted //OOMF//! The jagged rocks dig into your back, as you feel the warmth of blood beginning to well into the fabric of your clothes.
 
 //(set: $injuryScore to $injuryScore + 1) (text-colour:grey)[You have received an injury...]//
 
-With a gasp, the air returns into your lungs bringing pain shooting through your torso. Broken ribs. Gritting your teeth, you sit up, and look at where you fell from.
+With a gasp, the air returns into your lungs, accompanied by searing pain in your chest. Cracked ribs, maybe broken... Gritting your teeth, you sit up, and look at where you fell from.
 
-&quot;Ashton! Are you alright?&quot; Gavin&#39;s yells echo against the cliff walls. He stands on the path, 45 feet above you. You look down at the small platform you landed on. The bounces had broken your fall and then...
+&quot;Ashton! Are you alright?&quot; Gavin&#39;s yells echo against the cliffs. He stands on the path, 30 feet above you. You look down at the small platform you landed on. The bounces had broken your fall and then...
 
-&quot;Did I use Stoneshape without realizing it?&quot;
+Did you draw from the Veil without realizing it?
 
 &quot;ASHTON!&quot;
 
-&quot;Yes I&#39;m fine!&quot; Yelling back hurts your chest. If you did, they didn&#39;t notice. You stand up and look around. You see a possible path to climb up and forward which meets back with the path.
+&quot;Yeah, I&#39;m fine!&quot; You say, concluding from the accompanying pain that you are definitely not fine.
 
-&quot;Continue and I will meet you there!&quot; Pointing farther along the path. Gavin nods and starts moving. Moira takes a second before following.
+If you did draw from the Veil, they certainly didn&#39;t notice... You stand and survey your surroundings. A possible path to climb is carved naturally into the stone, meeting with the path, some distance ahead.
 
-[[Reach up and grab the first stone.-&gt;A2- The Climb]]</tw-passagedata><tw-passagedata pid="116" name="A2- Gavin&#39;s Initiative" tags="" position="563,3576" size="100,100">Gavin had already started to reach for you. You clutch each other&#39;s hands and he pulls you back to him. He steps back to make room for you and bumps into Moira.
+&quot;Keep moving! I&#39;ll meet you ahead!&quot; Pointing farther along the path. Gavin nods and starts moving. Moira hesitates a moment, before following.
 
-&quot;WATCH IT!&quot; Moira forces her voice out from her clenched jaw.
+[[Reach up, grasping the first stone.-&gt;A2- The Climb]]</tw-passagedata><tw-passagedata pid="116" name="A2- Gavin&#39;s Initiative" tags="" position="563,3576" size="100,100">Gavin had already started to reach for you. You clasp his arm, and he pulls you back to him. He steps back to make room for you and bumps into Moira.
 
-Gavin looks back at her. &quot;I got you both don&#39;t worry.&quot; He gives you a nod and looks past you.
+&quot;W-Watch it!&quot; Moira forces her voice out from her clenched jaw.
 
-&quot;No time to talk now, lets get somewhere safe first.&quot;
+Gavin looks back at her. &quot;I got you both! Would you relax?&quot;
 
-[[Begin leading the party again.-&gt;A2- Rocks Above]]</tw-passagedata><tw-passagedata pid="117" name="A2- Stoneshape" tags="" position="561,3722" size="100,100">You reach out and touch the stone of the cliffside. Grasping with your fingers, you mutter an encantation and the stone begins to shift. Jagged pieces reach out and envelope your hand. Using the solid hold, you pull yourself back.
+&quot;No!&quot; She retorts, rage seething from below her helm.
+
+He gives you a nod, returning his gaze to the path. &quot;No time to talk now... Lets get somewhere safe first.&quot;
+
+[[Begin leading the party again.-&gt;A2- Rocks Above]]</tw-passagedata><tw-passagedata pid="117" name="A2- Stoneshape" tags="" position="561,3722" size="100,100">You instinctively reach out, grasping at the stone wall and hastily drawing the Veil!
+
+With an incantation, the stone begins to shift, as jagged ribbons reach out and envelope your hand. You pull, using the solid hold to right yourself on the path!
 
 (set: $magicRevealed to true)(text-colour:grey)[//Your powers have been revealed!//]
 
-[[How will they react?-&gt;A2- Consequences]]</tw-passagedata><tw-passagedata pid="118" name="A2- The Climb" tags="" position="737,3439" size="100,100">You begin your slow and excruciating climb up. Suddenly, you feel vibrations in the sloped wall. Panicked, you look around for the source. Your eyes catch the water several hundred feet below you, and you can barely see water boiling.
+[[... Turn towards your companions.-&gt;A2- Consequences]]</tw-passagedata><tw-passagedata pid="118" name="A2- The Climb" tags="" position="737,3439" size="100,100">You begin your slow and excruciating climb upward. Your whole body aches, resisting your every motion, but you press on...
 
-The geysers! One&#39;s about to erupt.
+Suddenly, you feel vibrations in the sloped wall. Panicked, you look for the source. Your eyes catch the roiling water, several hundred feet below you, as you begin to notice see water boiling from below.
+
+The geysers! One&#39;s about to erupt!
 
 You must [&#39;&#39;act fast!&#39;&#39;]&lt;QTE|
 
@@ -1241,28 +1255,33 @@ You must [&#39;&#39;act fast!&#39;&#39;]&lt;QTE|
 			[[Pull youself as close as possible to the cliff wall.-&gt;A2- Geyser Eruption]]
 			[[Speed up your climbing to get out of the way.-&gt;A2- Guardian Gavin]]
 \		(if: $timer is 0)[(go-to:&quot;A2- Geyser Eruption&quot;)]]]
-</tw-passagedata><tw-passagedata pid="119" name="A2- Geyser Eruption" tags="" position="895,3525" size="100,100">You pull yourself as close as you can to the cliff wall. There is a low gutteral //BOOM// from below you. The sound of rushing water approaches quickly. Rocks and stones fly past you which were broken off and shot by the geyser. The stones do not hit you, but the water splashes on you. The boiling water sizzles against your skin and it takes all you have to keep your mouth and eyes closed. The water stings your injuries.
+</tw-passagedata><tw-passagedata pid="119" name="A2- Geyser Eruption" tags="" position="895,3525" size="100,100">You pull yourself as close as you can to the cliff wall!
+
+There is a low, guttural //BOOM//, as the sound of rushing water approaches quickly. Shards of stone fly upward, broken off and cascading alongside the blast. The stones clatter across the cliff-face, but the water splashes across you!
+
+It boils and sizzles against your skin, and it takes all you have to keep your mouth and eyes closed. Your injuries burn as they are subjugated to boiling heat!
 
 //(set: $injuryScore to $injuryScore + 1) (text-colour:grey)[You have received an injury...]//
 
-You begin climbing again after taking a moment. You speed up as you do not want to be splashed again. You reach the top and see Gavin holding his hand to you.
+Recovering for but a moment, you begin climbing once more, swiftly to avoid another eruption... Reaching the top, you see Gavin holding his hand to you.
 
-[[Take his hand and pull youself up.-&gt;A2- Hidden Bridges]]</tw-passagedata><tw-passagedata pid="120" name="A2- Rocks Above" tags="" position="889,3729" size="100,100">(text-colour:grey)[You continue leading the group towards the next section of the hidden path.]
+[[Take his hand and pull youself up.-&gt;A2- Hidden Bridges]]</tw-passagedata><tw-passagedata pid="120" name="A2- Rocks Above" tags="" position="889,3729" size="100,100">(text-colour:grey)[You continue leading the group along the narrow rockface(if: $magicRevealed is true)[, your mind racing. You stop to wonder if a fall will be your end, or Moira&#39;s blade]. ]
 
-(live: 5s)[(transition:&quot;dissolve&quot;)[(text-colour:grey)[//The path begins to widen...//]](stop:)]
+(live: 5s)[(transition:&quot;dissolve&quot;)[(text-colour:grey)[//As the path begins to widen...//]](stop:)]
 
-(live: 7s)[(transition:&quot;dissolve&quot;)[(text-colour:grey)[//You no longer have to sidestep and begin to walk forward...//]](stop:)]
+(live: 7s)[(transition:&quot;dissolve&quot;)[(text-colour:grey)[//You no longer have to sidestep, beginning to walk steadily...//]](stop:)]
 
-(live: 10s)[(transition:&quot;dissolve&quot;)[(text-colour:grey)[//You continue to walk along the path in silence except...//]](stop:)]
+(live: 10s)[(transition:&quot;dissolve&quot;)[(text-colour:grey)[//You tread lightly, each step a calculation...//]](stop:)]
 
-(live: 13s)[(transition:&quot;dissolve&quot;)[(text-colour:grey)[//You hear the distant screeches of the creates that dwell above in the plateau...//]](stop:)]
+(live: 13s)[(transition:&quot;dissolve&quot;)[(text-colour:grey)[//Until you hear the distant screeches of a creature that dwell above in the plateau...//]](stop:)]
 
-(live: 16s)[(transition:&quot;dissolve&quot;)[One seems to get close...
-Then with a sudden crash the earth rumbles. Whatever it is, it must be giant, but also far enough to not see you down here.
+(live: 16s)[(transition:&quot;dissolve&quot;)[THOOM! The earth from above rumbles. Whatever just landed, it must be collossal! However, you can&#39;t see it from here.
+
+Which means it can&#39;t see you...
 
 The vibrations continue, and turn into a low rumble. You feel debris hit your arm and look up.
 
-Giant pieces of the cliff ledge have broken off and are heading towards you.
+Masses of the cliff ledge have been sheared by the force, plummeting towards you!
 [You must [&#39;&#39;act fast!&#39;&#39;]&lt;QTE|](stop:)] ]
 
 []&lt;choice|
@@ -1273,69 +1292,107 @@ Giant pieces of the cliff ledge have broken off and are heading towards you.
 \		(set: $timer to it - 1)
 \		(replace:?choice)[
 \			$timer]
-			[Pull yourself flat against the cliff side.]&lt;avoid|
-			[Raise your arms to cover your head.]&lt;brace|
-			[&quot;Take cover rocks above!&quot;]&lt;warn|
+			[Pull yourself flat against the cliff-face.]&lt;avoid|
+			[Raise your arms, covering your head.]&lt;brace|
+			[Call out to the others, &quot;Take cover!&quot;]&lt;warn|
 			(click:?avoid)[(go-to:&quot;A2- Rocks Below&quot;)]
 			(click:?brace)[(go-to:&quot;A2- Rocks Below&quot;)]
 			(click:?warn)[(set:$a2_warnedOthers to true)(go-to:&quot;A2- Rocks Below&quot;)]
-\		(if: $timer is 0)[(go-to:&quot;A2- Rocks Below&quot;)]]]</tw-passagedata><tw-passagedata pid="121" name="A2- Consequences" tags="" position="730,3725" size="100,100">You look at Gavin who looks back at you with emotionless eyes. Behind him, Moira begins to move towards you with her hand on the hilt of her sword.
+\		(if: $timer is 0)[(go-to:&quot;A2- Rocks Below&quot;)]]]</tw-passagedata><tw-passagedata pid="121" name="A2- Consequences" tags="" position="730,3725" size="100,100">You look at Gavin, his eyes laced with resolve... Behind him, Moira begins to move shift her weight, only able to draw her blade halfway...
 
-Rocks shift beneath her foot and she stops in her tracks. Her eyes never leaving yours, burning a hole through you.
+Before rocks shift beneath her feet, stopping her in her tracks. She sidles hastily to the side, clearly shaken from the height. You can almost feel the heat of her gaze from beneath her helm.
 
-Gavin extends his arm across he, protecting her from a potential fall. &quot;This is not the place for the conversation we will be having. Lets get somewhere safe first.&quot;
+Gavin extends his arm across, protecting her from a potential fall. &quot;Keep moving! Don&#39;t stop! This is isn&#39;t the place to quarrel, we&#39;ll all end up as stains in the sea!&quot;
 
-Moira grunts &quot;Don&#39;t do anything stupid Ashton.&quot;
+Moira goes to say something, but holds her tongue.
 
-[[Keep leading the group.-&gt;A2- Rocks Above]]</tw-passagedata><tw-passagedata pid="122" name="A2- Hidden Bridges" tags="" position="1234,3551" size="100,100">(text-colour:grey)[You press on through the end of the narrow path and...]
+[[Keep leading the group!-&gt;A2- Rocks Above]]</tw-passagedata><tw-passagedata pid="122" name="A2- Hidden Bridges" tags="" position="1234,3551" size="100,100">(text-colour:grey)[You press on through the narrow path...]
 
-(live: 2s)[(transition:&quot;dissolve&quot;)[You reach an outcropping of the cliff side which is formed into a small platform. Two wooden beams are sticking out from each corner of the ledge, and a wooden suspended bridge stretches out from them to the other side of the fjord.
+(live: 2s)[(transition:&quot;dissolve&quot;)[You reach an outcropping of the cliff side which is formed into a small platform, covered by an arching ceiling of stone.
 
-The bridge sways in the wind, and a wooden board detaches from it, falling into the depths below.
+Overgrown ivy chokes the periphery, wrapping around two wooden beams that are excuding from each corner, suspending a wooden bridge from either side.
 
-&quot;And we&#39;re supposed to trust you with this?&quot; Moira walks up to Ashton, eyes never leaving his.
+The bridge sways in the wind, and a rotten wooden board buckles, falling into the depths below.
+(if: $magicRevealed is false) [
+You hear Gavin chuckle as Moira approaches.
+]
+&quot;This is your route? All this for a wooden deathtrap?&quot; Moira strides up to you, her armor rattling.
 
-&quot;We need to cross. This is narrowest section and I&#39;ve crossed the bridge before. Just not with heavy armour or other people.&quot;
+&quot;We&#39;re almost through, one final crossing. I&#39;ve made it before! But, your armor... Perhaps you could climb up to the archway?&quot;
 
-Moira glares at you. Then she turns towards the bridge and just waits.
+Moira glowers, before she turns towards the bridge. &quot;If I die, I&#39;ll be waiting for you in the hells beyond, Ashton.&quot;
 
-[[Step gingerly onto the bridge.-&gt;A2- Moira&#39;s Fall]]](stop:)]</tw-passagedata><tw-passagedata pid="123" name="A2- Bold and Reckless" tags="" position="1563,3407" size="100,100">You rush past Gavin who is hanging tightly onto the rope with one hand and extending his other. Moira spins around as she falls and manages to grab onto the bridge floor. You rush to Moira and dive to catch her arm. You grab her by the elbow just as the wooden board gives way to the weight of her armour and your impact. You reach out to grab the previous board and cling onto it, pulling your shoulder muscles and straining your body to its limit.
+[[Step gingerly onto the bridge.-&gt;A2- Moira&#39;s Fall]]](stop:)]</tw-passagedata><tw-passagedata pid="123" name="A2- Bold and Reckless" tags="" position="1563,3407" size="100,100">You rush past Gavin who is hanging tightly onto the rope with one hand and extending his other. Moira spins around as she falls, managing to grab onto the bridge floor.
+
+You dive laterally onto the bridge plants to distribute your weight, grasping Moira&#39;s arm!
+
+The wooden boards you land on creak and buckle, giving way to the weight of her armour and your impact. Grasping backward,  you cling onto the ropes of the bridge, pulling your shoulder muscles and straining your body to its limit.
 
 //(set: $injuryScore to $injuryScore + 1) (text-colour:grey)[You have received an injury...]//
 
-(if: $injuryScore &gt;= 3)[Your body has gone passed it&#39;s limit. Bleeding from previous injuries, you lose conciousness for a second. That&#39;s enough to lose your grip and slip off the edge with Moira...
+(if: $injuryScore &gt;= 3)[Your body has gone passed it&#39;s limit. Bleeding from previous injuries, you lose conciousness for a second... Just enough to lose your grip, slipping off the edge with Moira...
 
 [[Attempt to hold on to the edge of the bridge...-&gt;A2- Fall Death]]]
 (else:)[
-You let out a yell as you feel the veins in your head buldge with the effort. Then you see Gavin standing in the same spot, except now his eyes are focused on the slack rope beginning to slither across the floor and wrap around your arm. They pull you and Moira up. Gavin takes a sharp breath in and the rope goes slack again.
+You scream in pain, as you shoulder stretches and burns with a pop!
+
+Then you see Gavin standing across, on stable ground, except now his eyes flare with arcane force focused on the slack ropes. Extending a network of links that manipulate the inanimate matter, he psionically wraps the ropes loosely around your arm...
+
+With a flourish, Gavin grips his hand into a fist, and the ropes pull taut, yanking both you and Moira upward. Gavin takes a sharp breath in and the rope goes slack again.
 
 How did he...
 
-&quot;Let&#39;s get over this bridge.&quot; Gavin stops any further questioning.
+The bridge buckles, creaking with weight!
 
-[[Get up and continue across the bridge.-&gt;A2- Boarded Cliff Path]]]</tw-passagedata><tw-passagedata pid="124" name="A2- Let Her Fall" tags="" position="1560,3557" size="100,100">You remain rooted to place trying to find your own balance. Then you see Gavin hanging tightly onto the rope with one hand and extending his other. Moira spins around as she falls and manages to grab onto the bridge floor. The wooden board gives way to the weight of her armour.
+&quot;Go, go!&quot; Gavin shouts.
 
-Standing in the same spot, Gavin has his eyes focused on the slack rope which begins to slither across the floor and wrap around her arm. They pull her up. Gavin takes a sharp breath in and the rope goes slack again.
+[[Run, quickly across the bridge!-&gt;A2- Boarded Cliff Path]]]</tw-passagedata><tw-passagedata pid="124" name="A2- Let Her Fall" tags="" position="1560,3557" size="100,100">You remain rooted to place trying to find your own balance.
+
+You see Gavin hanging tightly onto the rope with one hand, extending his other in a supportive grasp. Moira spins around as she falls, managing to grab onto the bridge floor...
+
+//CRACK!//
+
+The wooden board gives way to the weight of her armour!
+
+Standing in the same spot, Gavin&#39;s eyes flare with arcane force focused on the slack ropes. Extending a network of links that manipulate the inanimate matter, he psionically wraps the ropes loosely around Moira&#39;s arm...
+
+With a flourish, Gavin grips his hand into a fist, and the ropes pull taut, yanking her upward. Gavin takes a sharp breath in and the rope goes slack again.
 
 How did he...
 
-&quot;Stop gawking!&quot; Gavin commands, snapping you back into the moment. &quot;Let&#39;s get over this bridge, before it gives way!&quot; 
+The bridge buckles, creaking with weight!
 
-[[Continue across the bridge.-&gt;A2- Boarded Cliff Path]]]</tw-passagedata><tw-passagedata pid="125" name="A2- Stone Hand" tags="" position="1562,3717" size="100,100">You remain rooted to place and extend your arm towards the start of the bridge. You feel the sting of the Veil invade your mind as you call on your Stoneshape abilities. You move the wooden post back and fasten the rope using stone, stabilising the bridge. You see Gavin hanging tightly onto the rope with one hand and extending his other. Moira spins around as she falls and manages to grab onto the bridge floor. She quickly grabs the rope above and pulls herself back up.
+&quot;Stop gawking and move! Go, go!&quot; Gavin shouts!
 
-Both Gavin and Moira turn to look towards you.
+[[Run, quickly across the bridge!-&gt;A2- Boarded Cliff Path]]]</tw-passagedata><tw-passagedata pid="125" name="A2- Stone Hand" tags="" position="1562,3717" size="100,100">You remain rooted to place, extending your arm towards the root of the bridge.
+
+You feel the sting of the Veil, as your thoughts flash with images of a place beyond. You allow that place to mirror your own, shifting the wooden post back and fastening the rope using a tomb of stone, stabilising the bridge.
+
+You see Gavin hanging tightly onto the rope with one hand and extending his other. Moira spins as she falls managing to grab the now stabilized bridge planks.
+
+With a swift and desperate motion, she grabs the rope above and pulls herself back up.
+
+Recovering from your arcane influence, Gavin and Moira turn to look towards you in shock.
 
 (set: $magicRevealed to true)(text-colour:grey)[//Your powers have been revealed!//]
 
-&quot;Let&#39;s get over this bridge.&quot; Gavin attempting to start any further questioning.
+The bridge buckles, creaking with weight!
 
-[[Turn to continue crossing.-&gt;A2- Friend or Foe]]</tw-passagedata><tw-passagedata pid="126" name="A2- Moira&#39;s Fall" tags="" position="1405,3551" size="100,100">As you cross the bridge, testing each board before trusting your entire weight on it. The bridge continues to sway in the wind, like a deadly cradle calling you to the depth of the fjord. You glance up at the stone arch above you.
+&quot;Go, go!&quot; Gavin shouts!
+
+[[Run, quickly across the bridge!-&gt;A2- Friend or Foe]]</tw-passagedata><tw-passagedata pid="126" name="A2- Moira&#39;s Fall" tags="" position="1405,3551" size="100,100">As you cross the bridge, you test each board before trusting your entire weight on it.
+
+The bridge continues to sway in the wind, creaking like a deadly cradle, calling you to the depths below. You glance up at the stone arch above you.
 
 &quot;That&#39;s how we would have crossed if we had gone over instead.&quot;
 
-Then suddenly, you hear a //CRACK// and the bridge ropes vibrate like a stringed instrument. The left rope under your hand goes slack. You look behind you to see one of the beems had cracked in half and shifted forward.
+Then suddenly, you hear a //CRACK// and the bridge ropes vibrate like a stringed instrument. The left rope under your hand goes slack.
 
-You also see Moira losing her balance and begin to teeter off the bridge.
+Glancing backward, you see one of the beams has cracked in half, shifting the bridge forward!
+
+Moira sways, losing her balance and teetering off the bridge!
+
+&quot;Gods, please!&quot; She yells, her hardened deameanor completely eroded.
 
 (live: 10s)[(transition:&quot;dissolve&quot;)[You must [&#39;&#39;act fast!&#39;&#39;]&lt;QTE|](stop:)]
 
@@ -1347,26 +1404,28 @@ You also see Moira losing her balance and begin to teeter off the bridge.
 \		(set: $timer to it - 1)
 \		(replace:?choice)[
 \			$timer]
-			[[Run past Gavin to grab her hand.-&gt;A2- Bold and Reckless]]
-			[[Stay put. You don&#39;t want to make it worse.-&gt;A2- Let Her Fall]]
-			[[Use Stoneshape to secure the bridge.-&gt;A2- Stone Hand]]
-\		(if: $timer is 0)[(go-to:&quot;A2- Let Her Fall&quot;)]]]</tw-passagedata><tw-passagedata pid="127" name="A2- Boarded Cliff Path" tags="" position="1914,3648" size="100,100">Once you reach the end of the bridge, you look ahead on this new cliff side.
+			[[Run past Gavin, grasping for Moira.-&gt;A2- Bold and Reckless]]
+			[[Stay put, maintaining your balance.-&gt;A2- Let Her Fall]]
+			[[Channel the Veil, shaping the stone to secure the bridge.-&gt;A2- Stone Hand]]
+\		(if: $timer is 0)[(go-to:&quot;A2- Let Her Fall&quot;)]]]</tw-passagedata><tw-passagedata pid="127" name="A2- Boarded Cliff Path" tags="" position="1914,3648" size="100,100">Quickly moving away from the bridge, you are halted, as the final stretch of jagged cliffs begin ascending towards the distant arches above.
 
-&quot;You have got to be kidding...&quot; Moira&#39;s fixate on the path created out of boarded walkways alongside the cliff.
+An uneven array of wooden boards have been staked into the side of the cliffs, steadily ascending from one to the next. At it&#39;s peak, in the distance, several ropes are laid against the rock face, providing a stark, vertical climb to an upper archway.
 
-&quot;Not much longer before we climb up and we&#39;ll be on solid ground and away from hunting creatures.&quot; You point off in the distance to where the boarded walkway ends. Above it a series of wood platforms adorn the cliff side each with ropes to climb up.
+&quot;You have got to be kidding...&quot; Moira&#39;s says, her gaze fixed on the path. (if: $a2_hiddenPathChosen is false) [&quot;We could have avoided all this!&quot;]
 
-[[Step on the wooden path.-&gt;A2- Rotten Boards]]</tw-passagedata><tw-passagedata pid="128" name="A2- Friend or Foe" tags="" position="1724,3639" size="100,100">Just before you take a step you feel the bridge shake once again. This time however, it quakes with rythm as Moira takes long strides towards you.
+&quot;It&#39;s too late for doubts, unless you feel like turning back? One final push, and solid ground awaits!&quot;
 
-&quot;Ashton, you&#39;ll pay for dragging us into this pit!
-(if:$a2_hiddenPathChosen is false)[You just had to go and change our route!]
+[[Step on the wooden path.-&gt;A2- Rotten Boards]]</tw-passagedata><tw-passagedata pid="128" name="A2- Friend or Foe" tags="" position="1724,3639" size="100,100">Just before you take a step you feel the bridge shake violently rythmically, as Moira, a towering wall of brass, bears down upon you.
+
 Regent Rat! You think I will overlook your transgressions just because you saved me?&quot;
+
+&quot;You&#39;ll pay for dragging us into this pit!
 
 Gavin puts a firm hand on her shoulder, stopping her from passing him.
 
-&quot;Moira, unless you want to end up down there, we should hold this for when we are on solid ground. Ashton, quick, lead the way! Regent or not, we&#39;ll all be even as stains on the side of a chasm!&quot;
+&quot;Moira, unless you want to end up down there, we should hold this for when we are on solid ground! Ashton, quick, lead the way! Regent or not, the drop won&#39;t treat us any different!&quot;
 
-[[Turn around once again and lead the way.-&gt;A2- Boarded Cliff Path]]</tw-passagedata><tw-passagedata pid="129" name="A2- Gavin&#39;s Fall" tags="" position="2217,3647" size="100,100">You remain where you are in fear of falling yourself.
+[[Turn around and make haste!-&gt;A2- Boarded Cliff Path]]</tw-passagedata><tw-passagedata pid="129" name="A2- Gavin&#39;s Fall" tags="" position="2217,3647" size="100,100">You remain where you are in fear of falling yourself.
 
 Gavin extends his hands and clutches the cliff face. As he does, the stone grows out and envelopes his hand holding him in place.
 
@@ -1392,35 +1451,55 @@ He looks at you and smiles.
 
 Moira uses the protruding stone Gavin created to cross the new gap in the walkway and together you all reach the platform.
 
-[[Begin your ascent up the ropes.-&gt;A2- Out of Danger]]]</tw-passagedata><tw-passagedata pid="131" name="A2- Rotten Boards" tags="" position="2065,3646" size="100,100">You begin to make your way across the walkway. The wood creaking and bending under each footstep. You glance over the edge at the sheer drop to the jagged stones and water hundreds of feet below.
+[[Begin your ascent up the ropes.-&gt;A2- Out of Danger]]]</tw-passagedata><tw-passagedata pid="131" name="A2- Rotten Boards" tags="" position="2065,3645" size="100,100">Step by step, you begin to make your way across the walkway. The wood creaking and bending under each footstep, plumes of rock and dust scattering below.
 
-After almost 30 minutes of travel at a crawling speed, you come around the bend and begin to see the first platform.
+Glancing over the edge, the sheer drop to the jagged stones and water hundreds of feet below makes your stomach turn.
 
-You turn around to let the others know you&#39;re almost there.
+After almost 30 minutes of travel at a crawling speed, in a tightly-bound formation, you come around the bend and begin to see the first platform.
 
-As you open your mouth, the rotten wooden platform under Gavin cracks in two. He begins to plummet and begins to claw at the sloped wall.
+&quot;Here! We made it!&quot;
+(if: $magicRevealed is false) [Gavin, seeing the platforms above, smiles with relief. &quot;Well, that went smoother than expe-&quot;]
 
-[[Stay put.-&gt;A2- Gavin&#39;s Fall]]
-[[Lean out and reach for his hand.-&gt;A2- Sacrifice]]</tw-passagedata><tw-passagedata pid="132" name="A2- Fall Death" tags="Death" position="1926,3419" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="133" name="A2- Out of Danger" tags="" position="2570,3589" size="100,100">You feel the effects of the travel in your body as you climb the cliff face using the ropes. With only short rests at each platform, you soon begin aching all over. (if:$injuryScore &gt;= 1)[Your injuries begin to bleed once again.]
+// CRACK //
+
+The rotten wooden platform under Gavin cracks in two! He begins to plummet and begins to claw at the sloped wall.
+
+[[Stay put!-&gt;A2- Gavin&#39;s Fall]]
+[[Lean out and reach for his hand!-&gt;A2- Sacrifice]]</tw-passagedata><tw-passagedata pid="132" name="A2- Fall Death" tags="Death" position="1926,3419" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="133" name="A2- Out of Danger" tags="" position="2570,3589" size="100,100">You feel the effects of the travel in your body as you climb the cliff face using the ropes. With only short rests at each platform, you soon begin aching all over. (if:$injuryScore &gt;= 1)[Your injuries begin to bleed once again.]
 
 After using the last bit of your energy, you manage to climb the remainer of the way and reach the ledge of the cliff. Finally solid ground.
 
-[[Take a moment to catch your breath.-&gt;A2- Aftermath]]</tw-passagedata><tw-passagedata pid="134" name="A2- Rocks Below" tags="" position="1039,3727" size="100,100">(if:$a2_warnedOthers is true)[Gavin reaches out and touches the stone. Then with a swift overhead motion, he shapes the stone of the cliff side into a small ledge above you all, protected you from the falling rocks.
-(if:$a2_hiddenPathChosen is true)[Gavin looks at you and with a wink says &quot;I backed you up on picking this path. I need to step up if something goes wrong right? Let&#39;s keep going.&quot;
+[[Take a moment to catch your breath.-&gt;A2- Aftermath]]</tw-passagedata><tw-passagedata pid="134" name="A2- Rocks Below" tags="" position="1039,3727" size="100,100">(if:$a2_warnedOthers is true)[
+//(text-colour:grey)[You swiftly warn your companions!]//
+
+Reacting to your call, Gavin reaches above, and with a swift overhead motion, carves a small wedge out above you all, protecting you as the rocks rebound and scatter shrapnel across the pathway.
+(if:$magicRevealed is true)[Gavin looks at you, conviction in his eyes &quot;You understand what this means, yes? One wrong move: Don&#39;t give me a reason, Ashton.&quot;
 ]
-(else:)[Gavin glances towards you and says &quot;You were right... This path is dangerous. Let&#39;s keep going.&quot;]]
+(elseif:$a2_hiddenPathChosen is true)[Gavin looks at you and with a wink says &quot;I backed you up on picking this path. I need to step up if something goes wrong right? Let&#39;s keep going.&quot;
+]
+(else:)[Gavin glances towards you and says &quot;Alright, I admit it... We should have wrestled with the birds! Keep moving!&quot;]]
 (else:)[\
-The rocks plumet and crash all around you, taking pieces of the path with it. One strikes you across the head and hurls you against the wall. You hear Gavin and Moira grunt and cover as they are caught off gaurd by the falling rocks.
+The rocks plummet and crash around you, rebounding and scattering shrapnel and debris, carving the path alongside them!
 
-//(set: $injuryScore to $injuryScore + 1) (set: $GavinInjuryScore to $GavinInjuryScore + 1)(set: $MoiraInjuryScore to $MoiraInjuryScore + 1)(text-colour:grey)[You have received an injury...]//
+One strikes you across the head, hurling you against the wall. You hear Gavin and Moira grunt and cover as they are caught off-guard by the storm of stone.
 
-The stone barrage ends as quickly as it had begun. You look around and see battered faces. Moira staring ahead intensly and Gavin rolls his shoulder and grimmaces.]
+//(text-colour:grey)[You have received an injury...]
+(text-colour:grey)[Moira has received an injury...]
+(text-colour:grey)[Gavin has received an injury...]
+(set: $injuryScore to $injuryScore + 1) (set: $GavinInjuryScore to $GavinInjuryScore + 1)(set: $MoiraInjuryScore to $MoiraInjuryScore + 1) //
 
-[[&quot;We need to press on.&quot;-&gt;A2- Hidden Bridges]]</tw-passagedata><tw-passagedata pid="135" name="A2- Guardian Gavin" tags="" position="893,3393" size="100,100">You begin to climb quickly and recklessly. No time to check for solid holds. As you climb you can feel the vibrations intensifying. You quicken your pace, your muscles burning with each pull and your back aching. Suddenly you feel your grip shift as the stone under it begins to crack. Then just as suddenly, you see Gavin right above you extending his hand to you.
+The barrage ends as quickly as it had begun. You look around to inspect your battered escorts. Gavin rolls his shoulder and grimmaces.
 
-In your panic, you had missed him climbing down to help you up. With his help you climb out of the way of the geysers blast as it spews boiling water and loose rocks hundreds of feet up.
+Moira, staring ahead intensely, speaks under her breath: &quot;Hidden path, free from danger! What a load of...&quot;
+]
 
-Gavin climbs quicker than you, without losing hold at all. At the top he climbs to the path and extends his hand once more.
+[[&quot;We need to press on!&quot;-&gt;A2- Hidden Bridges]]</tw-passagedata><tw-passagedata pid="135" name="A2- Guardian Gavin" tags="" position="893,3393" size="100,100">You begin to climb quickly and recklessly, spending no time to check for solid holds. As you climb you can feel the vibrations intensifying. You quicken your pace, your muscles burning with each pull.
+
+Suddenly you feel your grip shift as the stone under it begins to crack, before //CLASP!// Gavin is hanging from a terrace above you, extending his hand and gripping your arm.
+
+In your panic, you had missed him climbing down to assist! Swiftly, he pulls you up to the terrace, ducking in cover as the geyser&#39;s blast spews boiling water and loose rocks hundreds of feet upward!
+
+With the immediate danger subsided, Gavin quickly ascends, without losing hold at all. You follow before meeting him back on the path, extending his hand once more.
 
 [[Take his hand and pull youself up.-&gt;A2- Hidden Bridges]]</tw-passagedata><tw-passagedata pid="136" name="A2- Powers Hidden 1" tags="" position="408,4596" size="100,100">You turn to Gavin and speak: &quot;You&#39;re a Seeker?&quot;
 (If: $a2_hiddenPathTraversed is false) [
@@ -1539,7 +1618,7 @@ A hulking shadow is crossing the edge of the camp, circling slowly around it&#39
 (t8n: &quot;dissolve&quot;) [(text-colour:grey)[This creature looks to be a Stonestrider, a type of wild hound common to this region, but something is abnormal. It&#39;s far larger than any natural subspecies, and it&#39;s eyes a vacant and dark, refracting almost no light from the flames, a void of all intent, vacant, and seemingly unaware...]] 
 
 (click: ?page)[==
-(t8n: &quot;dissolve&quot;) [[[The eyes of a corpse.-&gt; Creature Reveal]] ]</tw-passagedata><tw-passagedata pid="148" name=" Creature Reveal" tags="" position="399,5098" size="100,100">&lt;img src=&quot;https://pbs.twimg.com/media/EHwKAvYXkAQ7ohE.jpg&quot; width= &quot;100%&quot;&gt;
+(t8n: &quot;dissolve&quot;) [[[The eyes of a corpse.-&gt; Creature Reveal]] ]</tw-passagedata><tw-passagedata pid="148" name=" Creature Reveal" tags="" position="399,5097" size="100,100">&lt;img src=&quot;https://pbs.twimg.com/media/EHwKAvYXkAQ7ohE.jpg&quot; width= &quot;100%&quot;&gt;
 
 Shadows seem to recoil at it&#39;s approach, only to be consumed as whipping tendrils perforate it&#39;s back, incorporeal extremities that twitch like the feelers of an insect, stroking the air with ravenous intent.
 
@@ -1706,11 +1785,11 @@ The ailment that inhabits these beasts is due to the beings from The Veil, &#39;
 
 [[&quot;Have you seen any success?&quot;-&gt;A3- Success?]]
 
-[[&quot;No, The Pride King wants me dead!&quot;-&gt;A3- Deny!]]</tw-passagedata><tw-passagedata pid="165" name="A3 - Side With Enclave" tags="" position="1190.5,6900.5" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="166" name="A3- Success?" tags="" position="1437.5,6348.5" size="100,100">&quot;With the more juvenile beasts, yes. But the larger ones have yet to yield results.. We&#39;re so close, we need more time! Ashton, please! These ones are unreasonable, unable to see the bigger picture! This could change the world!&quot;
+[[&quot;No, The Pride King wants me dead!&quot;-&gt;A3- Deny!]]</tw-passagedata><tw-passagedata pid="165" name="A3 - Side With Enclave" tags="" position="1227.5,6745.5" size="100,100">(set: $a3_EnclaveChosen to true)</tw-passagedata><tw-passagedata pid="166" name="A3- Success?" tags="" position="1437.5,6348.5" size="100,100">&quot;With the more juvenile beasts, yes. But the larger ones have yet to yield results.. We&#39;re so close, we need more time! Ashton, please! These ones are unreasonable, unable to see the bigger picture! This could change the world!&quot;
 
 [[Moira Looks to you...-&gt;A3- Final Ultimatum 1]]</tw-passagedata><tw-passagedata pid="167" name="A3- Deny!" tags="" position="1432.5,6566.5" size="100,100">&quot;Help us! You&#39;re one of us! A free Arcanist! What do you think these Enclave dogs will do once your usefulness has run out? We&#39;re here at the Pride King&#39;s direct will! Help us protect our research, and we&#39;ll settle your debt with him! You&#39;ll be free to operate in Qui&#39;Lea with our blessing! Please!&quot;
 
-[[Moira Looks to you...-&gt;A3- Final Ultimatum 1]]</tw-passagedata><tw-passagedata pid="168" name="A3- Final Ultimatum 1" tags="" position="1601.5,6796.5" size="100,100">Moira addresses you directly. &quot;Ashton. The Pride King will not stop, he has no morals for the greater good. The forces of The Veil cannot be reasoned with, they cannot be controlled! They can only be supressed. If we do not take action here, countless people in Qui&#39;Lea will die. It&#39;s only a matter of time.&quot;
+[[Moira Looks to you...-&gt;A3- Final Ultimatum 1]]</tw-passagedata><tw-passagedata pid="168" name="A3- Final Ultimatum 1" tags="" position="1638.5,6641.5" size="100,100">Moira addresses you directly. &quot;Ashton. The Pride King will not stop, he has no morals for the greater good. The forces of The Veil cannot be reasoned with, they cannot be controlled! They can only be supressed. If we do not take action here, countless people in Qui&#39;Lea will die. It&#39;s only a matter of time.&quot;
 	
 &quot;Please Ashton! Don&#39;t let them take her from me! We can fix this!&quot; The lead researcher shouts, drawing a sigil in the air.
 	
@@ -1721,7 +1800,89 @@ Caught in the crashing whorl of two opposing worlds, the time has come to choose
 [[The Regent is right... Draw the Veil. The Enclave will not manipulate you.-&gt;A3 - Defend the Regent]]
 
 [[Gavin &amp; Moira are right... Draw your blade. The Regent&#39;s corruption ends here.-&gt;A3 - Side With Enclave]]
-</tw-passagedata><tw-passagedata pid="169" name="A3 - Defend the Regent" tags="" position="1398.5,6898.5" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
+</tw-passagedata><tw-passagedata pid="169" name="A3 - Defend the Regent" tags="" position="1435.5,6743.5" size="100,100">(set: $a3_EnclaveChosen to false)
+
+</tw-passagedata><tw-passagedata pid="170" name="A3- Regent Denouement" tags="" position="798.5,8196" size="100,100">Gavin lies bloodied, halfway drenched in the falling water. He coughs as you approach, and shoots you a look of resentment. However, there is not anger in his eyes. He simply seems tired.
+	
+His words are nearly silent. He&#39;s barely able to expel the air for them.
+	
+[[Listen to his Final Words... -&gt;A3- Regent Doubts]]
+
+[[Walk away. This was the right thing to do. -&gt;A3-Regent Conviction]]</tw-passagedata><tw-passagedata pid="171" name="A3- Enclave Denouement 1" tags="" position="811.5,8647" size="100,100">You look upon the carnage, only just now fully grasping the gravity of what you have achieved today. If The Pride King wanted you dead before, he&#39;ll likely have other plans now. Death may be too kind for you.
+	
+You feel a pit rising in your stomach...
+
+[[What have you done? -&gt;A3- Enclave Doubts]]
+
+[[No, this was the right thing to do -&gt;A3- Enclave Conviction]]</tw-passagedata><tw-passagedata pid="172" name="A3- Enclave Doubts" tags="" position="997.5,8744" size="100,100">Free Arcanists have been studying the past for years, attempting to uncover it&#39;s secrets. There is a chapter in  history that has not been laid bare for anyone: A time of power and unbridled glory for mages, who held back nothing of themselves, manipulating the world as they saw fit.
+		
+And now you have cast that study down, ruthlessly butchered it&#39;s facilitators. And the man who you once saw as a father, he will likely stop at nothing  until you are dealt grim retribution.
+		
+These people were working in the name of healing. The people who have been poisoned by the Veil will likely die, as the only hope of a cure now rests far beyond the realm of possibility. The only cure for them now is to track them down and end them like these creatures...
+		
+[[Continue -&gt;A3- Enclave Denouement 2]]</tw-passagedata><tw-passagedata pid="173" name="A3- Enclave Conviction" tags="" position="1000.5,8596" size="100,100">These researchers were manipulating the natural order... You begin to realize the gravity of what you are: an anomaly. The distant, golden age the Pride King promised? What makes you believe it was Arcanists who ruled it?
+		
+Looking around you, at the corpses of the beasts in cages, seeped in Veil sickness and vile affliction... You begin to wonder if maybe it was Arcanists who caused the great calamity that brought the world here from that oh-so distant age.
+		
+Be it beast or man afflicted by this corruption, it all stemmed from here. With their influence halted, the land around this region may begin to heal...
+
+[[Continue -&gt;A3- Enclave Denouement 2]]</tw-passagedata><tw-passagedata pid="174" name="A3- Enclave Denouement 2" tags="" position="1200.5,8658" size="100,100">Gavin approaches, sensing your conflict, as you gaze vacantly across the carnage.
+	
+&quot;I know it&#39;s difficult, but you&#39;ve made the right decision!&quot; He wraps his arm around your shoulder, walking you through the ruins. &quot;What we are is a great responsibility: it&#39;s our obligation to ensure that this power is not abused. And you&#39;ve done a noble job.&quot;
+	
+Moira sheathes her blade, approaching the both of you. &quot;I know you must see me as a heartless monster, but I pray one day you understand. It was men just like this that have brought this land to the brink. That took everything away from me.&quot;
+	
+Gavin continues &quot;Besides, you&#39;ll never be wanting for gold again. Any obligation to the Pride King, or the Regent? Gone! You&#39;ll be well protected with us. And the knowledge of your kind? The ways to use your powers for good? They&#39;ll be yours.
+	
+As a Seeker.
+	
+[[ Welcome to the Enclave of Brass. -&gt;END - Enclave of Brass]]</tw-passagedata><tw-passagedata pid="175" name="END - Enclave of Brass" tags="" position="1601.5,8699" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="176" name="A3- Regent Doubts" tags="" position="1000.5,8296" size="100,100">You crouch beside him, placing a hand on his shoulder. It begins to dawn on you that the corruption of the land will continue to spread, far beyond the point when these researchers are finished.
+	
+&quot;Ah, kid... Moira was right to doubt you. It was me who talked her into trusting you... I should have listened. I was sure you were different than them ... She&#39;s dead because of my stupidity.
+		
+I was wrong.
+		
+...It&#39;ll be many years until you realize your mistake... By then it will be too late. But it&#39;s alright. I&#39;ll be fine. Live your life... It&#39;ll all be ending soon.
+		
+When I see you on the other side?
+		
+I&#39;ll get to say &#39;I told you so&#39;.&quot; 
+		
+[[Continue -&gt;A3- Regent Denouement 2]]</tw-passagedata><tw-passagedata pid="177" name="A3-Regent Conviction" tags="" position="1003.5,8099" size="100,100">You aren&#39;t about to let him sour your mind with talks of final regrets. That man was Enclave. The same Enclave that has been putting down your kind like dogs since it&#39;s inception. The same Enclave who would happily kill you were you not to conform to their ideals.
+		
+That&#39;s no way to live.
+		
+Now, these researchers will go on to find the secrets of Veil corruption, and how to expel it. Those who have become sickened in the city will be swayed to The Regent, and be shown that our order is not some band of criminals.
+		
+And your debt with the Pride King? Paid for in retribution and loyalty. You need to speak with him, soon. The terms must still be settled. You&#39;ve been tested today, your loyalties laid bare. Even if your actions are not venerated by the Pride King, you can rest easy knowing you&#39;ve made the right choice.
+
+[[Continue -&gt;A3- Regent Denouement 2]]</tw-passagedata><tw-passagedata pid="178" name="A3- Regent Denouement 2" tags="" position="1201.5,8199" size="100,100">The lead researcher escorts you back to Qui&#39;Lea following the defence of the researchers. You are smuggled through the catacombs that stretch below the city, and eventually arrive at a Regent safehouse in the Noble District of the city.
+	
+You wait in a long and lavish hall, a branch of an underground bathhouse, surrounded by fellow Regent, mingling idly as if you belonged there all along. 
+	
+Eventually, the lead researcher returns. The man accompanying him is towering, dressed in fine silks. His hair is cut short, and his stature is imposing, but his face seems to betrays the pride he feels in your actions. 
+	
+He grasps your shoulder and begins walking alongside you, through the halls of the Regent bathhouse. Revelry amidst the Regent extends across many floors, which you gaze upon as he speaks, his voice rumbling like a landslide.
+	
+[[Continue. -&gt;A3- Regent Denouement 3]]</tw-passagedata><tw-passagedata pid="179" name="A3- Regent Denouement 3" tags="" position="1405.5,8199" size="100,100">&quot;Ashton... I&#39;ll admit, you&#39;ve surprised me.
+	
+For years, I believed you would end up straying. When you began to avoid my family members, and deny my requests, I feared the worst.
+	
+Understand that my actions against you were driven by that fear. You may represent someone dear and close to me, but I have obligations to the safety of my family.
+
+I refused to let anyone take you. I acted in haste. But now, you&#39;ve been placed in circumstances that tested your loyalty, and still...
+
+You chose us!&quot;
+	
+He stops, gazing down upon you. His height nearly doubles your own.
+	
+&quot;For placing you in these dire straits, know that I am sorry. I should never have doubted you. You have earned your life, and proved your loyalty. I have no fear you will remain loyal in the future. After all...&quot;
+
+He suddenly stops, leaning down close, such that his booming voice will not carry.
+	
+&quot;... You have nowhere else to go.&quot;
+	
+[[Welcome to the Regent. -&gt;END - The Destitute Regent]]</tw-passagedata><tw-passagedata pid="180" name="END - The Destitute Regent" tags="" position="1604.5,8197" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">"use strict";var _slicedToArray=function(){return function(e,t){if(Array.isArray(e))return e;if(Symbol.iterator in Object(e))return function(e,t){var n=[],r=!0,i=!1,a=void 0;try{for(var o,s=e[Symbol.iterator]();!(r=(o=s.next()).done)&&(n.push(o.value),!t||n.length!==t);r=!0);}catch(e){i=!0,a=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw a}}return n}(e,t);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}!function(){
 /**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
