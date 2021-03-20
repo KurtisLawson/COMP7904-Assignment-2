@@ -9,50 +9,59 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Final Battle.</tw-noscript></noscript></tw-story>
-<tw-storydata name="Final Battle" startnode="1" creator="Twine" creator-version="2.3.13" ifid="90CCA73C-8BA5-41E5-9581-DE95D42BA86A" zoom="1" format="Harlowe" format-version="3.2.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="Death" color="red"></tw-tag><tw-passagedata pid="1" name="A3- Beginning of an End" tags="" position="2010,7654" size="100,100">[[-&gt;Untitled Passage 6]]
-[[-&gt;Untitled Passage 7]]
-
+<tw-storydata name="Final Battle" startnode="1" creator="Twine" creator-version="2.3.13" ifid="90CCA73C-8BA5-41E5-9581-DE95D42BA86A" zoom="1" format="Harlowe" format-version="3.2.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="Death" color="red"></tw-tag><tw-passagedata pid="1" name="A3- Beginning of an End" tags="" position="497,498" size="100,100">(set: $a3_researcherInjuryScore to 0)\
+(if: $a3_EnclaveChosen is true)[\
+[[-&gt;Untitled Passage 6]]
+[[-&gt;Untitled Passage 7]]]
+(else:)[
 [[-&gt;Untitled Passage 9]]
-[[-&gt;Untitled Passage 8]]</tw-passagedata><tw-passagedata pid="2" name="A3- Moira Thrown" tags="" position="2403,7661" size="100,100">[[-&gt;Untitled Passage 11]]
-[[-&gt;Untitled Passage 10]]
-
+[[-&gt;Untitled Passage 8]]]</tw-passagedata><tw-passagedata pid="2" name="A3- Moira Thrown" tags="" position="893,495" size="100,100">(if: $a3_EnclaveChosen is true)[\
+[[-&gt;Untitled Passage 11]]
+[[-&gt;Untitled Passage 10]]]
+(else:)[
 [[-&gt;Untitled Passage 12]]
-[[-&gt;Untitled Passage 13]]
-</tw-passagedata><tw-passagedata pid="3" name="A3- Gavin Burned" tags="" position="2809,7660" size="100,100">[[-&gt;Untitled Passage 16]]
-[[-&gt;Untitled Passage 14]]
-
+[[-&gt;Untitled Passage 13]]]</tw-passagedata><tw-passagedata pid="3" name="A3- Gavin Burned" tags="" position="1299,494" size="100,100">(if: $a3_EnclaveChosen is true)[\
+[[-&gt;Untitled Passage 16]]
+[[-&gt;Untitled Passage 14]]]
+(else:)[
 [[-&gt;Untitled Passage 15]]
-[[-&gt;Untitled Passage 17]]</tw-passagedata><tw-passagedata pid="4" name="A3- Stonestrider Released" tags="" position="3205,7660" size="100,100">[[-&gt;Untitled Passage 21]]
-[[-&gt;Untitled Passage 18]]
-
+[[-&gt;Untitled Passage 17]]]</tw-passagedata><tw-passagedata pid="4" name="A3- Stonestrider Released" tags="" position="1695,494" size="100,100">(if: $a3_EnclaveChosen is true)[\
+[[-&gt;Untitled Passage 21]]
+[[-&gt;Untitled Passage 18]]]
+(else:)[
 [[-&gt;Untitled Passage 19]]
-[[-&gt;Untitled Passage 20]]</tw-passagedata><tw-passagedata pid="5" name="A3- Massacre" tags="" position="3607,7658" size="100,100">[[-&gt;Untitled Passage 23]]
-[[-&gt;Untitled Passage 24]]
-
+[[-&gt;Untitled Passage 20]]]</tw-passagedata><tw-passagedata pid="5" name="A3- Massacre" tags="" position="2097,492" size="100,100">(if: $a3_EnclaveChosen is true)[\
+[[-&gt;Untitled Passage 23]]
+[[-&gt;Untitled Passage 24]]]
+(else:)[
 [[-&gt;Untitled Passage 22]]
-[[-&gt;Untitled Passage 25]]</tw-passagedata><tw-passagedata pid="6" name="A3- Threat Down" tags="" position="4009,7661" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="7" name="Untitled Passage 6" tags="" position="2209,7430" size="100,100">[[-&gt;A3- Moira Thrown]]</tw-passagedata><tw-passagedata pid="8" name="Untitled Passage 7" tags="" position="2209,7560" size="100,100">[[-&gt;A3- Moira Thrown]]</tw-passagedata><tw-passagedata pid="9" name="Untitled Passage 8" tags="" position="2208,7890" size="100,100">[[-&gt;A3- Moira Thrown]]</tw-passagedata><tw-passagedata pid="10" name="Untitled Passage 9" tags="" position="2207,7763" size="100,100">[[-&gt;A3- Moira Thrown]]</tw-passagedata><tw-passagedata pid="11" name="Untitled Passage 10" tags="" position="2606,7560" size="100,100">[[-&gt;A3- Gavin Burned]]</tw-passagedata><tw-passagedata pid="12" name="Untitled Passage 11" tags="" position="2608,7434" size="100,100">[[-&gt;A3- Gavin Burned]]</tw-passagedata><tw-passagedata pid="13" name="Untitled Passage 12" tags="" position="2606,7763" size="100,100">[[-&gt;A3- Gavin Burned]]</tw-passagedata><tw-passagedata pid="14" name="Untitled Passage 13" tags="" position="2606,7890" size="100,100">[[-&gt;A3- Gavin Burned]]</tw-passagedata><tw-passagedata pid="15" name="Untitled Passage 14" tags="" position="3008,7559" size="100,100">[[-&gt;A3- Stonestrider Released]]
+[[-&gt;Untitled Passage 25]]]</tw-passagedata><tw-passagedata pid="6" name="A3- Threat Down" tags="" position="2499,495" size="100,100">(if: $a3_EnclaveChosen is true)[]
+(else:)[]</tw-passagedata><tw-passagedata pid="7" name="Untitled Passage 6" tags="" position="699,264" size="100,100">[[-&gt;A3- Moira Thrown]]</tw-passagedata><tw-passagedata pid="8" name="Untitled Passage 7" tags="" position="699,394" size="100,100">[[-&gt;A3- Moira Thrown]]</tw-passagedata><tw-passagedata pid="9" name="Untitled Passage 8" tags="" position="698,724" size="100,100">[[-&gt;A3- Moira Thrown]]</tw-passagedata><tw-passagedata pid="10" name="Untitled Passage 9" tags="" position="697,597" size="100,100">[[-&gt;A3- Moira Thrown]]</tw-passagedata><tw-passagedata pid="11" name="Untitled Passage 10" tags="" position="1096,394" size="100,100">[[-&gt;A3- Gavin Burned]]</tw-passagedata><tw-passagedata pid="12" name="Untitled Passage 11" tags="" position="1098,268" size="100,100">[[-&gt;A3- Gavin Burned]]</tw-passagedata><tw-passagedata pid="13" name="Untitled Passage 12" tags="" position="1096,597" size="100,100">[[-&gt;A3- Gavin Burned]]</tw-passagedata><tw-passagedata pid="14" name="Untitled Passage 13" tags="" position="1096,724" size="100,100">[[-&gt;A3- Gavin Burned]]</tw-passagedata><tw-passagedata pid="15" name="Untitled Passage 14" tags="" position="1498,393" size="100,100">[[-&gt;A3- Stonestrider Released]]</tw-passagedata><tw-passagedata pid="16" name="Untitled Passage 15" tags="" position="1497,599" size="100,100">[[-&gt;A3- Stonestrider Released]]</tw-passagedata><tw-passagedata pid="17" name="Untitled Passage 16" tags="" position="1497,267" size="100,100">[]&lt;choice|
 
-[[-&gt;A3- TPK]]</tw-passagedata><tw-passagedata pid="16" name="Untitled Passage 15" tags="" position="3007,7765" size="100,100">[[-&gt;A3- Stonestrider Released]]
+(if:$injuryScore &gt;= 5 or $MoiraInjuryScore &gt;= 5 or $GavinInjuryScore &gt;= 5)[
+(replace:?choice)[[[-&gt;A3- TPK]]]]
+\(else:)[
+(replace:?choice)[[[-&gt;A3- Stonestrider Released]]]]</tw-passagedata><tw-passagedata pid="18" name="Untitled Passage 17" tags="" position="1499,727" size="100,100">[]&lt;choice|
 
-[[-&gt;A3- Red Turncoat]]</tw-passagedata><tw-passagedata pid="17" name="Untitled Passage 16" tags="" position="3007,7433" size="100,100">[[-&gt;A3- Stonestrider Released]]
+(if:$injuryScore &gt;= 5 or $a3_researcherInjuryScore &gt;= 5)[
+(replace:?choice)[[[-&gt;A3- Red Turncoat]]]]
+\(else:)[(replace:)[[[-&gt;A3- Stonestrider Released]]]]</tw-passagedata><tw-passagedata pid="19" name="Untitled Passage 18" tags="" position="1897,394" size="100,100">[[-&gt;A3- Massacre]]</tw-passagedata><tw-passagedata pid="20" name="Untitled Passage 19" tags="" position="1898,593" size="100,100">[[-&gt;A3- Massacre]]</tw-passagedata><tw-passagedata pid="21" name="Untitled Passage 20" tags="" position="1900,722" size="100,100">[]&lt;choice|
 
-[[-&gt;A3- TPK]]</tw-passagedata><tw-passagedata pid="18" name="Untitled Passage 17" tags="" position="3009,7893" size="100,100">[[-&gt;A3- Red Turncoat]]</tw-passagedata><tw-passagedata pid="19" name="Untitled Passage 18" tags="" position="3407,7560" size="100,100">[[-&gt;A3- Massacre]]
+(if:$injuryScore &gt;= 5 or $a3_researcherInjuryScore &gt;= 5)[
+(replace:?choice)[[[-&gt;A3- Red Turncoat]]]]
+\(else:)[(replace:)[[[-&gt;A3- Massacre]]]]</tw-passagedata><tw-passagedata pid="22" name="Untitled Passage 21" tags="" position="1895,271" size="100,100">[]&lt;choice|
 
-[[-&gt;A3- TPK]]</tw-passagedata><tw-passagedata pid="20" name="Untitled Passage 19" tags="" position="3408,7759" size="100,100">[[-&gt;A3- Massacre]]
+(if:$injuryScore &gt;= 5 or $MoiraInjuryScore &gt;= 5 or $GavinInjuryScore &gt;= 5)[
+(replace:?choice)[[[-&gt;A3- TPK]]]]
+\(else:)[(replace:)[[[-&gt;A3- Massacre]]]]</tw-passagedata><tw-passagedata pid="23" name="Untitled Passage 22" tags="" position="2297,600" size="100,100">[[-&gt;A3- Threat Down]]</tw-passagedata><tw-passagedata pid="24" name="Untitled Passage 23" tags="" position="2294,266" size="100,100">[]&lt;choice|
 
-[[-&gt;A3- Red Turncoat]]</tw-passagedata><tw-passagedata pid="21" name="Untitled Passage 20" tags="" position="3410,7888" size="100,100">[[-&gt;A3- Massacre]]
+(if:$injuryScore &gt;= 5 or $MoiraInjuryScore &gt;= 5 or $GavinInjuryScore &gt;= 5)[
+(replace:?choice)[[[-&gt;A3- TPK]]]]
+\(else:)[(replace:)[[[-&gt;A3- Threat Down]]]]</tw-passagedata><tw-passagedata pid="25" name="Untitled Passage 24" tags="" position="2295,394" size="100,100">[[-&gt;A3- Threat Down]]</tw-passagedata><tw-passagedata pid="26" name="Untitled Passage 25" tags="" position="2298,723" size="100,100">[]&lt;choice|
 
-[[-&gt;A3- Red Turncoat]]</tw-passagedata><tw-passagedata pid="22" name="Untitled Passage 21" tags="" position="3405,7437" size="100,100">[[-&gt;A3- Massacre]]
-
-[[-&gt;A3- TPK]]</tw-passagedata><tw-passagedata pid="23" name="Untitled Passage 22" tags="" position="3807,7766" size="100,100">[[-&gt;A3- Threat Down]]
-
-[[-&gt;A3- Red Turncoat]]</tw-passagedata><tw-passagedata pid="24" name="Untitled Passage 23" tags="" position="3804,7432" size="100,100">[[-&gt;A3- Threat Down]]
-
-[[-&gt;A3- TPK]]</tw-passagedata><tw-passagedata pid="25" name="Untitled Passage 24" tags="" position="3805,7559" size="100,100">[[-&gt;A3- Threat Down]]
-
-[[-&gt;A3- TPK]]</tw-passagedata><tw-passagedata pid="26" name="Untitled Passage 25" tags="" position="3808,7889" size="100,100">[[-&gt;A3- Threat Down]]
-
-[[-&gt;A3- Red Turncoat]]</tw-passagedata><tw-passagedata pid="27" name="A3- TPK" tags="Death" position="3609,7161" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="28" name="A3- Red Turncoat" tags="Death" position="3614,8157" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
+(if:$injuryScore &gt;= 5 or $a3_researcherInjuryScore &gt;= 5)[
+(replace:?choice)[[[-&gt;A3- Red Turncoat]]]]
+\(else:)[(replace:)[[[-&gt;A3- Threat Down]]]]</tw-passagedata><tw-passagedata pid="27" name="A3- TPK" tags="Death" position="2099,44" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="28" name="A3- Red Turncoat" tags="Death" position="2104,991" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">"use strict";var _slicedToArray=function(){return function(e,t){if(Array.isArray(e))return e;if(Symbol.iterator in Object(e))return function(e,t){var n=[],r=!0,i=!1,a=void 0;try{for(var o,s=e[Symbol.iterator]();!(r=(o=s.next()).done)&&(n.push(o.value),!t||n.length!==t);r=!0);}catch(e){i=!0,a=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw a}}return n}(e,t);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}!function(){
 /**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
