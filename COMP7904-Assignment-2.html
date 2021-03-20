@@ -69,7 +69,7 @@ Damn! The last thing you wanted was Enclave intervention, but the situation has 
 
 You&#39;ve been given a moment to act! Some guard intervention may be just enough of a distraction to make an escape! 
 
-Your hand pulses as you draw power from the Veil.
+Your hand pulses as you draw power from [[the Veil-&gt; A1 - Veil Intro]].
 
 [[Swiftly heat the metal of Theo&#39;s blade, disarming him.-&gt;A1- Molten Metal ]]
 
@@ -1423,18 +1423,17 @@ Regent Rat! You think I will overlook your transgressions just because you saved
 
 Gavin puts a firm hand on her shoulder, stopping her from passing him.
 
-&quot;Moira, unless you want to end up down there, we should hold this for when we are on solid ground! Ashton, quick, lead the way! Regent or not, the drop won&#39;t treat us any different!&quot;
+&quot;Moira, unless you want to end up down there, we should hold this for when we are on solid ground! Ashton, quick, lead the way! Regent or not, the fall won&#39;t treat us any different!&quot;
 
 [[Turn around and make haste!-&gt;A2- Boarded Cliff Path]]</tw-passagedata><tw-passagedata pid="129" name="A2- Gavin&#39;s Fall" tags="" position="2218,3647" size="100,100">You remain where you are, in fear of falling yourself.
 
-Gavin extends his hands and clutches the cliff face. As he does, the stone grows out and envelopes his hand holding him in place.
+His eyes wide, Gavin extends his hands and clutches the cliff face. a Flash of energy grasps and grows from the stone, enveloping his hand and anchoring him in place.
 
-With this he steps onto the next wooden board.
+He leans against his weight for a moment, before stepping onto the next wooden board.
+(if: $magicRevealed is false) [
+He looks at you and smiles. ] (else:)[ He looks past you towards the platform now in his view. ]&quot;We&#39;re almost there aren&#39;t we?&quot;
 
-He looks at you and smiles. 
-&quot;We&#39;re almost there aren&#39;t we?&quot; He looks past you towards the platform now in his view.
-
-Moira uses the protruding stone Gavin created to cross the new gap in the walkway and together you all reach the platform.
+Moira uses the portruding stone Gavin created to cross the new gap in the walkway. Finally you have reached the platform.
 
 [[Begin your ascent up the ropes.-&gt;A2- Out of Danger]]]</tw-passagedata><tw-passagedata pid="130" name="A2- Sacrifice" tags="" position="2220,3505" size="100,100">You lean out and reach for Gavin&#39;s flailing hands. You clutch his arm and pull him towards you while gripping onto the wall yourself.
 
@@ -1442,14 +1441,16 @@ Moira uses the protruding stone Gavin created to cross the new gap in the walkwa
 
 [[Attempt to grab a hold of anything in reach...-&gt;A2- Fall Death]]]
 (else:)[
-Grabbing onto Gavin and the cliff face, you give him enough time to reach out and grab touch the cliff face. As he does, the stone grows out and envelopes his hand holding him in place.
+Grabbing onto Gavin and the cliff face, you give him enough time to reach out and clutches the stone.
 
-With this he steps onto the next wooden board.
+A Flash of energy grasps the earth, enveloping his hand and anchoring him in place.
 
-He looks at you and smiles. 
-&quot;We&#39;re almost there aren&#39;t we?&quot; He looks past you towards the platform now in his view.
+He leans against his weight for a moment, before stepping onto the next wooden board.
 
-Moira uses the protruding stone Gavin created to cross the new gap in the walkway and together you all reach the platform.
+(if: $magicRevealed is false) [
+He looks at you and smiles. ] (else:)[ He looks past you towards the platform now in his view. ]&quot;We&#39;re almost there aren&#39;t we?&quot;
+
+Moira uses the portruding stone Gavin created to cross the new gap in the walkway. Finally you have reached the platform.
 
 [[Begin your ascent up the ropes.-&gt;A2- Out of Danger]]]</tw-passagedata><tw-passagedata pid="131" name="A2- Rotten Boards" tags="" position="2065,3645" size="100,100">Step by step, you begin to make your way across the walkway. The wood creaking and bending under each footstep, plumes of rock and dust scattering below.
 
@@ -1462,10 +1463,18 @@ After almost 30 minutes of travel at a crawling speed, in a tightly-bound format
 
 // CRACK //
 
-The rotten wooden platform under Gavin cracks in two! He begins to plummet and begins to claw at the sloped wall.
+The rotten wooden platform under Gavin cracks in two! He begins to plummet and begins to claw at the sloped wall!
 
 [[Stay put!-&gt;A2- Gavin&#39;s Fall]]
-[[Lean out and reach for his hand!-&gt;A2- Sacrifice]]</tw-passagedata><tw-passagedata pid="132" name="A2- Fall Death" tags="Death" position="1926,3419" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="133" name="A2- Out of Danger" tags="" position="2570,3589" size="100,100">You feel the effects of the travel in your body as you climb the cliff face using the ropes. With only short rests at each platform, you soon begin aching all over. (if:$injuryScore &gt;= 1)[Your injuries begin to bleed once again.]
+[[Lean out and reach for his hand!-&gt;A2- Sacrifice]]</tw-passagedata><tw-passagedata pid="132" name="A2- Fall Death" tags="Death" position="1926,3419" size="100,100">Gravity takes you, as you tumble from the cliff face.
+
+There is but a moment of battering wind, as you feel weightlessly transported, helpless to halt your quickening descent...
+
+... before a sudden whip of crippling force exudes across your entire body.
+
+You know not whether you struck stone or water. In fact, you know very little now. Your final moments are a flash of pain, and then nothing.
+
+(text-colour:grey)[// All goes Dark //]</tw-passagedata><tw-passagedata pid="133" name="A2- Out of Danger" tags="" position="2570,3589" size="100,100">You feel the effects of the travel in your body as you climb the cliff face using the ropes. With only short rests at each platform, you soon begin aching all over. (if:$injuryScore &gt;= 1)[Your injuries begin to bleed once again.]
 
 After using the last bit of your energy, you manage to climb the remainer of the way and reach the ledge of the cliff. Finally solid ground.
 
@@ -1591,9 +1600,15 @@ I&#39;m going to ask you one last time.
 	
 You allow his words to ring through the silence for a moment. Moira stares at you from across the camp. The only sound is the idle crackle of the roaring campfire.
 
-[[&quot;Uhh... I&#39;m.. Not an Arcanist.&quot; -&gt;A2- Arcanist Admission]]
+[[&quot;Uhh... I&#39;m.. Not an Arcanist.&quot; -&gt;A2- Arcanist Admission 1]]
 
-[[&quot;Gavin... You got me. I&#39;m an Arcanist.&quot; -&gt;A2- Arcanist Denial]]</tw-passagedata><tw-passagedata pid="145" name="A2- Arcanist Admission" tags="" position="1699,4705" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="146" name="A2- Arcanist Denial" tags="" position="1705,4500" size="100,100">(text-colour:grey)[//You chose to lie to Gavin when confronted.//] (set: $a2_gavinTold to false)
+[[&quot;Gavin... You got me. I&#39;m an Arcanist.&quot; -&gt;A2- Arcanist Denial]]</tw-passagedata><tw-passagedata pid="145" name="A2- Arcanist Admission 1" tags="" position="1625,4738" size="100,100">(text-colour:grey)[//You chose to lie to Gavin when confronted.//] (set: $a2_gavinTold to true)
+
+Moira rises, gripping the hilt of her blade.
+		
+&quot;I see...&quot; Gavin says softly, eyes still locked with yours. &quot;Did you tell them we were coming?&quot;
+
+[[&quot;I&#39;m doing this for the bounty. I&#39;m here to guide you. Nothing more.&quot; -&gt;A2- Arcanist Admission 2]]</tw-passagedata><tw-passagedata pid="146" name="A2- Arcanist Denial" tags="" position="1705,4500" size="100,100">(text-colour:grey)[//You chose to lie to Gavin when confronted.//] (set: $a2_gavinTold to false)
 
 Several more moments pass, seemingly stretched to eternity.
 		
@@ -1618,7 +1633,7 @@ A hulking shadow is crossing the edge of the camp, circling slowly around it&#39
 (t8n: &quot;dissolve&quot;) [(text-colour:grey)[This creature looks to be a Stonestrider, a type of wild hound common to this region, but something is abnormal. It&#39;s far larger than any natural subspecies, and it&#39;s eyes a vacant and dark, refracting almost no light from the flames, a void of all intent, vacant, and seemingly unaware...]] 
 
 (click: ?page)[==
-(t8n: &quot;dissolve&quot;) [[[The eyes of a corpse.-&gt; Creature Reveal]] ]</tw-passagedata><tw-passagedata pid="148" name=" Creature Reveal" tags="" position="223,4964" size="100,100">&lt;img src=&quot;https://pbs.twimg.com/media/EHwKAvYXkAQ7ohE.jpg&quot; width= &quot;100%&quot;&gt;
+(t8n: &quot;dissolve&quot;) [[[The eyes of a corpse.-&gt; Creature Reveal]] ]</tw-passagedata><tw-passagedata pid="148" name=" Creature Reveal" tags="" position="231,5009" size="100,100">&lt;img src=&quot;https://pbs.twimg.com/media/EHwKAvYXkAQ7ohE.jpg&quot; width= &quot;100%&quot;&gt;
 
 Shadows seem to recoil at it&#39;s approach, only to be consumed as whipping tendrils perforate it&#39;s back, incorporeal extremities that twitch like the feelers of an insect, stroking the air with ravenous intent.
 
@@ -1635,13 +1650,14 @@ Squelching, as it&#39;s neck continues to open, and pop, uneven teeth lining it&
 ](If: $magicRevealed is true or $a2_toldGavin is true) [ &quot;Remember what I said! You&#39;ll never survive this thing alone, so no funny business!&quot;
 
 ]Bounding with deft leaps, the beast crosses the air in mere seconds, before crashing into the camp. Moira charges, dashing towards it without fear. You draw your blade from your hip, as Gavin&#39;s eyes flare with eldritch power.
-</tw-passagedata><tw-passagedata pid="149" name="A3- Enclave&#39;s Plea 1" tags="" position="707,6088" size="100,100">&lt;img src=&quot;https://papers.co/wallpaper/papers.co-bc37-galaxy-night-sky-star-art-illustration-samsung-dark-bw-29-wallpaper.jpg&quot; width= &quot;100%&quot;&gt;
+
+[[Moira meets the beast! -&gt;A2- Stonestrider Attack]]</tw-passagedata><tw-passagedata pid="149" name="A3- Enclave&#39;s Plea 1" tags="" position="707,6088" size="100,100">&lt;img src=&quot;https://papers.co/wallpaper/papers.co-bc37-galaxy-night-sky-star-art-illustration-samsung-dark-bw-29-wallpaper.jpg&quot; width= &quot;100%&quot;&gt;
 
 You awake to be staring at the distant sky. It&#39;s nearing morning, and the dawn is just beginning to consume the stars. You begin realizing that, in just a single day, your life has been threatened more time than you care to give count.
 
 You hear Gavin commanding Moira to begin preparations to depart. After some time, you hear footsteps approaching.
 
-Gavin&#39;s face has gone from it&#39;s usual casual smirk to something far more serious.
+Following the encounter, Gavin&#39;s face has gone from it&#39;s usual casual smirk to something far more serious.
 
 &quot;Where do you think Magic comes from, Ashton?&quot;
 
@@ -1718,13 +1734,13 @@ He smiles, clearly trying to think of an analogy involving grain.
 		
 See, you&#39;re a bright kid! It&#39;s a shame what The Regent have made you associate with. They&#39;d be happier if you never knew the truth. It&#39;s unfair: You deserve better. &quot;
 
-[[&quot;Are you eggheads done yet?&quot;-&gt;A3-Depart the Camp]]</tw-passagedata><tw-passagedata pid="158" name="A3- Incorrect Analogy" tags="" position="1863,6165" size="100,100">&lt;img src=&quot;https://www.treehugger.com/thmb/xMBVryBCoKOgXiRlPYM03buJyNQ=/1600x900/smart/filters:no_upscale()/__opt__aboutcom__coeus__resources__content_migration__mnn__images__2016__02__deepsea-a1932712b35741808136e1f7f98b67c0.jpg&quot; width= &quot;100%&quot;&gt;
+[[You hear a call: &quot;Are you eggheads done yet?&quot;-&gt;A3-Depart the Camp]]</tw-passagedata><tw-passagedata pid="158" name="A3- Incorrect Analogy" tags="" position="1863,6165" size="100,100">&lt;img src=&quot;https://www.treehugger.com/thmb/xMBVryBCoKOgXiRlPYM03buJyNQ=/1600x900/smart/filters:no_upscale()/__opt__aboutcom__coeus__resources__content_migration__mnn__images__2016__02__deepsea-a1932712b35741808136e1f7f98b67c0.jpg&quot; width= &quot;100%&quot;&gt;
 
 &quot;No, no, Ashton! The Arcanist would be consumed. The Veil is boundless in it&#39;s depth, like a great sea. You&#39;d be pouring until the new vessel overflowed, and we&#39;d be right back where we started.
 		
 You see? This is the problem. You couldn&#39;t understand the ramifications of your actions until someone explained it, and the Regent held this information from you, allowing you to run rampant, no worry for the greater harm they&#39;d cause.&quot;
 
-[[&quot;Are you eggheads done yet?&quot;-&gt;A3-Depart the Camp]]</tw-passagedata><tw-passagedata pid="159" name="A3-Depart the Camp" tags="" position="2052,6090" size="100,100">Moira interrupts the conversation, packed and preparing to leave. &quot;So sorry to end the lesson, but there may very well be more of those things. We need to finish this. And we&#39;re close. The ruins are nearby, according to the intel.&quot;
+[[You hear a call: &quot;Are you eggheads done yet?&quot;-&gt;A3-Depart the Camp]]</tw-passagedata><tw-passagedata pid="159" name="A3-Depart the Camp" tags="" position="2052,6090" size="100,100">Moira interrupts the conversation, packed and preparing to leave. &quot;So sorry to end the lesson, but there may very well be more of those things. We need to finish this. And we&#39;re close. The ruins are nearby, according to the intel.&quot;
 
 Gavin turns to you. &quot;The Anor Faultline is our destination. If you can guide us as close to it as you can safely, we can navigate to the ruins that house the source of these creatures.&quot;
 
@@ -1882,7 +1898,11 @@ He suddenly stops, leaning down close, such that his booming voice will not carr
 	
 &quot;... You have nowhere else to go.&quot;
 	
-[[Welcome to the Regent. -&gt;END - The Destitute Regent]]</tw-passagedata><tw-passagedata pid="180" name="END - The Destitute Regent" tags="" position="1789,8246" size="100,100"></tw-passagedata><tw-passagedata pid="181" name="A2- Moira Pinned" tags="" position="1000,5293" size="100,100">As you move behind the beast, it takes notice of you and begins to leap towards you. Moira takes the opening and steps in with an attack of her own. She slices the hindlegs of the beast, stopping its advance. It quickly pivots and brings down a claw, slamming and pinning Moira under its muscular form.
+[[Welcome to the Regent. -&gt;END - The Destitute Regent]]</tw-passagedata><tw-passagedata pid="180" name="END - The Destitute Regent" tags="" position="1789,8246" size="100,100"></tw-passagedata><tw-passagedata pid="181" name="A2- Moira Pinned" tags="" position="1075,5290" size="100,100">You press behind the beast, but it turns to meet you! 
+
+In a fleeting moment, Moira takes the opening and steps in with an attack of her own, slicing it&#39;s hindleg and stopping its advance!
+
+Returning, It quickly pivots, bringing down a claw and pinning Moira under its muscular form!
 
 (live: 5s)[(transition:&quot;dissolve&quot;)[You must [&#39;&#39;act fast!&#39;&#39;]&lt;QTE|](stop:)]
 
@@ -1894,143 +1914,187 @@ He suddenly stops, leaning down close, such that his booming voice will not carr
 \		(set: $timer to it - 1)
 \		(replace:?choice)[
 \			$timer]
-		[[Attack the arm with your sword in an attempt you free Moira.-&gt;A2- Moira&#39;s Saviour]]
-		[[Stay behind the beast and slice at it.-&gt;A2- Indifference]]
+		[[Attempt to free Moira!-&gt;A2- Moira&#39;s Saviour]]
+		[[Use the opening to strike!-&gt;A2- Indifference]]
 \		(if: $timer is 0)[(go-to:&quot;A2- Indifference&quot;)]]]
-</tw-passagedata><tw-passagedata pid="182" name="A2- Quick Feet" tags="" position="1089,5599" size="100,100">As you step away from the bite, the beast follows with raising its claw, striking at you from below. Your sword is laying on the ground under the beast.
+</tw-passagedata><tw-passagedata pid="182" name="A2- Quick Feet" tags="" position="1124,5596" size="100,100">Realizing overpowering the beast is folly, you relent, shifting your weight back and preparing to evade.
+
+The beast follows with raising its claw, striking at you from above. Your sword, now free from it&#39;s claws, is laying on the ground under the beast!
 
 (live: 2s)[(transition:&quot;dissolve&quot;)[You must [&#39;&#39;act fast!&#39;&#39;]&lt;QTE|](stop:)]
 
 []&lt;choice|
 \
 \(click: ?QTE)[
-\	(set: $timer to 4)
+\	(set: $timer to 3)
 \	(live: 1s)[
 \		(set: $timer to it - 1)
 \		(replace:?choice)[
 \			$timer]
 			[[Roll past the claw and grab your sword.-&gt;A2- Swift Hands]]
 \		(if: $timer is 0)[(go-to:&quot;A2- Damaged but Armed&quot;)]]]
-</tw-passagedata><tw-passagedata pid="183" name="A2- Daredevil" tags="" position="1090,5464" size="100,100">Your sword is stuck firmly under the beasts muscular and massive form. Before you can pull the sword or react, the beasts jaws clamp shut on your shoulder, sending a new wave of pain rolling through your body. You feel the darkness of the Veil reach out through fron the teeth into your wounds bringing you screeching pain within your mind, causing you to shut your eyes and grit your teeth.
+</tw-passagedata><tw-passagedata pid="183" name="A2- Daredevil" tags="" position="1150,5454" size="100,100">You desperately tug at your blade, attempting to cripple it&#39;s leg, but the sword is stuck firmly under the beasts massive form.
+
+Before you can reconsider your actions, the beasts jaws clamp shut on your shoulder, sending a new wave of pain rolling through your body.
+
+The dissonant shrieks of distant planes envelop your mind, as a roiling sea of incomprehensible thought washes through you. For a moment, you feel as though you are to drown in it...
 
 //(set: $injuryScore to $injuryScore + 1) (text-colour:grey)[You have received an injury...]//
 
-[[Focus to clear the visions of beyond the Veil.-&gt;A2- Rising Heat]]</tw-passagedata><tw-passagedata pid="184" name="A2- Moira&#39;s Saviour" tags="" position="1282,5193" size="100,100">You run forward towards Moira. &quot;AARGH&quot; You hear her grunt under the beasts weight as she attempts to hold back the beasts bites by jamming her sword across the beasts mouth, keeping the fangs at bay. You use your momentum to slice at the beasts legs, slicing the muscle and tendons as your sword cuts deep. The beast leaps away from you, freeing Moira of its clutches. Its body is lopsided for a second before the shadows crawl into the wound and the beast finds strenght again.
+[[Relinquish your mind from the assault.-&gt;A2- Rising Heat]]</tw-passagedata><tw-passagedata pid="184" name="A2- Moira&#39;s Saviour" tags="" position="1282,5193" size="100,100">You run forward towards Moira!
+
+&quot;AARGH&quot;
+
+Moira grunts, as her cuirass begins to buckle under the creature&#39;s immense weight! Holding it back, she rests her blade across it&#39;s mouth as the beast rends, splitting it&#39;s mouth open with each motion, it&#39;s ravenous grin growing wider, and wider...
+
+You use your momentum to slide, slicing at the beasts legs! The muscles and tendons pop and stretch as the beast leaps away from you, freeing Moira of its clutches.
+
+Its body rapidly regenrating, mending carved bone and gristle as the shadows crawl into the wound. The beast gathers it&#39;s strength, snarling.
 
 You extend your hand to Moira and pull her to her feet.
 
-[[You hear the roar of flames once again.-&gt;A2- Rising Heat]]</tw-passagedata><tw-passagedata pid="185" name="A2- Indifference" tags="" position="1283,5323" size="100,100">You remain behid the beast and use this as an opportunity to cut at the beast. You blade glides across the beasts back, leaving behind a streak of red. The tendrils of shadow once again begin to repair the damage almost immediately.
+&quot;This thing is relentless!&quot; She speaks, stepping between you and the creature.
 
-&quot;AARGH&quot; You hear Moira grunt under the beasts weight as she attempts to hold back the beasts bites by jamming her sword across the beasts mouth, keeping the fangs at bay.
+[[The roaring flames begin to build... -&gt;A2- Rising Heat]]</tw-passagedata><tw-passagedata pid="185" name="A2- Indifference" tags="" position="1283,5323" size="100,100">You remain behind the beast, using the opportunity to carve chunks! Your blade glides across it&#39;s back, but each streak of red is rapidly invelopeb by writhing shadows!
 
-[[You hear the roar of flames once again.-&gt;A2- Rising Heat]]</tw-passagedata><tw-passagedata pid="186" name="A2- Wall of Campfire" tags="" position="1656,5369" size="100,100">As Gavin twists his hands, the flames begin to burn brighter and extend. Embers begin twirling around the campfire and Gavin, spinning faster and faster. You notice the rocks at his feet rumbling as he throws his arms out and the flames expand rapidly in a roaring blaze. The fire licks the night sky, standing taller than Gavin himself with brightness that causes your eyes to tear. You raise your hand to shield your vision from the burning light.
+&quot;AARGH&quot;
 
-With sheer ferocity you have not seen from him yet, Gavin plants his feet and pushes his arms forward, and the wall of flames rolls over the rocky ground towards the beast.
+Moira grunts, as her cuirass begins to buckle under the creature&#39;s immense weight! Holding it back, she rests her blade across it&#39;s mouth as the beast rends, splitting it&#39;s mouth open with each motion, it&#39;s ravenous grin growing wider, and wider...
 
-The beacon of light and roaring inferno of the fire draws the beasts attention. You can see its muscles tense in a moment of hesitation. Just before the hellfire engulfes its body, the beast turns its undamaged shoulder towards the flames and sinks its claws into the ground. The flames slam into its body with an audible //WHOOSH// and the beast yelps in pain.
+[[Until the roaring flames begin to build.-&gt;A2- Rising Heat]]</tw-passagedata><tw-passagedata pid="186" name="A2- Wall of Campfire 1" tags="" position="1593,5239" size="100,100">&lt;img src=&quot;https://hdwallpaperim.com/wp-content/uploads/2017/08/31/148546-Magic_The_Gathering-wizard-fire-magic.jpg&quot; width= &quot;100%&quot;&gt;
 
-You lower your hands and blink, trying to get a clear vision of the beast. It stands several feet farther than it had been a moment ago. The stone below him gouged from claws ripping through them as the beast was pushed back. You look up at the beasts face and see burned flesh sizzling and the shadows dripping from its body retreating for a moment as the smell of burnt rotting fur and flesh singes your nose. Then you see the the darkness returning to its form, curling across the beasts body while encasing the fresh charcoaled wounds as the beast lets out an echoing roar spilling over the plateau&#39;s edge.
+Gavin twists his hands, the flames begining to burn brighter and erupt. Embers begin twirling around the campground, building speed.. You notice the rocks at Gavin&#39;s feet rumbling as he throws his arms out and the flames expand rapidly in a roaring blaze. The fire licks the night sky, standing taller than Gavin himself with brightness that causes your eyes to tear. You raise your hand to shield your vision from the burning light.
 
-It stands on its legs, its wounds and cuts being licked at by the shadowy tendrils. It must be feeling cornered... and it&#39;s chosen fight rather than flight.
+With sheer ferocity and disdain, Gavin plants his feet and pushes his arms forward, sending the wall of flames rolling over the uneven ground towards the beast.
 
-[[&quot;How is it still standing after that?&quot;-&gt;A2- Seeker&#39;s Intellect]]</tw-passagedata><tw-passagedata pid="187" name="A2- Rising Heat" tags="" position="1483,5372" size="100,100">The dark sky lights up once again as each of the four remaining flames around the battle swerve towards the beast. The arches of flame meet above the beast and form a bright streak of fire befoe slamming into the beast between its shoulder blades. 
+As it struggles against the enraged inferno, the beast&#39;s muscles tense in a moment of hesitation. Just before the hellfire engulfes its body, the beast turns its undamaged shoulder towards the flames and sinks its claws into the ground. The flames slam into its body with an audible //WHOOSH// and the beast yelps in pain, consumed by the storm!
 
-The beast is knocked into the rocks below it, its legs crumbling beneath the imapct. Then with an earth shattering roar, pulls him self up again, the tendrils of shadow sprouting from its back dancing in the fire light. The fur at the site of impact has burned away, leaving exposed hide. The Veil shadow begins to engulf the beasts hide once more and the tendrils obscure the exposed hide. Then the shadows begin to close the beasts wounds once more.
+[[You watch in awe...-&gt;A2- Wall of Campfire 2]]</tw-passagedata><tw-passagedata pid="187" name="A2- Rising Heat" tags="" position="1424,5366" size="100,100">The dark sky lights up once again, as four streams of flames cascade across the battlefield, meeting above the beast and forming a blinding streak of conflagration...
 
-As you and Moira take the moment to catch your breath, you see Gavin&#39;s eyes flare as he flicks his hands up above the campfire and towards the beas, gripping the air.
+Before slamming into the beast, enveloping it like a ravenous storm! 
 
-[[Brace for the attack.-&gt;A2- Wall of Campfire]]</tw-passagedata><tw-passagedata pid="188" name="A2- Damaged but Armed" tags="" position="1268,5682" size="100,100">You begin to roll, but the beast is faster. The claws catch your legs as you roll towards your sword. You summon all your willpower to ignore the pain in your leg as the blood soaks into your clothes and your mind is stabbed with edlrich energy. You reach for your sword and slice at the beast from under. The open wound you cause is immediately swarming with shadows of the Veil and you crawl back from the beast.
+The beast is knocked into the rocks below it, its legs crumbling beneath the imapct as the flames dance around it&#39;s form, meeting with the billowing shadow!
 
-//(set: $injuryScore to $injuryScore + 1) (text-colour:grey)[You have received an injury...]//
+As you and Moira take the moment to catch your breath, you see Gavin&#39;s eyes flare as he raises his hands up above the campfire and towards the beast, grasping the air.
 
-[[You hear the roar of flames once again.-&gt;A2- Rising Heat]]</tw-passagedata><tw-passagedata pid="189" name="A2- Swift Hands" tags="" position="1268,5550" size="100,100">The beast is fast, but you are faster. The claws graze your legs as you roll towards your sword. You reach for your sword and slice at the beast from under. The open wound you cause is immediately swarming with shadows of the Veil and you crawl back from the beast.
+[[You had almost forgotten this fear. -&gt;A2- Wall of Campfire 1]]</tw-passagedata><tw-passagedata pid="188" name="A2- Damaged but Armed" tags="" position="1382,5646" size="100,100">You begin to roll, but the beast is faster!
 
-[[You hear the roar of flames once again.-&gt;A2- Rising Heat]]</tw-passagedata><tw-passagedata pid="190" name="A2- Seeker&#39;s Intellect" tags="" position="1830,5368" size="100,100">Gavin keeps his eyes on the beast while shouting &quot;This creature cannot be brought down by natural means any longer. We must tap into the Veil and use arcane means to burn at its wounds.&quot;
-
-You&#39;ve noticed it too. The cuts from you and Moira had fully healed and the burns were already scarring on its body. Yet the flames embued with eldirch power slowed down the shadows crawling on its body.
-
-&quot;The flames were intended to hit the wounds you left on its body. It seems to be protecting cuts even if it means burning himself.&quot;
-
-At this moment the beast pounces, snarling with hatred. Moira charges once more to meet the bounding creature with a battle cry of her own. The two clash in a flurry of claws, fangs, and steel. Moira lets out a blood curdling scream as the beast grazes her, and continues to carve at the flesh in front of her.
-
-The shadow around the beast begin to flare up. The tendrils pulse with energy. The beast picks up speed and begins to advance, forcing Moira to shift into defensive strikes.
-
-&quot;Gavin... HAAH... slow this thing... HNG... DOWN!&quot; Moira yells in between swings.
-
-Gavin kneels and grasps the stone terrain with one hand and points his other towards the beast. Earth begins to rise beneath the beast, rocks wrapping around the beasts legs. The beast slows down for a moment before shattering the rocky clutches with powerful swings of its claws. Gavin does not relent and continues his assult on the creatures legs. Simultanously he he begins muttering encantations and you feel the breeze pick up. Walls of wind begin slamming into the beast, moving against his advance on Moira.
-
-Moira takes this opportunity to step in and deal massive arching blows into the beasts flesh.
-
-[]&lt;CallToAction|
-
-[[Clutch your sword and attack alongside Moira.-&gt;A2- Stubborn Nature]]
-[[Focus your mind on the embers remaining from the campfire and unleash your powers.-&gt;A2- Answer the Call]]
-
-(if:$a2_toldGavin is true)[(replace:?CallToAction)[&quot;Ashton! We cannot finish this fight without your abilities. I will hold him as best as I can. Help Moira kill this damn beast!&quot; You hear Gavin grunt through his teeth.]]
-(else:)[(replace:?CallToAction)[&quot;Curse the Veil, I can&#39;t hold it and attack at the same time. If only we had more Seekers with us to burn the beast and send it back to where it came from. I will hold him as best as I can. Ashton, help Moira in any way you can!&quot; You hear Gavin grunt through his teeth.]]</tw-passagedata><tw-passagedata pid="191" name="A2- Stubborn Nature" tags="" position="1992,5241" size="100,100">You move to Moira side, slicing with your sword and defending against the onslaught of claws and bites. You both manage to put a dozen open wounds on the creatures body. Darkness moving to undo you work.
-
-This is not without paying with blood. You feel your mind buzz with eldrich energy as the claws and bits pierce your skin and leave with stabbing pains.
+The claws catch your legs as you roll towards your sword, sending your weight carrying upward! You land hard on your back, grasping at stone and steel, before your mind is again enraptured by the lingering poison...
 
 //(set: $injuryScore to $injuryScore + 1) (text-colour:grey)[You have received an injury...]//
 
-With Gavin still slowing the beast down, its now your chance to deal some damage.
+You summon all your willpower to ignore the pain, and roll away just as the beast sends all it&#39;s weight into a strike, narrowly evading it&#39;s onslaught...
+
+[[You hear the roar of flames once more.-&gt;A2- Rising Heat]]</tw-passagedata><tw-passagedata pid="189" name="A2- Swift Hands" tags="" position="1268,5550" size="100,100">The beast is fast, but you are faster!
+
+The claws graze your legs, as you roll towards your sword. Recovering your blade, you twist, slicing at the beast from underneath. The open wound you cause is immediately swarming with shadows of the Veil before you follow your momentum, carrying you tumbling out of danger.
+
+[[You hear the roar of flames once again.-&gt;A2- Rising Heat]]</tw-passagedata><tw-passagedata pid="190" name="A2- Seeker&#39;s Intellect 1" tags="" position="1801,5351" size="100,100">Gavin drops to one knee, clutching his head... You&#39;ve seen Veil poisoning in the past, and Gavin has pushed himself too far. Too much more, and you all will be routed.
+
+He locks his eyes on the beast, shouting &quot;This creature cannot be brought down by natural means any longer. If it has communed with the Veil, we must meet it in turn!&quot;
+
+You&#39;ve noticed it too. The cuts from you and Moira had fully healed and the burns were already scarring on its body.
+
+Yet the flames embued with eldirch power seemend to deter the shadows crawling on its body. Whatever entity now inhabits the Stonestrider, it reacts to manipulations of the Veil.
+
+Gavin continues: &quot;It seems to be protecting it&#39;s injuries from the fire, even if it means weathering the blaze! So we strike it together!&quot;
+
+At this moment the beast pounces, snarling with hatred. Moira charges once more, meeting it&#39;s fury with an unbridled battle cry. The two clash in a flurry of claws, fangs, and steel. Moira lets out a blood curdling scream as the beast grazes her, and continues to carve at the flesh in front of her.
+
+[[Close the distance! It&#39;s now or never! -&gt;A2- Seeker&#39;s Intellect 2]]</tw-passagedata><tw-passagedata pid="191" name="A2- Stubborn Nature" tags="" position="2052,5182" size="100,100">You move alongside Moira&#39;s side, slicing with your sword and defending against the onslaught of claws and bites. For each blow you land, gripping tendrils gather to undo you work.
+
+You feel your mind buzz with eldrich energy as the claws pierce your skin, leaving you with lingering pains.
+
+It&#39;s corruption begins to spread...
+
+//(set: $injuryScore to $injuryScore + 1) (text-colour:grey)[You have received an injury...
+]//
+(if: $injuryScore &gt;=2)[ And you are beginning to wane... ]
+
+With Gavin still slowing the beast, now is your chance to deal some damage!
 
 [[[Focus your mind on the embers remaining from the campfire and unleash your powers.-&gt;A2- Answer the Call]]]&lt;choice|
 
-(if:$injuryScore &gt;= 3)[(replace:?choice)[[[With your existing injuries, you feel overwhelmed...-&gt;A2- Fanged Death]]]]</tw-passagedata><tw-passagedata pid="192" name="A2- Fire and Blood" tags="" position="2313,5362" size="100,100">The beast screams in agony and rage as the tendrils attempt to spread across the burned gashes, but the fail to stab into the flesh and withdraw. You swear you can hear a hiss as they do so.
+(if:$injuryScore &gt;= 3)[(replace:?choice)[[[With your existing injuries, you feel overwhelmed...-&gt;A2- Fanged Death]]]]</tw-passagedata><tw-passagedata pid="192" name="A2- Fire and Blood" tags="" position="2368,5334" size="100,100">The beast shrieks, with many voices ringing and echoing from it&#39;s jaws, as if a communion of creatures inhabit one fleshy form. Tendrils attempt to spread across the burned gashes, but the fail to reach before more flames envelop the form of the beast! You swear you can hear a hiss, acknlowledgement from the entity that it is, indeed, beginning to falter.
 
-You begin to conjur your energy again as the beast turns to face you. Before it can bound towards you, Moira sinks her blade into the beasts eye with a barbaric scream.
+You begin to conjure your energy again as the beast turns to face you. Before it can break your focus, Moira sinks her blade into the beasts eye with a barbaric scream. Gavin rends his hands apart, as the flesh from the beast splits and pops from the open wound, tearing it apart from the inside.
 
-Stone spikes erupt from the floor and sink into the beasts chest. With audible cracks, it is lifted off the ground as it claws for traction in the air. Gavin then closes his fist and the rocks turn molten.
+In that moment, you find renewed focus.
 
-This is your chance.
+[[Heat Moira&#39;s Blade.-&gt;A2- Beast Down]]</tw-passagedata><tw-passagedata pid="193" name="A2- Answer the Call" tags="" position="2187,5335" size="100,100">You draw from beyond, releasing your power, for once deigned with freedom. If you do not, your death will surely come. As you feel the rush of the visions from beyond the Veil, you use the pain and anger it causes you as fuel to stoke the flames.
 
-[[Heat Moira&#39;s Blade.-&gt;A2- Beast Down]]</tw-passagedata><tw-passagedata pid="193" name="A2- Answer the Call" tags="" position="2144,5369" size="100,100">As you feel the rush of the visions from beyond the Veil, you use the pain and anger it causes you as fuel to stoke the flames. With pulses of eldrich energy you begin feeling the heat of the embers bursting into flames once more. You turn your gaze towards the beast, slowed down by Gavin and shredded by Moira. With a practiced flick of your wrist, you send five streaks of flame towrads the monstrosity. The bolts weave through the air and meet to create a scorching ray of flame. The beast screeches as the flame connects with bleeding gashes left behind by Moira.
+The embers that litter the battlefield soon erupt into small fires, then roiling flames. You reach into the fabric of your perceived reality, and begin bending it to your needs. In this moment, you feel the weight of fear lift from your shoulders.
 
-You have hurt the abomination.
+It&#39;s good to feel free.
 
-[[Prepare to fire again.-&gt;A2- Fire and Blood]]</tw-passagedata><tw-passagedata pid="194" name="A2- Beast Down" tags="" position="2487,5367" size="100,100">you feel your fingertips tingle with the energy as you release it to form a psionic connection with the heat in the air surrounding the beast. You concentrate and manipulate the vibration between particles and focus them on Moira&#39;s blade.
+With a practiced flick of your wrist, you send five streaks of flame towrads the monstrosity, attempting to duplicate Gavin&#39;s inferno. The bolts weave through the air and meet, creating a scorching ray of flame. The beast screeches, flames driving into it&#39;s bleeding gashes, as Moira continues to carve, shrugging off the intense heat.
 
-The sword begins to glow red within the beasts eye and the fur around it bursts into flames. The beast begins to thrash against the stone spikes holding it off the ground. The stone cracks under its weight with a &quot;CRACK&quot; and it falls to the ground. Moira lets the hilt of her sword go and leaps away from the swining beast. Molten rock poors from its wounds left behind by the piercing rock. It claws at his eye engulfed in flames before tumbling to the ground. A final deafening //SCREECH// leaves its gnarled lips.
+Finally, the abomination is showing wear!
 
-Silence...
+[[Prepare to fire again.-&gt;A2- Fire and Blood]]</tw-passagedata><tw-passagedata pid="194" name="A2- Beast Down" tags="" position="2530,5333" size="100,100">You concentrate, rapidly manipulate the vibration between particles, sending Moira&#39;s blade into a fit of crackling flame.
 
-Moira walks up to the beast and pulls her blade from its sizzling eye. Gavin pulls you from your knees by your arm. The body of the beast unmoving, with the only shadows dancing being those from the flames.</tw-passagedata><tw-passagedata pid="195" name="A2- Fanged Death" tags="Death" position="2141,5182" size="100,100">The scorchign pain within your mind begins to envelope your thoughts. You cannot shake the visions of beyond the Veil as they cloud your vision. With each wound you recieve, your body slows. Eventually you lose the grip on your sword and the stength in your legs. As you fall to your knees holding on to your head, you hear as if from afar muffled screams from Moira. Then you slowly feel your grip over sanity leave as you plunge into the darkness...</tw-passagedata><tw-passagedata pid="196" name="A2- Double Attack" tags="" position="586,5233" size="100,100">Stepping in you lunge forward with your sword. Your blade sinks into the beasts flesh behind its left front leg. With a twist, then a slice you pull your blade from its torso as blood begins to coat the white fur. You notice the incorporeal tendrils begin to slither and crawl over the wound immediately. They lick at your blade as you pull it back, then stab into the beasts exposed flesh. Pulling taut, they stretch the beast&#39;s skin over the wound, squeezing the cut closed.
+//THOOM//
 
-A low growl pulls your attention to the beast&#39;s snarling face. You backstep as quickly as possible, but the beast&#39;s bite is quciker than you are. It&#39;s teeth sink into your left arm as you attempt to block the bite from reaching your head and throat. The countless teeth pierce your skin and the pain flares up your arm. You swing with your sword at the beasts head and it lets go, ducking out of reach. The moment the teeth leave your arm, you see the same dark tendrils linger and stick to your wound for a moment before pulling back to the beast. Then you feel the familiar pain of the eldrich energy stabbing your brain. Except this time, the pain paralyzing as vision from beyond the Veil cloud your vision. Your ears ring and you clutch your head.
+A jet of flame erupts from within, as Moira&#39;s blade erupts into a concentrated inferno, driven deep within the beast&#39;s flesh. Gavin breaks his communion, collapsing momentarily as the beast writhes in a fit of pain and resentment. The stone cracks under its weight as it falls to the ground, continuing to twitch.
 
-//(set: $injuryScore to $injuryScore + 1) (text-colour:grey)[You have received an injury...]//
+The charred remains of the Stonestrider come to rest, and even it&#39;s mass begins to dwindle, as the entity maintaining it&#39;s form can no longer recover it&#39;s remains.
 
-As the pain and ringing subsides, you look up to see the others move in to attack.
+A broken puppet.
 
-[[Grip your sword and look for an opening.-&gt;A2- Ambush Retaliation]]</tw-passagedata><tw-passagedata pid="197" name="A2- Fire Distraction" tags="" position="587,5364" size="100,100">You step towards the campfire and grab a burning gnarled piece of wood from it, sending embers flying through the dark air. You begin swinging the fire as you step between the beast and Moira. The beast snaps its teeth at you and lowers itself, lips pulled back in a snarl revealing twisted yet sharp teeth once again. You realize what seemed to be the dancing light causing shadows in its jaws move is actually the result of the same incorporeal shadow moving like mist within its mouth. You take a swing with your sword in your other hand.
+As the shadows begin to leak as a vapour from the now singed corpse. You and Moira step backward, maintaining distance to avoid contact with whatever is now dissapating. Whispers ring from the fringes of the camp, incorporeal and all-consuming.
 
-The beast leaps backwards at an angle and out of your reach. As it turns, the light from the fire dances across the carved flesh from Moira&#39;s sword. You notice the incorporeal tendrils slither and crawl over the wound. They lick at the blood, then stab into the beasts exposed flesh. Pulling taut, they stretch the beast&#39;s skin over the wound, squeezing the cut closed. The beast then turns to face you again, hiding the the gruesome sight from view.
+Silence ...
 
-[[Throw the log to the left in an attempt to limit the beasts space.-&gt;A2- Ambush Retaliation]]</tw-passagedata><tw-passagedata pid="198" name="A2- Composure" tags="" position="585,5493" size="100,100">You take a deep breath to calm yourself after the initial shock of the attack. You begin moving around the beast is it unleashes a flurry of attacks on Moira. You hear Gavin begin an encantation beside the campfire. You turn you attention back to the beast as you move to flank with Moira.
+[[But the whispers don&#39;t subside... -&gt;END OF ACT 2]]</tw-passagedata><tw-passagedata pid="195" name="A2- Fanged Death" tags="Death" position="2237,5122" size="100,100">The searing pain within your mind begins to envelope your thoughts.
 
-She is still on the defensive as the beast unleashes a storm of fangs and claws. Using its muscular hindlegs it lunges forward as it slashes at Moira. She manages to sidestep, and roll out of the way. A bite follow, the beasts lips extending past where natural as it opens its jaws to snap at Moira. On one knee, Moira brings her sword up to slice the beasts face, forcing it to one side. As the teeth miss their mark and before Moira can recover from her attack, the beasts claws slam into her arm and torso throwing her on her back. She lands with moss and dislodged debris flying around. She begins to get up clutching her ribs with the bloodied arm. A moment later she falls back on one knee screaming and clutching her head.
+You cannot shake the visions of beyond the Veil. They press against the borders of your mind before snapping, descending into a whorling scape of madness to which all reality falls away.
 
-&quot;Curse the Veil!&quot; She snarls as she gets back to her feet.
+The gripping darkness slows your perception, before the creatures claw is plunged into your chest, it&#39;s weight bringing you tumbling into the ground, as it falls like a blanket underneath you.
 
-The beast backs off in an attempt to stop you from flanking it.
+You barely hear the distant screams of your companions as all reality is swept into a tide of shrieking faces and unbridled madness.
 
-As it turns, the light from the fire dances across the carved flesh from Moira&#39;s sword. You notice the incorporeal tendrils slither and crawl over the wound. They lick at the blood, then stab into the beasts exposed flesh. Pulling taut, they stretch the beast&#39;s skin over the wound, squeezing the cut closed. The beast then turns to face all three of you as best as it can.
+//(text-colour:grey)[All goes dark.]//</tw-passagedata><tw-passagedata pid="196" name="A2- Double Attack 1" tags="" position="508,5233" size="100,100">Advancing quickly, you lunge forward, blade drawn!
 
-(set: $MoiraInjuryScore to $MoiraInjuryScore + 1)
+Your sword carves into the beast&#39;s flesh, before you draw the wound open with a twist, coating the rended flesh with blood and blackened ichor!
 
-[[Grip your sword and continue moving around the beast.-&gt;A2- Ambush Retaliation]]</tw-passagedata><tw-passagedata pid="199" name="A2- Ambush Retaliation" tags="" position="745,5367" size="100,100">Moira is the first to attack again. She lunges forward, and beast follows with its own pounce. Moira slides on one knee getting under the beasts bite and plunges her sword upwards into the beasts chest. She pushes with one leg and rolls to the side, avoiding the beasts claw and slicing open the flesh with blood arching from her sword.
+Trying to retract, your blade is caught on bone!
 
-The shadow sprouting from the beasts form begin to pull its wound shut again.
+Incorporeal tendrils begin to slither and crawl over the wound immediately. They lick at your blade as you pull it back, then stab into the beasts exposed flesh. Pulling taut, they stretch the beast&#39;s skin over the wound, squeezing the cut closed.
 
-Then you hear the roar of fire as Gavin raises his hands and throws them outword. Five streaks of flame shoot out from the campfire and arch across the night sky. Four of these archs land around you and remain lit, fueled by magic and lighting the surroundings. The final fire bolt streaks towards the beast. Turning to see the flames, the beast pounces back and lowers its fresh wound to the ground. The bolt of fire whooshes through the air and hits the ground where the beast used to be. Unlike the other streaks, the flame does not stay and stead burns out, boiling the pool of blood left behind by the beast.
+A low growl pulls your attention to the beast&#39;s snarling face.
 
-Its eyes dart between its adversaries and the flames and it lets out a low rumbling growl.
+[[Uh- oh... -&gt;A2- Double Attack 2]]</tw-passagedata><tw-passagedata pid="197" name="A2- Fire Distraction 1" tags="" position="509,5362" size="100,100">You sprint to to the campfire, grasping a gnarled piece of burning wood from it, sending embers flying through the dark air.
 
-[[Take the opening to move opposite to Moira.-&gt;A2- Moira Pinned]]
-[[Take the opening and follow up with an attack.-&gt;A2- Rock and a Hard Place]]</tw-passagedata><tw-passagedata pid="200" name="A2- Rock and a Hard Place" tags="" position="904,5450" size="100,100">You move in keeping the beast between you and the flames. As you begin to swing your sword, the beast brings down its claw onto your arm. You manage to pull back before impact, however changing trajectory mid strike slowed your movement down enough for your sword to be pinned between the beasts claw and the rocky ground.
+You begin swinging the fire as you step between the beast and Moira. The beast snaps its teeth at you and lowers itself, lips pulled back in a snarl revealing twisted teeth once more.
 
-The beasts relentless counter attack continues as it opens its jaw and bites at you.
+The visage of the creature shifts like many faces layered over one, the shadows of it&#39;s features pulled into fluid, rippling pools wrath. Through the gaps in it&#39;s teeth, worm-like shadows seep from every crevasse, lingering like an incorporeal mist...
+
+[[Strike, now! -&gt; A2- Fire Distraction 2]]</tw-passagedata><tw-passagedata pid="198" name="A2- Composure 1" tags="" position="507,5499" size="100,100">You take a deep breath to calm yourself after the initial shock of the attack. Moving stealthily around the beast, it unleashes a flurry of attacks on Moira, as you hear Gavin begin an incantation beside the campfire.
+
+Moira is still on the defensive, the beast unleashing a storm of fangs and claws. Using its muscular hindlegs it lunges forward, missing Moira as she rolls to the side...
+
+A bite follows, the beasts lips extending past where natural as it opens its jaws to snap at Moira. Still, on one knee, Moira meets the beast with her blade, forcing it to one side! While the teeth clasp at air, the beast&#39;s claws slam into her arm and torso, throwing her on her back!
+
+She lands in a cloud of dust and debris! She clutches her ribs with the bloodied arm, before falling back on one knee screaming, and clutching her head.
+
+(set: $MoiraInjuryScore to $MoiraInjuryScore + 1)[[&quot;Curse the Veil!&quot; She snarls.-&gt;A2- Composure 2]]
+</tw-passagedata><tw-passagedata pid="199" name="A2- Ambush Retaliation 1" tags="" position="799,5365" size="100,100">Once more, Moira lunges forward, and the beast meets her ferocity.
+
+(if: $a2_fireDistraction is true) [Moira slides on one knee, taking position alongside the flaming trap you&#39;ve set. The creature shifts it&#39;s weight to avoid the roaring fire, allowing Moira the opening to plunge her sword upwards into the beasts chest. She pushes with one leg and rolls to the side, avoiding the beasts claw and slicing open the flesh with blood arching from her sword.
+
+The shadow sprouting from the beasts form begin to pull its wound shut again.] (else:) [Moira slides on one knee attempting to plunge her sword upwards into the beasts chest, but it shifts it&#39;s weight opposite to hers, and forces her back with a sweeping strike! She pushes with one leg and rolls to the side, avoiding the beasts claw, but gaining no ground.]
+
+You hear the roar of fire as Gavin raises his hands and throws them outward. Five thin streaks of flame erupt from the campfire, arching through the now stagnant air.
+
+Four of these archs land around, fueling roaring fires that now billow from the battlefield. With the stage set, the final bolt streaks towards the beast!
+
+[[You watch in anticipation... -&gt; A2- Ambush Retaliation 2]]</tw-passagedata><tw-passagedata pid="200" name="A2- Rock and a Hard Place" tags="" position="998,5448" size="100,100">//(text-colour:grey)[You attempted to strike on your own!]//
+
+You move in, keeping the beast between you and the flames.
+
+Just as you attack, the beast ripostes a wild strike! You attempt to pull back, only for your blade to be caught and driven to the ground, pinned between the beast&#39;s claw and the rocky ground.
+
+The creature is relentless, leaping and snarling, a wild mass of tooth and fur!
 
 (live: 5s)[(transition:&quot;dissolve&quot;)[You must [&#39;&#39;act fast!&#39;&#39;]&lt;QTE|](stop:)]
 
@@ -2042,14 +2106,16 @@ The beasts relentless counter attack continues as it opens its jaw and bites at 
 \		(set: $timer to it - 1)
 \		(replace:?choice)[
 \			$timer]
-			[[Attempt to pull your sword out and slice at the beast.-&gt;A2- Daredevil]]
-			[[Let go of the sword and dodge backwards.-&gt;A2- Quick Feet]]
+			[[Attempt to recover sword, and slice at the beast!-&gt;A2- Daredevil]]
+			[[Relinquish the sword, and dodge backwards!-&gt;A2- Quick Feet]]
 \		(if: $timer is 0)[(go-to:&quot;A2- Daredevil&quot;)]]]
-</tw-passagedata><tw-passagedata pid="201" name="A2- Stonestrider Attack" tags="" position="349,5349" size="100,100">Moira crashes into the beast at an angle as it charges your camp. The beast loses balance for a split second. With a swift spin, Moira carves deep into its hide just above the left shoulder. Moira takes a step back as a whirlwind of teeth and fangs snap the air in front of her in retaliation. The beast begins to advance on Moira.
+</tw-passagedata><tw-passagedata pid="201" name="A2- Stonestrider Attack" tags="" position="271,5354" size="100,100">Moira drives her shoulder forward, crashing into the beast as it charges your camp!
 
-[[Use the opening and strike with your sword.-&gt;A2- Double Attack]]
-[[Use burnign wood from the campfire to force the beast back.-&gt;A2- Fire Distraction]]
-[[Begin moving to flank the beast and gain your composure.-&gt;A2- Composure]]</tw-passagedata><tw-passagedata pid="202" name="A3- Moira Thrown" tags="" position="828,7439" size="100,100">[[-&gt;Untitled Passage 11]]
+The beast loses balance for a beat, before Moira swiftly spins, carving deep into its hide just above it&#39;s left shoulder! A warbling shriek pierces the air as a whirlwind of gnarled fangs snap and thrash, driving Moira to her heels!
+
+[[Press the opening! Strike with your blade!-&gt;A2- Double Attack 1]]
+[[Strike with fire, drawing it&#39;s ire! .-&gt;A2- Fire Distraction 1]]
+[[Gain your composure, circling to it&#39;s flank!.-&gt;A2- Composure 1]]</tw-passagedata><tw-passagedata pid="202" name="A3- Moira Thrown" tags="" position="828,7439" size="100,100">[[-&gt;Untitled Passage 11]]
 [[-&gt;Untitled Passage 10]]
 
 [[-&gt;Untitled Passage 12]]
@@ -2088,7 +2154,92 @@ The beasts relentless counter attack continues as it opens its jaw and bites at 
 
 [[-&gt;A3- TPK]]</tw-passagedata><tw-passagedata pid="226" name="Untitled Passage 25" tags="" position="2233,7667" size="100,100">[[-&gt;A3- Threat Down]]
 
-[[-&gt;A3- Red Turncoat]]</tw-passagedata><tw-passagedata pid="227" name="A3- TPK" tags="Death" position="2034,6939" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="228" name="A3- Red Turncoat" tags="Death" position="2039,7935" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
+[[-&gt;A3- Red Turncoat]]</tw-passagedata><tw-passagedata pid="227" name="A3- TPK" tags="Death" position="2034,6939" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="228" name="A3- Red Turncoat" tags="Death" position="2039,7935" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="229" name="A2- Double Attack 2" tags="" position="653,5233" size="100,100">You backstep as quickly as possible, but the beast is quick despite it&#39;s size!
+
+It&#39;s teeth sink into your left arm, as you attempt to block the bite from reaching your head and throat. Enveloped in terror it&#39;s, as overwhelming mass bears down on you, knocking you to your feet!
+
+Swinging your sword wildly with a pained cry, the beast&#39;s head recoils, ducking out of reach. The moment the teeth leave your arm, the same dark tendrils lash and linger, sticking to your wound for a moment before clasping into the seeping wound!
+
+Screeching visions wrack your mind, driving you to convulse in searing pain. Your ears ring as you clutch your head.
+
+//(set: $injuryScore to $injuryScore + 1) (text-colour:grey)[You have been gripped by something truly evil...]//
+
+As the pain and ringing subsides, you look up to see the others move in to attack.
+
+[[Retaliate!-&gt;A2- Ambush Retaliation 1]]</tw-passagedata><tw-passagedata pid="230" name=" A2- Fire Distraction 2" tags="" position="657,5367" size="100,100">(set: $a2_fireDistraction to true)You thrust, bringing the flames forward in an attempt to drive it back!
+
+The beast leaps backwards deftly, out of your reach. As it turns, the light from the fire reveals it&#39;s wounds, carved flesh from Moira&#39;s sword.
+
+You watch in horror as the incorporeal tendrils slither and crawl over the wound. They lick at the blood, before stabbing into the beasts exposed flesh.
+
+Pulling taut, they stretch the beast&#39;s skin over the wound, squeezing the cut closed. The beast then turns to face you again, hiding the the gruesome sight from view.
+
+What in all manner is this thing?
+
+[[Throw your torch, limiting the beast&#39;s space.-&gt;A2- Ambush Retaliation 1]]</tw-passagedata><tw-passagedata pid="231" name="A2- Arcanist Admission 2" tags="" position="1776,4759" size="100,100">You speak with steady conviction. Now that your secret is revealed, it&#39;s paramount to be straightforward with him. Gavin hasn&#39;t tried to make any moves, and seems more reasonable a foe than other Seeker&#39;s you&#39;ve encountered.
+		
+But you&#39;re certain, if confronted, he&#39;s far more powerful than you are.
+		
+He pauses for a moment, seemingly reading the worry from your face, and relaxes slightly. &quot;Have you been told about The Veil? The place where you draw your power? How it works? What it causes? The risk, not to you, but everything around you?&quot;
+		
+You&#39;re confused. This doesn&#39;t seem like the time for a lesson in Arcanum... What&#39;s his ploy?
+		
+&quot;Gavin!&quot; Moira calls, gripping the hilt of her blade.
+		
+Surprisingly, Moira is no longer worried with you. Her stance is facing opposite to you, towards the edge of the camp.
+		
+[[A shadow crosses your vision, from where she faces. -&gt; A2- Camp Danger Intro]]</tw-passagedata><tw-passagedata pid="232" name=" A2- Ambush Retaliation 2" tags="" position="927,5288" size="100,100">Turning to see the flames, the beast pounces back and lowers its fresh wound to the ground. The bolt of fire whooshes through the air and hits the ground where the beast used to be. Unlike the other streaks, the flame does not stay and stead burns out, boiling the pool of blood left behind by the beast.
+
+Its eyes dart between its adversaries and the flames and it lets out a low rumbling growl.
+
+[[Take the opening to move opposite to Moira.-&gt;A2- Moira Pinned]]
+[[Take the opening and follow up with an attack.-&gt;A2- Rock and a Hard Place]]</tw-passagedata><tw-passagedata pid="233" name="A2- Composure 2" tags="" position="658,5501" size="100,100">The beast backs off, seemingly enamoured with it&#39;s handiwork.
+
+You watch in horror as the incorporeal tendrils slither and crawl over the wound. They lick at the blood, before stabbing into the beasts exposed flesh.
+
+Pulling taut, they stretch the beast&#39;s skin over the wound, squeezing the cut closed. The beast then turns to face you again, hiding the the gruesome sight from view.
+
+What in all manner is this thing?
+
+[[Grip your sword and continue moving around the beast.-&gt;A2- Ambush Retaliation 1]]</tw-passagedata><tw-passagedata pid="234" name="A2- Wall of Campfire 2" tags="" position="1592,5361" size="100,100">The flames linger in the air, but their concentration steadily wanes...
+
+You lower your hands and blink, trying to get a clear vision of the remains of the beast. It&#39;s mass stands several feet farther than it had but a moment prior. The stone below it gouged from claws ripping through them as the beast was pushed back.
+
+You look up at the remains of the beast&#39;s face and see burned flesh sizzling, the shadows dripping from its body, retreating as the smell of burnt and rotting fur and flesh singes your nostrils.
+
+The beast is still...
+
+[[But then, a twitch... -&gt;A2- Wall of Campfire 3]]</tw-passagedata><tw-passagedata pid="235" name="A2- Wall of Campfire 3" tags="" position="1594,5490" size="100,100">Then you see the the darkness returning to its form, curling across the beasts body while encasing the fresh charcoaled wounds as the beast lets out an echoing roar spilling over the plateau&#39;s edge.
+
+It stands on its legs, its wounds and cuts being steadily enveloped by the shadowy tendrils. It must be feeling cornered, but it&#39;s better judgement has abandoned it... it&#39;s chosen fight rather than flight.
+
+[[&quot;How is it still standing after that?&quot;-&gt;A2- Seeker&#39;s Intellect 1]]</tw-passagedata><tw-passagedata pid="236" name="A2- Seeker&#39;s Intellect 2" tags="" position="1933,5349" size="100,100">The shadow around the beast begin to flare up. The tendrils pulse with energy. The beast picks up speed and begins to advance, forcing Moira to shift into defensive strikes.
+
+&quot;Gavin! HAAH... slow this thing... HNG... DOWN!&quot; Moira yells in between swings.
+
+Gavin steadies his resolve, before throwing his hands forward towards the beast... For a moment, you don&#39;t understand his motives, before you see the darkened tendrils puppeteering the Stonestider suddenly become rigid, pulled outward against it&#39;s form.
+
+Gavin writhes in pain, barely standing as the creature&#39;s body swells from the building pressure. He&#39;s tapping directly into whatever is inhabiting the creature, interfacing directly with the Veil... If he loses control, it could take him as well. The beast&#39;s movement&#39;s slow, as it struggles against Gavin&#39;s intervention, they sway back and forth, synced to the same primordial rythm.
+
+Moira takes this opportunity to carve the beast, opening as many wounds as she can for Gavin to rend with fire... But you see he can barely hold this beast as is.
+
+[]&lt;CallToAction|
+
+[[Clutch your sword and attack alongside Moira.-&gt;A2- Stubborn Nature]]
+[[Focus your mind on the embers remaining, finally unleashing your powers.-&gt;A2- Answer the Call]]
+
+(if:$a2_toldGavin is true)[(replace:?CallToAction)[You hear Gavin grunt through his teeth. &quot;Ashton! We will die unless you release your magic. I cannot hold for long! Quickly Help Moira kill this damn beast!&quot; ]]
+(else:)[(replace:?CallToAction)[You hear Gavin grunt through his teeth. &quot;Curse the Veil, I can&#39;t hold it... Moira, take Ashton and run! Without more Seekers, I can only slow it for but a moment longer... If I am to be consumed, then you must not fall as well!&quot;]]</tw-passagedata><tw-passagedata pid="237" name=" A1 - Veil Intro" tags="Info" position="1241,58" size="100,100">&#39;&#39;The Veil&#39;&#39;
+
+&lt;img src=&quot;https://i1.wp.com/dmdave.com/wp-content/uploads/2018/09/the-astral-plane.jpg?fit=800%2C450&amp;ssl=1&quot; width= &quot;100%&quot;&gt;
+
+A near-limitless resource of power and potential, the abilities you grasp are known as &quot;magic&quot;. Those who manipulate it are known as Arcanists. From a young age, you were taught by The Regent that it constitutes the very matter you feel and see every day. 
+
+And anything you can quantify can be manipulated: Fire, stone, even the air around you. The very foundational structure of the world can be changed through manipulating this oft feared power.
+
+Additionally, the Veil can be tapped as a means to connect the minds of many beings, through psionic links that allow for subtle maipulation in people, from their disposition, motivations, even their fears.
+
+Though volatile, it represents the most concrete form of natural manipulation known to man. And as such, it is desperately supressed by those who fear it&#39;s influence.</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">"use strict";var _slicedToArray=function(){return function(e,t){if(Array.isArray(e))return e;if(Symbol.iterator in Object(e))return function(e,t){var n=[],r=!0,i=!1,a=void 0;try{for(var o,s=e[Symbol.iterator]();!(r=(o=s.next()).done)&&(n.push(o.value),!t||n.length!==t);r=!0);}catch(e){i=!0,a=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw a}}return n}(e,t);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}!function(){
 /**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
